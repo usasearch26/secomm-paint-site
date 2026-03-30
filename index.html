@@ -439,69 +439,129 @@
 
   <!-- HERO -->
   <section
-    class="relative w-screen -ml-[calc(50vw-50%)] h-auto bg-cover bg-center text-white py-6 md:py-10 px-4"
-    style="background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');">
-    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 opacity-65 z-10"></div>
+  style="
+    width:100vw;
+    position:relative;
+    left:50%;
+    right:50%;
+    margin-left:-50vw;
+    margin-right:-50vw;
+    height:auto;
+    background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+    background-size:cover;
+    background-position:center;
+    color:#ffffff;
+    padding:8px 16px 34px 16px;
+    box-sizing:border-box;
+  "
+>
+  <div
+    style="
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%);
+      z-index:10;
+    "
+  ></div>
 
-    <div class="relative z-20 container mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-      <div class="lg:w-1/2 text-center lg:text-left">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-3 text-shadow-md">
-          Commercial Building Painting Services Company.
-          <span class="text-emerald-400">Serving Greater Atlanta Since 1991</span>
-        </h1>
+  <div
+    style="
+      position:relative;
+      z-index:20;
+      width:100%;
+      max-width:1280px;
+      margin:0 auto;
+    "
+  >
+    <div
+      style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+        gap:40px;
+        align-items:start;
+      "
+    >
 
-        <p class="text-lg md:text-xl text-gray-200 leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0">
-          Southeast Commercial Services Offers a Comprehensive Array of Professional Commercial Painting Services with Exceptional Craftsmanship, Service, &amp; Attention-to-Detail.
-        </p>
+      <!-- LEFT COLUMN -->
+      <div style="text-align:center; padding-top:16px;">
+        <div style="width:100%; max-width:760px; margin:0 auto;">
 
-        <a href="#discovery-call-form"
-           class="inline-block bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mb-2">
-          Call (404) 446-2159 or Fill Out the Form for a Free Quote
-        </a>
+          <div style="margin-bottom:14px;">
+            <span style="font-size:14px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#2ea44f;">
+              Commercial Painting Contractors • Atlanta, GA • Est. 1991
+            </span>
+          </div>
 
-        <p class="text-sm text-gray-300 mb-3">
-          Free On-Site Quotes | Fast Scheduling.
-        </p>
+          <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase;">
+            Atlanta's<br />
+            <span style="color:#2ea44f;">Commercial</span><br />
+            Painting<br />
+            Specialists
+          </h1>
+
+          <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
+            Interior repainting. Exterior coatings. Industrial surfaces. Office, retail, warehouse, and facility painting.
+            <strong style="color:#ffffff;">Southeast Commercial Services</strong>
+            provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
+            <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">
+              Request a Free Quote
+            </a>
+
+            <a href="tel:+14044462159" style="min-height:58px; padding:0 30px; border:2px solid #fff; border-radius:14px; display:flex; align-items:center; color:#fff; font-weight:900;">
+              (404) 446-2159
+            </a>
+          </div>
+
+          <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:#97a7c0;">
+            No Residential Requests • Commercial Facilities Only
+          </div>
+
+        </div>
       </div>
 
-              <div class="form-card" id="quote-form">
-  <h2 class="form-title">Request a Free Quote</h2>
-  <p class="form-subtitle">We typically get back to you in minutes, to within the hour (M-F).</p>
+      <!-- RIGHT COLUMN -->
+      <div style="width:100%; max-width:460px; margin:0 auto;">
+        <div id="quote-form" style="margin-top:60px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:18px;">
 
-  <form class="lead-form" method="post" action="#" id="heroLeadForm">
-    <div class="lead-form-row">
-      <input type="text" name="first_name" placeholder="First Name" required>
-      <input type="text" name="last_name" placeholder="Last Name" required>
-    </div>
+          <h2 style="text-align:center; font-size:24px; font-weight:800;">Request a Free Quote</h2>
+          <p style="text-align:center; font-size:13px; color:#d1d5db;">We typically respond within minutes (M-F).</p>
 
-    <div class="lead-form-row">
-      <input type="text" name="company" placeholder="Company Name">
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-    </div>
+          <form method="post" action="#" id="heroLeadForm">
 
-    <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:10px; padding:12px; border-radius:10px;">
+            <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:10px; padding:12px; border-radius:10px;">
+            <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:10px; padding:12px; border-radius:10px;">
+            <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:10px; padding:12px; border-radius:10px;">
+            <textarea name="message" placeholder="Project details" style="width:100%; margin-bottom:10px; padding:12px; border-radius:10px;"></textarea>
 
-    <textarea name="message" placeholder="Tell us what type of commercial painting project you need"></textarea>
+            <!-- TRACKING -->
+            <input type="hidden" name="utm_source" id="hero_utm_source">
+            <input type="hidden" name="utm_medium" id="hero_utm_medium">
+            <input type="hidden" name="utm_campaign" id="hero_utm_campaign">
+            <input type="hidden" name="utm_term" id="hero_utm_term">
+            <input type="hidden" name="utm_content" id="hero_utm_content">
+            <input type="hidden" name="gclid" id="hero_gclid">
+            <input type="hidden" name="gbraid" id="hero_gbraid">
+            <input type="hidden" name="wbraid" id="hero_wbraid">
 
-    <input type="hidden" name="page_type" value="hero_form">
-    <input type="hidden" name="source" value="website">
-    <input type="hidden" name="utm_source" id="hero_utm_source">
-    <input type="hidden" name="utm_medium" id="hero_utm_medium">
-    <input type="hidden" name="utm_campaign" id="hero_utm_campaign">
-    <input type="hidden" name="utm_term" id="hero_utm_term">
-    <input type="hidden" name="utm_content" id="hero_utm_content">
+            <button type="submit" style="width:100%; padding:12px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800;">
+              Get My Free Quote
+            </button>
 
-    <button type="submit" class="form-button">Get My Free Quote</button>
+            <div style="text-align:center; font-size:11px; margin-top:8px;">
+              Commercial projects only • No residential
+            </div>
 
-    <div class="form-note">
-      Commercial and industrial projects only. No residential house painting.
-    </div>
-  </form>
-</div>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
 
+    </div>
+  </div>
+</section>
   <!-- MAIN SECTION -->
   <!-- PASTE THE ENTIRE CONTENT OF YOUR SECOND FILE HERE, STARTING BELOW THIS LINE -->
 
