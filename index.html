@@ -486,50 +486,30 @@
                   </a>
               </div>
 
-              <!-- Desktop Navigation -->
-              <nav class="main-nav desktop-nav">
-                  <a href="#">Home</a>
-                  <a href="#">Commercial Painting</a>
-                  <a href="#">Interior</a>
-                  <a href="#">Office Painting</a>
-                  <a href="#">Exterior</a>
-                  <a href="#">Hi-Rise</a>
-                  <a href="#">Buildings</a>
-                  <a href="#">Industrial</a>
-                  <a href="#">Floor Coatings</a>
-                  <a href="#">Contact</a>
-              </nav>
+              <div class="header-spacer"></div>
 
-              <!-- Hamburger + Phone -->
-              <div class="header-right">
-                  <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                  <label for="nav-toggle" class="hamburger">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                  </label>
-
-                  <!-- Mobile Menu -->
-                  <nav class="mobile-nav">
-                      <a href="#">Home</a>
-                      <a href="#">Commercial Painting</a>
-                      <a href="#">Interior</a>
-                      <a href="#">Office Painting</a>
-                      <a href="#">Exterior</a>
-                      <a href="#">Hi-Rise</a>
-                      <a href="#">Buildings</a>
-                      <a href="#">Industrial</a>
-                      <a href="#">Floor Coatings</a>
-                      <a href="#">Contact</a>
-                  </nav>
-
-                  <div class="phone">
-                      <a href="tel:4049247071">(404) 924-7071</a>
-                      <div class="fast">Call for Fast Service</div>
-                  </div>
+              <!-- Phone -->
+              <div class="phone">
+                  <a href="tel:4049247071">(404) 924-7071</a>
+                  <div class="fast">Call for Fast Service</div>
               </div>
 
           </div>
+
+          <!-- NAV MENU ON ITS OWN LINE -->
+          <nav class="main-nav">
+              <a href="#">Home</a>
+              <a href="#">Commercial Painting</a>
+              <a href="#">Interior</a>
+              <a href="#">Office Painting</a>
+              <a href="#">Exterior</a>
+              <a href="#">Hi-Rise</a>
+              <a href="#">Buildings</a>
+              <a href="#">Industrial</a>
+              <a href="#">Floor Coatings</a>
+              <a href="#">Contact</a>
+          </nav>
+
       </div>
   </div>
 </header>
@@ -945,6 +925,49 @@
   @media (max-width: 900px){
     .services-grid-3x4{ grid-template-columns: 1fr !important; }
   }
+  /* NAV MENU ON SEPARATE LINE */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    font-size: 15.5px;
+    font-weight: 600;
+    padding: 14px 0 10px 0;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 10px;
+}
+
+.main-nav a {
+    color: #0f172a;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.main-nav a:hover {
+    color: #008000;
+}
+
+.main-nav a:last-child {
+    color: #008000;
+    font-weight: 700;
+}
+
+/* Mobile adjustments for nav */
+@media (max-width: 1024px) {
+    .main-nav {
+        gap: 14px;
+        font-size: 15px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
 </style>
 
 <section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
