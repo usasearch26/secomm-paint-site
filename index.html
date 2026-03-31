@@ -358,161 +358,127 @@
     fill: #333;
   }
 
-  /* ================== RESPONSIVE HEADER (Clean) ================== */
+    /* ================== RESPONSIVE HEADER (Fixed - White Background) ================== */
   .main-header {
-    background: #0f172a;
-    padding: 16px 0;
-    position: relative;
+      background: #ffffff;
+      padding: 18px 0 16px;
+      border-bottom: 1px solid #e6e6e6;
   }
 
   .main-header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+      gap: 20px;
   }
 
   .logo img {
-    max-height: 68px;
-    width: auto;
+      max-height: 85px;
+      width: auto;
   }
 
-  /* Desktop Nav */
+  /* Desktop Navigation */
   .desktop-nav {
-    display: none;
-    gap: 18px;
-    font-size: 15.5px;
-    font-weight: 600;
+      display: none;
+      gap: 20px;
+      font-size: 15.5px;
+      font-weight: 600;
   }
 
   .desktop-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-    white-space: nowrap;
+      color: #0f172a;
+      text-decoration: none;
+      white-space: nowrap;
   }
 
   .desktop-nav a:hover {
-    color: #2ea44f;
+      color: #008000;
   }
 
   .desktop-nav a:last-child {
-    color: #2ea44f;
-    font-weight: 700;
+      color: #008000;
+      font-weight: 700;
   }
 
   /* Hamburger & Right Side */
   .header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
   }
 
   .nav-toggle {
-    display: none;
+      display: none;
   }
 
   .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
   }
 
   .hamburger span {
-    width: 28px;
-    height: 3px;
-    background: #2ea44f;
-    transition: all 0.3s;
+      width: 28px;
+      height: 3px;
+      background: #008000;
+      transition: all 0.3s;
   }
 
   /* Mobile Menu */
   .mobile-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #0f172a;
-    padding: 20px;
-    border-top: 1px solid #334155;
-    flex-direction: column;
-    gap: 16px;
-    font-size: 17px;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      padding: 20px;
+      border-top: 1px solid #e6e6e6;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 17px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .mobile-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-    padding: 8px 0;
+      color: #0f172a;
+      text-decoration: none;
+      padding: 8px 0;
   }
 
   .mobile-nav a:last-child {
-    color: #2ea44f;
-    font-weight: 700;
+      color: #008000;
+      font-weight: 700;
   }
 
-  /* Breakpoints */
+  /* Show desktop nav on large screens */
   @media (min-width: 1024px) {
-    .desktop-nav {
-      display: flex;
-    }
-    .hamburger {
-      display: none;
-    }
+      .desktop-nav { 
+          display: flex; 
+      }
+      .hamburger { 
+          display: none; 
+      }
   }
 
+  /* Show hamburger on mobile */
   @media (max-width: 1023px) {
-    .hamburger {
-      display: flex;
-    }
-    .phone {
-      display: none;
-    }
-    .nav-toggle:checked ~ .mobile-nav {
-      display: flex;
-    }
+      .hamburger { 
+          display: flex; 
+      }
+      .phone { 
+          display: none; 
+      }
+      .nav-toggle:checked ~ .mobile-nav {
+          display: flex;
+      }
   }
 
-  /* Keep your existing mobile fixes */
-  @media (max-width: 900px) {
-    .services-grid-3x4,
-    .authority-grid-3,
-    .stats-grid-3,
-    .lead-form-row,
-    .contact-grid,
-    .footer-grid {
-      grid-template-columns: 1fr !important;
-    }
-    .stat-divider {
-      border-right: none !important;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 12px;
-    }
-    .contact-copy h2 {
-      font-size: 32px;
-    }
-    .form-title {
-      font-size: 26px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .top-bar-inner {
-      grid-template-columns: 1fr;
-      gap: 8px;
-    }
-    .trust-items {
-      flex-direction: column;
-      gap: 10px;
-    }
-    .social-icons {
-      justify-content: center;
-    }
-  }
 </style>
 
  
@@ -525,7 +491,9 @@
   <div class="top-bar">
       <div class="container">
           <div class="top-bar-inner">
+              <!-- LEFT SPACER -->
               <div></div>
+              <!-- CENTER TRUST -->
               <div class="trust-items">
                   <div class="trust-item">
                       <strong>100% Customer Satisfaction</strong>
@@ -540,6 +508,7 @@
                       <span>Fully Insured &amp; Reliable</span>
                   </div>
               </div>
+              <!-- RIGHT SOCIAL -->
               <div class="social-icons">
                   <a href="#" aria-label="Facebook">FB</a>
                   <a href="#" aria-label="LinkedIn">LI</a>
