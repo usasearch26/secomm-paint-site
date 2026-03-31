@@ -754,44 +754,26 @@
   </div>
 </section>
   <!-- MAIN SECTION -->
-  <!-- PASTE THE ENTIRE CONTENT OF YOUR SECOND FILE HERE, STARTING BELOW THIS LINE -->
-
-  <!-- main content starts -->
-
-  <!-- ========================================
-     SECTION 1: Authority Intro (IMAGE LEFT / TEXT RIGHT)
-     Updates applied per your request:
-     - Keep H2 (H1 lives in separate hero)
-     - ALL titles/headlines set to dark grey #222222
-     - Removed the stray "#222222" text that was rendering on-page
-     - Reduced top padding (kept your adjusted sizing: padding:30px 20px)
-     - Kept all your adjusted font sizes (H2=44px, "What Is" H2=36px)
-     - Kept existing layout + performance-safe stats panel
-     ======================================== -->
-
-<!-- Responsive helpers (scoped to this snippet) -->
-<section style="display:block; position:relative; padding:16px 20px 30px 20px; background:linear-gradient(to bottom,#ffffff,#f9fafb); font-family:sans-serif; overflow:hidden;">
+<section style="display:block; position:relative; padding:40px 20px 50px 20px; background:linear-gradient(to bottom,#ffffff,#f9fafb); font-family:sans-serif; overflow:hidden;">
   <div style="max-width:1200px; margin:0 auto; position:relative; z-index:10;">
-
-    <!-- Headline Wrapper (tighter spacing) -->
-    <div style="margin-bottom:24px;">
-
-      <h2 style="color:#333333; font-size:44px; font-weight:900; line-height:1.08; letter-spacing:-0.025em; margin:0;">
+    
+    <!-- Centered Headline -->
+    <div style="text-align:center; margin-bottom:40px;">
+      <h2 style="color:#333333; font-size:clamp(36px, 4.5vw, 48px); font-weight:900; line-height:1.1; letter-spacing:-0.025em; margin:0 auto; max-width:1100px;">
         Atlanta Commercial Painting Contractors - Southeast Commercial Services
       </h2>
-
-      <div style="margin-top:8px; display:inline-flex; align-items:center; gap:10px;">
+      <div style="margin-top:12px; display:inline-flex; align-items:center; gap:10px; justify-content:center;">
         <span style="display:inline-block; width:10px; height:10px; border-radius:999px; background:#008000;"></span>
-        <span style="font-size:14px; font-weight:800; letter-spacing:.10em; text-transform:uppercase; color:#475569;">
-          Commercial &amp; Industrial Only • Greater Atlanta
+        <span style="font-size:15px; font-weight:800; letter-spacing:.10em; text-transform:uppercase; color:#475569;">
+          Commercial & Industrial Only • Greater Atlanta
         </span>
       </div>
-
     </div>
 
-    <div style="display:flex; flex-wrap:wrap; gap:60px; align-items:flex-start;">
-      <!-- IMAGE 1: LEFT (PRIORITY LOAD) -->
-      <div style="flex:1; min-width:320px; order:1;">
+    <div style="display:flex; flex-wrap:wrap; gap:50px; align-items:flex-start; justify-content:center;">
+      
+      <!-- IMAGE - LEFT -->
+      <div style="flex:1; min-width:320px; max-width:480px;">
         <img
           src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04a9a787d9e2.webp"
           alt="Atlanta Commercial Painting Contractors"
@@ -799,36 +781,37 @@
           fetchpriority="high"
           loading="eager"
           decoding="async"
-          style="display:block; width:100%; max-width:448px; height:auto; aspect-ratio:448 / 300; border-radius:14px;
+          style="display:block; width:100%; height:auto; border-radius:14px;
                  box-shadow:0 18px 40px rgba(2,6,23,.18);
                  border:1px solid rgba(15,23,42,.10);
-                 border-bottom:8px solid #334155; margin-top:6px;"
+                 border-bottom:8px solid #334155;"
         />
       </div>
 
-      <!-- TEXT 1: RIGHT -->
-      <div style="flex:1.2; min-width:320px; order:2;">
-        <p style="font-size:20px; color:#1f2937; margin-bottom:18px; line-height:1.65;">
-          <strong>Southeast Commercial Services</strong> serves the <strong>greater Atlanta area</strong>. We offer a broad range of <strong>commercial &amp; industrial painting services</strong> to meet the needs of Atlanta's growing <strong>commercial &amp; industrial sector</strong>.
+      <!-- TEXT + STATS - RIGHT -->
+      <div style="flex:1; min-width:320px; max-width:620px;">
+        <p style="font-size:20px; color:#1f2937; margin-bottom:20px; line-height:1.65;">
+          <strong>Southeast Commercial Services</strong> serves the <strong>greater Atlanta area</strong>. We offer a broad range of <strong>commercial & industrial painting services</strong> to meet the needs of Atlanta's growing <strong>commercial & industrial sector</strong>.
         </p>
-        <p style="font-size:18px; color:#374151; margin-bottom:26px; line-height:1.65;">
-          If it’s time to brighten up the appearance of your building or facility, <strong>Southeast Commercial Services</strong> can be your partner for <strong>Commercial Painting in Atlanta, GA</strong> &amp; surrounding cities &amp; communities. Our mission is to deliver an <strong>exceptional appearance &amp; image</strong> for your business with <strong>unsurpassed quality, attention-to-detail &amp; value</strong>.
+        <p style="font-size:18px; color:#374151; margin-bottom:32px; line-height:1.65;">
+          If it’s time to brighten up the appearance of your building or facility, <strong>Southeast Commercial Services</strong> can be your partner for <strong>Commercial Painting in Atlanta, GA</strong> & surrounding cities & communities. Our mission is to deliver an <strong>exceptional appearance & image</strong> for your business with <strong>unsurpassed quality, attention-to-detail & value</strong>.
         </p>
 
-        <!-- Stats Grid (performance-safe: no backdrop-filter blur) -->
-        <div class="stats-grid-3" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; padding:20px;
-             background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; box-shadow:0 10px 20px rgba(2,6,23,.08);">
-          <div class="stat-divider" style="text-align:center; border-right:1px solid #e5e7eb;">
-            <div style="font-size:24px; font-weight:900; color:#334155;">30+</div>
-            <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280;">Years Exp.</div>
+        <!-- Centered Stats Grid -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:16px; max-width:520px; margin:0 auto;">
+          <div style="text-align:center; background:#ffffff; padding:18px 12px; border-radius:12px; border:1px solid #e5e7eb; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size:26px; font-weight:900; color:#334155;">30+</div>
+            <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280; margin-top:4px;">Years Exp.</div>
           </div>
-          <div class="stat-divider" style="text-align:center; border-right:1px solid #e5e7eb;">
-            <div style="font-size:24px; font-weight:900; color:#008000;">OSHA</div>
-            <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280;">Safety Std.</div>
+          
+          <div style="text-align:center; background:#ffffff; padding:18px 12px; border-radius:12px; border:1px solid #e5e7eb; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size:26px; font-weight:900; color:#008000;">OSHA</div>
+            <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280; margin-top:4px;">Safety Std.</div>
           </div>
-          <div style="text-align:center;">
-            <div style="font-size:24px; font-weight:900; color:#111827;">GA</div>
-            <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280;">Local Entity</div>
+          
+          <div style="text-align:center; background:#ffffff; padding:18px 12px; border-radius:12px; border:1px solid #e5e7eb; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size:26px; font-weight:900; color:#111827;">GA</div>
+            <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.12em; font-weight:800; color:#6b7280; margin-top:4px;">Local Entity</div>
           </div>
         </div>
       </div>
