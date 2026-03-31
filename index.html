@@ -325,7 +325,7 @@
       font-size: 26px;
     }
   }
-    /* ===== HEADER FIX ===== */
+        /* ===== HEADER FIX ===== */
 
 .container {
   max-width: 1240px;
@@ -337,7 +337,7 @@
 .top-bar {
   background: #f8f8f8;
   border-bottom: 1px solid #e6e6e6;
-  padding: 10px 0 14px; /* increased bottom padding */
+  padding: 10px 0 14px;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03);
 }
 
@@ -359,15 +359,20 @@
   display: block;
   font-size: 13px;
   font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
 }
 
 .trust-item span {
+  display: block;
+  margin-top: 4px;
   font-size: 12px;
   color: #008000;
   font-weight: 600;
+  line-height: 1.2;
 }
 
-/* SOCIAL ICONS (THIS FIXES YOUR HUGE ICON ISSUE) */
+/* SOCIAL ICONS */
 .social-icons {
   display: flex;
   justify-content: flex-end;
@@ -375,8 +380,8 @@
 }
 
 .social-icons a {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,48 +398,108 @@
 
 /* MAIN HEADER */
 .main-header {
-  padding: 22px 0 18px; /* MUCH more separation */
+  padding: 18px 0 16px;
   background: #fff;
 }
 
+.main-header-inner {
+  display: grid;
+  grid-template-columns: minmax(320px, 1.45fr) minmax(200px, 0.75fr) minmax(240px, 0.9fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
-  width: auto;
-  max-width: 760px;
-  height: 110px;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: 110px;
+  object-fit: contain;
 }
 
 /* RATING */
 .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .stars {
   color: #c59d2a;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
 .rating-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
+  line-height: 1.3;
+  color: #0f172a;
+  max-width: 220px;
 }
 
 /* PHONE */
 .phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
   text-align: right;
 }
 
 .phone a {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 900;
   color: #008000;
   text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .fast {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
-  margin-top: 4px;
+  margin-top: 8px;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .trust-items {
+    gap: 22px;
+  }
+
+  .main-header-inner {
+    grid-template-columns: 1.2fr 0.75fr 0.85fr;
+    gap: 20px;
+  }
+
+  .logo img {
+    max-width: 440px;
+    max-height: 96px;
+  }
+
+  .stars {
+    font-size: 20px;
+  }
+
+  .rating-text {
+    font-size: 14px;
+  }
+
+  .phone a {
+    font-size: 28px;
+  }
 }
 
 /* MOBILE FIX */
@@ -444,23 +509,44 @@
     gap: 8px;
   }
 
+  .trust-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .social-icons {
     justify-content: center;
   }
 
-  .main-header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px; /* increased spacing */
-}
+  .main-header {
+    padding: 16px 0 14px;
+  }
 
+  .main-header-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    justify-items: center;
+  }
+
+  .logo,
+  .rating,
   .phone {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+  }
+
+  .logo img {
+    max-width: 360px;
+    max-height: none;
   }
 
   .phone a {
     font-size: 26px;
+  }
+
+  .fast {
+    margin-top: 6px;
   }
 }
 </style>
@@ -494,7 +580,7 @@
 
                 <div class="trust-item">
                     <strong>Expert Commercial Crews</strong>
-                    <span>Fully Insured & Reliable</span>
+                    <span>Fully Insured &amp; Reliable</span>
                 </div>
             </div>
 
