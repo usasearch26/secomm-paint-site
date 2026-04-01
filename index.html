@@ -663,48 +663,54 @@
           </p>
 
           <form method="post" action="#" id="heroLeadForm">
-            <input type="text" name="full_name" placeholder="Full Name" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+    <!-- Combined Full Name -->
+    <input type="text" name="full_name" placeholder="Full Name" required
+           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
 
-            <input type="text" name="company" placeholder="Company Name"
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+    <input type="text" name="company" placeholder="Company Name"
+           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
 
-            <input type="tel" name="phone" placeholder="Phone Number" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+    <input type="tel" name="phone" placeholder="Phone Number" required
+           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
 
-            <input type="email" name="email" placeholder="Email Address" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+    <input type="email" name="email" placeholder="Email Address" required
+           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
 
-            <textarea name="message" placeholder="Project details" rows="4"
-                      style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
+    <textarea name="message" placeholder="Project details" rows="4"
+              style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
 
-            <!-- CONSENT CHECKBOX -->
-            <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
-              <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
-                <input type="checkbox" name="consent" required
-                       style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
-                <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
-              </label>
-            </div>
+    <!-- CONSENT CHECKBOX -->
+    <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
+      <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
+        <input type="checkbox" name="consent" required
+               style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
+        <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
+      </label>
+    </div>
 
-            <!-- TRACKING -->
-            <input type="hidden" name="utm_source" id="hero_utm_source">
-            <input type="hidden" name="utm_medium" id="hero_utm_medium">
-            <input type="hidden" name="utm_campaign" id="hero_utm_campaign">
-            <input type="hidden" name="utm_term" id="hero_utm_term">
-            <input type="hidden" name="utm_content" id="hero_utm_content">
-            <input type="hidden" name="gclid" id="hero_gclid">
-            <input type="hidden" name="gbraid" id="hero_gbraid">
-            <input type="hidden" name="wbraid" id="hero_wbraid">
+    <!-- Comprehensive Hidden Tracking Fields for Google & Bing Ads -->
+    <input type="hidden" name="gclid" id="gclid">
+    <input type="hidden" name="gbraid" id="gbraid">
+    <input type="hidden" name="wbraid" id="wbraid">
+    <input type="hidden" name="utm_source" id="utm_source">
+    <input type="hidden" name="utm_medium" id="utm_medium">
+    <input type="hidden" name="utm_campaign" id="utm_campaign">
+    <input type="hidden" name="utm_term" id="utm_term">
+    <input type="hidden" name="utm_content" id="utm_content">
+    <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+    <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+    <input type="hidden" name="utm_adid" id="utm_adid">
+    <input type="hidden" name="fbclid" id="fbclid">
+    <input type="hidden" name="msclkid" id="msclkid">
 
-            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
-              Submit Form
-            </button>
+    <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
+      Submit Form
+    </button>
 
-            <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
-              Commercial projects only • No residential
-            </div>
-          </form>
+    <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
+      Commercial projects only • No residential
+    </div>
+</form>
         </div>
       </div>
     </div>
@@ -2097,7 +2103,7 @@
         </h3>
 
         <p style="margin:0 0 2rem 0; color:#4b5563;">
-          Our team typically responds to quote requests within 60 minutes during business hours.
+          Call us Now to Set Up a Free On-Site Walk Thru & Quote
         </p>
 
         <div style="margin-top:0;">
@@ -2122,7 +2128,7 @@
           </a>
 
           <p style="margin:1rem 0 0 0; font-size:0.875rem; color:#6b7280; font-style:italic;">
-            Click to call for immediate scheduling
+            Click to Call & Schedule Your Assessment & Quote
           </p>
         </div>
 
@@ -2199,54 +2205,45 @@
       </div>
 
       <div class="contact-card">
-        <h2 class="form-title">Get a Free Quote</h2>
-        <p class="form-subtitle">Use the form below and a team member will follow up.</p>
+    <h2 class="form-title">Contact Us via Our Form to Get a Free Quote</h2>
+    <p class="form-subtitle">Use the form below and a team member will follow up.</p>
+    
+    <form class="lead-form" method="post" action="#" id="bottomLeadForm">
+      
+      <!-- Combined Full Name -->
+      <input type="text" name="full_name" placeholder="Full Name" required>
 
-        <form class="lead-form" method="post" action="#" id="bottomLeadForm">
-          <div class="lead-form-row">
-            <input type="text" name="first_name" placeholder="First Name" required>
-            <input type="text" name="last_name" placeholder="Last Name" required>
-          </div>
-
-          <div class="lead-form-row">
-            <input type="text" name="company" placeholder="Company Name">
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-          </div>
-
-          <input type="email" name="email" placeholder="Email Address" required>
-
-          <select name="service" required>
-            <option value="">Select Service Needed</option>
-            <option>Commercial Building Painting</option>
-            <option>Warehouse Painting</option>
-            <option>Industrial Painting</option>
-            <option>High-Rise Painting</option>
-            <option>Office Painting</option>
-            <option>Exterior Commercial Painting</option>
-            <option>Interior Commercial Painting</option>
-            <option>Floor Coatings</option>
-            <option>Line Striping</option>
-            <option>Other Commercial Service</option>
-          </select>
-
-          <textarea name="message" placeholder="Tell us what type of commercial painting project you need"></textarea>
-
-          <!-- Hidden fields for future tracking -->
-          <input type="hidden" name="page_type" value="bottom_form">
-          <input type="hidden" name="source" value="website">
-          <input type="hidden" name="utm_source" id="bottom_utm_source">
-          <input type="hidden" name="utm_medium" id="bottom_utm_medium">
-          <input type="hidden" name="utm_campaign" id="bottom_utm_campaign">
-          <input type="hidden" name="utm_term" id="bottom_utm_term">
-          <input type="hidden" name="utm_content" id="bottom_utm_content">
-
-          <button type="submit" class="form-button">Request My Quote</button>
-
-          <div class="form-note">
-            Commercial and industrial projects only. No residential house painting.
-          </div>
-        </form>
+      <div class="lead-form-row">
+        <input type="text" name="company" placeholder="Company Name">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
       </div>
+      
+      <input type="email" name="email" placeholder="Email Address" required>
+      
+      <textarea name="message" placeholder="Tell us about your commercial painting project (type, size, timeline, etc.)" rows="5"></textarea>
+
+      <!-- Comprehensive Hidden Tracking Fields -->
+      <input type="hidden" name="gclid" id="gclid">
+      <input type="hidden" name="gbraid" id="gbraid">
+      <input type="hidden" name="wbraid" id="wbraid">
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="utm_term" id="utm_term">
+      <input type="hidden" name="utm_content" id="utm_content">
+      <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+      <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+      <input type="hidden" name="utm_adid" id="utm_adid">
+      <input type="hidden" name="fbclid" id="fbclid">
+      <input type="hidden" name="msclkid" id="msclkid">
+
+      <button type="submit" class="form-button">Request My Quote</button>
+      
+      <div class="form-note">
+        Commercial and industrial projects only. No residential house painting.
+      </div>
+    </form>
+</div>
 
     </div>
   </div>
@@ -2322,6 +2319,24 @@ Decatur, GA 30033
   setVal('hero_gbraid','gbraid');
   setVal('hero_wbraid','wbraid');
 })();
+</script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    
+    const fields = [
+        'gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 
+        'utm_campaign', 'utm_term', 'utm_content', 'utm_adgroup', 
+        'utm_campaignid', 'utm_adid', 'fbclid', 'msclkid'
+    ];
+    
+    fields.forEach(function(key) {
+        const el = document.getElementById(key);
+        if (el) {
+            el.value = params.get(key) || '';
+        }
+    });
+});
 </script>
 </body>
 </html>
