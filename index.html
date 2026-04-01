@@ -314,126 +314,95 @@
     fill: #333;
   }
 
-  /* ================== RESPONSIVE HEADER - CLEAN FIXED VERSION ================== */
-  .main-header {
-      background: #ffffff;
-      padding: 18px 0 16px;
-      border-bottom: 1px solid #e6e6e6;
-  }
+  /* ================== RESPONSIVE HEADER - IMPROVED ================== */
+.main-header {
+    background: #ffffff;
+    padding: 20px 0 12px;
+    border-bottom: 1px solid #e6e6e6;
+}
 
-  .main-header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 20px;
-      gap: 20px;
-  }
+.main-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+}
 
-  .logo img {
-      max-height: 85px;
-      width: auto;
-  }
+.logo img {
+    max-height: 95px;        /* Made logo more prominent */
+    width: auto;
+}
 
-  /* Desktop Navigation */
-  .desktop-nav {
-      display: none;
-      gap: 20px;
-      font-size: 15.5px;
-      font-weight: 600;
-  }
+/* Phone - Bigger and bolder */
+.phone a {
+    font-size: 28px;
+    font-weight: 900;
+    color: #008000;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
-  .desktop-nav a {
-      color: #0f172a;
-      text-decoration: none;
-      white-space: nowrap;
-  }
+.phone .fast {
+    font-size: 13px;
+    color: #0f172a;
+    margin-top: 4px;
+    font-weight: 600;
+}
 
-  .desktop-nav a:hover {
-      color: #008000;
-  }
+/* Nav Menu on its own line */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    font-size: 15.5px;
+    font-weight: 600;
+    padding: 12px 0 8px 0;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 8px;
+}
 
-  .desktop-nav a:last-child {
-      color: #008000;
-      font-weight: 700;
-  }
+.main-nav a {
+    color: #0f172a;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
-  /* Hamburger & Right Side */
-  .header-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-  }
+.main-nav a:hover {
+    color: #008000;
+}
 
-  .nav-toggle {
-      display: none;
-  }
+.main-nav a:last-child {
+    color: #008000;
+    font-weight: 700;
+}
 
-  .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 8px;
-  }
+/* Mobile adjustments */
+@media (max-width: 1024px) {
+    .main-nav {
+        gap: 16px;
+        font-size: 15px;
+    }
+    .logo img {
+        max-height: 78px;
+    }
+    .phone a {
+        font-size: 24px;
+    }
+}
 
-  .hamburger span {
-      width: 28px;
-      height: 3px;
-      background: #008000;
-      transition: all 0.3s;
-  }
-
-  /* Mobile Menu */
-  .mobile-nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: #ffffff;
-      padding: 20px;
-      border-top: 1px solid #e6e6e6;
-      flex-direction: column;
-      gap: 16px;
-      font-size: 17px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-
-  .mobile-nav a {
-      color: #0f172a;
-      text-decoration: none;
-      padding: 8px 0;
-  }
-
-  .mobile-nav a:last-child {
-      color: #008000;
-      font-weight: 700;
-  }
-
-  /* Desktop */
-  @media (min-width: 1024px) {
-      .desktop-nav { 
-          display: flex; 
-      }
-      .hamburger { 
-          display: none; 
-      }
-  }
-
-  /* Mobile */
-  @media (max-width: 1023px) {
-      .hamburger { 
-          display: flex; 
-      }
-      .phone { 
-          display: none; 
-      }
-      .nav-toggle:checked ~ .mobile-nav {
-          display: flex;
-      }
-  }
+@media (max-width: 768px) {
+    .main-nav {
+        gap: 12px;
+        font-size: 14.5px;
+    }
+    .logo img {
+        max-height: 70px;
+    }
+}
 
 </style>
 
@@ -447,9 +416,7 @@
   <div class="top-bar">
       <div class="container">
           <div class="top-bar-inner">
-              <!-- LEFT SPACER -->
               <div></div>
-              <!-- CENTER TRUST -->
               <div class="trust-items">
                   <div class="trust-item">
                       <strong>100% Customer Satisfaction</strong>
@@ -464,7 +431,6 @@
                       <span>Fully Insured &amp; Reliable</span>
                   </div>
               </div>
-              <!-- RIGHT SOCIAL -->
               <div class="social-icons">
                   <a href="#" aria-label="Facebook">FB</a>
                   <a href="#" aria-label="LinkedIn">LI</a>
@@ -478,7 +444,7 @@
       <div class="container">
           <div class="main-header-inner">
 
-              <!-- Logo -->
+              <!-- Logo - Made more prominent -->
               <div class="logo">
                   <a href="/">
                       <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp"
@@ -488,7 +454,7 @@
 
               <div class="header-spacer"></div>
 
-              <!-- Phone -->
+              <!-- Phone - Bigger and bolder -->
               <div class="phone">
                   <a href="tel:4049247071">(404) 924-7071</a>
                   <div class="fast">Call for Fast Service</div>
