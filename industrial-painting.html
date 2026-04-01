@@ -512,141 +512,179 @@
 <!-- =========================
      PROFESSIONAL SERVICE SCHEMA
 ========================= -->
+<!-- ========================================
+     SUPER JSON-LD SCHEMA BLOCK (GHL-SAFE PLACEMENT)
+     Industrial Painting Page + FAQ Schema
+     IMPORTANT: Replace the page URL below if your slug is different.
+     ======================================== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["ProfessionalService","PaintingContractor"],
-  "@id": "https://southeastcommercialpainting.com/atlanta-commercial-painting-contractors#business",
-  "name": "Southeast Commercial Services",
-  "url": "https://southeastcommercialpainting.com/atlanta-commercial-painting-contractors",
-  "image": "https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04a9a787d9e2.webp",
-  "telephone": "+1-404-348-2244",
-  "priceRange": "$$",
-  "foundingDate": "1991",
-  "description": "Commercial and industrial painting contractors serving Greater Atlanta. Interior and exterior painting for offices, warehouses, industrial facilities, high-rise buildings, and commercial properties since 1991.",
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Atlanta",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "Georgia"
-      }
-    },
-    { "@type": "City", "name": "Marietta" },
-    { "@type": "City", "name": "Alpharetta" },
-    { "@type": "City", "name": "Sandy Springs" },
-    { "@type": "City", "name": "Roswell" },
-    { "@type": "City", "name": "Dunwoody" },
-    { "@type": "City", "name": "Lawrenceville" }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Atlanta",
-    "addressRegion": "GA",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.7490,
-    "longitude": -84.3880
-  },
-  "serviceType": [
-    "Commercial Painting",
-    "Industrial Painting",
-    "Interior Commercial Painting",
-    "Exterior Commercial Painting",
-    "Warehouse Painting",
-    "High-Rise Painting",
-    "Industrial Floor Coatings"
-  ],
-  "sameAs": [
-    "https://southeastcommercialpainting.com/"
-  ]
-}
-</script>
-
-
-<!-- =========================
-     FAQ SCHEMA
-========================= -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://southeastcommercialpainting.com/atlanta-commercial-painting-contractors#faq",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What's included in a commercial painting quote?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A commercial painting quote outlines surface preparation requirements, coating systems, number of coats, protection and containment measures, scheduling, exclusions, and closeout expectations. We perform an on-site walkthrough and provide a detailed written scope of work."
+      "@type": "Organization",
+      "@id": "https://southeastcommercialpainting.com/#organization",
+      "name": "Southeast Commercial Services",
+      "url": "https://southeastcommercialpainting.com/",
+      "telephone": "+1-404-348-2244",
+      "foundingDate": "1991",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2785 Lawrenceville Hwy",
+        "addressLocality": "Decatur",
+        "addressRegion": "GA",
+        "postalCode": "30033",
+        "addressCountry": "US"
       }
     },
     {
-      "@type": "Question",
-      "name": "How do you minimize disruption in occupied commercial buildings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We sequence work areas, implement dust and overspray control, protect flooring and fixtures, coordinate access with facility managers, and schedule work during off-hours when necessary to maintain operations."
+      "@type": "ProfessionalService",
+      "@id": "https://southeastcommercialpainting.com/#professionalservice",
+      "name": "Southeast Commercial Services",
+      "url": "https://southeastcommercialpainting.com/",
+      "telephone": "+1-404-348-2244",
+      "foundingDate": "1991",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2785 Lawrenceville Hwy",
+        "addressLocality": "Decatur",
+        "addressRegion": "GA",
+        "postalCode": "30033",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Atlanta" },
+        { "@type": "AdministrativeArea", "name": "Greater Atlanta" },
+        { "@type": "City", "name": "Gainesville" },
+        { "@type": "City", "name": "Athens" },
+        { "@type": "AdministrativeArea", "name": "Georgia" }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Commercial & Industrial Only"
+      },
+      "provider": { "@id": "https://southeastcommercialpainting.com/#organization" },
+      "serviceType": "Industrial Painting",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Industrial Painting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Painting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Protective Coatings" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Steel Painting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Epoxy Floor Systems" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surface Preparation (Sandblasting / Abrasive Blasting)" } }
+        ]
       }
     },
     {
-      "@type": "Question",
-      "name": "Why is surface preparation critical on commercial painting projects?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Proper surface preparation ensures adhesion, durability, and coating longevity. Cleaning, repairs, priming, and contaminant removal directly impact performance and reduce premature coating failure."
+      "@type": "Service",
+      "@id": "https://southeastcommercialpainting.com/#service-industrial-painting",
+      "name": "Industrial Painting",
+      "serviceType": "Industrial Painting",
+      "provider": { "@id": "https://southeastcommercialpainting.com/#professionalservice" },
+      "areaServed": [
+        { "@type": "City", "name": "Atlanta" },
+        { "@type": "AdministrativeArea", "name": "Greater Atlanta" },
+        { "@type": "AdministrativeArea", "name": "Georgia" }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Commercial & Industrial Only"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can you handle multi-story and high-rise commercial painting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. High-access commercial painting requires lift equipment, safety planning, containment systems, and strict adherence to OSHA safety standards to protect occupants and property."
+      "@type": "WebPage",
+      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#webpage-industrial-painting-atlanta",
+      "url": "https://southeastcommercialpainting.com/atlanta-industrial-painting/",
+      "name": "Atlanta Industrial Painting Contractors - Southeast Commercial Services",
+      "isPartOf": { "@id": "https://southeastcommercialpainting.com/#website" },
+      "about": [
+        { "@id": "https://southeastcommercialpainting.com/#professionalservice" },
+        { "@id": "https://southeastcommercialpainting.com/#service-industrial-painting" }
+      ],
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
       }
     },
     {
-      "@type": "Question",
-      "name": "Do you offer both interior and exterior commercial painting in Atlanta?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We provide both interior and exterior commercial painting services for offices, warehouses, healthcare facilities, retail centers, and industrial properties throughout Greater Atlanta."
-      }
+      "@type": "FAQPage",
+      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#faq-industrial-painting-georgia",
+      "about": { "@id": "https://southeastcommercialpainting.com/#service-industrial-painting" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of industrial facilities do you paint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We paint everything from large-scale warehouses and food processing plants to utility infrastructure, steel structures, and production floors. If it has structural steel, concrete, corrugated siding, or machinery that needs protective coatings, we've likely painted it. Our team is built for high-access, high-demand, and high-risk environments where performance matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work during nights or weekends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Many of our projects are scheduled for off-hours, including nights, weekends, and plant shutdowns, to keep your operations running without interruption. We understand how critical uptime is in 24/7 facilities, and we tailor our schedule to yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle surface preparation for industrial painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Surface prep is the backbone of any lasting paint job. We use abrasive blasting, power washing, degreasing, grinding, and other prep methods depending on the substrate and coating requirements. Our crew ensures each surface is clean, dry, and properly profiled for adhesion—no shortcuts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of coatings do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That depends on the application. We regularly use epoxies, urethanes, polyaspartics, elastomerics, and food-grade finishes—each selected for chemical resistance, moisture tolerance, traffic durability, or UV protection. We spec systems based on what your surfaces actually face."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licensed and insured for industrial work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We're fully licensed in Georgia, insured for industrial and commercial projects, and follow all applicable safety and environmental regulations. When we're on your site, we treat your risk profile like it's our own."
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Do you provide residential house painting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. We specialize exclusively in commercial and industrial painting projects and do not provide residential house painting services."
-      }
+      "@type": "BreadcrumbList",
+      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#breadcrumb-industrial-painting-atlanta",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://southeastcommercialpainting.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industrial Painting",
+          "item": "https://southeastcommercialpainting.com/atlanta-industrial-painting/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Atlanta Industrial Painting Contractors",
+          "item": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#webpage-industrial-painting-atlanta"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "What areas do you serve?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We serve the Greater Atlanta metro area including Atlanta, Marietta, Alpharetta, Sandy Springs, Roswell, Dunwoody, Lawrenceville, and surrounding commercial districts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does a commercial painting project take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Project timelines depend on building size, access requirements, surface conditions, and coating systems. Smaller offices may take several days, while multi-story commercial properties may take several weeks. A realistic schedule is provided in your written estimate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are you licensed, bonded, and insured?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Southeast Commercial Services is licensed, bonded, and insured and has been serving Greater Atlanta since 1991."
-      }
+      "@type": "WebSite",
+      "@id": "https://southeastcommercialpainting.com/#website",
+      "name": "Southeast Commercial Services",
+      "url": "https://southeastcommercialpainting.com/",
+      "publisher": { "@id": "https://southeastcommercialpainting.com/#organization" }
     }
   ]
 }
