@@ -512,7 +512,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 9999;
+    z-index: 9999 !important;
 }
 
 .dropdown-content {
@@ -521,7 +521,7 @@
     background-color: white;
     min-width: 240px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    z-index: 10000;
+    z-index: 10000 !important;
     border-radius: 8px;
     margin-top: 8px;
     padding: 10px 0;
@@ -529,7 +529,7 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block !important;
 }
 
 .dropdown-content a {
@@ -762,7 +762,7 @@
           </div>
 
           <!-- NAV MENU ON ITS OWN SEPARATE LINE -->
-          <nav class="main-nav">
+          <nav class="main-nav" style="z-index: 99999; position: relative;">
     <a href="/">Home</a>
     <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
     <a href="/interior-commercial-painting.html">Interior</a>
