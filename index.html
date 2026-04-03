@@ -816,17 +816,17 @@
   color:#ffffff;
   padding:60px 16px 40px 16px;
   box-sizing:border-box;
+  z-index: 1;
 ">
   <div style="
     position:absolute;
     inset:0;
     background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%);
-    z-index:1;
+    z-index: 0;
   "></div>
-
   <div style="
     position:relative;
-    z-index:2;
+    z-index: 1;
     width:100%;
     max-width:1280px;
     margin:0 auto;
@@ -870,70 +870,62 @@
         </div>
       </div>
 
-                  <!-- RIGHT COLUMN -->
+      <!-- RIGHT COLUMN - FORM KEPT INTACT -->
       <div style="width:100%; max-width:520px; margin:0 auto;">
         <div id="quote-form" style="margin-top: -20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
-          
+         
           <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
-          
+         
           <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">
             We typically get back to you in minutes, to within the hour (M-F).
           </p>
 
-        <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
-    <!-- Combined Full Name -->
-    <input type="text" name="full_name" placeholder="Full Name" required
-           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-
-    <input type="text" name="company" placeholder="Company Name"
-           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-
-    <input type="tel" name="phone" placeholder="Phone Number" required
-           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-
-    <input type="email" name="email" placeholder="Email Address" required
-           style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-
-    <textarea name="message" placeholder="Project details" rows="4"
-              style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
-
-    <!-- CONSENT CHECKBOX -->
-    <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
-      <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
-        <input type="checkbox" name="consent" required
-               style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
-        <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
-      </label>
-    </div>
-
-    <!-- Comprehensive Hidden Tracking Fields -->
-    <input type="hidden" name="gclid" id="gclid">
-    <input type="hidden" name="gbraid" id="gbraid">
-    <input type="hidden" name="wbraid" id="wbraid">
-    <input type="hidden" name="utm_source" id="utm_source">
-    <input type="hidden" name="utm_medium" id="utm_medium">
-    <input type="hidden" name="utm_campaign" id="utm_campaign">
-    <input type="hidden" name="utm_term" id="utm_term">
-    <input type="hidden" name="utm_content" id="utm_content">
-    <input type="hidden" name="utm_adgroup" id="utm_adgroup">
-    <input type="hidden" name="utm_campaignid" id="utm_campaignid">
-    <input type="hidden" name="utm_adid" id="utm_adid">
-    <input type="hidden" name="fbclid" id="fbclid">
-    <input type="hidden" name="msclkid" id="msclkid">
-
-    <!-- Formsubmit Settings -->
-    <input type="hidden" name="_subject" value="New Quote Request from Website!">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-
-    <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
-      Submit Form
-    </button>
-
-    <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
-      Commercial projects only • No residential
-    </div>
-</form>
+          <!-- YOUR FULL FORM - UNCHANGED -->
+          <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
+            <!-- Combined Full Name -->
+            <input type="text" name="full_name" placeholder="Full Name" required
+                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="text" name="company" placeholder="Company Name"
+                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="tel" name="phone" placeholder="Phone Number" required
+                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="email" name="email" placeholder="Email Address" required
+                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <textarea name="message" placeholder="Project details" rows="4"
+                      style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
+            <!-- CONSENT CHECKBOX -->
+            <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
+              <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
+                <input type="checkbox" name="consent" required
+                       style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
+                <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
+              </label>
+            </div>
+            <!-- Comprehensive Hidden Tracking Fields -->
+            <input type="hidden" name="gclid" id="gclid">
+            <input type="hidden" name="gbraid" id="gbraid">
+            <input type="hidden" name="wbraid" id="wbraid">
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+            <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+            <input type="hidden" name="utm_adid" id="utm_adid">
+            <input type="hidden" name="fbclid" id="fbclid">
+            <input type="hidden" name="msclkid" id="msclkid">
+            <!-- Formsubmit Settings -->
+            <input type="hidden" name="_subject" value="New Quote Request from Website!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
+              Submit Form
+            </button>
+            <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
+              Commercial projects only • No residential
+            </div>
+          </form>
         </div>
       </div>
     </div>
