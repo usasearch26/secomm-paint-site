@@ -508,22 +508,24 @@
 .footer-list br {
     display: none;               /* Removes extra line breaks */
 }
-    .dropdown {
+    /* Dropdown Fix - Must be after all other styles */
+.dropdown {
     position: relative;
     display: inline-block;
-    z-index: 1000;           /* This is the key fix */
+    z-index: 9999;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 220px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    z-index: 1001;           /* Higher than  */
+    min-width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 10000;
     border-radius: 8px;
     margin-top: 8px;
-    padding: 8px 0;
+    padding: 10px 0;
+    border: 1px solid #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -535,32 +537,12 @@
     padding: 12px 20px;
     text-decoration: none;
     display: block;
+    white-space: nowrap;
 }
 
 .dropdown-content a:hover {
     background-color: #f8fafc;
     color: #008000;
-}
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 100;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 220px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    z-index: 101;
-    border-radius: 8px;
-    margin-top: 8px;
-    padding: 8px 0;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 </style>
 <!-- =========================
