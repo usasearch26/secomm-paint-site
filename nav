@@ -259,7 +259,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div>F
     </div>
   </section>
 
@@ -1346,83 +1346,7 @@ Decatur, GA 30033
 </div>
 </footer>
   <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const params = new URLSearchParams(window.location.search);
-    
-    const fields = [
-        'gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 
-        'utm_campaign', 'utm_term', 'utm_content', 'utm_adgroup', 
-        'utm_campaignid', 'utm_adid', 'fbclid', 'msclkid'
-    ];
-    
-    fields.forEach(function(key) {
-        const el = document.getElementById(key);
-        if (el) {
-            el.value = params.get(key) || '';
-        }
-    });
-});
-</script>
-      <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        const content = dropdown.querySelector('.dropdown-content');
-        
-        dropdown.addEventListener('mouseenter', () => {
-            content.style.display = 'block';
-        });
-        
-        dropdown.addEventListener('mouseleave', () => {
-            content.style.display = 'none';
-        });
-    });
-});
-</script>
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <h3 class="footer-title">Southeast Commercial Services</h3>
-        <p class="footer-text">Professional commercial and industrial painting services for buildings, facilities, warehouses, offices, and industrial properties throughout the Greater Atlanta area.</p>
-        <p class="footer-text">Commercial &amp; Industrial Only • Serving Greater Atlanta Since 1991</p>
-      </div>
-      <div>
-        <h4 class="footer-heading">Services</h4>
-        <div class="footer-list">
-          <a href="#">Commercial Building Painting</a>
-          <a href="#">Warehouse Painting</a>
-          <a href="#">Industrial Painting</a>
-          <a href="#">High-Rise Painting</a>
-          <a href="#">Floor Coatings</a>
-          <a href="#">Line Striping</a>
-        </div>
-      </div>
-      <div>
-        <h4 class="footer-heading">Contact</h4>
-        <div class="footer-list">
-          <strong>Southeast Commercial Services</strong><br><br>
-          <strong>Phone:</strong> <a href="tel:4043482244">(404) 348-2244</a><br><br>
-          <strong>Offices:</strong><br>
-          1874 Piedmont Ave. NE<br>Atlanta, GA 30324<br><br>
-          <span style="display:block; height:18px;"></span>
-          2785 Lawrenceville Highway, Suite 202<br>Decatur, GA 30033
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
-      Licensed • Bonded • Insured • Commercial &amp; Industrial Projects Only
-      <div style="margin-top: 18px; font-size: 11px;">
-        <a href="/privacy-policy.html" style="color:#94a3b8; text-decoration:none; margin-right: 20px;">Privacy Policy</a>
-        <a href="/terms-of-service.html" style="color:#94a3b8; text-decoration:none;">Terms of Service</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-  // UTM tracking
+  // UTM tracking for form fields
   document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const fields = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_adgroup','utm_campaignid','utm_adid','fbclid','msclkid'];
@@ -1432,7 +1356,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Reliable dropdown hover
+  // Reliable dropdown hover for the nav menu
   document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.dropdown');
     dropdowns.forEach(dropdown => {
@@ -1446,3 +1370,4 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 </body>
 </html>
+  
