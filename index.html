@@ -880,28 +880,20 @@
             We typically get back to you in minutes, to within the hour (M-F).
           </p>
 
-          <!-- YOUR FULL FORM - COMPLETELY UNCHANGED -->
           <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
-            <!-- Combined Full Name -->
-            <input type="text" name="full_name" placeholder="Full Name" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="text" name="company" placeholder="Company Name"
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="tel" name="phone" placeholder="Phone Number" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="email" name="email" placeholder="Email Address" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <textarea name="message" placeholder="Project details" rows="4"
-                      style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
-            <!-- CONSENT CHECKBOX -->
+            <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <textarea name="message" placeholder="Project details" rows="4" style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
+            
             <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
               <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
-                <input type="checkbox" name="consent" required
-                       style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
+                <input type="checkbox" name="consent" required style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
                 <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
               </label>
             </div>
-            <!-- Comprehensive Hidden Tracking Fields -->
+
             <input type="hidden" name="gclid" id="gclid">
             <input type="hidden" name="gbraid" id="gbraid">
             <input type="hidden" name="wbraid" id="wbraid">
@@ -915,10 +907,10 @@
             <input type="hidden" name="utm_adid" id="utm_adid">
             <input type="hidden" name="fbclid" id="fbclid">
             <input type="hidden" name="msclkid" id="msclkid">
-            <!-- Formsubmit Settings -->
             <input type="hidden" name="_subject" value="New Quote Request from Website!">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+
             <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
               Submit Form
             </button>
@@ -930,8 +922,8 @@
       </div>
     </div>
 
-    <!-- NAV MOVED HERE - This is the key fix -->
-    <nav class="main-nav" style="z-index: 99999; position: relative; isolation: isolate; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.25);">
+    <!-- NAV IS NOW INSIDE THE HERO - This fixes the stacking issue -->
+    <nav class="main-nav" style="z-index: 99999; position: relative; isolation: isolate; margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3);">
       <a href="/">Home</a>
       <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
       <a href="/interior-commercial-painting.html">Interior</a>
@@ -940,7 +932,6 @@
       <a href="/commercial-office-painting.html">Office Painting</a>
       <a href="/high-rise-painters.html">High-Rise</a>
       
-      <!-- Industrial & Warehouse Dropdown -->
       <div class="dropdown">
           <a href="#" class="dropbtn">Industrial & Warehouse ▼</a>
           <div class="dropdown-content">
@@ -952,7 +943,7 @@
               <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
           </div>
       </div>
-      <!-- Floor Coatings Dropdown -->
+
       <div class="dropdown">
           <a href="#" class="dropbtn">Floor Coatings ▼</a>
           <div class="dropdown-content">
