@@ -26,7 +26,9 @@
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    overflow-x: hidden;
   }
+  img { max-width: 100%; display: block; }
   a { text-decoration: none; color: inherit; }
 
   /* ================== HEADER ================== */
@@ -49,33 +51,17 @@
     gap: 36px;
     text-align: center;
   }
-  .trust-item strong {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    color: #0f172a;
-  }
-  .trust-item span {
-    display: block;
-    margin-top: 4px;
-    font-size: 12px;
-    color: #008000;
-    font-weight: 600;
-  }
+  .trust-item strong { display: block; font-size: 13px; font-weight: 700; color: #0f172a; }
+  .trust-item span { display: block; margin-top: 4px; font-size: 12px; color: #008000; font-weight: 600; }
   .social-icons {
     display: flex;
     justify-content: flex-end;
     gap: 12px;
   }
   .social-icons a {
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #e6e6e6;
+    width: 34px; height: 34px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; background: #fff; border: 1px solid #e6e6e6;
   }
 
   .main-header {
@@ -92,33 +78,20 @@
     padding: 0 20px;
     gap: 30px;
   }
-  .logo img {
-    max-height: 95px;
-    width: auto;
-  }
+  .logo img { max-height: 95px; width: auto; }
   .phone {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
   }
-  .phone .fast {
-    font-size: 20px;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom: 3px;
-  }
-  .phone a {
-    font-size: 29px;
-    font-weight: 900;
-    color: #008000;
-    text-decoration: none;
-  }
+  .phone .fast { font-size: 20px; font-weight: 700; color: #000000; margin-bottom: 3px; }
+  .phone a { font-size: 29px; font-weight: 900; color: #008000; text-decoration: none; }
 
-  /* ================== NAV MENU - Clean white bar above hero ================== */
+  /* ================== NAV - Tight spacing to fix overflow ================== */
   .main-nav {
     background: #ffffff;
-    padding: 14px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #e5e7eb;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
@@ -128,34 +101,21 @@
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 10px;                  /* tighter */
     align-items: center;
     justify-content: center;
-    font-size: 15.5px;
+    font-size: 15px;
     font-weight: 600;
   }
-  .main-nav a {
+  .main-nav a, .dropbtn {
     color: #1f2937;
-    text-decoration: none;
-    padding: 8px 14px;
+    padding: 8px 11px;          /* reduced padding */
     white-space: nowrap;
   }
-  .main-nav a:hover {
-    color: #008000;
-  }
+  .main-nav a:hover, .dropbtn:hover { color: #008000; }
 
   /* Dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropbtn {
-    color: #1f2937;
-    text-decoration: none;
-    padding: 10px 16px;
-    cursor: pointer;
-    white-space: nowrap;
-  }
+  .dropdown { position: relative; display: inline-block; }
   .dropdown-content {
     display: none;
     position: absolute;
@@ -173,18 +133,15 @@
     display: block;
     padding: 11px 20px;
     color: #111827;
-    text-decoration: none;
     white-space: nowrap;
   }
   .dropdown-content a:hover {
     background: #f0fdf4;
     color: #008000;
   }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  .dropdown:hover .dropdown-content { display: block; }
 
-  /* HERO */
+  /* HERO - exactly as you had it */
   .hero {
     width:100vw;
     position:relative;
@@ -205,44 +162,25 @@
 
   <!-- HEADER -->
   <header>
-    <!-- TOP BAR -->
     <div class="top-bar">
       <div class="top-bar-inner">
         <div></div>
         <div class="trust-items">
-          <div class="trust-item">
-            <strong>100% Customer Satisfaction</strong>
-            <span>With Every Job We Do</span>
-          </div>
-          <div class="trust-item">
-            <strong>Proudly Serving Atlanta</strong>
-            <span>Greater Atlanta Area</span>
-          </div>
-          <div class="trust-item">
-            <strong>Expert Commercial Crews</strong>
-            <span>Fully Insured &amp; Reliable</span>
-          </div>
+          <div class="trust-item"><strong>100% Customer Satisfaction</strong><span>With Every Job We Do</span></div>
+          <div class="trust-item"><strong>Proudly Serving Atlanta</strong><span>Greater Atlanta Area</span></div>
+          <div class="trust-item"><strong>Expert Commercial Crews</strong><span>Fully Insured &amp; Reliable</span></div>
         </div>
-        <div class="social-icons" style="display:flex; gap:10px;">
-          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">
-            f
-          </a>
-          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">
-            in
-          </a>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#1877F2;color:white;font-size:15px;font-weight:700;text-decoration:none;">f</a>
+          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#0A66C2;color:white;font-size:14px;font-weight:700;text-decoration:none;">in</a>
         </div>
       </div>
     </div>
 
-    <!-- MAIN HEADER -->
     <div class="main-header">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/">
-            <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo">
-          </a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo"></a>
         </div>
         <div class="phone">
           <div class="fast">Call Now for Fast Service</div>
@@ -252,7 +190,7 @@
     </div>
   </header>
 
-  <!-- NAV MENU - Clean white bar above hero -->
+  <!-- NAV MENU - Tight spacing -->
   <nav class="main-nav">
     <div class="main-nav-inner">
       <a href="/">Home</a>
@@ -290,7 +228,7 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO (exactly as you had it) -->
   <section class="hero">
     <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:0; pointer-events:none;"></div>
     <div style="position:relative; z-index:2; width:100%; max-width:1280px; margin:0 auto;">
@@ -311,8 +249,7 @@
             </h1>
             <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
               Interior repainting. Exterior coatings. Industrial surfaces. Office, retail, warehouse, and facility painting.
-              <strong style="color:#ffffff;">Southeast Commercial Services</strong>
-              provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
+              <strong style="color:#ffffff;">Southeast Commercial Services</strong> provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
             </div>
             <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
               <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">
@@ -327,7 +264,8 @@
             </div>
           </div>
         </div>
-        <!-- RIGHT COLUMN - FORM -->
+
+        <!-- RIGHT COLUMN - FORM (100% untouched) -->
         <div style="width:100%; max-width:520px; margin:0 auto;">
           <div id="quote-form" style="margin-top: -20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
             <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
@@ -363,6 +301,7 @@
               <input type="hidden" name="_subject" value="New Quote Request from Website!">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+              
               <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
                 Submit Form
               </button>
@@ -376,21 +315,22 @@
     </div>
   </section>
 
-  <!-- The rest of your page content (intro, services, etc.) goes here -->
-  <!-- You can paste the rest of your existing content below this point -->
+  <!-- ========================================
+       PASTE ALL YOUR REMAINING PAGE CONTENT HERE
+       (intro section, authority proof, services, stats, process, FAQ, bottom form, footer, etc.)
+       ======================================== -->
+
+  <!-- Your existing footer and scripts go here at the bottom -->
 
   <script>
-  // Reliable dropdown JS
+  // Reliable dropdown hover
   document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.dropdown');
     dropdowns.forEach(dropdown => {
-      const btn = dropdown.querySelector('.dropbtn');
       const content = dropdown.querySelector('.dropdown-content');
-      if (!btn || !content) return;
-
       dropdown.addEventListener('mouseenter', () => content.style.display = 'block');
       dropdown.addEventListener('mouseleave', () => content.style.display = 'none');
-      content.addEventListener('mouseenter', () => content.style.display = 'block');
+      if (content) content.addEventListener('mouseenter', () => content.style.display = 'block');
     });
   });
   </script>
