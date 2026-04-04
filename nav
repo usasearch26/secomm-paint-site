@@ -1,37 +1,37 @@
-<!-- NAV MENU - Clean, tight, and functional -->
-<nav style="background:#ffffff; padding:14px 0; border-bottom:1px solid #e5e7eb; position:relative; z-index:100000;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:center; font-size:15.5px; font-weight:600;">
+<!-- NAV MENU - Fixed spacing, no overflow -->
+<nav style="background:#ffffff; padding:16px 0; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:center; font-size:15.5px; font-weight:600;">
     
-    <a href="/" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Home</a>
-    <a href="/atlanta-commercial-painting-contractors.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Commercial Painting</a>
-    <a href="/interior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Interior</a>
-    <a href="/exterior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Exterior</a>
-    <a href="/commercial-building-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Buildings</a>
-    <a href="/commercial-office-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Office Painting</a>
-    <a href="/high-rise-painters.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">High-Rise</a>
+    <a href="/" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Home</a>
+    <a href="/atlanta-commercial-painting-contractors.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Commercial Painting</a>
+    <a href="/interior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Interior</a>
+    <a href="/exterior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Exterior</a>
+    <a href="/commercial-building-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Buildings</a>
+    <a href="/commercial-office-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">Office Painting</a>
+    <a href="/high-rise-painters.html" style="color:#1f2937; text-decoration:none; padding:8px 14px; white-space:nowrap;">High-Rise</a>
 
     <!-- Industrial & Warehouse Dropdown -->
     <div class="dropdown" style="position:relative; display:inline-block;">
-      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 14px; cursor:pointer; white-space:nowrap;">Industrial & Warehouse ▼</a>
-      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:240px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
-        <a href="/industrial-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Industrial Painting</a>
-        <a href="/atlanta-warehouse-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Warehouse Painting</a>
-        <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Line Striping</a>
-        <a href="/atlanta-tank-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Tank Painting</a>
-        <a href="/construction-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Construction Painting</a>
-        <a href="/commercial-sandblasting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Commercial Sandblasting</a>
+      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 16px; cursor:pointer; white-space:nowrap;">Industrial & Warehouse ▼</a>
+      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
+        <a href="/industrial-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Industrial Painting</a>
+        <a href="/atlanta-warehouse-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Warehouse Painting</a>
+        <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Line Striping</a>
+        <a href="/atlanta-tank-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Tank Painting</a>
+        <a href="/construction-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Construction Painting</a>
+        <a href="/commercial-sandblasting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Commercial Sandblasting</a>
       </div>
     </div>
 
     <!-- Floor Coatings Dropdown -->
     <div class="dropdown" style="position:relative; display:inline-block;">
-      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 14px; cursor:pointer; white-space:nowrap;">Floor Coatings ▼</a>
-      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:240px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
-        <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Industrial Floor Coatings</a>
-        <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Commercial Floor Epoxy</a>
-        <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Kitchen Epoxy Floors</a>
-        <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Garage Epoxy Floors</a>
-        <a href="/commercial-concrete-polishing.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Concrete Polishing</a>
+      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 16px; cursor:pointer; white-space:nowrap;">Floor Coatings ▼</a>
+      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
+        <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Industrial Floor Coatings</a>
+        <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Commercial Floor Epoxy</a>
+        <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Kitchen Epoxy Floors</a>
+        <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Garage Epoxy Floors</a>
+        <a href="/commercial-concrete-polishing.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Concrete Polishing</a>
       </div>
     </div>
 
