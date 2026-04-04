@@ -268,10 +268,13 @@
     box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03);
   }
   .top-bar-inner {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
   .trust-items {
     display: flex;
     justify-content: center;
@@ -294,10 +297,10 @@
     line-height: 1.2;
   }
   .social-icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-  }
+  display: flex;
+  justify-content: flex-start; /* was flex-end */
+  gap: 12px;
+}
   .social-icons a {
     width: 34px;
     height: 34px;
@@ -360,32 +363,44 @@
     white-space: nowrap;
 }
 
-/* Nav Menu on its own line */
+/* NAV MENU - Fixed and tightened */
 .main-nav {
+    background: #ffffff;
+    padding: 14px 0 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e5e7eb;
+}
+.main-nav > div {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;           /* tighter gap to prevent overflow */
     justify-content: center;
-    gap: 22px;
-    font-size: 15.5px;
+    align-items: center;
+    font-size: 15px;
     font-weight: 600;
-    padding: 12px 0 8px 0;
-    border-top: 1px solid #e6e6e6;
-    margin-top: 8px;
 }
-
-.main-nav a {
+.main-nav a,
+.dropbtn {
     color: #0f172a;
     text-decoration: none;
     white-space: nowrap;
+    padding: 8px 11px;
 }
-
-.main-nav a:hover {
+.main-nav a:hover,
+.dropbtn:hover {
     color: #008000;
 }
-
 .main-nav a:last-child {
     color: #008000;
     font-weight: 700;
+}
+
+/* Dropdowns */
+.dropdown:hover .dropdown-content {
+    display: block !important;
 }
 
 /* Mobile adjustments */
@@ -692,189 +707,94 @@
 <body>
 
   <!-- HEADER -->
-<header>
-  <!-- TOP BAR -->
-  <div class="top-bar">
-      <div class="container">
-          <div class="top-bar-inner">
-              <div></div>
-              <div class="trust-items">
-                  <div class="trust-item">
-                      <strong>100% Customer Satisfaction</strong>
-                      <span>With Every Job We Do</span>
-                  </div>
-                  <div class="trust-item">
-                      <strong>Proudly Serving Atlanta</strong>
-                      <span>Greater Atlanta Area</span>
-                  </div>
-                  <div class="trust-item">
-                      <strong>Expert Commercial Crews</strong>
-                      <span>Fully Insured &amp; Reliable</span>
-                  </div>
-              </div>
-             <div class="social-icons" style="display:flex; gap:10px;">
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/southestcommercialservices" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Facebook" 
-       style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; 
-              border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">
-        f
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/company/southeast-commercial-services" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="LinkedIn" 
-       style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; 
-              border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">
-        in
-    </a>
-</div>
-          </div>
-      </div>
-  </div>
-
-  <!-- MAIN HEADER -->
-  <div class="main-header">
-      <div class="container">
-          
-          <!-- Logo + Phone Row -->
-          <div class="main-header-inner">
-              <!-- Logo - More Prominent -->
-              <div class="logo">
-                  <a href="/">
-                      <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp"
-                           alt="Southeast Commercial Services Logo">
-                  </a>
-              </div>
-
-              <div class="header-spacer"></div>
-
-              <!-- Phone with "Call Now for Fast Service" above -->
-              <div class="phone">
-                  <div class="fast">Call Now for Fast Service</div>
-                  <a href="tel:4043482244">(404) 348-2244</a>
-                <div class="Lic">Est. 1991 | Licensed | Bonded | Insured</div>
-              </div>
-          </div>
-
-          <!-- NAV MENU ON ITS OWN SEPARATE LINE -->
-          <nav class="main-nav" style="z-index: 99999; position: relative; isolation: isolate; pointer-events: auto;">
-    <a href="/">Home</a>
-    <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
-    <a href="/interior-commercial-painting.html">Interior</a>
-    <a href="/exterior-commercial-painting.html">Exterior</a>
-    <a href="/commercial-building-painting.html">Buildings</a>
-    <a href="/commercial-office-painting.html">Office Painting</a>
-    <a href="/high-rise-painters.html">High-Rise</a>
-    
-    <!-- Industrial & Warehouse Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="dropbtn">Industrial & Warehouse ▼</a>
-        <div class="dropdown-content">
-            <a href="/industrial-painting.html">Industrial Painting</a>
-            <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
-            <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
-            <a href="/atlanta-tank-painting.html">Tank Painting</a>
-            <a href="/construction-painting.html">Construction Painting</a>
-            <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
+  <header>
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <div></div>
+        <div class="trust-items">
+          <div class="trust-item"><strong>100% Customer Satisfaction</strong><span>With Every Job We Do</span></div>
+          <div class="trust-item"><strong>Proudly Serving Atlanta</strong><span>Greater Atlanta Area</span></div>
+          <div class="trust-item"><strong>Expert Commercial Crews</strong><span>Fully Insured &amp; Reliable</span></div>
         </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#1877F2;color:white;font-size:15px;font-weight:700;text-decoration:none;">f</a>
+          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#0A66C2;color:white;font-size:14px;font-weight:700;text-decoration:none;">in</a>
+        </div>
+      </div>
     </div>
 
-    <!-- Floor Coatings Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="dropbtn">Floor Coatings ▼</a>
-        <div class="dropdown-content">
-            <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
-            <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
-            <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
-            <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
-            <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
+    <div class="main-header">
+      <div class="main-header-inner">
+        <div class="logo">
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo"></a>
         </div>
-    </div>
-
-    <a href="/contact-us.html">Contact</a>
-</nav>
+        <div class="phone">
+          <div class="fast">Call Now for Fast Service</div>
+          <a href="tel:4043482244">(404) 348-2244</a>
+        </div>
       </div>
-  </div>
-</header>
- <style>
-  /* ── Dropdown fix ── */
-  .dropdown { position: relative; display: inline-block; }
+    </div>
+  </header>
 
-  .dropdown-content {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: calc(100% + 4px);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    min-width: 280px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
-    z-index: 999999;
-    border-radius: 8px;
-    padding: 12px 0;
-    border: 1px solid #ddd;
-    transition: opacity 0.18s ease, visibility 0.18s ease;
-  }
+    <!-- NAV - Clean & Tight -->
+  <nav class="main-nav" style="background:#ffffff; padding:12px 0; border-bottom:1px solid #e5e7eb;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center; font-size:15px; font-weight:600;">
+      <a href="/">Home</a>
+      <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
+      <a href="/interior-commercial-painting.html">Interior</a>
+      <a href="/exterior-commercial-painting.html">Exterior</a>
+      <a href="/commercial-building-painting.html">Buildings</a>
+      <a href="/commercial-office-painting.html">Office Painting</a>
+      <a href="/high-rise-painters.html">High-Rise</a>
+      
+      <div class="dropdown" style="position:relative; display:inline-block;">
+        <a href="#" class="dropbtn" style="padding:8px 10px; white-space:nowrap;">Industrial & Warehouse ▼</a>
+        <div class="dropdown-content" style="display:none; position:absolute; background:white; min-width:240px; box-shadow:0 10px 25px rgba(0,0,0,0.25); z-index:10000; border-radius:8px; margin-top:6px; padding:8px 0; border:1px solid #ddd;">
+          <a href="/industrial-painting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Industrial Painting</a>
+          <a href="/atlanta-warehouse-painting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Warehouse Painting</a>
+          <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Line Striping</a>
+          <a href="/atlanta-tank-painting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Tank Painting</a>
+          <a href="/construction-painting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Construction Painting</a>
+          <a href="/commercial-sandblasting.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Commercial Sandblasting</a>
+        </div>
+      </div>
 
-  /* Keep open while hovering the button OR the menu itself */
-  .dropdown:hover .dropdown-content,
-  .dropdown-content:hover {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
+      <div class="dropdown" style="position:relative; display:inline-block;">
+        <a href="#" class="dropbtn" style="padding:8px 10px; white-space:nowrap;">Floor Coatings ▼</a>
+        <div class="dropdown-content" style="display:none; position:absolute; background:white; min-width:240px; box-shadow:0 10px 25px rgba(0,0,0,0.25); z-index:10000; border-radius:8px; margin-top:6px; padding:8px 0; border:1px solid #ddd;">
+          <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Industrial Floor Coatings</a>
+          <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Commercial Floor Epoxy</a>
+          <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Kitchen Epoxy Floors</a>
+          <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Garage Epoxy Floors</a>
+          <a href="/commercial-concrete-polishing.html" style="display:block; padding:12px 20px; color:#0f172a; white-space:nowrap;">Concrete Polishing</a>
+        </div>
+      </div>
+      
+      <a href="/contact-us.html">Contact</a>
+    </div>
+  </nav>
 
-  .dropdown-content a:hover {
-    background-color: #f0f4ff;
-  }
+ <!-- HERO -->
+<style>
+.hero{
+  position: relative;
+  width: 100%;
+  background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 56px 16px 34px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 </style>
 
-<!-- HERO -->
-<section style="
-  width:100vw;
-  position:relative;
-  left:50%;
-  right:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  height:auto;
-  background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
-  background-size:cover;
-  background-position:center;
-  color:#ffffff;
-  padding:60px 16px 40px 16px;
-  box-sizing:border-box;
-  z-index: 1;
-  overflow: visible;
-">
-  <div style="
-    position:absolute;
-    inset:0;
-    background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%);
-    z-index: 0;
-    pointer-events: none;
-  "></div>
-  <div style="
-    position:relative;
-    z-index: 2;
-    width:100%;
-    max-width:1280px;
-    margin:0 auto;
-    overflow: visible;
-  ">
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
-      gap:50px;
-      align-items:start;
-    ">
+<section class="hero">
+  <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:0; pointer-events:none;"></div>
+
+  <div style="position:relative; z-index:2; width:100%; max-width:1280px; margin:0 auto;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
+
       <!-- LEFT COLUMN -->
       <div style="text-align:center; padding-top:16px;">
         <div style="width:100%; max-width:760px; margin:0 auto;">
@@ -883,52 +803,61 @@
               Commercial Painting Contractors • Atlanta, GA • Est. 1991
             </span>
           </div>
-          <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase;">
+
+          <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase; color:#ffffff;">
             Atlanta's<br />
             <span style="color:#2ea44f;">Commercial</span><br />
             Painting<br />
             Specialists
           </h1>
+
           <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
             Interior repainting. Exterior coatings. Industrial surfaces. Office, retail, warehouse, and facility painting.
-            <strong style="color:#ffffff;">Southeast Commercial Services</strong>
-            provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
+            <strong style="color:#ffffff;">Southeast Commercial Services</strong> provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
           </div>
+
           <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
             <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">
               Request a Free Quote
             </a>
+
             <a href="tel:+14043482244" style="min-height:58px; padding:0 30px; border:2px solid #fff; border-radius:14px; display:flex; align-items:center; color:#fff; font-weight:900;">
               (404) 348-2244
             </a>
           </div>
+
           <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:#97a7c0;">
             No Residential Requests • Commercial Facilities Only
           </div>
         </div>
       </div>
-      <!-- RIGHT COLUMN - FORM KEPT 100% INTACT -->
+
+      <!-- RIGHT COLUMN - FORM -->
       <div style="width:100%; max-width:520px; margin:0 auto;">
-        <div id="quote-form" style="margin-top: -20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
-       
-          <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
-       
+        <div id="quote-form" style="margin-top:-20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
+          <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0; color:#ffffff;">
+            Request a Free Quote
+          </h2>
+
           <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">
             We typically get back to you in minutes, to within the hour (M-F).
           </p>
+
           <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
             <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <textarea name="message" placeholder="Project details" rows="4" style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
-           
+
             <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
               <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
                 <input type="checkbox" name="consent" required style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
                 <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
               </label>
             </div>
+
+            <!-- HIDDEN TRACKING FIELDS -->
             <input type="hidden" name="gclid" id="gclid">
             <input type="hidden" name="gbraid" id="gbraid">
             <input type="hidden" name="wbraid" id="wbraid">
@@ -945,53 +874,19 @@
             <input type="hidden" name="_subject" value="New Quote Request from Website!">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
+
+            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border:none; border-radius:12px; font-weight:800; font-size:17px; cursor:pointer;">
               Submit Form
             </button>
+
             <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
               Commercial projects only • No residential
             </div>
           </form>
         </div>
       </div>
+
     </div>
-
-    <!-- NAV -->
-    <nav class="main-nav" style="position: relative; z-index: 999998; isolation: isolate; margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3); overflow: visible;">
-
-      <a href="/">Home</a>
-      <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
-      <a href="/interior-commercial-painting.html">Interior</a>
-      <a href="/exterior-commercial-painting.html">Exterior</a>
-      <a href="/commercial-building-painting.html">Buildings</a>
-      <a href="/commercial-office-painting.html">Office Painting</a>
-      <a href="/high-rise-painters.html">High-Rise</a>
-
-      <div class="dropdown">
-        <a href="#" class="dropbtn" style="padding: 18px 22px; display: inline-block;">Industrial & Warehouse ▼</a>
-        <div class="dropdown-content">
-          <a href="/industrial-painting.html">Industrial Painting</a>
-          <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
-          <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
-          <a href="/atlanta-tank-painting.html">Tank Painting</a>
-          <a href="/construction-painting.html">Construction Painting</a>
-          <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <a href="#" class="dropbtn" style="padding: 18px 22px; display: inline-block;">Floor Coatings ▼</a>
-        <div class="dropdown-content">
-          <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
-          <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
-          <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
-          <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
-          <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
-        </div>
-      </div>
-
-      <a href="/contact-us.html">Contact</a>
-    </nav>
   </div>
 </section>
   <!-- MAIN SECTION -->
@@ -1929,12 +1824,12 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f5f9;
-    color: #008000;
+  background: #f8fafc;
+  color: #008000;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block !important;
 }
   </style>
 </section>
@@ -2111,5 +2006,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+   <script>
+  // Reliable dropdown hover for the nav
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+      const content = dropdown.querySelector('.dropdown-content');
+      if (!content) return;
+      dropdown.addEventListener('mouseenter', () => content.style.display = 'block');
+      dropdown.addEventListener('mouseleave', () => content.style.display = 'none');
+      content.addEventListener('mouseenter', () => content.style.display = 'block');
+    });
+  });
+  </script>
 </body>
 </html>
