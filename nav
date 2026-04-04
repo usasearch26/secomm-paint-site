@@ -1253,4 +1253,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+  <script>
+  // UTM tracking for form fields
+  document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const fields = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_adgroup','utm_campaignid','utm_adid','fbclid','msclkid'];
+    fields.forEach(function(key) {
+      const el = document.getElementById(key);
+      if (el) el.value = params.get(key) || '';
+    });
+  });
+
+  // Reliable dropdown hover for the nav
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+      const content = dropdown.querySelector('.dropdown-content');
+      if (!content) return;
+      dropdown.addEventListener('mouseenter', () => content.style.display = 'block');
+      dropdown.addEventListener('mouseleave', () => content.style.display = 'none');
+      content.addEventListener('mouseenter', () => content.style.display = 'block');
+    });
+  });
+  </script>
+</body>
+</html>
       
