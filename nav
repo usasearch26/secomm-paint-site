@@ -1,7 +1,6 @@
-<!-- NAV MENU - Clean white bar with working dropdowns -->
-<nav style="background:#ffffff; padding:14px 0; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+<!-- NAV MENU - Clean white bar above hero + reliable dropdowns -->
+<nav style="background:#ffffff; padding:14px 0; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05); position:relative; z-index:100000;">
   <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:center; font-size:15.5px; font-weight:600;">
-    
     <a href="/" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Home</a>
     <a href="/atlanta-commercial-painting-contractors.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Commercial Painting</a>
     <a href="/interior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Interior</a>
@@ -10,7 +9,6 @@
     <a href="/commercial-office-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Office Painting</a>
     <a href="/high-rise-painters.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">High-Rise</a>
 
-    <!-- Industrial & Warehouse -->
     <div class="dropdown" style="position:relative; display:inline-block;">
       <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 16px; cursor:pointer; white-space:nowrap;">Industrial & Warehouse ▼</a>
       <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
@@ -23,7 +21,6 @@
       </div>
     </div>
 
-    <!-- Floor Coatings -->
     <div class="dropdown" style="position:relative; display:inline-block;">
       <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 16px; cursor:pointer; white-space:nowrap;">Floor Coatings ▼</a>
       <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
@@ -39,19 +36,17 @@
   </div>
 </nav>
 
-<!-- Small JS to make dropdowns reliable -->
+<!-- Tiny JS to force dropdowns to work reliably -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const dropdowns = document.querySelectorAll('.dropdown');
   dropdowns.forEach(dropdown => {
     const btn = dropdown.querySelector('.dropbtn');
     const content = dropdown.querySelector('.dropdown-content');
-    
     if (!btn || !content) return;
-    
+
     dropdown.addEventListener('mouseenter', () => content.style.display = 'block');
     dropdown.addEventListener('mouseleave', () => content.style.display = 'none');
-    
     content.addEventListener('mouseenter', () => content.style.display = 'block');
   });
 });
