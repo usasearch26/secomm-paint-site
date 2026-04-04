@@ -1,3 +1,41 @@
+<!-- NAV MENU - ON TOP OF THE HERO -->
+<nav class="main-nav" style="background:#0f172a; padding:18px 0; position:relative; z-index:99999;">
+  <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:center; font-size:15.5px;">
+    <a href="/" style="color:#fff; text-decoration:none; padding:8px 16px;">Home</a>
+    <a href="/atlanta-commercial-painting-contractors.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Commercial Painting</a>
+    <a href="/interior-commercial-painting.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Interior</a>
+    <a href="/exterior-commercial-painting.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Exterior</a>
+    <a href="/commercial-building-painting.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Buildings</a>
+    <a href="/commercial-office-painting.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Office Painting</a>
+    <a href="/high-rise-painters.html" style="color:#fff; text-decoration:none; padding:8px 16px;">High-Rise</a>
+
+    <div class="dropdown" style="position:relative; display:inline-block;">
+      <a href="#" class="dropbtn" style="color:#fff; text-decoration:none; padding:8px 16px; cursor:pointer;">Industrial & Warehouse ▼</a>
+      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:260px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:10px 0; border:1px solid #ddd;">
+        <a href="/industrial-painting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Industrial Painting</a>
+        <a href="/atlanta-warehouse-painting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Warehouse Painting</a>
+        <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Line Striping</a>
+        <a href="/atlanta-tank-painting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Tank Painting</a>
+        <a href="/construction-painting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Construction Painting</a>
+        <a href="/commercial-sandblasting.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Commercial Sandblasting</a>
+      </div>
+    </div>
+
+    <div class="dropdown" style="position:relative; display:inline-block;">
+      <a href="#" class="dropbtn" style="color:#fff; text-decoration:none; padding:8px 16px; cursor:pointer;">Floor Coatings ▼</a>
+      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:260px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:10px 0; border:1px solid #ddd;">
+        <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Industrial Floor Coatings</a>
+        <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Commercial Floor Epoxy</a>
+        <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Kitchen Epoxy Floors</a>
+        <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Garage Epoxy Floors</a>
+        <a href="/commercial-concrete-polishing.html" style="display:block; padding:12px 20px; color:#111827; text-decoration:none; white-space:nowrap;">Concrete Polishing</a>
+      </div>
+    </div>
+
+    <a href="/contact-us.html" style="color:#fff; text-decoration:none; padding:8px 16px;">Contact</a>
+  </div>
+</nav>
+
 <!-- HERO -->
 <section style="
   width:100vw;
