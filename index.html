@@ -869,31 +869,28 @@
           </div>
         </div>
       </div>
-
       <!-- RIGHT COLUMN - FORM KEPT 100% INTACT -->
       <div style="width:100%; max-width:520px; margin:0 auto;">
         <div id="quote-form" style="margin-top: -20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
-        
+       
           <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
-        
+       
           <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">
             We typically get back to you in minutes, to within the hour (M-F).
           </p>
-
           <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
             <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
             <textarea name="message" placeholder="Project details" rows="4" style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
-            
+           
             <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
               <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
                 <input type="checkbox" name="consent" required style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
                 <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
               </label>
             </div>
-
             <input type="hidden" name="gclid" id="gclid">
             <input type="hidden" name="gbraid" id="gbraid">
             <input type="hidden" name="wbraid" id="wbraid">
@@ -910,7 +907,6 @@
             <input type="hidden" name="_subject" value="New Quote Request from Website!">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-
             <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
               Submit Form
             </button>
@@ -922,7 +918,7 @@
       </div>
     </div>
 
-    <!-- NAV IS NOW INSIDE THE HERO - This fixes the stacking issue -->
+    <!-- NAV - Fixed for reliable dropdown -->
     <nav class="main-nav" style="z-index: 99999; position: relative; isolation: isolate; margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3);">
       <a href="/">Home</a>
       <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
@@ -931,10 +927,10 @@
       <a href="/commercial-building-painting.html">Buildings</a>
       <a href="/commercial-office-painting.html">Office Painting</a>
       <a href="/high-rise-painters.html">High-Rise</a>
-      
-      <div class="dropdown">
-          <a href="#" class="dropbtn">Industrial & Warehouse ▼</a>
-          <div class="dropdown-content">
+     
+      <div class="dropdown" style="position: relative; display: inline-block;">
+          <a href="#" class="dropbtn" style="padding: 14px 18px;">Industrial & Warehouse ▼</a>
+          <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 260px; box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 100000 !important; border-radius: 8px; margin-top: 6px; padding: 10px 0; border: 1px solid #ddd; left: 50%; transform: translateX(-50%);">
               <a href="/industrial-painting.html">Industrial Painting</a>
               <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
               <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
@@ -943,10 +939,9 @@
               <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
           </div>
       </div>
-
-      <div class="dropdown">
-          <a href="#" class="dropbtn">Floor Coatings ▼</a>
-          <div class="dropdown-content">
+      <div class="dropdown" style="position: relative; display: inline-block;">
+          <a href="#" class="dropbtn" style="padding: 14px 18px;">Floor Coatings ▼</a>
+          <div class="dropdown-content" style="display: none; position: absolute; background-color: #ffffff; min-width: 260px; box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 100000 !important; border-radius: 8px; margin-top: 6px; padding: 10px 0; border: 1px solid #ddd; left: 50%; transform: translateX(-50%);">
               <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
               <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
               <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
@@ -956,7 +951,6 @@
       </div>
       <a href="/contact-us.html">Contact</a>
     </nav>
-
   </div>
 </section>
   <!-- MAIN SECTION -->
