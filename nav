@@ -29,7 +29,7 @@
   }
   a { text-decoration: none; color: inherit; }
 
-  /* ================== HEADER & NAV ================== */
+  /* ================== HEADER ================== */
   .top-bar {
     background: #f8f8f8;
     border-bottom: 1px solid #e6e6e6;
@@ -115,7 +115,7 @@
     text-decoration: none;
   }
 
-  /* NAV - Clean white bar above hero */
+  /* ================== NAV MENU - Clean white bar above hero ================== */
   .main-nav {
     background: #ffffff;
     padding: 14px 0;
@@ -128,7 +128,7 @@
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 18px;
     align-items: center;
     justify-content: center;
     font-size: 15.5px;
@@ -199,13 +199,11 @@
     padding:60px 16px 40px 16px;
     box-sizing:border-box;
   }
-
-  /* Rest of your styles (kept minimal for this test) */
   </style>
 </head>
 <body>
 
-  <!-- HEADER (your existing top bar + main header) -->
+  <!-- HEADER -->
   <header>
     <!-- TOP BAR -->
     <div class="top-bar">
@@ -225,8 +223,17 @@
             <span>Fully Insured &amp; Reliable</span>
           </div>
         </div>
-        <div class="social-icons">
-          <!-- your social icons here -->
+        <div class="social-icons" style="display:flex; gap:10px;">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">
+            f
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">
+            in
+          </a>
         </div>
       </div>
     </div>
@@ -247,46 +254,45 @@
     </div>
   </header>
 
-  <!-- NAV MENU - Fixed tight spacing, no overflow -->
-<nav style="background:#ffffff; padding:14px 0; border-bottom:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-  <div style="max-width:1280px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center; font-size:15px; font-weight:600;">
-    
-    <a href="/" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Home</a>
-    <a href="/atlanta-commercial-painting-contractors.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Commercial Painting</a>
-    <a href="/interior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Interior</a>
-    <a href="/exterior-commercial-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Exterior</a>
-    <a href="/commercial-building-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Buildings</a>
-    <a href="/commercial-office-painting.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">Office Painting</a>
-    <a href="/high-rise-painters.html" style="color:#1f2937; text-decoration:none; padding:8px 12px; white-space:nowrap;">High-Rise</a>
+  <!-- NAV MENU - Clean white bar above hero -->
+  <nav class="main-nav">
+    <div class="main-nav-inner">
+      <a href="/">Home</a>
+      <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
+      <a href="/interior-commercial-painting.html">Interior</a>
+      <a href="/exterior-commercial-painting.html">Exterior</a>
+      <a href="/commercial-building-painting.html">Buildings</a>
+      <a href="/commercial-office-painting.html">Office Painting</a>
+      <a href="/high-rise-painters.html">High-Rise</a>
 
-    <div class="dropdown" style="position:relative; display:inline-block;">
-      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 14px; cursor:pointer; white-space:nowrap;">Industrial & Warehouse ▼</a>
-      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
-        <a href="/industrial-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Industrial Painting</a>
-        <a href="/atlanta-warehouse-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Warehouse Painting</a>
-        <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Line Striping</a>
-        <a href="/atlanta-tank-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Tank Painting</a>
-        <a href="/construction-painting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Construction Painting</a>
-        <a href="/commercial-sandblasting.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Commercial Sandblasting</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Industrial & Warehouse ▼</a>
+        <div class="dropdown-content">
+          <a href="/industrial-painting.html">Industrial Painting</a>
+          <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
+          <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
+          <a href="/atlanta-tank-painting.html">Tank Painting</a>
+          <a href="/construction-painting.html">Construction Painting</a>
+          <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
+        </div>
       </div>
-    </div>
 
-    <div class="dropdown" style="position:relative; display:inline-block;">
-      <a href="#" class="dropbtn" style="color:#1f2937; text-decoration:none; padding:10px 14px; cursor:pointer; white-space:nowrap;">Floor Coatings ▼</a>
-      <div class="dropdown-content" style="display:none; position:absolute; top:100%; left:0; background:#ffffff; min-width:250px; box-shadow:0 15px 35px rgba(0,0,0,0.3); z-index:1000000; border-radius:8px; padding:8px 0; border:1px solid #e5e7eb;">
-        <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Industrial Floor Coatings</a>
-        <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Commercial Floor Epoxy</a>
-        <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Kitchen Epoxy Floors</a>
-        <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Garage Epoxy Floors</a>
-        <a href="/commercial-concrete-polishing.html" style="display:block; padding:11px 20px; color:#111827; text-decoration:none;">Concrete Polishing</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Floor Coatings ▼</a>
+        <div class="dropdown-content">
+          <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
+          <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
+          <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
+          <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
+          <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
+        </div>
       </div>
+
+      <a href="/contact-us.html">Contact</a>
     </div>
+  </nav>
 
-    <a href="/contact-us.html" style="color:#16a34a; text-decoration:none; padding:8px 12px; font-weight:700; white-space:nowrap;">Contact</a>
-  </div>
-</nav>
-
-  <!-- HERO - Your original hero without any nav inside -->
+  <!-- HERO -->
   <section class="hero">
     <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:0; pointer-events:none;"></div>
     <div style="position:relative; z-index:2; width:100%; max-width:1280px; margin:0 auto;">
@@ -343,7 +349,6 @@
                   <span>By providing my phone number and email address, I agree to receive information & service-related communications from Southeast Commercial Services of Georgia LLC.</span>
                 </label>
               </div>
-              <!-- hidden fields -->
               <input type="hidden" name="gclid" id="gclid">
               <input type="hidden" name="gbraid" id="gbraid">
               <input type="hidden" name="wbraid" id="wbraid">
@@ -373,7 +378,7 @@
     </div>
   </section>
 
-  <!-- Rest of your page content can go here -->
+  <!-- The rest of your page content goes here (intro, services, etc.) -->
 
   <script>
   // Reliable dropdown JS
