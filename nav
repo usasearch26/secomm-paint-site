@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlanta Warehouse Line Striping</title>
-  <meta name="description" content="Atlanta's trusted warehouse line striping experts since 1991. OSHA-compliant safety markings, 5S floor layouts & industrial coatings. Get a free quote today! (404) 348-2244.">
+  <title>Atlanta Warehouse Painting Contractors | Southeast Commercial Services</title>
+  <meta name="description" content="Professional Atlanta warehouse painting contractors specializing in industrial coatings, epoxy floors, and OSHA-compliant safety striping. Serving Greater Atlanta since 1991. Get a free B2B quote today.. No residential. Get a free quote: (404) 348-2244.">
   <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -195,27 +195,66 @@
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
     .footer-bottom { margin-top: 40px; }
   }
+
+  /* ================== WAREHOUSE PAGE STYLES ================== */
+  .se-warehouse-page,
+  .se-warehouse-page * {
+    font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+  }
+  .se-warehouse-page h1, .se-warehouse-page h2 {
+    color: #008000 !important; font-weight: 800 !important;
+    letter-spacing: -0.02em !important; line-height: 1.15 !important; margin-top: 0 !important;
+  }
+  .se-warehouse-page h3, .se-warehouse-page h4 {
+    color: #111827 !important; font-weight: 800 !important;
+    letter-spacing: -0.01em !important; line-height: 1.2 !important; margin-top: 0 !important;
+  }
+  .se-warehouse-page p, .se-warehouse-page li {
+    font-size: 1.125rem !important; line-height: 1.65 !important; color: #374151 !important;
+  }
+  .se-warehouse-page .direct-answer p {
+    margin: 0 !important; font-size: 1.1rem !important; line-height: 1.7 !important;
+    color: #111827 !important; font-style: normal !important;
+  }
+  .se-warehouse-page .direct-answer p strong:first-child { font-style: italic !important; font-weight: 800 !important; }
+  .se-warehouse-page a { font-weight: 700 !important; }
+  @media (max-width: 767px) { .se-warehouse-page h2 { font-size: 1.85rem !important; } }
+  @media (min-width: 768px) { .se-warehouse-page h2 { font-size: 2.25rem !important; } }
+
+  .process-badge {
+    background: #334155 !important; color: #ffffff !important;
+    width: 4rem !important; height: 4rem !important; border-radius: 9999px !important;
+    display: flex !important; align-items: center !important; justify-content: center !important;
+    font-size: 1.5rem !important; font-weight: 800 !important; line-height: 1 !important;
+    text-align: center !important; margin: 0 auto 1rem auto !important;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05) !important;
+    box-sizing: border-box !important;
+  }
+  @media (min-width: 768px) {
+    .process-container { padding-left: 2rem !important; padding-right: 2rem !important; }
+    .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  }
+  @media (min-width: 1024px) {
+    .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  }
   </style>
 
-<!-- =========================
-     SUPER SCHEMA (PRO + FAQ) — Warehouse Line Striping Page
-========================= -->
+<!-- ========================= SCHEMA ========================= -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization","ProfessionalService"],
-      "@id": "https://southeastcommercialpainting.com/#business",
-      "name": "Southeast Commercial Services of GA, LLC",
-      "alternateName": "Southeast Commercial Services",
+      "@type": "Organization",
+      "@id": "https://southeastcommercialpainting.com/#organization",
+      "name": "Southeast Commercial Services",
       "url": "https://southeastcommercialpainting.com/",
-      "telephone": "+1-404-348-2244",
+      "logo": "https://southeastcommercialpainting.com/logo.png",
       "foundingDate": "1991",
-      "description": "Commercial and industrial painting, coatings, and warehouse line striping contractor serving Greater Atlanta since 1991. Commercial & industrial facilities only.",
-      "image": ["https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699794fbdf9bdf1e5529f7d8.webp"],
-      "logo": "https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699794fbdf9bdf1e5529f7d8.webp",
-      "priceRange": "$$",
+      "telephone": "+1-404-348-2244",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2785 Lawrenceville Hwy",
@@ -223,106 +262,75 @@
         "addressRegion": "GA",
         "postalCode": "30033",
         "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Atlanta", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Decatur", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Marietta", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Alpharetta", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Sandy Springs", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Norcross", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Duluth", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Lawrenceville", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Buford", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Forest Park", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "College Park", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Fairburn", "containedInPlace": { "@type": "State", "name": "Georgia" } },
-        { "@type": "City", "name": "Union City", "containedInPlace": { "@type": "State", "name": "Georgia" } }
-      ],
-      "geo": { "@type": "GeoCoordinates", "latitude": 33.7748, "longitude": -84.2963 },
-      "sameAs": ["https://southeastcommercialpainting.com/"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://southeastcommercialpainting.com/#website",
-      "url": "https://southeastcommercialpainting.com/",
-      "name": "Southeast Commercial Painting",
-      "publisher": { "@id": "https://southeastcommercialpainting.com/#business" },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#webpage",
-      "url": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting",
-      "name": "Atlanta Warehouse Line Striping | OSHA-Compliant Floor Markings",
-      "isPartOf": { "@id": "https://southeastcommercialpainting.com/#website" },
-      "about": [
-        { "@id": "https://southeastcommercialpainting.com/#business" },
-        { "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#service" }
-      ],
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#primaryimage",
-        "url": "https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699794fbdf9bdf1e5529f7d8.webp"
-      },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#service",
-      "name": "Atlanta Warehouse Line Striping",
-      "serviceType": [
-        "Warehouse line striping","Warehouse floor markings","Forklift lane striping",
-        "Pedestrian walkway striping","Loading dock markings","Hazard zone crosshatching",
-        "Directional arrows and stop bars","Safety stenciling","Epoxy / urethane / polyaspartic striping systems"
-      ],
-      "description": "OSHA-aligned warehouse line striping and floor markings for Atlanta distribution centers, warehouses, and manufacturing facilities.",
-      "provider": { "@id": "https://southeastcommercialpainting.com/#business" },
-      "areaServed": { "@type": "AdministrativeArea", "name": "Greater Atlanta, Georgia" },
-      "audience": { "@type": "Audience", "audienceType": "Commercial & Industrial Facilities" },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "servicePhone": {
-          "@type": "ContactPoint",
-          "telephone": "+1-404-348-2244",
-          "contactType": "sales",
-          "areaServed": "US",
-          "availableLanguage": ["English"]
-        }
       }
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#breadcrumbs",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southeastcommercialpainting.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Atlanta Warehouse Line Striping", "item": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" }
-      ]
+      "@type": "ProfessionalService",
+      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#service",
+      "name": "Atlanta Warehouse Painting",
+      "url": "https://southeastcommercialpainting.com/atlanta-warehouse-painting",
+      "telephone": "+1-404-348-2244",
+      "areaServed": { "@type": "Place", "name": "Greater Atlanta, Georgia" },
+      "provider": { "@id": "https://southeastcommercialpainting.com/#organization" },
+      "serviceType": "Warehouse Painting",
+      "audience": { "@type": "BusinessAudience", "audienceType": "Commercial and Industrial Facilities Only" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#warehousepainting",
+      "name": "Warehouse Painting Services",
+      "provider": { "@id": "https://southeastcommercialpainting.com/#organization" },
+      "areaServed": { "@type": "Place", "name": "Atlanta, GA" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Warehouse Painting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Warehouse Painting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Warehouse Painting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Steel Coatings" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#webpage",
+      "url": "https://southeastcommercialpainting.com/atlanta-warehouse-painting",
+      "name": "Atlanta Warehouse Painting Contractors",
+      "isPartOf": { "@id": "https://southeastcommercialpainting.com/#organization" },
+      "about": { "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#service" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting#faq",
+      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How long does warehouse line striping take to dry?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Dry and return-to-service time depends on the coating system and site conditions. Many traffic paints become tack-free quickly, while epoxy/urethane/polyaspartic systems may require longer cure windows for forklift traffic." }
+          "name": "How do you paint warehouse walls and ceilings without shutting down operations?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Warehouse painting projects are phased around active operating zones, lift access, and safety protocols. Surfaces are prepared, protected, and coated according to manufacturer specifications to maintain adhesion and durability." }
         },
         {
           "@type": "Question",
-          "name": "What is the best coating for warehouse floor markings with heavy forklift traffic?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The best system depends on abrasion, turning pressure, and chemical exposure. High-wear zones often perform best with epoxy, urethane, or polyaspartic systems when specified and installed over properly prepared concrete." }
+          "name": "Do you paint both interior and exterior warehouse surfaces?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Services include interior walls, high-bay ceilings, structural steel, and exterior metal siding, doors, and loading dock areas." }
         },
         {
           "@type": "Question",
-          "name": "Do you offer weekend or night scheduling for warehouse line striping in Atlanta?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We can phase work and schedule nights or weekends to minimize disruption and keep warehouse operations running." }
+          "name": "Are your warehouse painting services commercial only?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Services are provided exclusively for commercial and industrial warehouse facilities. Residential projects are not accepted." }
         },
         {
           "@type": "Question",
-          "name": "Do you stripe residential garages or driveways?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. We specialize in commercial and industrial facilities only and do not provide residential striping." }
+          "name": "How long does warehouse painting typically take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Project timelines depend on square footage, surface condition, and access requirements. Work is scheduled to minimize disruption and may include nights or phased operations." }
         }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://southeastcommercialpainting.com/atlanta-warehouse-painting#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southeastcommercialpainting.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Warehouse Painting", "item": "https://southeastcommercialpainting.com/atlanta-warehouse-painting" }
       ]
     }
   ]
@@ -354,18 +362,10 @@
           </div>
         </div>
         <div class="social-icons" style="display:flex; gap:10px;">
-          <a href="https://www.facebook.com/southestcommercialservices"
-             target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center;
-                    border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">
-            f
-          </a>
-          <a href="https://www.linkedin.com/company/southeast-commercial-services"
-             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center;
-                    border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">
-            in
-          </a>
+          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">f</a>
+          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">in</a>
         </div>
       </div>
     </div>
@@ -374,14 +374,9 @@
   <!-- MAIN HEADER -->
   <div class="main-header">
     <div class="container">
-
-      <!-- Logo + Phone Row -->
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/">
-            <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp"
-                 alt="Southeast Commercial Services Logo">
-          </a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo"></a>
         </div>
         <div class="header-spacer"></div>
         <div class="phone">
@@ -391,7 +386,7 @@
         </div>
       </div>
 
-      <!-- NAV MENU ON ITS OWN SEPARATE LINE -->
+      <!-- NAV MENU -->
       <nav class="main-nav">
         <div>
           <a href="/">Home</a>
@@ -434,21 +429,7 @@
 </header>
 
 <!-- HERO -->
-<section style="
-  width:100vw;
-  position:relative;
-  left:50%;
-  right:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  height:auto;
-  background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
-  background-size:cover;
-  background-position:center;
-  color:#ffffff;
-  padding:60px 16px 40px 16px;
-  box-sizing:border-box;
-">
+<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp'); background-size:cover; background-position:center; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -463,22 +444,18 @@
           </div>
           <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase;">
             Atlanta's<br />
-            <span style="color:#2ea44f;">Warehouse</span><br />
-            Line Striping<br />
-            Painting
+            <span style="color:#2ea44f;">Commercial Warehouse</span><br />
+            Painting<br />
+            Specialists
           </h1>
           <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
-            Line Striping &amp; Floor Marking Painting Services.
+            Warehouse Painting Done Right — Southeast Commercial Services Enhances Your Facility with Durable Coatings, Clean Finishes, and Minimal Operational Disruption.
             <strong style="color:#ffffff;">Southeast Commercial Services</strong>
             provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
-            <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">
-              Request a Free Quote
-            </a>
-            <a href="tel:+14043482244" style="min-height:58px; padding:0 30px; border:2px solid #fff; border-radius:14px; display:flex; align-items:center; color:#fff; font-weight:900;">
-              (404) 348-2244
-            </a>
+            <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">Request a Free Quote</a>
+            <a href="tel:+14043482244" style="min-height:58px; padding:0 30px; border:2px solid #fff; border-radius:14px; display:flex; align-items:center; color:#fff; font-weight:900;">(404) 348-2244</a>
           </div>
           <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:#97a7c0;">
             No Residential Requests • Commercial Facilities Only
@@ -490,24 +467,16 @@
       <div style="width:100%; max-width:520px; margin:0 auto;">
         <div id="quote-form" style="margin-top:-20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
           <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
-          <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">
-            We typically get back to you in minutes, to within the hour (M-F).
-          </p>
+          <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">We typically get back to you in minutes, to within the hour (M-F).</p>
           <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
-            <input type="text" name="full_name" placeholder="Full Name" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="text" name="company" placeholder="Company Name"
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="tel" name="phone" placeholder="Phone Number" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="email" name="email" placeholder="Email Address" required
-                   style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <textarea name="message" placeholder="Project details" rows="4"
-                      style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
+            <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
+            <textarea name="message" placeholder="Project details" rows="4" style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
             <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
               <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
-                <input type="checkbox" name="consent" required
-                       style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
+                <input type="checkbox" name="consent" required style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
                 <span>By providing my phone number and email address, I agree to receive information &amp; service-related communications from Southeast Commercial Services of Georgia LLC.</span>
               </label>
             </div>
@@ -527,12 +496,8 @@
             <input type="hidden" name="_subject" value="New Quote Request from Website!">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">
-              Submit Form
-            </button>
-            <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
-              Commercial projects only • No residential
-            </div>
+            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">Submit Form</button>
+            <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">Commercial projects only • No residential</div>
           </form>
         </div>
       </div>
@@ -541,536 +506,370 @@
   </div>
 </section>
 
-<!-- ========================================
-     SECTION 1: Authority Intro
-     ======================================== -->
-<section style="display: block; position: relative; padding: 16px 24px 64px; background: #ffffff; overflow: hidden;">
-  <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px;">
-    <div style="background: #ffffff; padding: 48px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #f3f4f6;">
-      <h2 style="color: #008000; font-size: 32px; font-weight: 800; text-align: center; line-height: 1.2; margin-bottom: 12px;">
-        Atlanta Warehouse Line Striping - <strong>OSHA-Compliant Safety Markings</strong>
+<!-- MAIN SECTION -->
+<div class="se-warehouse-page">
+
+<!-- SECTION 1: Authority Intro -->
+<div style="position:relative; padding-top:2rem; padding-bottom:4rem; background:linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);">
+  <div style="max-width:1152px; margin:0 auto; padding:0 1.5rem;">
+    <div style="margin-bottom:2.5rem; text-align:center;">
+      <h2 style="color:#008000 !important; font-size:2.25rem; font-weight:800; line-height:1.2; letter-spacing:-0.02em; margin:0;">
+        Atlanta Warehouse Painting Contractors - Southeast Commercial Services
       </h2>
-      <p style="text-align:center; font-size:14px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; color:#1e3a8a; margin:0 0 24px 0;">
+      <div style="margin-top:0.75rem; display:inline-flex; align-items:center; gap:0.5rem; padding:0.5rem 0.9rem; border-radius:9999px; background:rgba(51,65,85,0.08); border:1px solid rgba(51,65,85,0.18); color:#111827; font-weight:800; font-size:0.95rem; line-height:1.2;">
         $2M Insured • Bondable • Commercial &amp; Industrial Only
-      </p>
-      <div style="background: #eff6ff; border-left: 4px solid #334155; padding: 20px; margin-bottom: 40px; max-width: 896px; margin-left: auto; margin-right: auto; border-radius: 0 8px 8px 0;">
-        <p style="margin:0;">
-          <strong>What is warehouse line striping?</strong><br>
-          Warehouse line striping creates durable, OSHA-aligned floor markings that separate pedestrians from forklifts and define hazard zones in Atlanta facilities.
-          <br><span style="display:block; margin-top:10px; color:#374151;">
-          We plan layouts (walkways, lanes, crosshatch, stop bars), prep concrete for adhesion, and install industrial coatings with a return-to-service schedule.
-          </span>
+      </div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:2.5rem; align-items:center;">
+      <div style="position:relative; flex:1; min-width:300px; display:flex; justify-content:center;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994b08ed614c94a0afc824f.webp"
+             alt="Atlanta Warehouse Painting Contractors" width="448" height="300"
+             fetchpriority="high" decoding="async" loading="eager"
+             style="display:block; width:100%; max-width:448px; height:auto; border-radius:0.75rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.1); object-fit:cover; border-bottom:8px solid #334155;">
+      </div>
+      <div style="flex:1; min-width:300px; display:flex; flex-direction:column; justify-content:center;">
+        <p style="font-size:1.25rem; color:#1f2937; margin:0 0 1.5rem 0; line-height:1.6;">
+          <strong>Southeast Commercial Services</strong> provides <strong>professional warehouse painting</strong> across the <strong>Greater Atlanta area</strong>. We specialize in <strong>large-scale industrial coatings</strong> for distribution centers, logistics facilities, and manufacturing warehouses.
         </p>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
-        <div style="flex: 1; min-width: 300px;">
-          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699794fbdf9bdf1e5529f7d8.webp"
-               alt="Atlanta Warehouse Line Striping" width="448" height="300"
-               fetchpriority="high" loading="eager"
-               style="display: block; width: 100%; max-width: 448px; height: auto; aspect-ratio: 448 / 300; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); margin-top: 32px;" />
-        </div>
-        <div style="flex: 1; min-width: 300px; color: #374151; font-size: 18px; line-height: 1.75;">
-          <p style="text-align: center; font-size: 20px; margin-bottom: 32px; color: #008000;">
-            <strong>Protect Your Team. Boost Productivity. Stay OSHA Compliant.</strong>
-          </p>
-          <p style="margin-bottom: 24px;">
-            In high-traffic <strong>Atlanta warehouses</strong>, clear and durable <strong>floor markings</strong> are not optional—they are essential for <strong>safety, compliance, and operational flow</strong>. <strong>Southeast Commercial Services</strong> has delivered <strong>professional warehouse line striping</strong> across Metro Atlanta since <strong>1991</strong>, helping facility managers reduce accidents and meet <strong>OSHA standards</strong>.
-          </p>
-          <p style="margin: 0;">
-            From <strong>pedestrian walkways</strong> to <strong>forklift lanes</strong> and <strong>hazard zones</strong>, our industrial-grade striping solutions are built to withstand heavy traffic and last for years.
-          </p>
-        </div>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 16px; margin-top: 48px;">
-        <div style="text-align: center; border-right: 1px solid #e5e7eb;">
-          <div style="font-size: 24px; font-weight: 900; color: #334155;">30+ Years</div>
-          <div style="font-size: 14px; color: #4b5563; text-transform: uppercase; letter-spacing: 0.05em;">Atlanta Experience</div>
-        </div>
-        <div style="text-align: center; border-right: 1px solid #e5e7eb;">
-          <div style="font-size: 24px; font-weight: 900; color: #111827;">OSHA Safe</div>
-          <div style="font-size: 14px; color: #4b5563; text-transform: uppercase; letter-spacing: 0.05em;">Certified Crews</div>
-        </div>
-        <div style="text-align: center;">
-          <div style="font-size: 24px; font-weight: 900; color: #111827;">GA Licensed</div>
-          <div style="font-size: 14px; color: #4b5563; text-transform: uppercase; letter-spacing: 0.05em;">Bonded &amp; Insured</div>
+        <p style="font-size:1.125rem; color:#374151; margin:0 0 1.5rem 0; line-height:1.6;">
+          Your warehouse is the operational backbone of your business. Our <strong>Atlanta warehouse painting contractors</strong> deliver <strong>durable coatings</strong>, safety line striping, and <strong>high-performance floor systems</strong> designed to protect your assets and keep your operation running 24/7.
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:0.5rem; padding:1.25rem; background:rgba(255,255,255,0.60); border:1px solid #e5e7eb; border-radius:1rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
+          <div style="text-align:center; border-right:1px solid #e5e7eb;">
+            <div style="font-size:1.5rem; font-weight:900; color:#334155;">30+</div>
+            <div style="font-size:10px; text-transform:uppercase; font-weight:700; color:#6b7280;">Years Exp.</div>
+          </div>
+          <div style="text-align:center; border-right:1px solid #e5e7eb;">
+            <div style="font-size:1.5rem; font-weight:900; color:#008000;">OSHA</div>
+            <div style="font-size:10px; text-transform:uppercase; font-weight:700; color:#6b7280;">Safety Std.</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:1.5rem; font-weight:900; color:#111827;">GA</div>
+            <div style="font-size:10px; text-transform:uppercase; font-weight:700; color:#6b7280;">Local Entity</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-<!-- Commercial Qualifications -->
-<section style="display:block; position:relative; padding: 24px 24px 44px; background:#ffffff; overflow:hidden;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
-    <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:14px; padding:16px 18px;">
-      <p style="margin:0; font-size:14px; color:#1e3a8a; font-weight:900; letter-spacing:0.02em; text-transform:uppercase;">
-        What should a facility manager require from a line striping contractor?
-      </p>
-      <p style="margin:6px 0 0 0; font-size:15px; color:#111827; font-weight:700; line-height:1.6;">
-        Documented layout planning, substrate prep (grind/shot blast as needed), durable industrial coatings, and commercial qualifications: <strong>$2,000,000 insured</strong> and <strong>bonding capability</strong> for qualifying scopes.
-      </p>
-    </div>
-    <div style="display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:16px; margin-top:14px;">
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; box-shadow: 0 18px 28px -22px rgba(0,0,0,0.25);">
-        <h3 style="margin:0 0 8px 0; font-size:16px; font-weight:900; color:#111827;">Scope Documentation</h3>
-        <p style="margin:0; font-size:14px; color:#374151; line-height:1.65;">Measured quantities, colors, line widths, zones, and phasing—so your safety plan is consistent and repeatable.</p>
-      </div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; box-shadow: 0 18px 28px -22px rgba(0,0,0,0.25);">
-        <h3 style="margin:0 0 8px 0; font-size:16px; font-weight:900; color:#111827;">Durability &amp; Return-to-Service</h3>
-        <p style="margin:0; font-size:14px; color:#374151; line-height:1.65;">Coating selection based on forklift traffic, abrasion, and cure windows—built for active Atlanta distribution environments.</p>
-      </div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; padding:18px; box-shadow: 0 18px 28px -22px rgba(0,0,0,0.25);">
-        <h3 style="margin:0 0 8px 0; font-size:16px; font-weight:900; color:#111827;">B2B Only</h3>
-        <p style="margin:0; font-size:14px; color:#374151; line-height:1.65;">Warehouses, distribution centers, manufacturing facilities, and commercial sites only. No residential garages or driveways.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Answer Box -->
-<div style="max-width:896px; margin:18px auto 0; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; padding:18px; border-radius:14px;">
-  <p style="margin:0; color:#111827; font-weight:700; line-height:1.7;">
-    <strong>What should a facility manager require before approving striping work?</strong><br>
-    Require a documented layout plan, prep method, coating system, cure windows, and a return-to-service schedule—plus commercial insurance and closeout standards.
-    <br><span style="display:block; margin-top:10px; color:#374151; font-weight:600;">
-    Southeast is $2M insured, bondable for qualifying scopes, and serves commercial/industrial facilities only.
-    </span>
-  </p>
 </div>
 
-<!-- SECTION 2: Why Line Striping Matters -->
-<section style="display: block; position: relative; padding: 64px 24px; background: linear-gradient(to bottom, #f3f4f6, #e5e7eb); overflow: hidden;">
-  <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px;">
-    <div style="background: rgba(255,255,255,0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 48px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
-      <h2 style="color: #008000; font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 40px; line-height: 1.2;">
-        Why <strong>Warehouse Line Striping</strong> Is Risk Management, Not Decoration
-      </h2>
-      <div style="background: #eff6ff; border-left: 4px solid #334155; padding: 20px; margin-bottom: 40px; max-width: 896px; margin-left: auto; margin-right: auto; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <p style="margin:0;">
-          <strong>Why does warehouse line striping matter?</strong><br>
-          Warehouse floor markings reduce accidents by organizing traffic flow, identifying hazards, and improving OSHA inspection readiness in Atlanta warehouses.
-          <br><span style="display:block; margin-top:10px; color:#374151;">
-          The best results come from proper surface prep and coating selection based on forklift traffic, abrasion, and cure windows—not just paint on concrete.
-          </span>
-        </p>
+<!-- SECTION 2: Risk Management -->
+<div style="position:relative; padding:6rem 0; background:linear-gradient(to bottom, #f3f4f6 0%, #e5e7eb 100%); border-top:1px solid rgba(209,213,219,0.30); border-bottom:1px solid rgba(209,213,219,0.30);">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="display:flex; flex-wrap:wrap; gap:3rem; align-items:center;">
+      <div style="flex:1; min-width:300px;">
+        <h2 style="margin:0 0 1.5rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Warehouse Painting Is Risk Management, Not Decoration</h2>
+        <div class="direct-answer" style="background:rgba(255,255,255,0.90); border-left:4px solid #334155; padding:1.5rem; margin-bottom:2rem; border-radius:0.75rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10);">
+          <p><strong>Direct Answer:</strong> <strong>How does warehouse painting reduce facility risk?</strong> It protects steel, concrete, and walls from moisture, chemicals, and abrasion in active warehouses. We specify coatings and prep by exposure, traffic, and data-sheet cure windows.</p>
+        </div>
+        <p style="margin:0 0 1rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">A warehouse repaint isn't cosmetic. It's about <strong>asset protection</strong> and maintaining a facility that meets <strong>OSHA standards</strong> and client expectations.</p>
+        <p style="margin:0 0 1.5rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">Properly applied <strong>industrial coatings</strong> extend the life of your building, reduce maintenance costs, and create a cleaner, brighter, safer work environment for your team.</p>
+        <a href="#quote-form" style="display:inline-flex; align-items:center; background:#334155; color:#ffffff; font-weight:800; padding:1.25rem 2.5rem; border-radius:9999px; text-decoration:none; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);"
+           onmouseover="this.style.transform='translateY(-4px)'; this.style.backgroundColor='#1f2937';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#334155';">
+          Schedule a Free Warehouse Assessment
+          <span style="margin-left:0.75rem; display:inline-flex; align-items:center; padding:0.3rem 0.6rem; border-radius:9999px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); color:#ffffff; font-size:0.75rem; font-weight:900; white-space:nowrap;">B2B ONLY</span>
+        </a>
+        <p style="margin:1rem 0 0 0; font-size:0.95rem; color:#374151;">For <strong>Commercial &amp; Industrial Facilities Only</strong> — <strong>No Residential Projects</strong>.</p>
       </div>
-      <div style="color: #374151; font-size: 18px; line-height: 1.75;">
-        <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px;">
-          <span style="color: #008000; font-weight: 700; font-size: 24px; flex-shrink: 0;">1.</span>
-          <div>
-            <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 8px;">Safety Enhancement</h3>
-            <p style="margin: 0;">Clearly marked <strong>pedestrian walkways</strong>, <strong>forklift lanes</strong>, and <strong>hazard zones</strong> significantly reduce the risk of collisions and injuries. When your team can see exactly where they should—and shouldn't—walk, accidents drop.</p>
-          </div>
-        </div>
-        <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px;">
-          <span style="color: #008000; font-weight: 700; font-size: 24px; flex-shrink: 0;">2.</span>
-          <div>
-            <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 8px;">Operational Efficiency</h3>
-            <p style="margin: 0;">Organized <strong>floor layouts</strong> eliminate confusion. Designated zones for equipment, inventory staging, and loading docks streamline workflows and reduce downtime caused by misplaced materials or blocked pathways.</p>
-          </div>
-        </div>
-        <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px;">
-          <span style="color: #008000; font-weight: 700; font-size: 24px; flex-shrink: 0;">3.</span>
-          <div>
-            <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 8px;">OSHA Compliance</h3>
-            <p style="margin: 0;"><strong>OSHA mandates</strong> that permanent aisles and passageways be appropriately marked. Non-compliance can result in fines, work stoppages, and increased liability. Our striping ensures you meet federal safety standards.</p>
-          </div>
-        </div>
-        <div style="display: flex; align-items: flex-start; gap: 16px;">
-          <span style="color: #008000; font-weight: 700; font-size: 24px; flex-shrink: 0;">4.</span>
-          <div>
-            <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 8px;">Visual Management (5S &amp; Lean)</h3>
-            <p style="margin: 0;">Color-coded <strong>floor markings</strong> support <strong>5S and Lean methodologies</strong>, promoting organization and continuous improvement. This visual system aids in quick identification of tools, processes, and safety zones.</p>
-          </div>
-        </div>
+      <div style="flex:1; min-width:300px; display:flex; justify-content:flex-end;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp"
+             alt="Atlanta warehouse painting contractors" width="448" height="300" loading="lazy"
+             style="width:100%; max-width:448px; height:auto; border-radius:0.75rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); object-fit:cover; border-left:8px solid #008000; display:block;">
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- SECTION 3: Our Line Striping Services -->
-<div style="background:#ffffff; padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      Comprehensive <strong>Atlanta Warehouse Line Striping Services</strong>
-    </h2>
-    <div style="background:#eff6ff; border-left:4px solid #334155; padding:20px; margin-bottom:40px; max-width:896px; margin-left:auto; margin-right:auto; border-radius:0 8px 8px 0; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-      <p style="margin:0; font-size:16px; color:#374151;">
-        <strong>What line striping services do you provide?</strong><br>
-        We stripe warehouse interiors and exteriors—walkways, forklift lanes, dock markings, hazard zones, arrows, and stop bars for Atlanta industrial sites.
-        <br><span style="display:block; margin-top:10px; color:#374151;">
-        Systems include traffic paint and higher-durability epoxy/urethane options when the environment demands longer service life.
-        </span>
-      </p>
+<!-- SECTION 2.5: Why Painting Fails -->
+<div style="position:relative; padding:6rem 0; background:linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%); border-top:1px solid rgba(229,231,235,0.70);">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0 0 1rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Why Warehouse Painting Fails Prematurely (And How We Prevent It)</h2>
+      <div class="direct-answer" style="background:#f3f4f6; border-left:4px solid #334155; padding:1.25rem; margin:0 auto 2rem auto; max-width:56rem; text-align:left; border-radius:0 0.5rem 0.5rem 0;">
+        <p><strong>Direct Answer:</strong> <strong>Why does warehouse paint fail early?</strong> Most failures trace to adhesion loss, contamination, moisture, or coating mismatch for traffic and exposure. We prevent it by planning prep and coating systems around substrate condition and manufacturer specs.</p>
+      </div>
     </div>
-    <div style="display:flex; flex-wrap:wrap; gap:48px; align-items:flex-start;">
-      <div style="flex:1; min-width:300px;">
-        <h3 style="font-size:24px; font-weight:700; color:#008000; margin-bottom:16px;">Interior Warehouse Floor Striping</h3>
-        <ul style="list-style:none; padding:0; margin:0 0 32px 0;">
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Pedestrian Walkways:</strong> Clearly marked paths to separate foot traffic from machinery and forklifts.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Equipment Zones:</strong> Designated areas for machinery, pallet jacks, and tools to prevent obstructions.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Hazard Markings:</strong> High-visibility identification of potential danger zones.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Inventory Staging Areas:</strong> Color-coded zones for receiving, staging, and shipping.</span></li>
-        </ul>
-        <h3 style="font-size:24px; font-weight:700; color:#008000; margin-bottom:16px;">Exterior Line Striping</h3>
-        <ul style="list-style:none; padding:0; margin:0 0 32px 0;">
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Loading Docks:</strong> Alignment guides for safe truck positioning and loading/unloading operations.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Parking Areas:</strong> Organized layouts for employee and visitor parking.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Traffic Flow Indicators:</strong> Directional arrows and stop bars to manage vehicle movement.</span></li>
-        </ul>
-        <h3 style="font-size:24px; font-weight:700; color:#008000; margin-bottom:16px;">Specialized Industrial Coatings</h3>
-        <ul style="list-style:none; padding:0; margin:0;">
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Epoxy Line Striping:</strong> Durable, chemical-resistant coatings for high-traffic areas.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Anti-Slip Treatments:</strong> Enhanced traction in areas prone to spills or moisture.</span></li>
-          <li style="display:flex; align-items:flex-start; gap:12px; font-size:18px; color:#374151;"><span style="color:#008000; font-weight:800;">✓</span><span><strong>Reflective Paints:</strong> Improved visibility in low-light or 24/7 operations.</span></li>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Common Failure Modes in Active Warehouses</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">•</span><span><strong>Insufficient surface prep:</strong> smooth concrete, embedded oils, or dust reduce mechanical bond and shorten coating life.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">•</span><span><strong>Moisture and vapor pressure:</strong> damp slabs and migration can push coatings off the surface over time.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">•</span><span><strong>Coating mismatch:</strong> selecting the wrong system for forklift traffic, abrasion, chemicals, or washdown conditions.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">•</span><span><strong>Rushed cure windows:</strong> returning traffic too early or recoating outside data-sheet limits leads to soft films or poor intercoat adhesion.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">•</span><span><strong>Detail/edge breakdown:</strong> corners, dock edges, and steel transitions fail first when film build and prep aren't controlled.</span></li>
         </ul>
       </div>
-      <div style="flex:0 0 auto; width:100%; max-width:448px; margin-top:32px;">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6997968d8523c58d94e7de1f.webp"
-             alt="Warehouse line striping services example" width="448" height="300" loading="lazy"
-             style="width:100%; height:auto; border-radius:12px; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); border-left:8px solid #008000; margin-left:auto; margin-right:auto; display:block;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">How We Reduce Failure Risk Before We Paint</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Prep planning by substrate:</strong> degreasing, profiling, and targeted prep to support adhesion where it matters most.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>System selection by exposure:</strong> epoxy, urethane, or elastomeric systems aligned to traffic, abrasion, and environmental demands.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Phasing for operations:</strong> sequencing work zones so your facility can keep moving while coatings cure properly.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Spec-driven execution:</strong> application and recoat timing aligned with manufacturer data sheets to reduce early failures.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: Services Gallery -->
+<div style="position:relative; padding:6rem 0; background:#ffffff;">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0 0 1rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Warehouse Painting Services in Atlanta</h2>
+      <div class="direct-answer" style="background:#f3f4f6; border-left:4px solid #334155; padding:1.25rem; margin:0 auto 2rem auto; max-width:56rem; text-align:left; border-radius:0 0.5rem 0.5rem 0;">
+        <p><strong>Direct Answer:</strong> <strong>What warehouse painting services do you provide in Atlanta?</strong> We deliver interior/exterior coatings, floor solutions, and steel protection for distribution facilities. Each scope is built around substrate condition, operating zones, and manufacturer specs.</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2.5rem;">
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af661ecd7122fb572cf5.webp" alt="Warehouse interior painting" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Interior Warehouse Painting</h3><p style="margin:0; color:#4b5563;">Walls, high-bay ceilings, columns, mezzanines, and office areas.</p></div>
+      </div>
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994b08e6bac24c72c0d36e7.webp" alt="Warehouse exterior painting" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Exterior Warehouse Painting</h3><p style="margin:0; color:#4b5563;">Metal siding, loading docks, doors, and exterior protection for high-exposure areas.</p></div>
+      </div>
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6988f8f77f6dcf92c15f18d8.png" alt="Structural steel coatings in warehouses" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Structural Steel Coatings</h3><p style="margin:0; color:#4b5563;">Steel columns, frames, and exposed members protected for durability in industrial environments.</p></div>
+      </div>
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" style="text-decoration:none; color:inherit;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp" alt="Warehouse line striping" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Warehouse Line Striping</h3><p style="margin:0; color:#4b5563;">Safety striping, lane marking, and operational layout painting to support traffic flow and OSHA visibility requirements.</p></div>
+        </a>
+      </div>
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <a href="https://southeastcommercialpainting.com/atlanta-industrial-floor-coatings" style="text-decoration:none; color:inherit;">
+          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp" alt="Warehouse epoxy floor coatings" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Industrial Floor Coatings</h3><p style="margin:0; color:#4b5563;"><strong>Epoxy and urethane systems</strong> designed for heavy forklift traffic.</p></div>
+        </a>
+      </div>
+      <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
+        <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" style="text-decoration:none; color:inherit;">
+          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f8545899b885ed767513e.webp" alt="Commercial concrete polishing" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Commercial Concrete Polishing</h3><p style="margin:0; color:#4b5563;">Mechanically polished concrete for dust control, durability, and a clean, low-maintenance floor finish.</p></div>
+        </a>
       </div>
     </div>
     <!-- B2B DISQUALIFIER -->
-    <div style="margin-top:64px; max-width:768px; margin-left:auto; margin-right:auto;">
-      <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:24px; border-radius:12px; display:flex; align-items:flex-start; gap:16px; box-shadow:0 1px 2px rgba(0,0,0,.06);">
-        <div style="margin-top:4px; color:#2563eb; flex-shrink:0;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+    <div style="margin-top:4rem; max-width:48rem; margin-left:auto; margin-right:auto;">
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:1.5rem; border-radius:0.75rem; display:flex; align-items:flex-start; gap:1rem;">
+        <div style="flex:0 0 auto; color:#2563eb; margin-top:0.25rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
         </div>
         <div>
-          <h4 style="font-size:18px; font-weight:800; color:#1e3a8a; margin:0 0 4px;">Commercial &amp; Industrial Facilities Only</h4>
-          <p style="font-size:14px; color:#1e40af; margin:0; line-height:1.75;">
-            We <strong>do not stripe residential garages or driveways</strong>. We specialize exclusively in <strong>warehouse, distribution center, and manufacturing facility line striping</strong>.
-          </p>
+          <h4 style="margin:0 0 0.25rem 0; font-size:1.125rem; font-weight:800; color:#1e3a8a;">Commercial &amp; Industrial Warehouses Only</h4>
+          <p style="margin:0; color:#1e40af; font-size:0.875rem; line-height:1.6;">We <strong>do not paint residential garages or homes</strong>. We specialize exclusively in <strong>commercial and industrial warehouse facilities</strong>.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 4: Our Process -->
-<div style="background:linear-gradient(to bottom, #f3f4f6, #e5e7eb); padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      Our Process: Precision from Start to Finish for Your <strong>Warehouse Floor Markings</strong>
-    </h2>
-    <div style="background:#eff6ff; border-left:4px solid #334155; padding:20px; margin-bottom:40px; max-width:896px; margin-left:auto; margin-right:auto; border-radius:0 8px 8px 0; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-      <p style="margin:0; font-size:16px; color:#374151;">
-        <strong>What is your warehouse line striping process?</strong><br>
-        We assess traffic flow, finalize layout, prepare the substrate, apply industrial coatings, and confirm markings before returning areas to service.
-        <br><span style="display:block; margin-top:10px; color:#374151;">
-        Prep may include grinding or shot blasting for adhesion, and scheduling can be phased (nights/weekends) to keep operations running.
-        </span>
-      </p>
-    </div>
-    <div style="display:flex; flex-wrap:wrap; gap:48px; align-items:flex-start;">
-      <div style="flex:1; min-width:300px;">
-        <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;">
-          <div style="width:48px; height:48px; background:#334155; color:#fff; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0;">1</div>
-          <div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Facility Assessment</h3><p style="margin:0; font-size:18px;">We conduct a thorough on-site evaluation to understand your traffic patterns, safety requirements, and operational goals.</p></div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;">
-          <div style="width:48px; height:48px; background:#334155; color:#fff; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0;">2</div>
-          <div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Custom Layout Planning</h3><p style="margin:0; font-size:18px;">We develop a tailored <strong>line striping plan</strong> that aligns with OSHA standards and your facility's unique workflow.</p></div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;">
-          <div style="width:48px; height:48px; background:#334155; color:#fff; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0;">3</div>
-          <div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Surface Preparation</h3><p style="margin:0; font-size:18px;">Ensuring optimal adhesion through <strong>shot blasting, grinding, or pressure washing</strong> to remove contaminants and create a clean surface.</p></div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;">
-          <div style="width:48px; height:48px; background:#334155; color:#fff; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0;">4</div>
-          <div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">High-Durability Application</h3><p style="margin:0; font-size:18px;">Utilizing <strong>industrial-grade epoxy or urethane paints</strong> and precision spray equipment for long-lasting, high-visibility results.</p></div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:16px;">
-          <div style="width:48px; height:48px; background:#334155; color:#fff; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; flex-shrink:0;">5</div>
-          <div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Final OSHA Compliance Inspection</h3><p style="margin:0; font-size:18px;">Conducting a comprehensive review to guarantee quality, durability, and full compliance with federal safety standards.</p></div>
-        </div>
+<!-- SECTION 4: Process -->
+<div style="position:relative; padding:6rem 0; background:linear-gradient(to bottom, #f3f4f6 0%, #e5e7eb 100%); border-top:1px solid rgba(209,213,219,0.30);">
+  <div class="process-container" style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0 0 1rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Built for Active Warehouse Operations</h2>
+      <div class="direct-answer" style="background:rgba(255,255,255,0.80); border-left:4px solid #334155; padding:1.25rem; margin:0 auto 2rem auto; max-width:56rem; text-align:left; border-radius:0 0.5rem 0.5rem 0;">
+        <p><strong>Direct Answer:</strong> <strong>How do you paint warehouse walls and ceilings without disrupting operations?</strong> We phase work, protect inventory, and prep substrates so coatings adhere and last. Each step is planned around access, safety protocols, and manufacturer application specs.</p>
       </div>
-      <div style="flex:0 0 auto; width:100%; max-width:448px; margin-top:32px;">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp"
-             alt="Precision line striping process" width="448" height="300" loading="lazy"
-             style="width:100%; height:auto; border-radius:12px; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); border-left:8px solid #008000; margin-left:auto; margin-right:auto; display:block;">
+    </div>
+    <div class="process-grid" style="display:grid; grid-template-columns:1fr; gap:2rem;">
+      <div style="text-align:center;"><div class="process-badge">1</div><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Inspection</h3><p style="margin:0; color:#4b5563;">Reviewing <strong>walls, ceilings, steel, doors, and exterior surfaces</strong> for condition and access needs.</p></div>
+      <div style="text-align:center;"><div class="process-badge">2</div><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Surface Prep</h3><p style="margin:0; color:#4b5563;">Cleaning, patching, scraping, and sanding to ensure <strong>proper adhesion</strong> on warehouse substrates.</p></div>
+      <div style="text-align:center;"><div class="process-badge">3</div><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Protection &amp; Staging</h3><p style="margin:0; color:#4b5563;">Masking and protecting inventory, racks, and equipment while staging lifts for <strong>high-bay access</strong>.</p></div>
+      <div style="text-align:center;"><div class="process-badge">4</div><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Application &amp; Closeout</h3><p style="margin:0; color:#4b5563;">Applying coatings per manufacturer specs, then <strong>cleanup and final inspection</strong> to confirm coverage and site readiness.</p></div>
+    </div>
+    <div style="margin-top:4rem; text-align:center;">
+      <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7daa00849872644cbd16.webp"
+           alt="Warehouse painting process" width="448" height="300" loading="lazy"
+           style="width:100%; max-width:48rem; height:auto; border-radius:0.75rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); object-fit:cover; display:block; margin:0 auto;">
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4.5: Scope -->
+<div style="position:relative; padding:6rem 0; background:linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%); border-top:1px solid rgba(229,231,235,0.70);">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0 0 1rem 0; color:#008000; font-size:2.25rem; font-weight:900;">What's Included in a Warehouse Painting Scope</h2>
+      <div class="direct-answer" style="background:#f3f4f6; border-left:4px solid #334155; padding:1.25rem; margin:0 auto 2rem auto; max-width:56rem; text-align:left; border-radius:0 0.5rem 0.5rem 0;">
+        <p><strong>Direct Answer:</strong> <strong>What should a warehouse painting scope include?</strong> It should define surfaces, prep, coating systems, phasing, and closeout so work matches your operations and manufacturer specs. A spec-grade scope prevents gaps that cause downtime, change orders, and early failures.</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Scope Definition &amp; Layout Planning</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Surface inventory:</strong> walls, ceilings, steel, doors, loading areas, and floor zones defined by use.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Traffic and access planning:</strong> forklift routes, staging, and protection of active operations.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Sequencing:</strong> work zones divided to keep critical areas operational while coatings cure.</span></li>
+        </ul>
+      </div>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Surface Prep &amp; Coating Systems</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Prep selection:</strong> degreasing, profiling, and shot blasting where required for adhesion.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Coating system alignment:</strong> epoxy/urethane/elastomeric systems selected by exposure and performance needs.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Spec timing:</strong> recoat and return-to-service windows planned around manufacturer requirements.</span></li>
+        </ul>
+      </div>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Phasing, Protection, and Closeout</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Operational phasing:</strong> nights/weekends or controlled zones to minimize downtime.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Safety and protection:</strong> containment, masking, and site controls to keep work areas clean and safe.</span></li>
+          <li style="margin-top:0.75rem; display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:900; margin-right:0.75rem;">✓</span><span><strong>Closeout:</strong> walkdown, punch list completion, and turnover aligned with your facility requirements.</span></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <!-- SECTION 5: Why Choose Southeast -->
-<div style="background:#ffffff; padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      Why Choose <strong>Southeast Commercial Services</strong> for Atlanta Warehouse Line Striping?
-    </h2>
-    <div style="background:#eff6ff; border-left:4px solid #334155; padding:20px; margin-bottom:40px; max-width:896px; margin-left:auto; margin-right:auto; border-radius:0 8px 8px 0; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-      <p style="margin:0; font-size:16px; color:#374151;">
-        <strong>Why choose Southeast for warehouse line striping?</strong><br>
-        We deliver OSHA-aligned striping with documented planning, durable materials, flexible scheduling, and commercial insurance standards for Atlanta sites.
-        <br><span style="display:block; margin-top:10px; color:#374151;">
-        Commercial &amp; industrial only, serving Metro Atlanta since 1991, with a 1-year labor warranty and closeout walkthrough.
-        </span>
-      </p>
-    </div>
-    <div style="font-size:18px; color:#374151;">
-      <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;"><span style="color:#008000; font-weight:800; font-size:24px; flex-shrink:0;">✓</span><div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">30+ Years of Atlanta Experience</h3><p style="margin:0;">Since <strong>1991</strong>, we have delivered <strong>commercial and industrial line striping</strong> across Metro Atlanta, from Fulton Industrial to the I-85 NE Corridor.</p></div></div>
-      <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;"><span style="color:#008000; font-weight:800; font-size:24px; flex-shrink:0;">✓</span><div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Industrial-Grade Materials</h3><p style="margin:0;">We use only <strong>premium epoxy and urethane paints</strong> designed for heavy forklift traffic, chemical exposure, and 24/7 operations.</p></div></div>
-      <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;"><span style="color:#008000; font-weight:800; font-size:24px; flex-shrink:0;">✓</span><div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">OSHA Compliance Expertise</h3><p style="margin:0;">In-depth knowledge of <strong>federal safety regulations</strong> and industry best practices for <strong>warehouse floor markings</strong>.</p></div></div>
-      <div style="display:flex; align-items:flex-start; gap:16px; margin-bottom:24px;"><span style="color:#008000; font-weight:800; font-size:24px; flex-shrink:0;">✓</span><div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">Minimal Downtime</h3><p style="margin:0;">Flexible scheduling options, including <strong>nights and weekends</strong>, to keep your operations running without disruption.</p></div></div>
-      <div style="display:flex; align-items:flex-start; gap:16px;"><span style="color:#008000; font-weight:800; font-size:24px; flex-shrink:0;">✓</span><div><h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 8px;">1-Year Labor Warranty</h3><p style="margin:0;">We stand behind our work with a <strong>one-year warranty on labor</strong> and long-term manufacturer warranties on all materials.</p></div></div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 6: Service Area -->
-<div style="background:linear-gradient(to bottom, #f3f4f6, #e5e7eb); padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:16px; line-height:1.2;">
-      Serving the Greater Atlanta Area with <strong>Warehouse Line Striping</strong>
-    </h2>
-    <p style="text-align:center; margin-bottom:32px; font-size:18px;">
-      <strong>Southeast Commercial Services</strong> proudly delivers <strong>OSHA-compliant line striping solutions</strong> across Metro Atlanta's key industrial corridors:
-    </p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:16px; text-align:center; font-size:18px; font-weight:600;">
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Fulton Industrial Blvd</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">I-85 NE Corridor</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Gwinnett County</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">South Metro Logistics</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Chamblee</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Doraville</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Norcross</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Duluth</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Suwanee</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Lawrenceville</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Buford</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Forest Park</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">College Park</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Fairburn</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Union City</div>
-      <div style="background:#fff; padding:16px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,.06);">Alpharetta</div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 7: Related Services -->
-<div style="background:#ffffff; padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      Complete <strong>Atlanta Commercial &amp; Industrial Painting</strong> Solutions
-    </h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:32px;">
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp" alt="High Rise Painting" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">High-Rise Painting</p>
+<div style="position:relative; padding:6rem 0; background:#ffffff;">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="display:flex; flex-wrap:wrap; gap:3rem; align-items:center;">
+      <div style="flex:1; min-width:300px;">
+        <h2 style="margin:0 0 1.5rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Why Warehouse Managers Choose Southeast</h2>
+        <div class="direct-answer" style="background:#f3f4f6; border-left:4px solid #334155; padding:1.25rem; margin-bottom:1.5rem; border-radius:0 0.5rem 0.5rem 0;">
+          <p><strong>Direct Answer:</strong> <strong>Why do warehouse managers choose Southeast for painting?</strong> We phase work around operating schedules to limit disruption and deliver durable, compliant finishes. Since 1991, our crews follow documented OSHA safety practices on active industrial sites.</p>
+        </div>
+        <ul style="margin:0 0 1.5rem 0; padding:0; list-style:none; color:#374151; font-size:1.125rem; line-height:1.75;">
+          <li style="display:flex; align-items:flex-start;"><span style="color:#008000; font-weight:800; margin-right:0.75rem;">✓</span><span><strong>Flexible Scheduling:</strong> Nights and weekends to keep your operation running.</span></li>
+          <li style="display:flex; align-items:flex-start; margin-top:1rem;"><span style="color:#008000; font-weight:800; margin-right:0.75rem;">✓</span><span><strong>OSHA Compliance:</strong> Trained crews and documented safety practices.</span></li>
+          <li style="display:flex; align-items:flex-start; margin-top:1rem;"><span style="color:#008000; font-weight:800; margin-right:0.75rem;">✓</span><span><strong>Industrial Experience:</strong> Serving Atlanta distribution centers since 1991.</span></li>
+        </ul>
       </div>
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Exterior Painting" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Exterior Painting</p>
-      </div>
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp" alt="Interior Painting" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Interior Painting</p>
-      </div>
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6845dd82e8861b3e2a3d3f38.png" alt="Industrial Painting" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Industrial Painting</p>
-      </div>
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f855c14c4293ed957b1d9.webp" alt="Epoxy Floor Coatings" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Epoxy Floor Coatings</p>
-      </div>
-      <div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f8545899b885ed767513e.webp" alt="Parking & Loading Areas" width="400" height="192" loading="lazy" style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
-        <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Parking &amp; Loading Areas</p>
+      <div style="flex:1; min-width:300px; display:flex; justify-content:center;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7daa008498692c4cbd17.webp"
+             alt="Warehouse painting safety" width="448" height="300" loading="lazy"
+             style="width:100%; max-width:448px; height:auto; border-radius:0.75rem; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); object-fit:cover; display:block;">
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 8: OSHA Technical Authority -->
-<div style="background:#0f172a; padding:64px 24px; color:#ffffff;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
-    <div style="max-width:896px; margin:0 auto;">
-      <h2 style="font-size:30px; font-weight:800; text-align:center; margin-bottom:32px;">
-        Meeting <strong>OSHA 1910.22</strong> Floor Marking Requirements
-      </h2>
-      <div style="background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.20); border-radius:16px; padding:32px;">
-        <p style="font-size:18px; line-height:1.75; margin:0 0 24px 0;">
-          Our Atlanta warehouse line striping services are engineered to meet <strong>OSHA 1910.22(c)</strong> requirements for permanent aisles and passageways. We ensure your facility remains compliant, safe, and ready for inspection by providing:
-        </p>
-        <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; font-size:14px; line-height:1.4;">
-          <li style="display:flex; align-items:center; gap:12px;"><span style="color:#008000; font-size:20px; line-height:1;">●</span> Clear delineation of pedestrian vs. vehicle zones</li>
-          <li style="display:flex; align-items:center; gap:12px;"><span style="color:#008000; font-size:20px; line-height:1;">●</span> High-visibility hazard zone identification</li>
-          <li style="display:flex; align-items:center; gap:12px;"><span style="color:#008000; font-size:20px; line-height:1;">●</span> ANSI-standard color coding for safety</li>
-          <li style="display:flex; align-items:center; gap:12px;"><span style="color:#008000; font-size:20px; line-height:1;">●</span> Durable markings for egress and fire safety</li>
+<!-- SECTION 6: Service Area & Links -->
+<div style="position:relative; padding:6rem 0; background:linear-gradient(to bottom, #f3f4f6 0%, #e5e7eb 100%); border-top:1px solid rgba(209,213,219,0.30);">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0; color:#008000; font-size:2.25rem; font-weight:900;">Serving Atlanta's Industrial Corridors</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Core Warehouse Zones</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem;">• <strong>Fulton Industrial District</strong></li>
+          <li style="margin-top:0.75rem;">• <strong>I-85 NE Corridor</strong> (Gwinnett)</li>
+          <li style="margin-top:0.75rem;">• <strong>South Metro</strong> (Union City, Fairburn)</li>
+        </ul>
+      </div>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Related Services</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Painting</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Warehouse Line Striping</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-floor-coatings" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Floor Coatings</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Commercial Concrete Polishing</a></li>
+        </ul>
+      </div>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Specialized Solutions</h3>
+        <ul style="margin:0; padding:0; list-style:none; color:#374151;">
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Tank Painting</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/industrial-floor-coatings" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Floor Coatings</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 9: Safety & Compliance -->
-<div style="background:linear-gradient(to bottom, #f3f4f6, #e5e7eb); padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      Strict Adherence to <strong>OSHA Safety Standards</strong>
-    </h2>
-    <div style="max-width:896px; margin:0 auto; font-size:18px; line-height:1.75;">
-      <p style="margin:0 0 24px 0;">All <strong>Southeast Commercial Services line striping projects</strong> are completed with the utmost attention to <strong>job site safety, quality, and professionalism</strong>. We strictly adhere to <strong>OSHA requirements</strong> and apply all coatings in accordance with manufacturer specifications.</p>
-      <p style="margin:0 0 24px 0;">We ensure that all materials comply with current requirements of <strong>Environmental Protection Agencies</strong>, the appropriate <strong>Air Pollution Control District</strong>, and all other local, state, or federal agencies.</p>
-      <p style="margin:0;">Our crews are trained in <strong>confined space entry, fall protection, and hazardous material handling</strong> to ensure a safe work environment for your team and ours.</p>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 10: Flexible Scheduling -->
-<div style="background:#ffffff; padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      We Work Around Your <strong>Operational Schedule</strong>
-    </h2>
-    <div style="max-width:896px; margin:0 auto; font-size:18px; line-height:1.75;">
-      <p style="margin:0 0 24px 0;">We understand the needs of <strong>Atlanta warehouse and distribution center managers</strong>. We know how critical it is to keep your operations running with <strong>minimal disruption</strong> during the striping project.</p>
-      <p style="margin:0;">All work is completed in a <strong>timely manner</strong> to avoid delays and schedule overruns that can negatively impact your business. We offer <strong>flexible scheduling options</strong>, including nights, weekends, and planned shutdowns.</p>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION: What's Included in a Scope -->
-<section style="display:block; position:relative; padding: 40px 24px 80px; background:#ffffff; border-top:1px solid rgba(226,232,240,1);">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <div style="text-align:center; margin-bottom:44px;">
-      <h2 style="font-size:30px; font-weight:800; color:#111827; margin:0 0 16px 0;">What's Included in a Warehouse Line Striping Scope?</h2>
-      <div style="max-width:896px; margin:0 auto; padding:16px 18px; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:14px;">
-        <p style="margin:0; font-size:16px; color:#111827; font-weight:600; line-height:1.7;">
-          A professional striping quote should define the layout, colors, line widths, prep method, coating system, cure windows, and return-to-service plan—so safety markings stay durable and compliant.
-        </p>
+<!-- SECTION 6.5: Technical Q&A -->
+<div style="position:relative; padding:6rem 0; background:#ffffff;">
+  <div style="max-width:80rem; margin:0 auto; padding:0 2rem;">
+    <div style="text-align:center; margin-bottom:4rem;">
+      <h2 style="margin:0 0 1rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Technical Questions Facility Managers Ask</h2>
+      <div class="direct-answer" style="background:#f3f4f6; border-left:4px solid #334155; padding:1.25rem; margin:0 auto 2rem auto; max-width:56rem; text-align:left; border-radius:0 0.5rem 0.5rem 0;">
+        <p><strong>Direct Answer:</strong> <strong>What questions matter most for warehouse painting?</strong> Prep, cure windows, phasing, and coating system fit drive durability in active facilities. We plan around traffic, exposure, and manufacturer specs so operations can keep moving.</p>
       </div>
     </div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Layout Plan &amp; Zones</h3><p style="margin:0; font-size:15px; line-height:1.65;">Pedestrian walkways, forklift lanes, staging zones, equipment areas, egress paths, hazard zones, and loading dock markings defined in a repeatable plan.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Colors, Line Widths &amp; Standards</h3><p style="margin:0; font-size:15px; line-height:1.65;">Color plan, striping widths, symbols/arrows, and signage coordination—built for OSHA awareness and visual management (5S/Lean).</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Surface Preparation Method</h3><p style="margin:0; font-size:15px; line-height:1.65;">Grinding/shot blasting/cleaning selection based on slab condition, contamination, and adhesion needs—so markings don't peel under forklift traffic.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Coating System &amp; Durability</h3><p style="margin:0; font-size:15px; line-height:1.65;">Traffic paints, epoxy, urethane, or specialty systems based on wear, chemicals, and shift schedules—with clear cure windows and expected service life.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Phasing &amp; Return-to-Service</h3><p style="margin:0; font-size:15px; line-height:1.65;">Work sequencing, access rules, and scheduling (nights/weekends) so your facility stays operational while markings are installed and cured.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Closeout &amp; Quality Check</h3><p style="margin:0; font-size:15px; line-height:1.65;">Final walkthrough and punch list confirmation so markings match the plan and your facility is ready for inspection and daily use.</p></div>
-    </div>
-    <div style="margin:36px auto 0; padding:16px 18px; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:14px; max-width:896px; text-align:center;">
-      <p style="margin:0; font-size:15px; color:#1e3a8a; font-weight:800; line-height:1.6;">
-        Commercial &amp; Industrial Only • $2,000,000 insured • Call <a href="tel:4043482244" style="color:#1e3a8a; text-decoration:underline;">(404) 348-2244</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION: Why Striping Fails -->
-<section style="display:block; position:relative; padding: 28px 24px 74px; background:#ffffff; border-top:1px solid rgba(226,232,240,1);">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <div style="text-align:center; margin-bottom:36px;">
-      <h2 style="font-size:30px; font-weight:900; color:#111827; margin:0 0 14px 0;">Why Warehouse Line Striping Fails Prematurely (And How We Prevent It)</h2>
-      <div style="max-width:896px; margin:0 auto; padding:16px 18px; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:14px;">
-        <p style="margin:0; font-size:16px; color:#111827; font-weight:700; line-height:1.7;">
-          <strong>What causes warehouse striping to peel or wear out fast?</strong><br>
-          Most failures come from skipped prep, the wrong coating for forklift traffic, or rushing cure time in active Atlanta facilities.
-          <br><span style="display:block; margin-top:10px; color:#374151; font-weight:600;">We prevent this by matching prep + coating systems to your slab, traffic load, and return-to-service schedule.</span>
-        </p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 0.75rem 0; font-size:1.25rem; font-weight:800; color:#111827;">How long until forklift traffic can return?</h3>
+        <p style="margin:0; color:#4b5563;">Return-to-service timing depends on the <strong>coating system</strong> and the manufacturer's <strong>cure window</strong>. We plan phasing so critical areas can stay operational while coatings cure properly.</p>
       </div>
-    </div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Failure #1: No Mechanical Prep</h3><p style="margin:0; font-size:15px; line-height:1.65;">Paint over dust, oil, curing compounds, or smooth concrete won't hold. High-traffic zones often need grinding or shot blasting for adhesion.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Failure #2: Wrong Coating System</h3><p style="margin:0; font-size:15px; line-height:1.65;">Traffic paint has limits. Forklift lanes, dock approaches, and tight-turn areas may require epoxy/urethane/polyaspartic systems for durability.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Failure #3: Cure Time Rushed</h3><p style="margin:0; font-size:15px; line-height:1.65;">Returning forklifts too early causes scuffing, tracking, and hot-tire pickup. A good plan defines cure windows and phased re-entry.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Failure #4: Layout Isn't Defensible</h3><p style="margin:0; font-size:15px; line-height:1.65;">Random or inconsistent markings reduce safety clarity. We align walkways, hazard zones, and lanes to a consistent visual management plan.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Failure #5: No Phasing Plan</h3><p style="margin:0; font-size:15px; line-height:1.65;">Striping should support operations—not stop them. A phased plan keeps shipping, staging, and dock activity moving while work is completed.</p></div>
-      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:16px; border-top:4px solid #1e3a8a; padding:22px; box-shadow:0 18px 28px -22px rgba(0,0,0,0.25);"><h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#111827;">Our Standard: Documented Closeout</h3><p style="margin:0; font-size:15px; line-height:1.65;">We confirm markings match the plan, identify punch items, and provide warranty + insurance documentation appropriate for commercial facilities.</p></div>
-    </div>
-    <div style="margin-top:28px; padding:14px 16px; background:#eff6ff; border:1px solid #bfdbfe; border-left:5px solid #1e3a8a; border-radius:14px;">
-      <p style="margin:0; font-size:14px; color:#1e3a8a; font-weight:900; line-height:1.6; text-transform:uppercase; letter-spacing:0.04em;">
-        Commercial &amp; Industrial Only • $2,000,000 insured • Bondable • Call <a href="tel:4043482244" style="color:#1e3a8a; text-decoration:underline;">(404) 348-2244</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 11: FAQ -->
-<div style="background:linear-gradient(to bottom, #f9fafb, #f3f4f6); padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:48px; line-height:1.2;">
-      Warehouse Line Striping <strong>Frequently Asked Questions</strong>
-    </h2>
-    <div style="max-width:896px; margin:0 auto;">
-      <div style="background:#ffffff; padding:24px; border-radius:12px; box-shadow:0 1px 2px rgba(0,0,0,.06); border:1px solid #e5e7eb; margin-bottom:32px;">
-        <h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 12px;">How long does warehouse line striping take to dry?</h3>
-        <p style="color:#374151; margin:0;">Our industrial-grade traffic paints and epoxy coatings are designed for fast return-to-service. Most interior striping is tack-free in 30-60 minutes and ready for full forklift traffic within 4-24 hours depending on the coating system used.</p>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 0.75rem 0; font-size:1.25rem; font-weight:800; color:#111827;">What prep is used for contaminated or high-traffic floors?</h3>
+        <p style="margin:0; color:#4b5563;">Prep is selected based on <strong>concrete condition</strong> and required adhesion and may include <strong>degreasing</strong>, profiling, and <strong>shot blasting</strong> where needed for performance.</p>
       </div>
-      <div style="background:#ffffff; padding:24px; border-radius:12px; box-shadow:0 1px 2px rgba(0,0,0,.06); border:1px solid #e5e7eb; margin-bottom:32px;">
-        <h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 12px;">What is the best paint for industrial warehouse floors?</h3>
-        <p style="color:#374151; margin:0;">For maximum durability, we recommend high-solids epoxy or polyaspartic coatings. These materials bond deeply to the concrete and resist the "hot tire pickup" and abrasive wear common in high-volume Atlanta distribution centers.</p>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 0.75rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Can you paint while the warehouse stays open?</h3>
+        <p style="margin:0; color:#4b5563;">Yes. We plan <strong>phasing</strong> and work zones around your operating schedule to minimize downtime and keep traffic routes and critical areas functional.</p>
       </div>
-      <div style="background:#ffffff; padding:24px; border-radius:12px; box-shadow:0 1px 2px rgba(0,0,0,.06); border:1px solid #e5e7eb;">
-        <h3 style="font-size:20px; font-weight:700; color:#111827; margin:0 0 12px;">Do you offer weekend or night scheduling for line striping in Atlanta?</h3>
-        <p style="color:#374151; margin:0;">Yes. We specialize in "Zero-Downtime" scheduling. Our crews are available 24/7, including nights, weekends, and holidays, to ensure your facility remains operational during the project.</p>
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
+        <h3 style="margin:0 0 0.75rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Do you handle floor coating systems or polished concrete?</h3>
+        <p style="margin:0; color:#4b5563;">Yes. We provide <strong>industrial floor coatings</strong> and <strong>commercial concrete polishing</strong> as specialized floor solutions for warehouse facilities.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 12: Warranty -->
-<div style="background:linear-gradient(to bottom, #f3f4f6, #e5e7eb); padding:64px 24px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px; color:#374151;">
-    <h2 style="color:#008000; font-size:30px; font-weight:800; text-align:center; margin-bottom:40px; line-height:1.2;">
-      <strong>1-Year Labor Warranty</strong> + Long-Term Material Warranties
-    </h2>
-    <div style="max-width:896px; margin:0 auto; font-size:18px; line-height:1.75;">
-      <p style="margin:0 0 24px 0;">We offer a <strong>one-year warranty on labor</strong> and <strong>long-term manufacturer warranties</strong> on all paint products and coatings.</p>
-      <p style="margin:0;">By offering a one-year warranty on labor, we <strong>guarantee that our services are performed to the highest standard</strong> and that any issues that arise within the first year will be <strong>addressed promptly and professionally</strong>.</p>
+<!-- SECTION 7: Final CTA -->
+<div style="position:relative; padding:6rem 0; background:#ffffff;">
+  <div style="max-width:64rem; margin:0 auto; padding:0 2rem; text-align:center; margin-bottom:2.5rem;">
+    <div style="display:inline-flex; flex-wrap:wrap; justify-content:center; gap:0.75rem; padding:0.9rem 1.25rem; border-radius:9999px; background:rgba(51,65,85,0.06); border:1px solid rgba(51,65,85,0.14); color:#111827; font-weight:900; font-size:0.95rem;">
+      Est. 1991 • Licensed • Bonded • Insured • OSHA-Compliant Crews
     </div>
+  </div>
+  <div style="max-width:64rem; margin:0 auto; padding:0 2rem; text-align:center;">
+    <h2 style="margin:0 0 1.5rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Serving Greater Atlanta Warehouses</h2>
+    <p style="margin:0 0 2rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">From <strong>Fulton Industrial to the I-85 corridor</strong>, we help warehouse operators maintain <strong>durable, safe, and compliant facilities</strong>.</p>
+    <a href="tel:4043482244"
+       style="display:inline-block; background:#334155; color:#ffffff; font-weight:600; padding:1rem 2.5rem; border-radius:0.5rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); font-size:1.25rem; text-decoration:none;"
+       onmouseover="this.style.transform='translateY(-4px)'; this.style.backgroundColor='#1f2937';"
+       onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#334155';">
+      Call (404) 348-2244 for a Free Warehouse Assessment
+      <span style="margin-left:0.75rem; display:inline-flex; align-items:center; padding:0.3rem 0.6rem; border-radius:9999px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); color:#ffffff; font-size:0.75rem; font-weight:900; white-space:nowrap;">B2B ONLY</span>
+    </a>
+    <p style="margin:1rem 0 0 0; font-size:0.95rem; color:#374151;">For <strong>Commercial &amp; Industrial Facilities Only</strong> — <strong>No Residential Projects</strong>.</p>
   </div>
 </div>
 
-<!-- SECTION 13: Strategic Setup -->
-<div style="background:#ffffff; padding:64px 24px 32px;">
-  <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
-    <div style="max-width:896px; margin:0 auto; text-align:center;">
-      <h2 style="color:#008000; font-size:30px; font-weight:800; margin-bottom:24px; line-height:1.2;">
-        Atlanta's Partner in <strong>Industrial Safety &amp; Compliance</strong>
-      </h2>
-      <p style="font-size:20px; line-height:1.75; color:#374151; margin:0 0 24px 0;">
-        Your facility deserves more than just paint on the floor. It deserves a <strong>long-lasting, OSHA-compliant solution</strong> that enhances safety, efficiency, and operational flow. Since 1991, <strong>Southeast Commercial Services</strong> has been the leading contractor for 5S safety pathways and high-durability industrial coatings across Metro Atlanta.
-      </p>
-      <p style="font-weight:600; color:#111827; margin:0;">Safe. Compliant. Reliable.</p>
-    </div>
-  </div>
-</div>
+</div><!-- end .se-warehouse-page -->
 
-<!-- FINAL CTA -->
-<section id="quote-cta"
-  style="padding:4rem 1rem; border-top:1px solid #e5e7eb; background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);">
+<!-- FINAL CTA SECTION -->
+<section id="quote" style="padding:4rem 1rem; border-top:1px solid #e5e7eb; background:linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);">
   <div style="max-width:80rem; margin:0 auto;">
     <div style="text-align:center; margin-bottom:2.5rem;">
-      <h2 style="margin:0 0 1rem 0; font-size:1.5rem; line-height:2rem; font-weight:700; color:#008000; text-transform:capitalize;">
-        Get Your Free Quote From The Top <strong>Atlanta Commercial Line Striping Painting Contractors</strong>
+      <h2 style="margin:0 0 1rem 0; font-size:1.5rem; font-weight:700; color:#008000; text-transform:capitalize;">
+        Get Your Free Quote From The Top <strong>Atlanta Commercial Painting Contractors</strong>
       </h2>
       <p style="margin:0; color:#4b5563; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; font-size:0.875rem;">
         Professional B2B Services Only — No Residential Requests
       </p>
     </div>
-    <div style="max-width:72rem; margin:0 auto; display:grid; grid-template-columns: 1fr; gap:2.5rem; align-items:center;">
+    <div style="max-width:72rem; margin:0 auto; display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:center;">
       <div style="color:#374151; font-size:1.125rem; line-height:1.75;">
-        <p style="margin:0 0 1.5rem 0;">We provide a comprehensive <strong>commercial painting consultation</strong> and detailed price quote that covers every measurable requirement of your facility. From high-durability coatings to aesthetic branding, our <strong>professional estimators</strong> ensure your project is scoped for longevity and ROI.</p>
+        <p style="margin:0 0 1.5rem 0;">We provide a comprehensive <strong>commercial warehouse painting consultation</strong> and detailed price quote that covers every measurable requirement of your facility. From high-durability coatings to aesthetic branding, our <strong>professional estimators</strong> ensure your project is scoped for longevity and ROI.</p>
         <p style="margin:0 0 1.5rem 0;">With <strong>over 30 years of Atlanta project history</strong>, Southeast Commercial Services delivers a seamless experience for property managers and facility engineers. We specialize in high-traffic environments where <strong>minimal disruption</strong> and safety compliance are non-negotiable.</p>
         <p style="margin:0;">Whether you are looking for a trusted <strong>Atlanta commercial painting contractor</strong> for a single-story warehouse or a multi-phase high-rise exterior, you can rely on our team to exceed your EMR safety ratings and quality expectations.</p>
       </div>
-      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; border:1px solid #f3f4f6; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.10), 0 10px 10px -5px rgba(0,0,0,0.04); text-align:center;">
+      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; border:1px solid #f3f4f6; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); text-align:center;">
         <div style="margin-bottom:1.5rem;">
           <span style="display:inline-block; background:#008000; color:#ffffff; padding:0.25rem 1rem; border-radius:9999px; font-size:0.875rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Est. 1991</span>
         </div>
-        <h3 style="margin:0 0 1rem 0; font-size:1.5rem; line-height:2rem; font-weight:700; color:#111827;">Ready to Start Your Project?</h3>
+        <h3 style="margin:0 0 1rem 0; font-size:1.5rem; font-weight:700; color:#111827;">Ready to Start Your Project?</h3>
         <p style="margin:0 0 2rem 0; color:#4b5563;">Call us Now to Set Up a Free On-Site Walk Thru &amp; Quote</p>
         <a href="tel:+14043482244"
-          style="display:block; width:100%; background:#008000; color:#ffffff; font-size:1.5rem; line-height:2rem; font-weight:700; padding:1rem; border-radius:0.5rem; text-decoration:none; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);"
-          onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
-          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
+           style="display:block; width:100%; background:#008000; color:#ffffff; font-size:1.5rem; font-weight:700; padding:1rem; border-radius:0.5rem; text-decoration:none; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10);"
+           onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
+           onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
           (404) 348-2244
         </a>
         <p style="margin:1rem 0 0 0; font-size:0.875rem; color:#6b7280; font-style:italic;">Click to Call &amp; Schedule Your Assessment &amp; Quote</p>
@@ -1080,15 +879,13 @@
       </div>
     </div>
     <div style="margin-top:4rem; text-align:center;">
-      <p style="margin:0; font-size:0.875rem; color:#6b7280;">
-        Serving the entire Metro Atlanta area including <strong>Buckhead, Midtown, Fulton Industrial Blvd, and the I-85 NE Corridor.</strong>
-      </p>
+      <p style="margin:0; font-size:0.875rem; color:#6b7280;">Serving the entire Metro Atlanta area including <strong>Buckhead, Midtown, Fulton Industrial Blvd, and the I-85 NE Corridor.</strong></p>
     </div>
   </div>
   <style>
     @media (min-width: 768px) {
-      #quote-cta h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-      #quote-cta > div > div:nth-child(2) { grid-template-columns: 1fr 1fr !important; }
+      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+      #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
     }
   </style>
 </section>
@@ -1175,8 +972,8 @@
   <div class="footer-bottom">
     © 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
     Licensed • Bonded • Insured • Commercial &amp; Industrial Projects Only
-    <div style="margin-top: 18px; font-size: 11px;">
-      <a href="/privacy-policy.html" style="color:#94a3b8; text-decoration:none; margin-right: 20px;">Privacy Policy</a>
+    <div style="margin-top:18px; font-size:11px;">
+      <a href="/privacy-policy.html" style="color:#94a3b8; text-decoration:none; margin-right:20px;">Privacy Policy</a>
       <a href="/terms-of-service.html" style="color:#94a3b8; text-decoration:none;">Terms of Service</a>
     </div>
   </div>
