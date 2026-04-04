@@ -801,7 +801,42 @@
       </div>
   </div>
 </header>
- <!-- HERO -->
+ <style>
+  /* ── Dropdown fix ── */
+  .dropdown { position: relative; display: inline-block; }
+
+  .dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    min-width: 280px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    z-index: 999999;
+    border-radius: 8px;
+    padding: 12px 0;
+    border: 1px solid #ddd;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+  }
+
+  /* Keep open while hovering the button OR the menu itself */
+  .dropdown:hover .dropdown-content,
+  .dropdown-content:hover {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f0f4ff;
+  }
+</style>
+
+<!-- HERO -->
 <section style="
   width:100vw;
   position:relative;
@@ -817,19 +852,22 @@
   padding:60px 16px 40px 16px;
   box-sizing:border-box;
   z-index: 1;
+  overflow: visible;
 ">
   <div style="
     position:absolute;
     inset:0;
     background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%);
     z-index: 0;
+    pointer-events: none;
   "></div>
   <div style="
     position:relative;
-    z-index: 1;
+    z-index: 2;
     width:100%;
     max-width:1280px;
     margin:0 auto;
+    overflow: visible;
   ">
     <div style="
       display:grid;
@@ -918,8 +956,9 @@
       </div>
     </div>
 
-    <!-- NAV - Fixed dropdown version -->
-    <nav class="main-nav" style="z-index: 99999; position: relative; isolation: isolate; margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3);">
+    <!-- NAV -->
+    <nav class="main-nav" style="position: relative; z-index: 999998; isolation: isolate; margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3); overflow: visible;">
+
       <a href="/">Home</a>
       <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
       <a href="/interior-commercial-painting.html">Interior</a>
@@ -927,29 +966,30 @@
       <a href="/commercial-building-painting.html">Buildings</a>
       <a href="/commercial-office-painting.html">Office Painting</a>
       <a href="/high-rise-painters.html">High-Rise</a>
-     
-      <div class="dropdown" style="position: relative; display: inline-block;">
+
+      <div class="dropdown">
         <a href="#" class="dropbtn" style="padding: 18px 22px; display: inline-block;">Industrial & Warehouse ▼</a>
-        <div class="dropdown-content" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: #ffffff; min-width: 280px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); z-index: 100000 !important; border-radius: 8px; margin-top: 6px; padding: 12px 0; border: 1px solid #ddd;">
-          <a href="/industrial-painting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Industrial Painting</a>
-          <a href="/atlanta-warehouse-painting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Warehouse Painting</a>
-          <a href="/atlanta-warehouse-line-striping-painting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Line Striping</a>
-          <a href="/atlanta-tank-painting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Tank Painting</a>
-          <a href="/construction-painting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Construction Painting</a>
-          <a href="/commercial-sandblasting.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Commercial Sandblasting</a>
+        <div class="dropdown-content">
+          <a href="/industrial-painting.html">Industrial Painting</a>
+          <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
+          <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
+          <a href="/atlanta-tank-painting.html">Tank Painting</a>
+          <a href="/construction-painting.html">Construction Painting</a>
+          <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
         </div>
       </div>
 
-      <div class="dropdown" style="position: relative; display: inline-block;">
+      <div class="dropdown">
         <a href="#" class="dropbtn" style="padding: 18px 22px; display: inline-block;">Floor Coatings ▼</a>
-        <div class="dropdown-content" style="display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: #ffffff; min-width: 280px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); z-index: 100000 !important; border-radius: 8px; margin-top: 6px; padding: 12px 0; border: 1px solid #ddd;">
-          <a href="/atlanta-industrial-floor-coatings.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Industrial Floor Coatings</a>
-          <a href="/atlanta-commercial-floor-epoxy.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Commercial Floor Epoxy</a>
-          <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Kitchen Epoxy Floors</a>
-          <a href="/commercial-garage-epoxy-floor-coatings.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Garage Epoxy Floors</a>
-          <a href="/commercial-concrete-polishing.html" style="display:block; padding:12px 22px; color:#0f172a; text-decoration:none; white-space:nowrap;">Concrete Polishing</a>
+        <div class="dropdown-content">
+          <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
+          <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
+          <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
+          <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
+          <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
         </div>
       </div>
+
       <a href="/contact-us.html">Contact</a>
     </nav>
   </div>
