@@ -360,37 +360,49 @@
     white-space: nowrap;
 }
 
-/*  Menu on its own line */
-.main- {
+/* NAV MENU - Fixed and tightened */
+.main-nav {
+    background: #ffffff;
+    padding: 14px 0 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e5e7eb;
+}
+.main-nav > div {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;           /* tighter gap to prevent overflow */
     justify-content: center;
-    gap: 22px;
-    font-size: 15.5px;
+    align-items: center;
+    font-size: 15px;
     font-weight: 600;
-    padding: 12px 0 8px 0;
-    border-top: 1px solid #e6e6e6;
-    margin-top: 8px;
 }
-
-.main- a {
+.main-nav a,
+.dropbtn {
     color: #0f172a;
     text-decoration: none;
     white-space: nowrap;
+    padding: 8px 11px;
 }
-
-.main- a:hover {
+.main-nav a:hover,
+.dropbtn:hover {
     color: #008000;
 }
-
-.main- a:last-child {
+.main-nav a:last-child {
     color: #008000;
     font-weight: 700;
 }
 
+/* Dropdowns */
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
 /* Mobile adjustments */
 @media (max-width: 1024px) {
-    .main- {
+    .main-nav {
         gap: 16px;
         font-size: 15px;
     }
@@ -403,7 +415,7 @@
 }
 
 @media (max-width: 768px) {
-    .main- {
+    .main-nav {
         gap: 12px;
         font-size: 14.5px;
     }
