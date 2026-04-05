@@ -653,111 +653,46 @@ Got everything. Here is the full Contact Us page with the formsubmit.co form, al
 
         <div class="b2b-badge">B2B &amp; Commercial Clients Only &mdash; No Residential Requests</div>
 
-        <form
-          action="https://formsubmit.co/usasearchsystems@gmail.com"
-          method="POST"
-          id="contactForm"
-          novalidate
-        >
-          <!-- FormSubmit Config -->
-          <input type="hidden" name="_subject" value="New Contact Form Inquiry — Southeast Commercial Services" />
-          <input type="hidden" name="_next" value="https://www.southeastcommercialpainting.com/thank-you.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="text" name="_honey" style="display:none" />
+        <form class="lead-form" method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="bottomLeadForm">
+     
+      <!-- Combined Full Name -->
+      <input type="text" name="full_name" placeholder="Full Name" required>
 
-          <!-- Name Row -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first_name">First Name <span class="required">*</span></label>
-              <input type="text" id="first_name" name="first_name" placeholder="John" required />
-            </div>
-            <div class="form-group">
-              <label for="last_name">Last Name <span class="required">*</span></label>
-              <input type="text" id="last_name" name="last_name" placeholder="Smith" required />
-            </div>
-          </div>
+      <div class="lead-form-row">
+        <input type="text" name="company" placeholder="Company Name">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
+     
+      <input type="email" name="email" placeholder="Email Address" required>
+     
+      <textarea name="message" placeholder="Tell us about your commercial painting project (type, size, timeline, etc.)" rows="5"></textarea>
 
-          <!-- Company & Title Row -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="company">Company Name <span class="required">*</span></label>
-              <input type="text" id="company" name="company" placeholder="ABC Properties LLC" required />
-            </div>
-            <div class="form-group">
-              <label for="title">Your Title / Role</label>
-              <input type="text" id="title" name="title" placeholder="Facility Manager" />
-            </div>
-          </div>
+      <!-- Comprehensive Hidden Tracking Fields for Google & Bing Ads -->
+      <input type="hidden" name="gclid" id="gclid">
+      <input type="hidden" name="gbraid" id="gbraid">
+      <input type="hidden" name="wbraid" id="wbraid">
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="utm_term" id="utm_term">
+      <input type="hidden" name="utm_content" id="utm_content">
+      <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+      <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+      <input type="hidden" name="utm_adid" id="utm_adid">
+      <input type="hidden" name="fbclid" id="fbclid">
+      <input type="hidden" name="msclkid" id="msclkid">
 
-          <!-- Contact Row -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phone">Phone Number <span class="required">*</span></label>
-              <input type="tel" id="phone" name="phone" placeholder="(404) 000-0000" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address <span class="required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="john@company.com" required />
-            </div>
-          </div>
+      <!-- Formsubmit Settings -->
+      <input type="hidden" name="_subject" value="New Quote Request from Website!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
 
-          <!-- Service Type -->
-          <div class="form-group">
-            <label for="service_type">Service Needed <span class="required">*</span></label>
-            <select id="service_type" name="service_type" required>
-              <option value="" disabled selected>— Select a Service —</option>
-              <option value="Commercial Exterior Painting">Commercial Exterior Painting</option>
-              <option value="Commercial Interior Painting">Commercial Interior Painting</option>
-              <option value="Industrial & Warehouse Painting">Industrial &amp; Warehouse Painting</option>
-              <option value="Office Building Painting">Office Building Painting</option>
-              <option value="High-Rise Painting">High-Rise Painting</option>
-              <option value="Floor Coatings / Epoxy">Floor Coatings / Epoxy</option>
-              <option value="Other / Not Sure">Other / Not Sure</option>
-            </select>
-          </div>
-
-          <!-- Project Location -->
-          <div class="form-group">
-            <label for="project_location">Project Location / City <span class="required">*</span></label>
-            <input type="text" id="project_location" name="project_location" placeholder="Atlanta, GA" required />
-          </div>
-
-          <!-- Project Details -->
-          <div class="form-group">
-            <label for="project_details">Project Details <span class="required">*</span></label>
-            <textarea id="project_details" name="project_details" placeholder="Briefly describe your project — facility type, square footage, timeline, and any special requirements..." required></textarea>
-          </div>
-
-          <hr class="section-divider" />
-
-          <!-- Hidden Tracking Fields -->
-          <input type="hidden" id="field_gclid"          name="gclid"          value="" />
-          <input type="hidden" id="field_gbraid"         name="gbraid"         value="" />
-          <input type="hidden" id="field_wbraid"         name="wbraid"         value="" />
-          <input type="hidden" id="field_utm_source"     name="utm_source"     value="" />
-          <input type="hidden" id="field_utm_medium"     name="utm_medium"     value="" />
-          <input type="hidden" id="field_utm_campaign"   name="utm_campaign"   value="" />
-          <input type="hidden" id="field_utm_term"       name="utm_term"       value="" />
-          <input type="hidden" id="field_utm_content"    name="utm_content"    value="" />
-          <input type="hidden" id="field_utm_adgroup"    name="utm_adgroup"    value="" />
-          <input type="hidden" id="field_utm_campaignid" name="utm_campaignid" value="" />
-          <input type="hidden" id="field_utm_adid"       name="utm_adid"       value="" />
-          <input type="hidden" id="field_fbclid"         name="fbclid"         value="" />
-          <input type="hidden" id="field_msclkid"        name="msclkid"        value="" />
-
-          <button type="submit" class="submit-btn">
-            &#128221; Submit Project Inquiry
-          </button>
-
-          <p class="form-disclaimer">
-            By submitting this form you agree to our
-            <a href="https://www.southeastcommercialpainting.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-            and
-            <a href="https://www.southeastcommercialpainting.com/terms-of-service" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>.
-            B2B commercial clients only. No residential requests.
-          </p>
-
-        </form>
+      <button type="submit" class="form-button">Request My Quote</button>
+     
+      <div class="form-note">
+        Commercial and industrial projects only. No residential house painting.
+      </div>
+    </form>
       </section>
 
     </div>
