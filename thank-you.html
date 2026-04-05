@@ -1,1 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Southeast Commercial Services of Georgia LLC</title>
+  <meta name="description" content="Thank you for contacting Southeast Commercial Services of Georgia LLC. A project manager will be in touch within 1 business day." />
+  <link rel="canonical" href="https://www.southeastcommercialpainting.com/thank-you.html" />
+
+  <!-- Prevent indexing of thank you page -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Southeast Commercial Services of Georgia LLC",
+    "url": "https://www.southeastcommercialpainting.com",
+    "logo": "https://www.southeastcommercialpainting.com/logo.png",
+    "telephone": "(404) 348-2244",
+    "email": "support@southeastcommercialservices.com",
+    "foundingDate": "1991",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "1874 Piedmont Ave NE",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30324",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "2785 Lawrenceville Hwy, Suite 202",
+        "addressLocality": "Decatur",
+        "addressRegion": "GA",
+        "postalCode": "30033",
+        "addressCountry": "US"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #334155;
+      line-height: 1.75;
+      font-size: 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: #006400;
+      text-decoration: underline;
+    }
+    a:hover { color: #008000; }
+
+    /* ── Site Header ── */
+    .site-header {
+      background-color: #0f172a;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .site-header .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .site-header .brand-name {
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .site-header .brand-tagline {
+      color: #94a3b8;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .site-header .header-phone {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: #008000;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+    .site-header .header-phone:hover { background-color: #006400; }
+
+    /* ── Main Content ── */
+    .page-wrapper {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+      width: 100%;
+    }
+
+    /* ── Hero Card ── */
+    .hero-card {
+      background-color: #0f172a;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      border-radius: 12px;
+      padding: 56px 40px;
+      text-align: center;
+      border-top: 5px solid #008000;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.18);
+    }
+
+    .checkmark-circle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background-color: #008000;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      font-size: 2rem;
+      box-shadow: 0 0 0 8px rgba(0, 128, 0, 0.15);
+    }
+
+    .hero-card .badge {
+      display: inline-block;
+      background-color: rgba(0, 128, 0, 0.2);
+      color: #4ade80;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(0, 128, 0, 0.3);
+    }
+
+    .hero-card h1 {
+      color: #ffffff;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero-card h1 span {
+      color: #4ade80;
+    }
+
+    .hero-card .hero-sub {
+      color: #94a3b8;
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .hero-card .call-btn {
+      display: inline-block;
+      background-color: #008000;
+      color: #ffffff !important;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 5px;
+      min-height: 56px;
+      line-height: 1.2;
+      transition: background-color 0.2s ease, transform 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-card .call-btn:hover {
+      background-color: #006400;
+      transform: translateY(-2px);
+    }
+
+    .hero-card .call-note {
+      color: #64748b;
+      font-size: 0.78rem;
+      margin-top: 14px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── What Happens Next ── */
+    .next-steps-card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(15, 23, 42, 0.08);
+      padding: 40px 36px;
+      border-top: 5px solid #008000;
+      margin-bottom: 32px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .next-steps-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.13);
+    }
+
+    .next-steps-card h2 {
+      color: #0f172a;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .next-steps-card h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background-color: #008000;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* ── Steps List ── */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background-color: #008000;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .step-content .step-title {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    .step-content .step-detail {
+      font-size: 0.88rem;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* ── Bottom Grid ── */
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .bottom-grid { grid-template-columns: 1fr; }
+    }
+
+    .info-card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+      padding: 24px 22px;
+      border-top: 4px solid #008000;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .info-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.13);
+    }
+
+    .info-card .card-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .info-card .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 5px;
+    }
+
+    .info-card .card-detail {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.65;
+    }
+
+    .info-card .card-detail a {
+      color: #008000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .info-card .card-detail a:hover { text-decoration: underline; }
+
+    /* ── Return Home Link ── */
+    .return-home {
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .return-home a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #475569;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .return-home a:hover { color: #008000; }
+
+    /* ── Footer ── */
+    .site-footer {
+      background-color: #0f172a;
+      padding: 36px 24px;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .site-footer p {
+      color: #64748b;
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+
+    .site-footer a {
+      color: #008000;
+      text-decoration: none;
+    }
+    .site-footer a:hover { text-decoration: underline; }
+
+    .site-footer .footer-brand {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero-card { padding: 40px 22px; }
+      .next-steps-card { padding: 28px 20px; }
+      .site-header { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       SITE HEADER
+  ══════════════════════════════════ -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-name">Southeast Commercial Services</span>
+      <span class="brand-tagline">of Georgia LLC &mdash; Est. 1991</span>
+    </div>
+    <a href="tel:4043482244" class="header-phone">(404) 348-2244</a>
+  </header>
+
+  <!-- ══════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════ -->
+  <main class="page-wrapper">
+
+    <!-- ── Hero Confirmation Card ── -->
+    <div class="hero-card">
+      <div class="checkmark-circle">✓</div>
+      <span class="badge">Inquiry Received</span>
+      <h1>Thank You for<br><span>Reaching Out!</span></h1>
+      <p class="hero-sub">
+        Your project inquiry has been successfully submitted to Southeast Commercial Services of Georgia LLC. A project manager will review your request and follow up within <strong style="color:#ffffff;">1 business day.</strong>
+      </p>
+      <a href="tel:4043482244" class="call-btn">
+        &#128222; Call (404) 348-2244
+      </a>
+      <p class="call-note">Need a faster response? Call us directly &mdash; Mon–Fri &nbsp;|&nbsp; 7:00 AM – 5:00 PM ET</p>
+    </div>
+
+    <!-- ── What Happens Next ── -->
+    <div class="next-steps-card">
+      <h2>What Happens Next</h2>
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p class="step-title">Inquiry Review</p>
+            <p class="step-detail">Our team reviews your project details, service type, and location to assign the right project manager for your account.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p class="step-title">Project Manager Follow-Up</p>
+            <p class="step-detail">A dedicated project manager will contact you within 1 business day to discuss your project scope, timeline, and scheduling a site assessment.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p class="step-title">On-Site Assessment &amp; Quote</p>
+            <p class="step-detail">We schedule a no-obligation site visit to measure the project, review surface conditions, and prepare an accurate commercial painting estimate.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p class="step-title">Project Kickoff</p>
+            <p class="step-detail">Once you approve the quote, we coordinate scheduling, crew deployment, and project management from start to final walkthrough.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Contact Info Grid ── -->
+    <div class="bottom-grid">
+
+      <div class="info-card">
+        <p class="card-label">Direct Phone</p>
+        <p class="card-title">Speak with a Project Manager</p>
+        <p class="card-detail">
+          <a href="tel:4043482244">(404) 348-2244</a><br>
+          Mon–Fri &nbsp;|&nbsp; 7:00 AM – 5:00 PM ET
+        </p>
+      </div>
+
+      <div class="info-card">
+        <p class="card-label">Email Support</p>
+        <p class="card-title">General &amp; Project Inquiries</p>
+        <p class="card-detail">
+          <a href="mailto:support@southeastcommercialservices.com">support@southeastcommercialservices.com</a>
+        </p>
+      </div>
+
+      <div class="info-card">
+        <p class="card-label">Atlanta Office</p>
+        <p class="card-title">Southeast Commercial Services of Georgia LLC</p>
+        <p class="card-detail">
+          1874 Piedmont Ave NE<br>Atlanta, GA 30324
+        </p>
+      </div>
+
+      <div class="info-card">
+        <p class="card-label">Decatur Office</p>
+        <p class="card-title">Southeast Commercial Services of Georgia LLC</p>
+        <p class="card-detail">
+          2785 Lawrenceville Hwy, Suite 202<br>Decatur, GA 30033
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ── Return Home ── -->
+    <div class="return-home">
+      <a href="https://www.southeastcommercialpainting.com">
+        &#8592; Return to Homepage
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ══════════════════════════════════
+       SITE FOOTER
+  ══════════════════════════════════ -->
+  <footer class="site-footer">
+    <span class="footer-brand">Southeast Commercial Services of Georgia LLC</span>
+    <p>
+      &copy; 2025 All Rights Reserved &nbsp;&bull;&nbsp;
+      <a href="https://www.southeastcommercialpainting.com/privacy-policy">Privacy Policy</a> &nbsp;&bull;&nbsp;
+      <a href="https://www.southeastcommercialpainting.com/terms-of-service">Terms &amp; Conditions</a>
+    </p>
+    <p style="margin-top: 8px;">
+      Atlanta, GA &nbsp;&bull;&nbsp; Decatur, GA &nbsp;&bull;&nbsp;
+      <a href="tel:4043482244">(404) 348-2244</a> &nbsp;&bull;&nbsp;
+      <a href="mailto:support@southeastcommercialservices.com">support@southeastcommercialservices.com</a>
+    </p>
+    <p style="margin-top: 10px; font-size: 0.75rem; color: #475569;">
+      B2B Commercial &amp; Industrial Painting Contractors &mdash; Serving Metro Atlanta &amp; Greater Georgia Since 1991.
+    </p>
+  </footer>
+
+</body>
+</html>
 
