@@ -318,7 +318,55 @@
   ]
 }
 </script>
+<!-- Head Tracking - Fast & Clean Version -->
 
+<!-- Preload important CSS (optional but good for speed) -->
+<link rel="preload" href="https://stcdn.leadconnectorhq.com/_preview/entry.IgpDOq8p.css" as="style">
+<link rel="preload" href="https://stcdn.leadconnectorhq.com/intl-tel-input/1.10.60/css/intlTelInput.min.css" as="style">
+
+<!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
+<script>
+(function () {
+  // Capture GCLID immediately and save to cookie + localStorage
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var gclid = params.get('gclid');
+    if (gclid) {
+      localStorage.setItem('gclid', gclid);
+      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
+      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
+    }
+  } catch(e) {}
+
+  // Load GHL session early (needed for number pool and attribution)
+  var ghlSession = document.createElement("script");
+  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
+  ghlSession.defer = true;
+  document.head.appendChild(ghlSession);
+})();
+</script>
+
+<!-- Google Analytics + Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KEH5L41ZYX');
+  gtag('config', 'AW-784863985');
+</script>
+
+<!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
+<script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
+
+<!-- Other tracking scripts (RevealID, Ksrndkehqnwntyxlhgto, etc.) -->
+<script async src="https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0"></script>
+<script async src="https://s.ksrndkehqnwntyxlhgto.com/99626.js"></script>
+<script async src="https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo"></script>
+<script async src="https://cdn.growify.ai/pixel.min.js" 
+        data-website-id="252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5"
+        data-endpoint="api_v2"
+        data-platform="web"></script>
 </head>
 <body>
 
