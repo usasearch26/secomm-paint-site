@@ -559,6 +559,107 @@
     background-color: #f8fafc;
     color: #008000;
 }
+/* =============== MOBILE FIXES FOR HEADER & NAV =============== */
+
+@media (max-width: 768px) {
+    
+    /* Top Bar - tighter and centered */
+    .top-bar-inner {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 10px;
+        padding: 0 12px;
+    }
+    
+    .trust-items {
+        gap: 20px;
+        font-size: 12px;
+    }
+    
+    .trust-item strong {
+        font-size: 12px;
+    }
+    
+    .social-icons {
+        gap: 8px;
+    }
+    .social-icons a {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    /* Main Header - stack logo and phone vertically */
+    .main-header-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 16px 12px;
+    }
+    
+    .logo img {
+        max-height: 72px;
+    }
+    
+    .phone {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .phone .fast {
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    
+    .phone a {
+        font-size: 26px;
+    }
+
+    /* NAV MENU - Much tighter on mobile */
+    .main-nav {
+        padding: 10px 0 8px;
+    }
+    
+    .main-nav > div {
+        gap: 6px;           /* very tight gap */
+        padding: 0 10px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .main-nav a,
+    .dropbtn {
+        padding: 6px 9px;
+        font-size: 14px;
+    }
+
+    /* Dropdowns on mobile */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        border: none;
+        margin-top: 4px;
+        min-width: 100%;
+        background: #f8fafc;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block !important;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .main-nav > div {
+        gap: 4px;
+        font-size: 13.5px;
+    }
+    
+    .main-nav a,
+    .dropbtn {
+        padding: 5px 8px;
+    }
+}    
 </style>
 <!-- =========================
      PROFESSIONAL SERVICE SCHEMA
