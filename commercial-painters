@@ -2286,6 +2286,465 @@
   </div>
 </section>
 
+<!-- ========================================
+     WHAT'S IN A COMMERCIAL PAINTING SCOPE
+     Follows: Process section
+     Precedes: Built for Your Site section
+     Story position: "What does the actual 
+     paperwork look like when we quote you?"
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:1100px; margin:0 auto;">
+
+    <!-- Section Header -->
+    <div style="
+      display:flex;
+      flex-wrap:wrap;
+      gap:56px;
+      align-items:center;
+      margin-bottom:56px;
+    ">
+
+      <!-- Left: Headline + Intro -->
+      <div style="flex:1.2; min-width:300px;">
+
+        <span style="
+          font-size:12px;
+          font-weight:800;
+          letter-spacing:0.12em;
+          text-transform:uppercase;
+          color:#008000;
+          display:block;
+          margin-bottom:12px;
+        ">Before Work Begins</span>
+
+        <h2 style="
+          font-size:clamp(26px, 3.2vw, 38px);
+          font-weight:900;
+          color:#111827;
+          line-height:1.1;
+          letter-spacing:-0.02em;
+          margin:0 0 20px 0;
+        ">
+          What's in a Commercial<br>
+          Painting Scope of Work
+        </h2>
+
+        <p style="
+          font-size:17px;
+          color:#374151;
+          line-height:1.75;
+          margin:0 0 16px 0;
+        ">
+          A commercial painting proposal is not 
+          a price — it is a document. When you 
+          receive a scope from us, every line 
+          item is measurable, every material 
+          is specified by name, and every 
+          exclusion is stated in writing 
+          before anyone picks up a brush.
+        </p>
+
+        <p style="
+          font-size:17px;
+          color:#374151;
+          line-height:1.75;
+          margin:0;
+        ">
+          This protects you as the facility manager. 
+          It means there are no conversations 
+          after the fact about what was or 
+          was not included.
+        </p>
+
+      </div>
+
+      <!-- Right: Highlight stat -->
+      <div style="flex:1; min-width:260px; display:flex; justify-content:center;">
+        <div style="
+          background:#111827;
+          border-radius:16px;
+          padding:36px 32px;
+          text-align:center;
+          box-shadow:0 18px 48px rgba(2,6,23,.18);
+          max-width:320px;
+          width:100%;
+        ">
+          <p style="
+            margin:0 0 8px 0;
+            font-size:15px;
+            font-weight:800;
+            text-transform:uppercase;
+            letter-spacing:0.10em;
+            color:#94a3b8;
+          ">Every Proposal Includes</p>
+          <p style="
+            margin:0 0 20px 0;
+            font-size:42px;
+            font-weight:900;
+            color:#ffffff;
+            line-height:1;
+            letter-spacing:-0.03em;
+          ">6 Sections</p>
+          <p style="
+            margin:0;
+            font-size:14px;
+            color:#94a3b8;
+            line-height:1.6;
+          ">
+            Quantities · Prep · Coatings · 
+            Protection · Schedule · Warranty
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 6 Scope Components -->
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:20px;
+      margin-bottom:36px;
+    ">
+
+      <!-- 1: Measured Quantities -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">1</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Measured Surface Quantities</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Square footage, linear footage, door 
+          counts, overhead doors, fascia, 
+          gutters, handrails, bollards, and 
+          specialty items — all clearly 
+          itemized so you know exactly 
+          what is being coated.
+        </p>
+      </div>
+
+      <!-- 2: Surface Prep -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">2</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Substrate-Specific Preparation</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Power washing, scraping, sanding, 
+          mechanical grinding where required, 
+          caulking, priming, efflorescence 
+          removal, and surface repair — 
+          matched to what your specific 
+          substrate actually needs.
+        </p>
+      </div>
+
+      <!-- 3: Coating System -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">3</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Manufacturer-Specified Systems</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Coating product specified by name — 
+          Sherwin-Williams or PPG — with number 
+          of coats, wet and dry film thickness 
+          requirements, and application method 
+          per the manufacturer technical 
+          data sheet.
+        </p>
+      </div>
+
+      <!-- 4: Protection -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">4</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Protection &amp; Containment</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Protection of flooring, fixtures, 
+          landscaping, vehicles, and adjacent 
+          surfaces. Hardware removal, lift 
+          access planning, noise coordination, 
+          and phased scheduling for 
+          occupied buildings.
+        </p>
+      </div>
+
+      <!-- 5: Schedule -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">5</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Scheduling &amp; Project Coordination</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Pre-job meeting, work notifications 
+          to occupants, coordination with 
+          property management, and a documented 
+          project sequence — so everyone 
+          knows what is happening and when 
+          before day one.
+        </p>
+      </div>
+
+      <!-- 6: Closeout & Warranty -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-top:4px solid #1e3a8a;
+        border-radius:14px;
+        padding:22px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <div style="
+          display:flex;
+          align-items:center;
+          gap:12px;
+          margin-bottom:12px;
+        ">
+          <div style="
+            width:32px;
+            height:32px;
+            border-radius:999px;
+            background:#1e3a8a;
+            color:#ffffff;
+            font-size:15px;
+            font-weight:900;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+          ">6</div>
+          <h3 style="
+            margin:0;
+            font-size:17px;
+            font-weight:900;
+            color:#111827;
+          ">Closeout &amp; Warranty Terms</h3>
+        </div>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Final walkthrough, punch list 
+          completion, workmanship review, 
+          and warranty documentation aligned 
+          to the coating system selected — 
+          all confirmed before the 
+          project is closed.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom callout -->
+    <div style="
+      padding:22px 28px;
+      background:#eff6ff;
+      border:1px solid #bfdbfe;
+      border-left:6px solid #1e3a8a;
+      border-radius:14px;
+      box-shadow:0 6px 18px rgba(2,6,23,.06);
+    ">
+      <p style="
+        margin:0;
+        font-size:16px;
+        font-weight:700;
+        color:#1e3a8a;
+        line-height:1.7;
+      ">
+        Our proposals include detailed scope 
+        breakdowns, material specifications, 
+        execution standards, and insurance 
+        documentation. If you have a vendor 
+        qualification form, we can complete it. 
+        If you need a certificate of insurance 
+        naming your organization, we provide it.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ========================================
      BUILT FOR YOUR SITE + SERVICE AREA
@@ -3393,120 +3852,179 @@
   </div>
 </section>
 
-
-
 <!-- ========================================
-     SECTION 8: Our Atlanta Service Area & Specialized Solutions
-     GHL-safe / Inline styling
-     - Keeps your local entity anchoring + corridor language
-     - 3 cards with link lists (no dependency on list classes)
-     ======================================== -->
+     WE BACK OUR WORK — WARRANTY & TRUST
+     Follows: FAQ section
+     Story position: "What if something 
+     goes wrong?" — answered before the 
+     final CTA removes the last hesitation
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#f3f4f6;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:900px; margin:0 auto;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:linear-gradient(to bottom,#f3f4f6,#f8fafc); border-top:1px solid rgba(209,213,219,.30); border-bottom:1px solid rgba(209,213,219,.30); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
+    <!-- Section Header -->
+    <div style="text-align:center; margin-bottom:48px;">
 
-    <div style="text-align:center; margin-bottom:56px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-      </div>
+      <span style="
+        font-size:12px;
+        font-weight:800;
+        letter-spacing:0.12em;
+        text-transform:uppercase;
+        color:#008000;
+        display:block;
+        margin-bottom:12px;
+      ">Warranty &amp; Workmanship</span>
 
-      <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0 0 14px 0;">
-        Our Atlanta Service Area &amp; Specialized Solutions
-      </h2>
+      <h2 style="
+        font-size:clamp(26px, 3.2vw, 38px);
+        font-weight:900;
+        color:#111827;
+        line-height:1.1;
+        letter-spacing:-0.02em;
+        margin:0 0 16px 0;
+      ">We Back Our Work</h2>
 
-      <div style="max-width:950px; margin:0 auto; text-align:left; background:rgba(255,255,255,.92); border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08);">
-        <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-          <strong>We provide commercial and industrial painting services across Greater Atlanta</strong>, including Buckhead, Midtown, Downtown Atlanta, Marietta, Alpharetta, Sandy Springs, Roswell, Dunwoody, Norcross, Duluth, Lawrenceville, and the Fulton Industrial corridor. Our crews service office parks, distribution centers, healthcare campuses, retail centers, and high-rise buildings throughout Metro Atlanta.
+      <p style="
+        font-size:17px;
+        color:#475569;
+        line-height:1.65;
+        margin:0 auto;
+        max-width:52ch;
+      ">
+        When the job is done, we are not gone. 
+        We stand behind the work we put our 
+        name on.
+      </p>
+
+    </div>
+
+    <!-- Two Warranty Cards -->
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      gap:20px;
+      margin-bottom:36px;
+    ">
+
+      <!-- Card 1: Labor Warranty -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-top:5px solid #008000;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 8px 24px rgba(2,6,23,.08);
+        text-align:center;
+      ">
+        <div style="
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          width:56px;
+          height:56px;
+          border-radius:999px;
+          background:#ecfdf5;
+          margin-bottom:16px;
+        ">
+          <span style="font-size:26px;">🛡️</span>
+        </div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:22px;
+          font-weight:900;
+          color:#111827;
+        ">1-Year Labor Warranty</h3>
+        <p style="
+          margin:0;
+          font-size:15px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Every project we complete is backed by 
+          a one-year workmanship warranty. 
+          If there is an application issue 
+          on our end, we come back and 
+          make it right. No argument.
         </p>
-        <p style="margin:14px 0 0 0; font-size:16px; color:#374151; line-height:1.7;">
-          We regularly operate within major logistics and commercial corridors near I-75, I-85, I-285, and key industrial districts throughout Fulton, Cobb, Gwinnett, and DeKalb counties.
+      </div>
+
+      <!-- Card 2: Product Guarantee -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-top:5px solid #008000;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 8px 24px rgba(2,6,23,.08);
+        text-align:center;
+      ">
+        <div style="
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          width:56px;
+          height:56px;
+          border-radius:999px;
+          background:#ecfdf5;
+          margin-bottom:16px;
+        ">
+          <span style="font-size:26px;">✅</span>
+        </div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:22px;
+          font-weight:900;
+          color:#111827;
+        ">Up to 10-Year Product Guarantee</h3>
+        <p style="
+          margin:0;
+          font-size:15px;
+          color:#475569;
+          line-height:1.7;
+        ">
+          Premium Sherwin-Williams and PPG 
+          coating systems carry manufacturer 
+          warranties of up to 10 years when 
+          applied to specification. We will 
+          walk you through the options 
+          at the time of estimate.
         </p>
       </div>
-    </div>
-
-    <!-- 3 Column Cards -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px;">
-
-      <!-- Card 1 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:900; color:#333333;">Core Service Areas</h3>
-        <ul style="margin:0; padding-left:18px; color:#475569; line-height:1.8;">
-          <li><a href="https://southeastcommercialpainting.com/atlanta-commercial-painting-contractors" style="color:#008000; font-weight:800; text-decoration:underline;">Atlanta Commercial Painting</a></li>
-          <li>Marietta Commercial Painting</li>
-          <li>Alpharetta Commercial Painting</li>
-          <li>Sandy Springs Commercial Painting</li>
-        </ul>
-      </div>
-
-      <!-- Card 2 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:900; color:#333333;">Specialized Solutions</h3>
-        <ul style="margin:0; padding-left:18px; color:#475569; line-height:1.8;">
-          <li><a href="https://southeastcommercialpainting.com/industrial-painting-contractors" style="color:#008000; font-weight:800; text-decoration:underline;">Industrial Painting Contractors</a></li>
-          <li><a href="https://southeastcommercialpainting.com/high-rise-painters" style="color:#008000; font-weight:800; text-decoration:underline;">High-Rise Painting Services</a></li>
-          <li><a href="https://southeastcommercialpainting.com/commercial-industrial-painting" style="color:#008000; font-weight:800; text-decoration:underline;">Commercial &amp; Industrial Painting</a></li>
-          <li><a href="https://southeastcommercialpainting.com/commercial-building-painting" style="color:#008000; font-weight:800; text-decoration:underline;">Commercial Building Painting</a></li>
-        </ul>
-      </div>
-
-      <!-- Card 3 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:900; color:#333333;">Facility Types</h3>
-        <ul style="margin:0; padding-left:18px; color:#475569; line-height:1.8;">
-          <li><a href="https://southeastcommercialpainting.com/commercial-office-painting" style="color:#008000; font-weight:800; text-decoration:underline;">Office Building Painting</a></li>
-          <li><a href="https://southeastcommercialpainting.com/atlanta-warehouse-painting" style="color:#008000; font-weight:800; text-decoration:underline;">Warehouse &amp; Logistics Painting</a></li>
-          <li><a href="https://southeastcommercialpainting.com/construction-painting" style="color:#008000; font-weight:800; text-decoration:underline;">New Construction Painting</a></li>
-          <li><a href="https://southeastcommercialpainting.com/industrial-floor-coatings" style="color:#008000; font-weight:800; text-decoration:underline;">Industrial Floor Coatings</a></li>
-        </ul>
-      </div>
 
     </div>
 
-  </div>
-</section>
-
-
-<!-- ========================================
-     SECTION 9: We Back Our Work
-     GHL-safe / Inline styling
-     - Two warranty cards + answer capsule
-     - Headline #333333
-     ======================================== -->
-
-<section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1024px; margin:0 auto; text-align:center; position:relative; z-index:10;">
-
-    <div style="display:flex; justify-content:center; margin-bottom:14px;">
-      <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-    </div>
-
-    <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0 0 14px 0;">
-      We Back Our Work
-    </h2>
-
-    <div style="max-width:900px; margin:0 auto 22px auto; text-align:left; background:#f3f4f6; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08);">
-      <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-        <strong>Direct Answer:</strong> We back our work with a <strong>1-year labor warranty</strong> and up to a <strong>10-year guarantee</strong> on premium paint products (when selected).
+    <!-- Closing trust statement -->
+    <div style="
+      padding:24px 28px;
+      background:#ffffff;
+      border:1px solid #e2e8f0;
+      border-left:6px solid #334155;
+      border-radius:14px;
+      box-shadow:0 6px 18px rgba(2,6,23,.06);
+      text-align:center;
+    ">
+      <p style="
+        margin:0;
+        font-size:17px;
+        color:#374151;
+        line-height:1.75;
+        max-width:640px;
+        margin:0 auto;
+      ">
+        Your estimate includes coating options matched 
+        to your performance requirements and budget. 
+        We will tell you plainly what each system 
+        covers — and what it does not — 
+        so you can make the right call for 
+        your facility.
       </p>
     </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; margin-top:18px; text-align:left;">
-
-      <div style="background:#f9fafb; border:1px solid rgba(226,232,240,1); border-left:6px solid #008000; border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:22px; font-weight:900; color:#333333;">1-Year Labor Warranty</h3>
-        <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">We stand behind our <strong>workmanship</strong> and application standards.</p>
-      </div>
-
-      <div style="background:#f9fafb; border:1px solid rgba(226,232,240,1); border-left:6px solid #008000; border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:22px; font-weight:900; color:#333333;">10-Year Product Guarantee</h3>
-        <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;"><strong>Premium paint products</strong> backed by manufacturer warranties (when selected).</p>
-      </div>
-
-    </div>
-
-    <p style="font-size:18px; color:#475569; line-height:1.65; margin:22px auto 0 auto; max-width:70ch; text-align:center;">
-      Your estimate includes <strong>paint options</strong> aligned to performance and budget—so you're not overbuying or under-spec'ing.
-    </p>
 
   </div>
 </section>
@@ -3527,185 +4045,9 @@
 </section>
 
 
-<!-- ========================================
-     SECTION: What’s Included in a Commercial Painting Scope?
-     Converted to match new system
-     - Headline #333333
-     - Blue accent retained (technical section)
-     - Cards use same shadows/radius language
-     ======================================== -->
-
-<section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; border-top:1px solid rgba(226,232,240,1);">
-  <div style="max-width:1200px; margin:0 auto; position:relative; z-index:10;">
-
-    <div style="text-align:center; margin-bottom:48px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#1e3a8a; border-radius:999px;"></div>
-      </div>
-
-      <h2 style="font-size:40px; font-weight:900; color:#333333; line-height:1.12; letter-spacing:-0.02em; margin:0 0 14px 0;">
-        What’s Included in a Commercial Painting Scope?
-      </h2>
-
-      <div style="max-width:860px; margin:0 auto; padding:16px 18px; background:#eff6ff; border:1px solid #bfdbfe; border-left:6px solid #1e3a8a; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08); text-align:left;">
-        <p style="margin:0; font-size:16px; color:#111827; line-height:1.7; font-weight:600;">
-          A proper commercial painting quote should include measurable quantities, substrate-specific preparation, coating systems, protection details, scheduling coordination, and documented closeout standards.
-        </p>
-      </div>
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px;">
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Measured Surface Quantities</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Square footage (SF), linear footage (LF), door counts, overhead doors, fascia, gutters, downspouts, handrails, bollards, and specialty items clearly itemized.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Substrate-Specific Preparation</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Power washing, scraping, sanding, mechanical grinding where necessary, caulking, priming, efflorescence removal, and surface repair coordination.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Manufacturer-Specified Systems</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Sherwin-Williams or PPG systems applied per technical data sheets, including wet film and dry film thickness requirements.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Protection &amp; Tenant Coordination</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Protection of adjacent areas, landscaping, vehicles, hardware removal, noise coordination, lift access planning, and phased scheduling.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Scheduling &amp; Pre-Commencement Planning</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Pre-job meetings, work notifications, coordination with property management, and documented project sequencing.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border-radius:18px; border:1px solid rgba(226,232,240,1); border-top:4px solid #1e3a8a; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Inspection &amp; Warranty Alignment</h3>
-        <p style="margin:0; font-size:15px; color:#475569; line-height:1.65;">
-          Final walkthrough, punch list completion, workmanship review, and warranty documentation aligned with product selection.
-        </p>
-      </div>
-
-    </div>
-
-    <div style="margin-top:40px; padding:18px 20px; background:#eff6ff; border:1px solid #bfdbfe; border-left:6px solid #1e3a8a; border-radius:14px;">
-      <p style="margin:0; font-size:15px; color:#1e3a8a; font-weight:800; line-height:1.6;">
-        Our commercial proposals include detailed scope breakdowns, material specifications, execution standards, and insurance documentation.
-      </p>
-    </div>
-
-  </div>
-</section>
 
 
-<!-- ========================================
-     SECTION 10: Frequently Asked Questions
-     Converted to match new system
-     - Headline #333333
-     - Cards styled inline (no dependencies)
-     ======================================== -->
 
-<section style="display:block; position:relative; padding:80px 20px; background:linear-gradient(to bottom,#f3f4f6,#f8fafc); border-top:1px solid rgba(209,213,219,.30); border-bottom:1px solid rgba(209,213,219,.30); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1024px; margin:0 auto; position:relative; z-index:10;">
-
-    <div style="text-align:center; margin-bottom:48px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-      </div>
-
-      <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0;">
-        Frequently Asked Questions About Atlanta Commercial Painting Contractors
-      </h2>
-    </div>
-
-    <!-- FAQ Cards -->
-    <div style="display:grid; gap:18px;">
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">What's included in a <strong>commercial painting quote</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          A commercial quote should specify <strong>prep steps</strong>, coating system, number of coats, <strong>protection/containment</strong>, schedule, exclusions, and closeout expectations. We walk the site, confirm requirements, and provide a detailed estimate.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">How do you minimize disruption in <strong>occupied buildings</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          By sequencing areas, protecting floors and fixtures, controlling dust and overspray, coordinating access, and <strong>scheduling work</strong> around operating hours when needed.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Why does <strong>surface prep</strong> matter so much on commercial projects?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          Prep determines <strong>adhesion and lifespan</strong>. Cleaning, repairs, priming, and contaminant removal are often the difference between "looks good for six months" and "lasts for years."
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Can you handle <strong>multi-story or high-rise commercial painting</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          Yes. High-access work requires planning, staging, and strict safety practices to protect people, property, and timelines. We have the equipment and experience.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Do you offer <strong>interior and exterior commercial painting</strong> in Atlanta?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          Yes. Southeast Commercial Services performs both <strong>interior and exterior commercial painting</strong> across the <strong>Greater Atlanta area</strong>.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Do you do <strong>residential house painting</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          No. We're <strong>commercial painting contractors</strong> focused on commercial and industrial facilities. We don't paint homes.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">What areas do you serve?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          We serve the <strong>Greater Atlanta metro area</strong>, including Atlanta, Decatur, Marietta, Alpharetta, Sandy Springs, Buckhead, Midtown, Norcross, Duluth, Suwanee, Lawrenceville, Roswell, Dunwoody, and surrounding communities.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">How long does a <strong>commercial painting project</strong> take?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          It depends on the size, scope, and access. A small office might take a few days. A multi-story building could take weeks. We provide a <strong>realistic timeline</strong> in your estimate and stick to it.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Do you work <strong>nights and weekends</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          Yes. We can schedule work around your business hours, including nights and weekends, to <strong>minimize disruption</strong> to your operations.
-        </p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:900; color:#333333;">Are you <strong>licensed, bonded, and insured</strong>?</h3>
-        <p style="margin:0; font-size:16px; color:#475569; line-height:1.7;">
-          Yes. Southeast Commercial Services is fully <strong>licensed, bonded, and insured</strong>. We've been serving Greater Atlanta since 1991.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 <!-- ========================================
