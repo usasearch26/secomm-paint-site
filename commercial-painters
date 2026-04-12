@@ -2014,12 +2014,12 @@
 
     </div>
 
-    <!-- Steps — vertical on mobile, horizontal flow on desktop -->
+    <!-- Steps -->
     <div style="
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
       gap:24px;
-      margin-bottom:56px;
+      margin-bottom:48px;
     ">
 
       <!-- Step 1 -->
@@ -2030,7 +2030,6 @@
         padding:28px 22px;
         text-align:center;
         box-shadow:0 8px 24px rgba(2,6,23,.07);
-        position:relative;
       ">
         <div style="
           width:52px;
@@ -2059,7 +2058,8 @@
         ">
           We visit the facility, confirm substrates, 
           access requirements, operating hours, 
-          and protection needs before anything is quoted.
+          and protection needs before anything 
+          is quoted.
         </p>
       </div>
 
@@ -2140,8 +2140,8 @@
         ">
           Surfaces are cleaned, repaired, and primed 
           to spec. Floors, fixtures, and adjacent 
-          areas are protected before 
-          a brush or sprayer touches the wall.
+          areas are protected before a brush 
+          or sprayer touches the wall.
         </p>
       </div>
 
@@ -2221,14 +2221,38 @@
           line-height:1.65;
         ">
           We walk the job with you, complete the 
-          punch list, and don't consider the 
-          project closed until you do.
+          punch list, and don't consider the project 
+          closed until you do.
         </p>
       </div>
 
     </div>
 
-    <!-- Anchor statement — sets up proof section next -->
+    <!-- Process Image -->
+    <div style="
+      display:flex;
+      justify-content:center;
+      margin-bottom:48px;
+    ">
+      <img
+        src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f78d614c97b8ef70ff3.webp"
+        alt="Atlanta commercial painting contractors on site"
+        width="768" height="400"
+        loading="lazy"
+        decoding="async"
+        style="
+          width:100%;
+          max-width:768px;
+          height:auto;
+          object-fit:cover;
+          border-radius:16px;
+          border:1px solid #e2e8f0;
+          box-shadow:0 18px 48px rgba(2,6,23,.15);
+        "
+      />
+    </div>
+
+    <!-- Anchor Statement -->
     <div style="
       max-width:780px;
       margin:0 auto;
