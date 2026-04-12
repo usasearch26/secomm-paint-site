@@ -2654,157 +2654,552 @@
 
   
 <!-- ========================================
-     SECTION 6: Commercial Properties We Paint in Atlanta
-     GHL-safe / Inline styling (matches your new design system)
-     - #333333 headlines
-     - Answer capsule + green accent bar
-     - Card grid uses auto-fit/minmax (no CSS dependencies)
-     ======================================== -->
+     FACILITY TYPES WE SERVE
+     Follows: Built for Your Site + Service Area
+     Story position: "You'll recognize your 
+     building type here"
+     Condensed from 12 to 8 — scannable only
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#f3f4f6;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:1100px; margin:0 auto;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:linear-gradient(to bottom,#f3f4f6,#f8fafc); border-top:1px solid rgba(209,213,219,.30); border-bottom:1px solid rgba(209,213,219,.30); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
+    <!-- Section Header -->
+    <div style="text-align:center; margin-bottom:48px;">
 
-    <!-- Heading -->
-    <div style="text-align:center; margin-bottom:56px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-      </div>
+      <span style="
+        font-size:12px;
+        font-weight:800;
+        letter-spacing:0.12em;
+        text-transform:uppercase;
+        color:#008000;
+        display:block;
+        margin-bottom:12px;
+      ">Commercial &amp; Industrial Facilities</span>
 
-      <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0 0 14px 0;">
-        Commercial Properties We Paint in Atlanta
-      </h2>
+      <h2 style="
+        font-size:clamp(26px, 3.2vw, 38px);
+        font-weight:900;
+        color:#111827;
+        line-height:1.1;
+        letter-spacing:-0.02em;
+        margin:0 0 16px 0;
+      ">Properties We Paint in Atlanta</h2>
 
-      <div style="max-width:900px; margin:0 auto 16px auto; text-align:left; background:rgba(255,255,255,.92); border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08);">
-        <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-          <strong>We provide commercial and industrial painting in Atlanta</strong> for office buildings, warehouses, healthcare facilities, retail centers, multi-family communities, educational institutions, hospitality properties, government buildings, and high-rise structures. Projects range from single facilities to multi-property portfolios across Metro Atlanta.
+      <p style="
+        font-size:17px;
+        color:#475569;
+        line-height:1.65;
+        margin:0 auto;
+        max-width:58ch;
+      ">
+        Over 30 years we have worked on facilities 
+        of every type across Metro Atlanta. 
+        If you manage or own a commercial property, 
+        we have almost certainly worked on one like it.
+      </p>
+
+    </div>
+
+    <!-- 8 Facility Type Cards — 4 columns desktop -->
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:16px;
+      margin-bottom:36px;
+    ">
+
+      <!-- 1: Office -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Office Buildings</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Corporate campuses, multi-tenant 
+          buildings, executive suites, 
+          and common areas.
         </p>
       </div>
 
-      <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 auto; max-width:85ch;">
-        Over <strong>30+ years</strong>, we've worked on schools, warehouses, retail stores, restaurants, hotels, <strong>high-rise buildings</strong>, industrial silos, small offices, large corporate campuses, <strong>government facilities</strong>, medical offices, med spas, car washes, entertainment venues, parking structures, and more.
-      </p>
+      <!-- 2: Warehouse -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Warehouses &amp; Distribution</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Logistics facilities, distribution 
+          centers, storage buildings, 
+          and fulfillment operations.
+        </p>
+      </div>
+
+      <!-- 3: Industrial -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Industrial &amp; Manufacturing</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Manufacturing plants, heavy-use 
+          facilities, processing areas, 
+          and equipment structures.
+        </p>
+      </div>
+
+      <!-- 4: Healthcare -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Healthcare Facilities</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Medical offices, clinics, hospitals, 
+          dental practices, and 
+          outpatient facilities.
+        </p>
+      </div>
+
+      <!-- 5: Retail -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Retail &amp; Hospitality</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Shopping centers, restaurants, 
+          hotels, entertainment venues, 
+          and service businesses.
+        </p>
+      </div>
+
+      <!-- 6: Multi-Family -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Multi-Family &amp; HOA</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Apartment communities, condo 
+          buildings, and HOA-managed 
+          commercial common areas.
+        </p>
+      </div>
+
+      <!-- 7: High-Rise -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">High-Rise &amp; Mixed-Use</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Multi-story towers, difficult-access 
+          structures, and mixed-use 
+          commercial properties.
+        </p>
+      </div>
+
+      <!-- 8: Government & Education -->
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-left:5px solid #334155;
+        border-radius:14px;
+        padding:20px;
+        box-shadow:0 6px 18px rgba(2,6,23,.07);
+      ">
+        <h3 style="
+          margin:0 0 8px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Government &amp; Education</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.6;
+        ">
+          Municipal buildings, schools, 
+          universities, training centers, 
+          and public facilities.
+        </p>
+      </div>
+
     </div>
 
-    <!-- Property Types Grid -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:18px;">
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Office Buildings</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Multi-tenant commercial spaces, corporate campuses, executive suites</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Hospitality</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Hotels, restaurants, entertainment venues, event spaces</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Healthcare</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Hospitals, clinics, medical offices, med spas, dental practices</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Education</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Schools, universities, institutional buildings, training centers</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Multi-Family</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Apartment communities, condos, HOA-managed properties</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Retail</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Shopping centers, storefronts, car washes, service businesses</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Warehouses</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Distribution centers, logistics facilities, storage buildings</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Industrial</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Manufacturing plants, heavy-use facilities, industrial equipment</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Parking Structures</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Parking garages, decks, surface lots, loading areas</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">Government</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Municipal buildings, public facilities, government offices</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">High-Rise</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Multi-story commercial towers, difficult-access buildings</p>
-      </div>
-
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; border-radius:18px; padding:18px; box-shadow:0 12px 30px rgba(2,6,23,.10);">
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333;">New Construction</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.6;">Build-outs, tenant improvements, new commercial projects</p>
-      </div>
-
+    <!-- B2B disqualifier — brief, firm -->
+    <div style="
+      max-width:720px;
+      margin:0 auto;
+      padding:16px 22px;
+      background:#ffffff;
+      border:1px solid #e2e8f0;
+      border-left:5px solid #334155;
+      border-radius:12px;
+      text-align:center;
+      font-size:14px;
+      font-weight:700;
+      color:#334155;
+      line-height:1.6;
+    ">
+      Commercial and industrial facilities only. 
+      We do not provide residential house painting.
     </div>
+
   </div>
 </section>
 
 
+
 <!-- ========================================
-     SECTION 7: Minimal Disruption Isn't a Slogan—It's the Plan
-     GHL-safe / Inline styling
-     - Image + text 2-col
-     - Answer capsule + green reinforcement callout
-     ======================================== -->
+     FAQ
+     Follows: Facility Types section
+     Story position: "Last objections resolved 
+     before the final decision"
+     Cut from 10 to 5 genuine buyer questions
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:800px; margin:0 auto;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
+    <!-- Section Header -->
+    <div style="text-align:center; margin-bottom:48px;">
 
-    <div style="display:flex; flex-wrap:wrap; gap:48px; align-items:center;">
+      <span style="
+        font-size:12px;
+        font-weight:800;
+        letter-spacing:0.12em;
+        text-transform:uppercase;
+        color:#008000;
+        display:block;
+        margin-bottom:12px;
+      ">Common Questions</span>
 
-      <!-- LEFT: IMAGE -->
-      <div style="flex:1; min-width:320px; display:flex; justify-content:center;">
-        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f781ecd71326d520b6e.webp"
-             alt="Atlanta commercial painting contractors flexible scheduling"
-             width="448" height="300" loading="lazy" decoding="async"
-             style="width:100%; max-width:448px; height:auto; aspect-ratio:448 / 300; object-fit:cover; border-radius:18px; border:1px solid rgba(15,23,42,.10); box-shadow:0 18px 60px rgba(2,6,23,.18); border-left:8px solid #008000;" />
+      <h2 style="
+        font-size:clamp(26px, 3.2vw, 38px);
+        font-weight:900;
+        color:#111827;
+        line-height:1.1;
+        letter-spacing:-0.02em;
+        margin:0 0 16px 0;
+      ">What Facility Managers Ask Us</h2>
+
+      <p style="
+        font-size:17px;
+        color:#475569;
+        line-height:1.65;
+        margin:0 auto;
+        max-width:52ch;
+      ">
+        Straight answers to the questions we hear 
+        most often from property managers and 
+        facility directors before they hire us.
+      </p>
+
+    </div>
+
+    <!-- FAQ Items -->
+    <div style="display:grid; gap:16px;">
+
+      <!-- Q1 -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <h3 style="
+          margin:0 0 12px 0;
+          font-size:18px;
+          font-weight:900;
+          color:#111827;
+          line-height:1.2;
+        ">
+          How do you handle painting in an 
+          occupied building without disrupting 
+          our operations?
+        </h3>
+        <p style="
+          margin:0;
+          font-size:16px;
+          color:#475569;
+          line-height:1.75;
+        ">
+          We start with a pre-job meeting to map 
+          out access, occupant flow, noise 
+          sensitivity, and any areas that need 
+          to stay completely off-limits. From there 
+          we sequence the work by zone — one section 
+          at a time — and contain dust and overspray 
+          before it becomes your problem. If your 
+          building needs night or weekend work, 
+          that is what we schedule.
+        </p>
       </div>
 
-      <!-- RIGHT: TEXT -->
-      <div style="flex:1.2; min-width:320px;">
-
-        <div style="margin-bottom:18px;">
-          <div style="height:6px; width:60px; background:#008000; border-radius:999px; margin-bottom:14px;"></div>
-          <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0;">
-            Minimal Disruption Isn't a Slogan—It's the Plan
-          </h2>
-        </div>
-
-        <div style="background:#f3f4f6; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08); margin-bottom:18px;">
-          <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-            <strong>Direct Answer:</strong> We plan around your <strong>hours, occupants, and access rules</strong>—so your commercial repaint stays on schedule with <strong>minimal disruption</strong>.
-          </p>
-        </div>
-
-        <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 0 14px 0;">
-          We coordinate work sequencing, protection, and staging to keep your <strong>facility functional</strong>. We're punctual, flexible, and experienced working around tenants, customers, staff, and other trades.
+      <!-- Q2 -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <h3 style="
+          margin:0 0 12px 0;
+          font-size:18px;
+          font-weight:900;
+          color:#111827;
+          line-height:1.2;
+        ">
+          What does your quote actually include — 
+          and how detailed is it?
+        </h3>
+        <p style="
+          margin:0;
+          font-size:16px;
+          color:#475569;
+          line-height:1.75;
+        ">
+          Every proposal we write includes surface 
+          quantities, substrate-specific prep 
+          requirements, the coating system by 
+          product name, number of coats, protection 
+          and containment plan, schedule, exclusions, 
+          and warranty terms. You will not get a 
+          single number on a napkin from us. 
+          If something is not in the scope, 
+          it is not in the price.
         </p>
-        <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 0 18px 0;">
-          Need us to work <strong>nights or weekends</strong>? We can do that. Need us to paint one floor at a time so you don't shut down the whole building? We do that too.
+      </div>
+
+      <!-- Q3 -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <h3 style="
+          margin:0 0 12px 0;
+          font-size:18px;
+          font-weight:900;
+          color:#111827;
+          line-height:1.2;
+        ">
+          Why does surface preparation matter 
+          so much — and do you ever skip it 
+          to come in lower on price?
+        </h3>
+        <p style="
+          margin:0;
+          font-size:16px;
+          color:#475569;
+          line-height:1.75;
+        ">
+          Prep is what determines whether a coating 
+          lasts three years or ten. Cleaning, 
+          repairs, priming, and contaminant removal 
+          are not optional steps — they are what 
+          the coating manufacturer requires for 
+          the warranty to hold. We do not cut prep 
+          to win a bid. If another quote is 
+          significantly lower, ask them what 
+          prep is included.
         </p>
+      </div>
 
-        <div style="background:#ecfdf5; border:1px solid rgba(16,185,129,.25); border-left:6px solid #008000; padding:16px 18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.06);">
-          <p style="margin:0; font-size:18px; color:#064e3b; font-weight:800; line-height:1.45;">
-            The goal: Your building gets painted. Your <strong>business keeps running</strong>.
-          </p>
-        </div>
+      <!-- Q4 -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <h3 style="
+          margin:0 0 12px 0;
+          font-size:18px;
+          font-weight:900;
+          color:#111827;
+          line-height:1.2;
+        ">
+          Are you licensed, bonded, and insured — 
+          and can you meet our insurance 
+          requirements?
+        </h3>
+        <p style="
+          margin:0;
+          font-size:16px;
+          color:#475569;
+          line-height:1.75;
+        ">
+          Yes. Southeast Commercial Services is 
+          fully licensed, bonded, and insured 
+          in Georgia. We carry multi-million dollar 
+          general liability coverage and bonding 
+          capacity for qualifying commercial scopes. 
+          We can provide certificates of insurance 
+          naming your organization as an additional 
+          insured — a standard requirement we 
+          fulfill regularly.
+        </p>
+      </div>
 
+      <!-- Q5 -->
+      <div style="
+        background:#f8fafc;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px;
+        box-shadow:0 6px 18px rgba(2,6,23,.06);
+      ">
+        <h3 style="
+          margin:0 0 12px 0;
+          font-size:18px;
+          font-weight:900;
+          color:#111827;
+          line-height:1.2;
+        ">
+          How long will the project take — 
+          and how do you handle the timeline 
+          if something changes on site?
+        </h3>
+        <p style="
+          margin:0;
+          font-size:16px;
+          color:#475569;
+          line-height:1.75;
+        ">
+          Timeline depends on the size of the 
+          facility, access conditions, and the 
+          coating system specified. A small 
+          office repaint may take a few days. 
+          A large warehouse or multi-story 
+          building may take several weeks. 
+          We give you a realistic schedule in 
+          the proposal — not an optimistic one 
+          designed to win the job. If conditions 
+          change on site, we communicate it 
+          immediately and adjust the plan 
+          with you, not around you.
+        </p>
       </div>
 
     </div>
+
   </div>
 </section>
 
