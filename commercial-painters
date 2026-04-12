@@ -2288,111 +2288,313 @@
 
 
 <!-- ========================================
-     SECTION 5: Built for Commercial Sites With Real Constraints
-     GHL-safe / Inline styling:
-     - Two-column layout (responsive via wrap)
-     - #333333 headlines
-     - Answer capsules match your system
-     - Green “qualification” callout preserved and upgraded
-     ======================================== -->
+     SERVICE AREA
+     Follows: Process section (temporarily)
+     Will sit BELOW Proof section once added
+     Story position: "We know your market"
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:1100px; margin:0 auto;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
+    <!-- Section Header -->
+    <div style="
+      display:flex;
+      flex-wrap:wrap;
+      gap:56px;
+      align-items:center;
+      margin-bottom:48px;
+    ">
 
-    <div style="display:flex; flex-wrap:wrap; gap:48px; align-items:center;">
+      <!-- Left: Headline -->
+      <div style="flex:1.2; min-width:280px;">
 
-      <!-- LEFT: TEXT -->
-      <div style="flex:1.2; min-width:320px;">
+        <span style="
+          font-size:12px;
+          font-weight:800;
+          letter-spacing:0.12em;
+          text-transform:uppercase;
+          color:#008000;
+          display:block;
+          margin-bottom:12px;
+        ">Greater Atlanta &amp; Metro Area</span>
 
-        <div style="margin-bottom:18px;">
-          <div style="height:6px; width:60px; background:#008000; border-radius:999px; margin-bottom:14px;"></div>
-          <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0;">
-            Built for Commercial Sites With Real Constraints
-          </h2>
-        </div>
+        <h2 style="
+          font-size:clamp(26px, 3.2vw, 38px);
+          font-weight:900;
+          color:#111827;
+          line-height:1.1;
+          letter-spacing:-0.02em;
+          margin:0 0 20px 0;
+        ">
+          We Work Where<br>Your Facilities Are
+        </h2>
 
-        <!-- Long Answer capsule -->
-        <div style="background:#f3f4f6; border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08); margin-bottom:18px;">
-          <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-            <strong>Commercial painting on active facilities</strong> requires OSHA-aligned safety practices, documented surface preparation, controlled containment, and coating systems applied strictly to manufacturer specifications. We plan access, staging, lift operation, material storage, and protection protocols to maintain compliance and jobsite control.
-          </p>
-          <p style="margin:12px 0 0 0; font-size:16px; color:#374151; line-height:1.7;">
-            For industrial and regulated environments, we coordinate ventilation, dust control, off-hours scheduling, and substrate-specific prep (concrete, steel, CMU) to ensure adhesion, durability, and operational continuity throughout the project.
-          </p>
-        </div>
-
-        <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 0 14px 0;">
-          Commercial projects require control: access, occupants, other trades, and safety. <strong>Atlanta commercial painting contractors</strong> at Southeast adhere to <strong>OSHA requirements</strong> and apply finishes per manufacturer recommendations.
+        <p style="
+          font-size:17px;
+          color:#374151;
+          line-height:1.75;
+          margin:0 0 16px 0;
+        ">
+          Our crews operate across Metro Atlanta —
+          from Buckhead and Midtown to the Fulton 
+          Industrial corridor, Gwinnett logistics parks, 
+          and commercial districts throughout 
+          Cobb, DeKalb, and surrounding counties.
         </p>
-        <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 0 18px 0;">
-          Materials are stored properly. Disposal follows applicable local requirements. Any <strong>lead-related prep</strong> follows current regulatory standards.
-        </p>
 
-        <!-- Green qualification callout -->
-        <div style="background:#ecfdf5; border:1px solid rgba(16,185,129,.25); border-left:6px solid #008000; padding:16px 18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.06);">
-          <p style="margin:0; font-size:18px; color:#064e3b; font-weight:800; line-height:1.45;">
-            ✓ <strong>Licensed, Bonded, and Insured</strong>—Serving Greater Atlanta Since 1991
-          </p>
-        </div>
+        <p style="
+          font-size:17px;
+          color:#374151;
+          line-height:1.75;
+          margin:0;
+        ">
+          We regularly work along I-75, I-85, and I-285 
+          corridors where Atlanta's largest warehouses, 
+          distribution centers, manufacturing facilities, 
+          and commercial campuses are concentrated.
+        </p>
 
       </div>
 
-      <!-- RIGHT: IMAGE -->
-      <div style="flex:1; min-width:320px; display:flex; justify-content:center;">
-        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7daa008498692c4cbd17.webp"
-             alt="Atlanta commercial painting contractors safety and compliance"
-             width="448" height="300" loading="lazy" decoding="async"
-             style="width:100%; max-width:448px; height:auto; aspect-ratio:448 / 300; object-fit:cover; border-radius:18px; border:1px solid rgba(15,23,42,.10); box-shadow:0 18px 60px rgba(2,6,23,.18); border-left:8px solid #008000;" />
-      </div>
+      <!-- Right: Area List -->
+      <div style="flex:1; min-width:280px;">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-radius:16px;
+          padding:28px;
+          box-shadow:0 8px 24px rgba(2,6,23,.07);
+        ">
+          <h3 style="
+            margin:0 0 20px 0;
+            font-size:16px;
+            font-weight:900;
+            color:#111827;
+            text-transform:uppercase;
+            letter-spacing:0.08em;
+          ">Areas We Serve</h3>
 
+          <div style="
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:10px;
+          ">
+
+            <!-- Area pills -->
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Atlanta</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Buckhead</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Midtown</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Decatur</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Marietta</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Alpharetta</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Sandy Springs</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Roswell</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Dunwoody</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Norcross</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Duluth</div>
+
+            <div style="
+              padding:10px 14px;
+              background:#ffffff;
+              border:1px solid #e2e8f0;
+              border-left:4px solid #008000;
+              border-radius:8px;
+              font-size:14px;
+              font-weight:700;
+              color:#334155;
+            ">Lawrenceville</div>
+
+          </div>
+
+          <!-- County anchor -->
+          <div style="
+            margin-top:18px;
+            padding:12px 16px;
+            background:#f1f5f9;
+            border-radius:10px;
+            font-size:13px;
+            font-weight:700;
+            color:#64748b;
+            text-align:center;
+            letter-spacing:0.04em;
+          ">
+            Fulton · Cobb · Gwinnett · DeKalb · Cherokee
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Corridor callout — industrial anchor -->
+    <div style="
+      padding:24px 28px;
+      background:#111827;
+      border-radius:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      align-items:center;
+      justify-content:space-between;
+      box-shadow:0 12px 32px rgba(2,6,23,.16);
+    ">
+      <div>
+        <p style="
+          margin:0 0 6px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#ffffff;
+          line-height:1.3;
+        ">
+          Fulton Industrial · I-285 Corridor · I-75 / I-85 NE
+        </p>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#94a3b8;
+          line-height:1.6;
+        ">
+          We regularly serve warehouses, distribution centers, 
+          and manufacturing facilities in Atlanta's primary 
+          industrial and logistics corridors.
+        </p>
+      </div>
+      <a href="tel:4043482244" style="
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        padding:14px 24px;
+        background:#008000;
+        color:#ffffff;
+        font-size:15px;
+        font-weight:900;
+        border-radius:10px;
+        text-decoration:none;
+        white-space:nowrap;
+        box-shadow:0 8px 20px rgba(0,128,0,.30);
+        flex-shrink:0;
+      ">
+        📞 (404) 348-2244
+      </a>
     </div>
 
   </div>
 </section>
 
-  <!-- DUAL ACTION SECTION - Light Grey Gradient -->
-<section style="background: linear-gradient(to bottom, #f8fafc, #f1f5f9); 
-                padding: 50px 20px; text-align: center;">
-  <div style="max-width: 820px; margin: 0 auto;">
-    
-    <h2 style="font-size: 30px; font-weight: 900; color: #0f172a; margin-bottom: 12px;">
-      Ready to Get Started?
-    </h2>
-    
-    <p style="font-size: 18px; color: #475569; margin-bottom: 32px; line-height: 1.5;">
-      Speak with our team today or request a free on-site quote.
-    </p>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; align-items: center;">
-      
-      <!-- Call Now Button -->
-      <a href="tel:4043482244"
-         style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-                background: #ffffff; color: #0f172a; font-size: 17px; font-weight: 800; 
-                padding: 16px 32px; border-radius: 12px; text-decoration: none;
-                border: 2px solid #008000; box-shadow: 0 8px 25px rgba(0, 128, 0, 0.12);">
-        📞 Call Now: <strong>(404) 348-2244</strong>
-      </a>
-
-      <!-- Request Quote Button -->
-      <a href="#quote-form"
-         style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-                background: linear-gradient(to right, #16a34a, #15803d);
-                color: #ffffff; font-size: 17px; font-weight: 800; 
-                padding: 16px 36px; border-radius: 12px; text-decoration: none;
-                box-shadow: 0 12px 30px rgba(22, 163, 74, 0.35);">
-        Request a Free Quote
-        <span style="font-size: 24px;">→</span>
-      </a>
-
-    </div>
-
-    <p style="margin-top: 24px; font-size: 13px; color: #64748b;">
-      Commercial &amp; Industrial Projects Only • No Residential
-    </p>
-
-  </div>
-</section>
   
 <!-- ========================================
      SECTION 6: Commercial Properties We Paint in Atlanta
