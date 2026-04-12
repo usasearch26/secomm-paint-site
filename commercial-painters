@@ -1965,95 +1965,298 @@
 </section>
 
 <!-- ========================================
-     SECTION 4: A Professional Process
-     GHL-safe / Inline styling:
-     - Same visual system as your working sections
-     - #333333 headlines
-     - Step grid uses auto-fit/minmax so it naturally becomes 5-across on desktop, collapses cleanly
-     - Keeps your original copy
-     ======================================== -->
+     PROCESS — HOW IT WORKS
+     Follows: Services section
+     Story position: "Here's exactly what happens next"
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#f3f4f6;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  border-top:1px solid #e5e7eb;
+">
+  <div style="max-width:1100px; margin:0 auto;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:linear-gradient(to bottom,#f3f4f6,#f8fafc); border-top:1px solid rgba(209,213,219,.30); border-bottom:1px solid rgba(209,213,219,.30); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
-
-    <!-- Heading -->
+    <!-- Section Header -->
     <div style="text-align:center; margin-bottom:56px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-      </div>
 
-      <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0 0 14px 0;">
-        A Professional Process - Not Just a Crew With Brushes
-      </h2>
+      <span style="
+        font-size:12px;
+        font-weight:800;
+        letter-spacing:0.12em;
+        text-transform:uppercase;
+        color:#008000;
+        display:block;
+        margin-bottom:12px;
+      ">No Surprises. No Guesswork.</span>
 
-      <!-- Answer capsule -->
-      <div style="max-width:900px; margin:0 auto 16px auto; text-align:left; background:rgba(255,255,255,.92); border:1px solid rgba(226,232,240,1); border-left:6px solid #334155; padding:18px; border-radius:14px; box-shadow:0 10px 18px rgba(2,6,23,.08);">
-        <p style="margin:0; font-size:16px; color:#374151; line-height:1.7;">
-          <strong>Our Atlanta commercial painting process</strong> includes a documented site walkthrough, surface preparation, protection/containment, manufacturer-specified coatings, and phased scheduling to minimize disruption in occupied buildings.
-        </p>
-      </div>
+      <h2 style="
+        font-size:clamp(28px, 3.5vw, 40px);
+        font-weight:900;
+        color:#111827;
+        line-height:1.1;
+        letter-spacing:-0.02em;
+        margin:0 0 16px 0;
+      ">How a Project Works With Us</h2>
 
-      <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 auto; max-width:70ch;">
-        <strong>Commercial painting</strong> isn't about slapping paint on walls. It's about <strong>planning, prep, protection</strong>, and execution that doesn't create new problems while solving the old ones.
+      <p style="
+        font-size:18px;
+        color:#475569;
+        line-height:1.65;
+        margin:0 auto;
+        max-width:58ch;
+      ">
+        From the first call to final walkthrough — 
+        here is exactly what to expect when you work 
+        with Southeast Commercial Services.
       </p>
+
     </div>
 
-    <!-- Steps Grid (auto-fit = responsive without CSS media queries) -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:20px;">
+    <!-- Steps — vertical on mobile, horizontal flow on desktop -->
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+      gap:24px;
+      margin-bottom:56px;
+    ">
 
       <!-- Step 1 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10); text-align:center;">
-        <div style="width:64px; height:64px; border-radius:999px; background:#334155; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; margin:0 auto 14px auto; box-shadow:0 10px 20px rgba(2,6,23,.12);">1</div>
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Walkthrough</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.65;">
-          We confirm <strong>substrates</strong>, access, operating hours, <strong>protection needs</strong>, and success criteria.
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px 22px;
+        text-align:center;
+        box-shadow:0 8px 24px rgba(2,6,23,.07);
+        position:relative;
+      ">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:999px;
+          background:#111827;
+          color:#ffffff;
+          font-size:22px;
+          font-weight:900;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin:0 auto 16px auto;
+        ">1</div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Site Walkthrough</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.65;
+        ">
+          We visit the facility, confirm substrates, 
+          access requirements, operating hours, 
+          and protection needs before anything is quoted.
         </p>
       </div>
 
       <!-- Step 2 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10); text-align:center;">
-        <div style="width:64px; height:64px; border-radius:999px; background:#334155; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; margin:0 auto 14px auto; box-shadow:0 10px 20px rgba(2,6,23,.12);">2</div>
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Surface Prep</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.65;">
-          Pressure washing, scraping, sanding, <strong>caulking, priming, and repairs</strong>—so coatings bond and perform.
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px 22px;
+        text-align:center;
+        box-shadow:0 8px 24px rgba(2,6,23,.07);
+      ">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:999px;
+          background:#111827;
+          color:#ffffff;
+          font-size:22px;
+          font-weight:900;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin:0 auto 16px auto;
+        ">2</div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Written Scope</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.65;
+        ">
+          You receive a detailed written proposal — 
+          prep steps, coating system, schedule, 
+          exclusions, and warranty terms. 
+          No ballparks.
         </p>
       </div>
 
       <!-- Step 3 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10); text-align:center;">
-        <div style="width:64px; height:64px; border-radius:999px; background:#334155; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; margin:0 auto 14px auto; box-shadow:0 10px 20px rgba(2,6,23,.12);">3</div>
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Protection</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.65;">
-          We protect flooring, fixtures, <strong>landscaping</strong>, and <strong>adjacent surfaces</strong> from drips, dust, and overspray.
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px 22px;
+        text-align:center;
+        box-shadow:0 8px 24px rgba(2,6,23,.07);
+      ">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:999px;
+          background:#111827;
+          color:#ffffff;
+          font-size:22px;
+          font-weight:900;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin:0 auto 16px auto;
+        ">3</div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Prep &amp; Protection</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.65;
+        ">
+          Surfaces are cleaned, repaired, and primed 
+          to spec. Floors, fixtures, and adjacent 
+          areas are protected before 
+          a brush or sprayer touches the wall.
         </p>
       </div>
 
       <!-- Step 4 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10); text-align:center;">
-        <div style="width:64px; height:64px; border-radius:999px; background:#334155; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; margin:0 auto 14px auto; box-shadow:0 10px 20px rgba(2,6,23,.12);">4</div>
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Application</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.65;">
-          Proven spray and roller methods following <strong>manufacturer specs</strong> for each coating system.
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px 22px;
+        text-align:center;
+        box-shadow:0 8px 24px rgba(2,6,23,.07);
+      ">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:999px;
+          background:#111827;
+          color:#ffffff;
+          font-size:22px;
+          font-weight:900;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin:0 auto 16px auto;
+        ">4</div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Application</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.65;
+        ">
+          Coatings applied to manufacturer 
+          specification — correct mil thickness, 
+          correct method, correct sequence. 
+          Your facility stays operational throughout.
         </p>
       </div>
 
       <!-- Step 5 -->
-      <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; padding:20px; box-shadow:0 12px 30px rgba(2,6,23,.10); text-align:center;">
-        <div style="width:64px; height:64px; border-radius:999px; background:#334155; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; margin:0 auto 14px auto; box-shadow:0 10px 20px rgba(2,6,23,.12);">5</div>
-        <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Clean-Up</h3>
-        <p style="margin:0; color:#475569; font-size:15px; line-height:1.65;">
-          Materials secured, work areas left orderly, and <strong>final punch</strong> completed to your standards.
+      <div style="
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:16px;
+        padding:28px 22px;
+        text-align:center;
+        box-shadow:0 8px 24px rgba(2,6,23,.07);
+      ">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:999px;
+          background:#111827;
+          color:#ffffff;
+          font-size:22px;
+          font-weight:900;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          margin:0 auto 16px auto;
+        ">5</div>
+        <h3 style="
+          margin:0 0 10px 0;
+          font-size:17px;
+          font-weight:900;
+          color:#111827;
+        ">Final Walkthrough</h3>
+        <p style="
+          margin:0;
+          font-size:14px;
+          color:#475569;
+          line-height:1.65;
+        ">
+          We walk the job with you, complete the 
+          punch list, and don't consider the 
+          project closed until you do.
         </p>
       </div>
 
     </div>
 
-    <!-- Image -->
-    <div style="margin-top:56px; display:flex; justify-content:center;">
-      <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f78d614c97b8ef70ff3.webp"
-           alt="Atlanta commercial painting contractors professional process"
-           width="768" height="400" loading="lazy" decoding="async"
-           style="width:100%; max-width:768px; height:auto; object-fit:cover; border-radius:18px; border:1px solid rgba(15,23,42,.10); box-shadow:0 18px 60px rgba(2,6,23,.18);" />
+    <!-- Anchor statement — sets up proof section next -->
+    <div style="
+      max-width:780px;
+      margin:0 auto;
+      padding:28px 32px;
+      background:#111827;
+      border-radius:16px;
+      text-align:center;
+      box-shadow:0 18px 40px rgba(2,6,23,.18);
+    ">
+      <p style="
+        margin:0 0 8px 0;
+        font-size:20px;
+        font-weight:900;
+        color:#ffffff;
+        line-height:1.4;
+        letter-spacing:-0.01em;
+      ">
+        Every project gets this process.<br>
+        Every time. Regardless of size.
+      </p>
+      <p style="
+        margin:0;
+        font-size:15px;
+        color:#94a3b8;
+        line-height:1.6;
+      ">
+        Licensed · Bonded · Insured · Serving Greater Atlanta Since 1991
+      </p>
     </div>
 
   </div>
