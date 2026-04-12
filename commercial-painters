@@ -1601,282 +1601,369 @@
 </section>
 
 <!-- ========================================
-     SECTION 3: Commercial Painting Services Gallery
-     Self-contained (INLINE) so it will style correctly in GHL even if classes fail.
-     - 3 x 4 grid on desktop
-     - 1 column on mobile
-     - Premium card styling (border, radius, shadow, hover lift)
-     - Headline color #333333
-     ======================================== -->
+     SERVICES — WHAT WE DO
+     Follows: Business Case section
+     Story position: "Here's what we actually do"
+     Reduced from 12 cards to 6 core services
+======================================== -->
+<section style="
+  display:block;
+  padding:72px 20px;
+  background:#ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+">
+  <div style="max-width:1100px; margin:0 auto;">
 
-<style>
-  @media (max-width: 900px){
-    .services-grid-3x4{ grid-template-columns: 1fr !important; }
-  }
- 
-</style>
+    <!-- Section Header -->
+    <div style="text-align:center; margin-bottom:48px;">
 
-<section style="display:block; position:relative; padding:80px 20px; background:#ffffff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-  <div style="max-width:1280px; margin:0 auto; position:relative; z-index:10;">
+      <span style="
+        font-size:12px;
+        font-weight:800;
+        letter-spacing:0.12em;
+        text-transform:uppercase;
+        color:#008000;
+        display:block;
+        margin-bottom:12px;
+      ">Commercial &amp; Industrial Painting Services</span>
 
-    <!-- Heading -->
-    <div style="text-align:center; margin-bottom:56px;">
-      <div style="display:flex; justify-content:center; margin-bottom:14px;">
-        <div style="height:6px; width:60px; background:#008000; border-radius:999px;"></div>
-      </div>
+      <h2 style="
+        font-size:clamp(28px, 3.5vw, 40px);
+        font-weight:900;
+        color:#111827;
+        line-height:1.1;
+        letter-spacing:-0.02em;
+        margin:0 0 16px 0;
+      ">What We Do</h2>
 
-      <h2 style="color:#333333; font-size:40px; font-weight:900; line-height:1.12; letter-spacing:-0.02em; margin:0 0 12px 0;">
-        Commercial Painting Services in Atlanta
-      </h2>
-
-      <p style="font-size:18px; color:#475569; line-height:1.65; margin:0 auto; max-width:70ch;">
-        Whether it's a single building or a portfolio of properties, <strong>Atlanta commercial painting contractors</strong> at Southeast handle every project with the <strong>discipline and planning</strong> that commercial work requires.
+      <p style="
+        font-size:18px;
+        color:#475569;
+        line-height:1.65;
+        margin:0 auto;
+        max-width:60ch;
+      ">
+        Every service below is commercial and industrial only. 
+        We bring the same preparation standards, coating systems, 
+        and project discipline to every scope — regardless of size.
       </p>
-    </div>
-
-    <!-- Grid: forced 3 columns desktop -->
-    <div class="services-grid-3x4" style="display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:28px;">
-
-      <!-- CARD TEMPLATE NOTES:
-           - Link wraps card
-           - Card hover uses inline onmouseover/onmouseout (works in GHL)
-      -->
-
-      <!-- 1 Interior -->
-      <a href="https://southeastcommercialpainting.com/interior-commercial-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transform:translateY(0); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949849c547053b05c9f121.webp"
-               alt="Commercial interior painting Atlanta - office lobby"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Interior Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Offices, lobbies, corridors, stairwells, restrooms, tenant spaces, and common areas.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 2 Exterior -->
-      <a href="https://southeastcommercialpainting.com/exterior-commercial-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp"
-               alt="Commercial exterior painting Atlanta - building facade"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Exterior Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Façades, trim, doors, loading docks, metal surfaces, and siding.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 3 High-Rise -->
-      <a href="https://southeastcommercialpainting.com/high-rise-painters" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp"
-               alt="High-rise commercial painting Atlanta contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">High-Rise Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Multi-story buildings with difficult access, controlled staging, and safety-first execution.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 4 Office -->
-      <a href="https://southeastcommercialpainting.com/commercial-office-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp"
-               alt="Office painting Atlanta commercial contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Office Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Corporate offices, conference rooms, cubicles, and executive suites.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 5 Building -->
-      <a href="https://southeastcommercialpainting.com/commercial-building-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699492566bac24485c04e564.webp"
-               alt="Commercial building painting Atlanta contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Building Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Full building repaints and maintenance cycles for commercial properties.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 6 Warehouse -->
-      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e2f6bac24edfaace3b1.webp"
-               alt="Warehouse painting Atlanta commercial contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Warehouse Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Large-scale warehouse interiors, exteriors, and metal surfaces.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 7 Industrial -->
-      <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f8553fb408f3334d79374.webp"
-               alt="Industrial painting Atlanta commercial contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Industrial Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Manufacturing plants, heavy-use facilities, and industrial equipment.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 8 Floor Coatings -->
-      <a href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04158787d9e1.webp"
-               alt="Commercial floor epoxy Atlanta contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Floor Coatings</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Epoxy, urethane, and specialty floor coatings for commercial and industrial spaces.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 9 Line Striping -->
-      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f856814c429054c57b329.webp"
-               alt="Warehouse line striping Atlanta commercial contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Line Striping</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Parking lots, loading zones, warehouses, and safety markings.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 10 Tank Painting -->
-      <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f854f899b88380c67532b.webp"
-               alt="Industrial tank painting Atlanta contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Tank Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">Industrial tanks, silos, and large metal structures.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 11 Construction Painting -->
-      <a href="https://southeastcommercialpainting.com/construction-painting" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7d8c7d68776cc2cb4e65.webp"
-               alt="Construction painting Atlanta commercial contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Construction Painting</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">New construction and build-out painting for commercial projects.</p>
-          </div>
-        </div>
-      </a>
-
-      <!-- 12 Concrete Polishing -->
-      <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" target="_blank" rel="noopener"
-         style="text-decoration:none; color:inherit; display:block;"
-         onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';"
-         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
-        <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949278d614c93a76f3d7d5.webp"
-               alt="Commercial concrete polishing Atlanta contractors"
-               width="400" height="192" loading="lazy" decoding="async"
-               style="display:block; width:100%; height:192px; object-fit:cover;">
-          <div style="padding:22px;">
-            <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
-            <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Concrete Polishing</h3>
-            <p style="margin:0; color:#475569; font-size:16px; line-height:1.6;">High-performance polished concrete for commercial and industrial floors.</p>
-          </div>
-        </div>
-      </a>
 
     </div>
 
-    <!-- B2B Disqualifier (inline so it always styles) -->
-    <div style="margin-top:64px; max-width:768px; margin-left:auto; margin-right:auto;">
-      <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:24px; border-radius:16px; display:flex; gap:16px; align-items:flex-start; box-shadow:0 8px 18px rgba(2,6,23,.06);">
-        <svg xmlns="http://www.w3.org/2000/svg" style="flex:0 0 auto; color:#2563eb; margin-top:4px; width:24px; height:24px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <div>
-          <h4 style="margin:0 0 4px 0; font-size:18px; font-weight:900; color:#333333;">Commercial &amp; Industrial Only</h4>
-          <p style="margin:0; font-size:14px; color:#1e40af; line-height:1.6;">
-            We <strong>do not paint residential homes</strong>. No interior house painting. No exterior house painting. If you're a homeowner, we're not the right fit.
-          </p>
+    <!-- 6 Service Cards — 3 columns desktop, 1 mobile -->
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:24px;
+      margin-bottom:48px;
+    ">
+
+      <!-- 1: Interior -->
+      <a href="https://southeastcommercialpainting.com/interior-commercial-painting"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949849c547053b05c9f121.webp"
+            alt="Commercial interior painting Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">Interior Painting</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Offices, lobbies, corridors, stairwells, 
+              restrooms, and tenant spaces. Scheduled 
+              to keep your building operational.
+            </p>
+          </div>
         </div>
+      </a>
+
+      <!-- 2: Exterior -->
+      <a href="https://southeastcommercialpainting.com/exterior-commercial-painting"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp"
+            alt="Commercial exterior painting Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">Exterior Painting</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Façades, loading docks, metal panels, 
+              tilt-wall, masonry, and siding — 
+              with containment and weather planning.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3: Warehouse -->
+      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-painting"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e2f6bac24edfaace3b1.webp"
+            alt="Warehouse painting Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">Warehouse &amp; Industrial</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Large-scale interiors, structural steel, 
+              concrete block, metal decking, and 
+              high-wear industrial surfaces.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4: High-Rise -->
+      <a href="https://southeastcommercialpainting.com/high-rise-painters"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp"
+            alt="High-rise commercial painting Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">High-Rise Painting</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Multi-story access, lift staging, 
+              containment systems, and OSHA-aligned 
+              safety planning for occupied towers.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5: Floor Coatings -->
+      <a href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04158787d9e1.webp"
+            alt="Commercial floor epoxy coatings Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">Floor Coatings</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Epoxy, urethane, and specialty systems 
+              for warehouses, facilities, kitchens, 
+              garages, and industrial floors.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6: Line Striping -->
+      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting"
+         style="text-decoration:none; color:inherit; display:block;"
+         onmouseover="this.firstElementChild.style.transform='translateY(-4px)'; this.firstElementChild.style.boxShadow='0 20px 40px rgba(2,6,23,.13)';"
+         onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 8px 24px rgba(2,6,23,.08)';">
+        <div style="
+          background:#f8fafc;
+          border:1px solid #e2e8f0;
+          border-top:4px solid #008000;
+          border-radius:16px;
+          overflow:hidden;
+          box-shadow:0 8px 24px rgba(2,6,23,.08);
+          transition:transform .18s ease, box-shadow .18s ease;
+        ">
+          <img
+            src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f856814c429054c57b329.webp"
+            alt="Warehouse line striping Atlanta"
+            width="400" height="200"
+            loading="lazy" decoding="async"
+            style="display:block; width:100%; height:200px; object-fit:cover;"
+          />
+          <div style="padding:22px;">
+            <h3 style="
+              margin:0 0 8px 0;
+              font-size:19px;
+              font-weight:900;
+              color:#111827;
+            ">Line Striping</h3>
+            <p style="
+              margin:0;
+              font-size:15px;
+              color:#475569;
+              line-height:1.65;
+            ">
+              Warehouse safety markings, parking lots, 
+              loading zones, and OSHA-required 
+              floor delineation.
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- More Services Footer — keeps SEO links without bloating the grid -->
+    <div style="
+      padding:20px 24px;
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      border-radius:12px;
+      text-align:center;
+    ">
+      <p style="
+        margin:0 0 12px 0;
+        font-size:14px;
+        font-weight:700;
+        color:#475569;
+        text-transform:uppercase;
+        letter-spacing:0.08em;
+      ">Additional Services</p>
+      <div style="
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        justify-content:center;
+      ">
+        <a href="https://southeastcommercialpainting.com/atlanta-tank-painting.html"
+           style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
+           Tank Painting
+        </a>
+        <span style="color:#cbd5e1;">·</span>
+        <a href="https://southeastcommercialpainting.com/construction-painting.html"
+           style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
+           Construction Painting
+        </a>
+        <span style="color:#cbd5e1;">·</span>
+        <a href="https://southeastcommercialpainting.com/commercial-sandblasting.html"
+           style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
+           Commercial Sandblasting
+        </a>
+        <span style="color:#cbd5e1;">·</span>
+        <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing.html"
+           style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
+           Concrete Polishing
+        </a>
+        <span style="color:#cbd5e1;">·</span>
+        <a href="https://southeastcommercialpainting.com/commercial-office-painting.html"
+           style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
+           Office Painting
+        </a>
       </div>
     </div>
 
   </div>
 </section>
+
 <!-- ========================================
      SECTION 4: A Professional Process
      GHL-safe / Inline styling:
