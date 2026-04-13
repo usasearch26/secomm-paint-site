@@ -3599,12 +3599,12 @@ fake on a jobsite.
           flex-wrap:wrap;
           gap:10px;
         ">
-          <a href="/interior-commercial-painting.html" style="
+          <a href="/construction-painting" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
-          ">Interior Commercial Painting</a>
+          ">Contstruction Painting</a>
           <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-warehouse-painting" style="
             font-size:13px;
@@ -3613,12 +3613,12 @@ fake on a jobsite.
             text-decoration:underline;
           ">Warehouse Painting</a>
           <span style="color:#cbd5e1; font-size:13px;">·</span>
-          <a href="/commercial-office-painting" style="
+          <a href="/atlanta-warehouse-line-striping-painting" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
-          ">Office Painting</a>
+          ">Line Striping Painting</a>
         </div>
       </div>
 
