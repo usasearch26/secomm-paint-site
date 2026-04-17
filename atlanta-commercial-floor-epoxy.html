@@ -96,18 +96,24 @@
   }
   .container { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
 
-  /* TOP BAR - FIXED WHITE */
-  .top-bar { 
-    background: #ffffff !important; 
-    border-bottom: 1px solid #e6e6e6; 
-    padding: 10px 0 14px; 
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03); 
-    position: relative;
-    z-index: 60;
-  }
+  /* TOP BAR */
+.top-bar { 
+  background: #f3f4f6 !important; 
+  border-bottom: 1px solid #e6e6e6; 
+  padding: 10px 0 14px; 
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03); 
+  position: relative;
+  z-index: 60;
+}
   .top-bar-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .trust-items { display: flex; justify-content: center; gap: 36px; text-align: center; }
+  .trust-item strong { display: block; font-size: 13px; font-weight: 700; color: #0f172a; line-height: 1.2; }
+  .trust-item span { display: block; margin-top: 4px; font-size: 12px; color: #008000; font-weight: 600; line-height: 1.2; }
+  .social-icons { display: flex; justify-content: flex-end; gap: 12px; }
+  .social-icons a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #fff; border: 1px solid #e6e6e6; }
+  .social-icons svg { width: 14px; height: 14px; fill: #333; }
 
-  /* MAIN HEADER - FIXED WHITE WITH SEPARATION */
+  /* ================== RESPONSIVE HEADER ================== */
   .main-header {
     background: #ffffff !important;
     padding: 20px 0 12px;
@@ -115,8 +121,9 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     position: relative;
     z-index: 50;
-  }
-  .main-header-inner {
+}
+
+.main-header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,33 +131,39 @@
     margin: 0 auto;
     padding: 0 20px;
     gap: 30px;
-  }
-  .logo img {
-    max-height: 95px;
+}
+
+.logo img {
+    max-height: 95px;        /* Made logo more prominent */
     width: auto;
-  }
-  .phone {
+}
+
+/* Phone - Bigger and bolder */
+.phone {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-  }
-  .phone .fast {
+}
+
+.phone .fast {
     font-size: 20px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 3px;
+    margin-bottom: 3px;     /* space between text and number */
     white-space: nowrap;
-  }
-  .phone a {
+}
+
+.phone a {
     font-size: 29px;
     font-weight: 900;
     color: #008000;
     text-decoration: none;
     white-space: nowrap;
-  }
+}
 
-  /* NAV */
+
+     /* NAV */
   .main-nav { background: #ffffff; padding: 14px 0 10px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e5e7eb; }
   .main-nav > div { max-width: 1280px; margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; font-size: 15px; font-weight: 600; }
   .main-nav a, .dropbtn { color: #0f172a; text-decoration: none; white-space: nowrap; padding: 8px 11px; }
@@ -201,22 +214,11 @@
   .cs-stack { display: grid; gap: 40px; }
   .cs-stack-item { border-left: 4px solid #008000; padding-left: 20px; }
 
-  /* Image grid - FIXED HEALTHCARE CARD */
+  /* Image grid */
   .cs-img-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
   .cs-img-card { text-align: center; }
-  .cs-img-wrap { 
-    position: relative; 
-    overflow: hidden; 
-    border-radius: 10px; 
-    box-shadow: 0 8px 20px rgba(2,6,23,0.10); 
-  }
-  .cs-img-wrap img { 
-    width: 100%; 
-    height: 192px; 
-    object-fit: cover; 
-    transition: transform 0.5s ease; 
-    display: block; 
-  }
+  .cs-img-wrap { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 8px 20px rgba(2,6,23,0.10); }
+  .cs-img-wrap img { width: 100%; height: 192px; object-fit: cover; transition: transform 0.5s ease; display: block; }
   .cs-img-wrap:hover img { transform: scale(1.08); }
   .cs-img-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.18); }
   .cs-img-label { margin-top: 12px; font-size: 13px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -560,30 +562,251 @@
               <a href="/atlanta-industrial-painting.html">Industrial Painting</a>
               <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
               <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
+              <a href="/atlanta-tank-painting.html">Tank Painting</a>
+              <a href="/construction-painting.html">Construction Painting</a>
+              <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
             </div>
           </div>
-          <!-- Additional nav links preserved exactly as original -->
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Floor Coatings ▼</a>
+            <div class="dropdown-content">
+              <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
+              <a href="/warehouse-floor-epoxy">Warehouse Floor Epoxy</a>
+              <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
+              <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
+              <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
+              <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
+            </div>
+          </div>
+          <a href="/contact-us.html">Contact</a>
         </div>
       </nav>
     </div>
   </div>
 </header>
 
-<!-- HERO SECTION (preserved exactly, now properly separated from fixed white header) -->
-<!-- [Hero content from original file preserved 100% - omitted here for brevity but fully included in actual deployment] -->
+<!-- HERO -->
+<section style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;height:auto;background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp');background-size:cover;background-position:center;color:#ffffff;padding:60px 16px 40px 16px;box-sizing:border-box;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(17,24,39,.80) 0%,rgba(30,58,138,.72) 50%,rgba(49,46,129,.78) 100%);z-index:10;"></div>
+  <div style="position:relative;z-index:20;width:100%;max-width:1280px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:50px;align-items:start;">
 
-<!-- IMAGE GALLERY SECTION (all cards preserved) -->
+      <!-- LEFT COLUMN -->
+      <div style="text-align:center;padding-top:16px;">
+        <div style="width:100%;max-width:760px;margin:0 auto;">
+          <div style="margin-bottom:14px;">
+            <span style="font-size:14px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#2ea44f;">
+              Commercial Floor Epoxy Contractors • Atlanta, GA • Est. 1991
+            </span>
+          </div>
+          <h1 style="margin:0 0 22px 0;font-size:clamp(30px,4.5vw,56px);line-height:.92;font-weight:900;letter-spacing:-.04em;text-transform:uppercase;">
+            Atlanta's<br/>
+            <span style="color:#2ea44f;">Commercial</span><br/>
+            Floor Epoxy<br/>
+            Contractors
+          </h1>
+          <div style="max-width:720px;margin:0 auto 28px auto;font-size:clamp(18px,2vw,22px);line-height:1.7;color:#d8e1f0;">
+            From Warehouses and Manufacturing Plants to Retail Spaces and Service Facilities, Our Commercial Epoxy Floor Systems Deliver Strength, Safety, &amp; Professional Appearance.
+            <strong style="color:#ffffff;">Southeast Commercial Services</strong>
+            provides high-quality commercial painting services for property managers, contractors, and facility owners across Atlanta.
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:18px;">
+            <a href="#quote-form" style="min-height:58px;padding:0 30px;background:#2ea44f;color:#0a1628;font-weight:900;text-transform:uppercase;border-radius:14px;display:flex;align-items:center;">Request a Free Quote</a>
+            <a href="tel:+14043482244" style="min-height:58px;padding:0 30px;border:2px solid #fff;border-radius:14px;display:flex;align-items:center;color:#fff;font-weight:900;">(404) 348-2244</a>
+          </div>
+          <div style="font-size:12px;font-weight:800;text-transform:uppercase;color:#97a7c0;">
+            No Residential Requests • Commercial Facilities Only
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: FORM -->
+      <div style="width:100%;max-width:520px;margin:0 auto;">
+        <div id="quote-form" style="margin-top:-20px;border-radius:16px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.32);background:rgba(10,18,40,.62);padding:10px 24px 20px 24px;">
+          <h2 style="text-align:center;font-size:36px;font-weight:800;margin:4px 0 16px 0;color:#ffffff;">Request a Free Quote</h2>
+          <p style="text-align:center;font-size:13px;color:#d1d5db;margin-bottom:24px;">We typically get back to you in minutes, to within the hour (M-F).</p>
+          <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
+            <input type="text" name="full_name" placeholder="Full Name" required style="width:100%;margin-bottom:12px;padding:14px;border-radius:8px;border:none;font-size:16px;background:#ffffff;">
+            <input type="text" name="company" placeholder="Company Name" style="width:100%;margin-bottom:12px;padding:14px;border-radius:8px;border:none;font-size:16px;background:#ffffff;">
+            <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;margin-bottom:12px;padding:14px;border-radius:8px;border:none;font-size:16px;background:#ffffff;">
+            <input type="email" name="email" placeholder="Email Address" required style="width:100%;margin-bottom:12px;padding:14px;border-radius:8px;border:none;font-size:16px;background:#ffffff;">
+            <textarea name="message" placeholder="Project details" rows="4" style="width:100%;margin-bottom:18px;padding:14px;border-radius:8px;border:none;font-size:16px;background:#ffffff;resize:vertical;"></textarea>
+            <div style="margin:20px 0;font-size:13.5px;line-height:1.5;color:#e2e8f0;">
+              <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;user-select:none;">
+                <input type="checkbox" name="consent" required style="margin-top:4px;accent-color:#2ea44f;width:18px;height:18px;flex-shrink:0;">
+                <span>By providing my phone number and email address, I agree to receive information &amp; service-related communications from Southeast Commercial Services of Georgia LLC.</span>
+              </label>
+            </div>
+            <input type="hidden" name="gclid" id="gclid">
+            <input type="hidden" name="gbraid" id="gbraid">
+            <input type="hidden" name="wbraid" id="wbraid">
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+            <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+            <input type="hidden" name="utm_adid" id="utm_adid">
+            <input type="hidden" name="fbclid" id="fbclid">
+            <input type="hidden" name="msclkid" id="msclkid">
+            <input type="hidden" name="_subject" value="New Quote Request from Website!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+            <button type="submit" style="width:100%;padding:14px;background:#16a34a;color:#fff;border-radius:12px;font-weight:800;font-size:17px;border:none;cursor:pointer;">Submit Form</button>
+            <div style="text-align:center;font-size:11px;margin-top:12px;color:#a3b4d0;">Commercial projects only • No residential</div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MAIN CONTENT SECTIONS ==================== -->
+
+<!-- INTRO -->
+<section class="cs-section cs-section-white">
+  <div class="cs-container cs-container-narrow">
+    <h2 class="cs-h2">Atlanta Commercial Epoxy Flooring: High-Performance Systems Built to Protect Your Concrete and Your Operation</h2>
+    <p class="cs-p-lead">Southeast Commercial Services has been installing commercial and industrial epoxy floor systems across Atlanta since 1991. We work directly with facility managers, property managers, and general contractors on projects where floor performance is not optional — warehouses, manufacturing plants, food processing facilities, healthcare buildings, and commercial properties that run hard every day.</p>
+  </div>
+</section>
+
+<!-- CONSEQUENCES OF UNPROTECTED CONCRETE -->
+<section class="cs-section cs-section-gray">
+  <div class="cs-container">
+    <div class="cs-split">
+      <div>
+        <h2 class="cs-h2">What Happens to an Unprotected Concrete Floor in a Working Facility</h2>
+        <p class="cs-p">In any commercial or industrial facility, the concrete floor is the hardest-working surface in the building. It takes forklift loads, chemical spills, foot traffic, and impact every single day. Left unprotected or coated with the wrong system, concrete fails in predictable ways — and each failure costs real money. A properly specified and installed <strong>epoxy flooring system</strong> is built specifically to stop these failure points before they start.</p>
+      </div>
+      <div>
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" alt="Commercial epoxy floor installation Atlanta">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAILURE POINTS -->
+<section class="cs-section cs-section-white">
+  <div class="cs-container cs-container-narrow">
+    <div class="cs-stack">
+
+      <div class="cs-stack-item">
+        <h3 class="cs-h3">Failure Point 1: Concrete Absorbs Everything</h3>
+        <p class="cs-p">Concrete looks solid, but it acts like a sponge. Its internal network of pores and capillaries pulls in any liquid it contacts — water, oils, hydraulic fluid, cleaning chemicals. Once absorbed, contamination goes deep into the slab and cannot be removed. In a food or beverage facility, that porosity is a direct compliance problem — it creates conditions that fail USDA, FDA, and SQF audits. An <strong>impervious epoxy system</strong> seals those pores permanently, giving you a surface that wipes clean and stays clean.</p>
+      </div>
+
+      <div class="cs-stack-item">
+        <h3 class="cs-h3">Failure Point 2: Industrial Chemicals Eat Concrete</h3>
+        <p class="cs-p">Concrete holds its strength because of high alkalinity — a pH between 12.5 and 13.5. Acids attack that directly. When an acidic substance hits bare concrete, it dissolves the calcium silicate hydrate compounds that hold the slab together. The result is surface erosion, chronic dusting, and long-term structural weakening. A correctly specified <strong>chemical-resistant epoxy system</strong> takes the hit instead of your slab, preserving both surface integrity and load-bearing capacity.</p>
+      </div>
+
+      <div class="cs-stack-item">
+        <h3 class="cs-h3">Failure Point 3: Traffic and Impact Break Down the Surface</h3>
+        <p class="cs-p">Concrete handles compression well but cracks under tension. The daily reality of a working facility — forklift point loads, pallet jack wheels, dropped tools, turning equipment — creates exactly the kind of flexural stress concrete cannot handle. Micro-cracks form, widen under continued traffic, and turn into spalls and joint deterioration. Those aren't just cosmetic problems. They create trip hazards, damage MHE tires, and generate airborne silicate dust. A <strong>high-build epoxy floor system</strong> distributes those forces across a larger surface area and gives the concrete a durable wear layer to hide behind.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL IMPACT -->
+<section class="cs-section cs-section-gray">
+  <div class="cs-container cs-container-narrow">
+    <h2 class="cs-h2 cs-h2-center">The Real Cost of a Floor You Keep Patching</h2>
+    <p class="cs-p">A deteriorating floor doesn't just cost you repair bills. It costs you in layers. First there's the direct spend on patches that fail again in six months. Then there's unplanned downtime — the production hours you lose while a crew fixes a section of floor. Then the soft costs: extra cleaning time on a dusty damaged surface, inventory damaged by that same dust, and the constant low-grade risk of a trip-and-fall incident turning into an OSHA citation or a workers' comp claim. A <strong>professionally installed epoxy floor</strong> eliminates that entire cycle. It's not a maintenance cost — it's what stops the maintenance costs.</p>
+  </div>
+</section>
+
+<!-- ENVIRONMENTS WE SERVE -->
 <section class="cs-section cs-section-white">
   <div class="cs-container">
-    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:12px;">Atlanta Commercial &amp; Industrial Floor Coating Applications</h2>
-    <p class="cs-p-lead cs-p-center" style="max-width:760px;margin:0 auto 40px auto;">From heavy manufacturing to healthcare and food-grade facilities — we engineer the right epoxy system for every environment.</p>
-    
+    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:36px;">Commercial and Industrial Facilities We Serve</h2>
     <div class="cs-img-grid">
-      <!-- All other gallery cards preserved exactly as original -->
-      <!-- ... previous cards ... -->
 
-      <!-- FIXED HEALTHCARE CARD -->
       <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" alt="Factory floor with industrial epoxy coating Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Factory</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29080b4d553e7072c0.png" alt="Warehouse floor with epoxy coating Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Warehouse</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a595188d832e175e24d.png" alt="Supermarket floor with polished concrete Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Supermarket</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd36f165be33c.png" alt="Parking deck traffic coating Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Parking Deck Coatings</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b81d6e3c40977e1c71efe.png" alt="Aviation hangar specialty floor coating Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Aviation</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c059599e9456.png" alt="Retail facility decorative concrete floor Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Retail Facilities</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59080b4d4ea1707088.png" alt="Food and beverage production sanitary floor coating Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Food &amp; Beverage Production</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29bd9c141e302a5ea0.png" alt="High heat area thermal shock resistant flooring Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">High Heat Areas</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29625d6735c8f01555.png" alt="Auto dealership service bay chemical resistant floor Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Auto Dealerships</div>
+      </div>
+
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3eb045be33a.png" alt="Restaurant kitchen seamless sanitary flooring Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Restaurant</div>
+      </div>
+
+            <div class="cs-img-card">
         <div class="cs-img-wrap">
           <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd385ea5be33b.png" 
                alt="Healthcare facility hygienic seamless floor Atlanta" 
@@ -593,15 +816,352 @@
         <div class="cs-img-label">Healthcare</div>
       </div>
 
-      <!-- Remaining cards preserved exactly -->
-      <!-- ... rest of grid ... -->
+      <div class="cs-img-card">
+        <div class="cs-img-wrap">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c0c7bc9e9454.png" alt="Office building durable aesthetic flooring Atlanta" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+          <div class="cs-img-overlay"></div>
+        </div>
+        <div class="cs-img-label">Office &amp; Buildings</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- All remaining sections (Why Us, Epoxy Systems, Scheduling, FAQ, Trust, CTAs, Contact, Footer) preserved 100% as in original file -->
+<!-- WHY US -->
+<section class="cs-section cs-section-gray">
+  <div class="cs-container">
+    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:12px;">Why Southeast Commercial Services</h2>
+    <p class="cs-p-lead cs-p-center" style="max-width:760px;margin:0 auto 40px auto;">Picking an epoxy flooring contractor in Atlanta is a decision you'll live with for ten years or more. Here is what separates how we work from how most contractors approach a flooring job:</p>
+    <div class="cs-2col">
 
-<!-- [Full remaining body content from original file included exactly - no omissions] -->
+      <div class="cs-2col-item">
+        <h3 class="cs-h3">1. We Start With a Site Assessment, Not a Sales Pitch</h3>
+        <p class="cs-p">The most common reason epoxy floors fail is that the contractor never properly understood the facility before they started. We come to your site, look at your operations, your traffic patterns, your chemical exposure, and your substrate condition before we recommend anything. Our initial walkthrough is a working diagnostic — not a handshake meeting.</p>
+      </div>
+
+      <div class="cs-2col-item">
+        <h3 class="cs-h3">2. Surface Preparation Is 90% of the Job</h3>
+        <p class="cs-p">A floor coating is only as good as what it bonds to. We mechanically prepare every substrate using industrial diamond grinders or captive shot blasters to create the correct <strong>Concrete Surface Profile (CSP)</strong>. All equipment runs with HEPA-filtered vacuums. We do not acid etch and we do not skip this step — it is non-negotiable on every project we run.</p>
+      </div>
+
+      <div class="cs-2col-item">
+        <h3 class="cs-h3">3. We Specify the Right System for Your Facility</h3>
+        <p class="cs-p">Our crews understand epoxy chemistry well enough to match the coating system to your actual conditions — the chemicals on your floor, the loads your floor carries, whether you run hot washdowns, whether you need slip resistance in wet zones. We work with <strong>100% Solids Epoxies</strong>, Novolac systems, urethane cement, and water-based formulations and we know when each one is the right call.</p>
+      </div>
+
+      <div class="cs-2col-item">
+        <h3 class="cs-h3">4. Quality Control Through the Entire Install</h3>
+        <p class="cs-p">Our crew leaders verify ambient conditions, mixing ratios, and application thickness at every stage of the installation. The difference between a floor that holds up for a decade and one that starts delaminating in year two almost always comes down to what happened during the application — not what was specified on paper.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EPOXY SYSTEMS -->
+<section class="cs-section cs-section-white">
+  <div class="cs-container">
+    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:12px;">Our Atlanta Commercial and Industrial Epoxy Flooring Systems</h2>
+    <p class="cs-p-lead cs-p-center" style="max-width:760px;margin:0 auto 40px auto;">We engineer and install multi-layer epoxy systems matched to your facility's specific performance requirements. Every system we specify is designed for the Atlanta metro area's climate conditions and the operational demands of your building.</p>
+    <div class="cs-container-narrow">
+      <div class="cs-systems">
+
+        <div class="cs-system-item">
+          <h3 class="cs-h3">High-Build Epoxy Coating Systems (30-50 mils)</h3>
+          <p class="cs-p">This is the standard system for manufacturing floors and warehouse environments. It is a multi-layer, high-solids build that starts with a low-viscosity epoxy primer to penetrate and lock into the prepared concrete, followed by pigmented intermediate coats, and finished with a high-performance urethane or epoxy topcoat. The right choice for forklift aisles, production zones, and general heavy-use floors. This is our most commonly installed <strong>industrial epoxy flooring</strong> system in Atlanta.</p>
+        </div>
+
+        <div class="cs-system-item">
+          <h3 class="cs-h3">Decorative Quartz &amp; Flake Epoxy Systems</h3>
+          <p class="cs-p">Industrial strength with a finished appearance. We broadcast decorative vinyl flakes or colored quartz into a wet epoxy base coat to full rejection, then seal with clear chemical-resistant topcoats. The result is a floor that handles the same abuse as a plain industrial system but looks sharp doing it. The right fit for Atlanta <strong>commercial spaces</strong>, labs, locker rooms, healthcare facilities, and showrooms where the floor is part of the customer experience.</p>
+        </div>
+
+        <div class="cs-system-item">
+          <h3 class="cs-h3">Chemical-Resistant Novolac Epoxy Systems</h3>
+          <p class="cs-p">When your facility handles aggressive chemicals, standard epoxy is not enough. <strong>Novolac epoxy systems</strong> have a tighter molecular structure with higher cross-link density, giving them resistance that holds up against 98% sulfuric acid, industrial solvents, and other materials that would quickly break down a standard coating. We specify novolac for secondary containment areas, battery charging stations, chemical transfer pads, and any zone where a spill is a real operational event.</p>
+        </div>
+
+        <div class="cs-system-item">
+          <h3 class="cs-h3">Self-Leveling Epoxy Systems</h3>
+          <p class="cs-p"><strong>Self-leveling epoxy</strong> is applied at higher volume and flows out to fill surface imperfections, creating a seamless, glass-smooth finish. We use a notched squeegee and porcupine roller to achieve a perfectly flat, monolithic surface. This system is the right call for clean rooms, pharmaceutical labs, and precision facilities in Atlanta where the floor has to be absolutely sanitary and easy to maintain to a documented standard.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULING -->
+<section class="cs-section cs-section-gray">
+  <div class="cs-container">
+    <div class="cs-split-reverse">
+      <div>
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3c5d95be339.png" alt="Commercial epoxy floor installation active facility Atlanta">
+      </div>
+      <div>
+        <h2 class="cs-h2">We Work Around Your Operation — Not the Other Way Around</h2>
+        <p class="cs-p">Downtime costs money. We build every project schedule around keeping your facility running as much as possible. In a large Atlanta warehouse, that typically means we isolate and complete forklift aisles over a weekend shutdown, then phase through the remaining areas section by section while your operation continues around us.</p>
+        <p class="cs-p">We use high-tack plastic barriers, zipper doors, and negative air machines on every active-facility project to contain dust and fumes. Your equipment, inventory, and staff in adjacent areas stay protected throughout the work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="cs-section cs-section-white">
+  <div class="cs-container cs-container-narrow">
+    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:40px;">Common Questions From Facility Managers</h2>
+
+    <div class="cs-faq-group">
+      <h3 class="cs-faq-topic">Installation &amp; Operational Downtime</h3>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">How much downtime should we plan for, and can you work weekends or phase the project around our schedule?</p>
+        <p class="cs-faq-a">Most installations run 3 to 5 days from prep through final cure, depending on square footage, system type, and substrate condition. We build every project schedule around your operation — not ours. We phase work section by section to keep critical areas running, and we regularly work weekends, holidays, and planned shutdowns to keep your production impact as close to zero as possible.</p>
+      </div>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">What about fumes and VOCs? Can employees work in areas adjacent to the installation?</p>
+        <p class="cs-faq-a">The majority of our systems are 100% solids — zero or near-zero VOC — which means minimal odor during application and cure. For any project running next to an occupied area, we set up containment zones with negative air ventilation so fumes stay in the work zone and do not migrate into your facility.</p>
+      </div>
+    </div>
+
+    <div class="cs-faq-group">
+      <h3 class="cs-faq-topic">Safety &amp; Compliance</h3>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">How do you handle slip resistance? We have wet zones and dry zones with different requirements.</p>
+        <p class="cs-faq-a">Slip resistance is engineered into the system — it is not a fixed property of epoxy. We control the final slip coefficient by broadcasting specific aggregates like quartz or aluminum oxide into the coating during installation. Each zone in your facility gets specified to its own requirement, whether that means OSHA-compliant dry warehouse traction or the higher slip resistance needed in a food processing wash-down area.</p>
+      </div>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">We run a food processing facility. Do your floors meet USDA and FDA requirements?</p>
+        <p class="cs-faq-a">Yes. We install USDA-approved and FDA-compliant flooring systems for food and beverage, pharmaceutical, and healthcare environments across Atlanta. These systems are fully seamless and non-porous — no joints, no grout lines, no place for bacteria or biofilm to establish. They hold up under aggressive sanitizing protocols including hot water and steam cleaning without degrading.</p>
+      </div>
+    </div>
+
+    <div class="cs-faq-group">
+      <h3 class="cs-faq-topic">Performance &amp; Durability</h3>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">Our forklifts run that floor all day and we drop heavy parts regularly. Will an epoxy floor hold up?</p>
+        <p class="cs-faq-a">Our industrial systems are built specifically for that environment. Compressive strength far exceeds bare concrete for constant forklift traffic. For high-impact zones where heavy tooling or parts get dropped, we typically specify a urethane cement system — it has more flexibility than standard epoxy, which means it absorbs impact energy instead of cracking under it.</p>
+      </div>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">We run hot washdowns twice a day. What happens to the floor under that kind of thermal cycling?</p>
+        <p class="cs-faq-a">Standard epoxy can crack or delaminate under rapid temperature swings — that is a real failure mode in washdown environments. For those situations we specify a polyurethane cement slurry system, which is designed to expand and contract with the concrete slab. It handles the thermal cycling that would eventually destroy a rigid epoxy coating.</p>
+      </div>
+    </div>
+
+    <div class="cs-faq-group">
+      <h3 class="cs-faq-topic">Maintenance &amp; Customization</h3>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">What does day-to-day maintenance actually look like on an epoxy floor?</p>
+        <p class="cs-faq-a">Simpler than most people expect. Daily: dry dust mop or sweep to pull abrasive grit off the surface — that grit is what dulls the finish over time. Weekly or as needed: mop with a dual-bucket system and a pH-neutral cleaner. Avoid citrus-based cleaners, strong degreasers, or highly alkaline products — they are not necessary and they will shorten the life of the topcoat. Clean up spills when they happen. We give every client a written maintenance guide when the job is done.</p>
+      </div>
+      <div class="cs-faq-item">
+        <p class="cs-faq-q">Can you put our OSHA safety lines and forklift lane markings into the floor instead of using tape?</p>
+        <p class="cs-faq-a">Yes — and it is a far better solution than tape or topical paint, which both wear out fast under forklift traffic. We integrate permanent OSHA-compliant walkway lines, forklift lanes, and safety zone markings directly into the floor system during installation. Company logos and custom graphics can also be embedded. The markings last the life of the floor.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST / CERTIFICATIONS -->
+<section class="cs-section cs-section-gray">
+  <div class="cs-container">
+    <h2 class="cs-h2 cs-h2-center" style="margin-bottom:36px;">Licensed, Insured &amp; Certified for Commercial Work</h2>
+    <div class="cs-trust-grid">
+
+      <div class="cs-trust-card">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        <h3>Safety &amp; Compliance</h3>
+        <p>All projects run to OSHA standards in active industrial and commercial environments.</p>
+      </div>
+
+      <div class="cs-trust-card">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+        <h3>Manufacturer Certified</h3>
+        <p>Trained and certified to install coating systems to manufacturer specifications on every project.</p>
+      </div>
+
+      <div class="cs-trust-card">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1h3m-3 0H9"></path></svg>
+        <h3>Fully Insured</h3>
+        <p>Comprehensive general liability and workers' compensation coverage on all Atlanta area projects.</p>
+      </div>
+
+      <div class="cs-trust-card">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        <h3>Written Warranties</h3>
+        <p>Every project backed by a written warranty covering both materials and workmanship.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MID-PAGE CTA -->
+<section class="cs-section cs-section-white">
+  <div class="cs-container cs-container-narrow cs-midcta">
+    <h2 class="cs-h2 cs-h2-center">Schedule a Site Assessment for Your Atlanta Facility</h2>
+    <p class="cs-p-lead cs-p-center" style="max-width:680px;margin:0 auto 28px auto;">The first step is a walkthrough of your facility — no cost, no obligation. We look at your concrete, your operations, and your specific requirements, then give you a system recommendation and a detailed project plan built around your schedule.</p>
+    <a href="#quote-form" class="cs-midcta-btn">Request a Free On-Site Assessment</a>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="quote" style="padding:4rem 1rem;border-top:1px solid #e5e7eb;background:linear-gradient(to bottom,#f9fafb 0%,#ffffff 100%);">
+  <div style="max-width:80rem;margin:0 auto;">
+
+    <p style="text-align:center;font-size:14px;color:#6b7280;font-style:italic;margin:0 auto 2rem auto;max-width:720px;line-height:1.7;">
+      Southeast Commercial Services — Atlanta's commercial painting and floor coatings contractor since 1991, serving industrial facilities, warehouses, office complexes, and high-rise buildings across Metro Atlanta.
+    </p>
+
+    <div style="text-align:center;margin-bottom:2.5rem;">
+      <h2 style="margin:0 0 1rem 0;font-size:1.5rem;line-height:2rem;font-weight:700;color:#008000;">
+        Get Your Free Quote From The Top <strong>Atlanta Commercial Painting &amp; Floor Coatings Contractors</strong>
+      </h2>
+      <p style="margin:0;color:#4b5563;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;font-size:0.875rem;">
+        Professional B2B Services Only — No Residential Requests
+      </p>
+    </div>
+
+    <div style="max-width:72rem;margin:0 auto;display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;">
+
+      <div style="color:#374151;font-size:1.125rem;line-height:1.75;">
+        <p style="margin:0 0 1.5rem 0;">
+          We provide a comprehensive <strong>commercial floor epoxy coatings consultation</strong> and detailed price quote that covers every measurable requirement of your facility. From high-durability coatings to safety line striping and aesthetic branding, our <strong>professional estimators</strong> make sure your project is scoped correctly the first time.
+        </p>
+        <p style="margin:0 0 1.5rem 0;">
+          With <strong>over 30 years of Atlanta project history</strong>, Southeast Commercial Services is the contractor property managers and facility engineers call when the floor actually matters. We run tight schedules, work around active operations, and back every job with a written warranty.
+        </p>
+        <p style="margin:0;">
+          Whether it is a single warehouse floor or a multi-phase industrial facility across several buildings, our crews deliver installations that hold up under real operating conditions — heavy traffic, chemical exposure, and the daily demands of a working facility.
+        </p>
+      </div>
+
+      <div style="background:#ffffff;padding:2rem;border-radius:0.75rem;border:1px solid #f3f4f6;box-shadow:0 20px 25px -5px rgba(0,0,0,0.10),0 10px 10px -5px rgba(0,0,0,0.04);text-align:center;">
+        <div style="margin-bottom:1.5rem;">
+          <span style="display:inline-block;background:#008000;color:#ffffff;padding:0.25rem 1rem;border-radius:9999px;font-size:0.875rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">Est. 1991</span>
+        </div>
+        <h3 style="margin:0 0 1rem 0;font-size:1.5rem;line-height:2rem;font-weight:700;color:#111827;">Ready to Start Your Project?</h3>
+        <p style="margin:0 0 2rem 0;color:#4b5563;">Call us now to set up a free on-site walkthrough and quote.</p>
+        <a href="tel:+14043482244"
+           style="display:block;width:100%;background:#008000;color:#ffffff;font-size:1.5rem;line-height:2rem;font-weight:700;padding:1rem;border-radius:0.5rem;text-decoration:none;box-shadow:0 10px 15px -3px rgba(0,0,0,0.10),0 4px 6px -2px rgba(0,0,0,0.05);transition:transform 200ms ease,background-color 200ms ease;"
+           onmouseover="this.style.transform='scale(1.05)';this.style.backgroundColor='#15803d';"
+           onmouseout="this.style.transform='scale(1)';this.style.backgroundColor='#008000';">
+          (404) 348-2244
+        </a>
+        <p style="margin:1rem 0 0 0;font-size:0.875rem;color:#6b7280;font-style:italic;">Click to Call &amp; Schedule Your Assessment &amp; Quote</p>
+        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid #f3f4f6;display:flex;justify-content:center;align-items:center;gap:0.75rem;font-size:0.75rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#9ca3af;">
+          <span>Licensed</span><span>•</span><span>Bonded</span><span>•</span><span>Insured</span><span>•</span><span>30+ Years Serving Atlanta</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:4rem;text-align:center;">
+      <p style="margin:0;font-size:0.875rem;color:#6b7280;">
+        Serving the entire Metro Atlanta area including <strong>Buckhead, Midtown, Fulton Industrial Blvd, and the I-85 NE Corridor.</strong>
+      </p>
+    </div>
+  </div>
+
+  <style>
+    @media (min-width: 768px) {
+      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+      #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+    }
+  </style>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-wrap contact-section" id="contact">
+  <div class="container-main">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <h2>Talk to an Atlanta Commercial Floor Epoxy Contractor</h2>
+        <p>Need a quote for a commercial or industrial flooring project? Reach out today and tell us what you need.</p>
+        <p>We work with warehouses, manufacturing facilities, food and beverage plants, healthcare buildings, retail properties, and commercial sites throughout Greater Atlanta.</p>
+        <div class="contact-points">
+          <div class="contact-point"><strong>Commercial &amp; Industrial Only.</strong> No residential requests.</div>
+          <div class="contact-point"><strong>Fast Scheduling.</strong> We respond quickly during normal business hours.</div>
+          <div class="contact-point"><strong>Built for Real Projects.</strong> Warehouses, facilities, offices, industrial sites, and commercial properties.</div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2 class="form-title">Contact Us to Get a Free Quote</h2>
+        <p class="form-subtitle">Use the form below and a team member will follow up.</p>
+        <form class="lead-form" method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="bottomLeadForm">
+          <input type="text" name="full_name" placeholder="Full Name" required>
+          <div class="lead-form-row">
+            <input type="text" name="company" placeholder="Company Name">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+          </div>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" placeholder="Tell us about your commercial floor epoxy project (facility type, square footage, timeline, etc.)" rows="5"></textarea>
+          <input type="hidden" name="gclid" id="gclid">
+          <input type="hidden" name="gbraid" id="gbraid">
+          <input type="hidden" name="wbraid" id="wbraid">
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_term" id="utm_term">
+          <input type="hidden" name="utm_content" id="utm_content">
+          <input type="hidden" name="utm_adgroup" id="utm_adgroup">
+          <input type="hidden" name="utm_campaignid" id="utm_campaignid">
+          <input type="hidden" name="utm_adid" id="utm_adid">
+          <input type="hidden" name="fbclid" id="fbclid">
+          <input type="hidden" name="msclkid" id="msclkid">
+          <input type="hidden" name="_subject" value="New Quote Request from Website!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+          <button type="submit" class="form-button">Request My Quote</button>
+          <div class="form-note">Commercial and industrial projects only. No residential.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3 class="footer-title">Southeast Commercial Services</h3>
+      <p class="footer-text">Professional commercial and industrial painting and floor coating services for buildings, facilities, warehouses, offices, and industrial properties throughout the Greater Atlanta area.</p>
+      <p class="footer-text">Commercial &amp; Industrial Only • Serving Greater Atlanta Since 1991</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">Services</h4>
+      <div class="footer-list">
+        <a href="/atlanta-commercial-painting-contractors.html">Commercial Building Painting</a>
+        <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
+        <a href="/atlanta-industrial-painting.html">Industrial Painting</a>
+        <a href="/high-rise-painters.html">High-Rise Painting</a>
+        <a href="/atlanta-industrial-floor-coatings.html">Floor Coatings</a>
+        <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact</h4>
+      <div class="footer-list">
+        <strong>Southeast Commercial Services</strong>
+        <span><strong>Phone:</strong> <a href="tel:4043482244">(404) 348-2244</a></span>
+        <span><strong>Office:</strong> 1874 Piedmont Ave. NE, Atlanta, GA 30324</span>
+        <span>2785 Lawrenceville Highway, Suite 202, Decatur, GA 30033</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
+    Licensed • Bonded • Insured • Commercial &amp; Industrial Projects Only
+    <div style="margin-top:18px;font-size:11px;">
+      <a href="/privacy-policy.html" style="color:#94a3b8;text-decoration:none;margin-right:20px;">Privacy Policy</a>
+      <a href="/terms-of-service.html" style="color:#94a3b8;text-decoration:none;">Terms of Service</a>
+    
+    </div>
+  </div>
+</footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -622,3 +1182,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
