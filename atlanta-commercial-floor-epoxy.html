@@ -618,30 +618,235 @@
 <!-- =========================
      PROFESSIONAL SERVICE SCHEMA
 ========================= -->
+<!-- ========================= 
+     SCHEMA BLOCK 1: LOCAL BUSINESS ENTITY
+========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://southeastcommercialpainting.com/#organization",
+  "name": "Southeast Commercial Services of Georgia LLC",
+  "alternateName": "Southeast Commercial Services",
+  "description": "Atlanta's commercial floor epoxy and industrial coating contractor since 1991. We install high-performance epoxy flooring systems for warehouses, manufacturing facilities, food and beverage plants, healthcare facilities, and commercial buildings across Metro Atlanta. Commercial and industrial projects only.",
+  "url": "https://southeastcommercialpainting.com",
+  "telephone": "(404) 348-2244",
+  "foundingDate": "1991",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1874 Piedmont Ave. NE",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30324",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8184,
+    "longitude": -84.3666
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Atlanta",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Georgia"
+      }
+    },
+    {"@type": "Place", "name": "Buckhead"},
+    {"@type": "Place", "name": "Midtown Atlanta"},
+    {"@type": "Place", "name": "Fulton Industrial Corridor"},
+    {"@type": "Place", "name": "I-85 Northeast Corridor"},
+    {"@type": "Place", "name": "Decatur"},
+    {"@type": "Place", "name": "Norcross"},
+    {"@type": "Place", "name": "Marietta"},
+    {"@type": "Place", "name": "Smyrna"},
+    {"@type": "Place", "name": "Kennesaw"},
+    {"@type": "Place", "name": "Duluth"},
+    {"@type": "Place", "name": "Peachtree City"},
+    {"@type": "Place", "name": "Alpharetta"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/southestcommercialservices",
+    "https://www.linkedin.com/company/southeast-commercial-services",
+    "https://maps.app.goo.gl/BWEATfVEbNVcMS8s9"
+  ],
+  "knowsAbout": [
+    "Commercial Floor Epoxy Coatings",
+    "Industrial Epoxy Flooring",
+    "Warehouse Floor Coatings",
+    "Novolac Epoxy Systems",
+    "Self-Leveling Epoxy",
+    "Decorative Quartz Epoxy",
+    "Concrete Surface Preparation",
+    "Chemical-Resistant Floor Coatings",
+    "USDA Compliant Floor Coatings",
+    "Commercial Painting",
+    "Industrial Painting",
+    "High-Rise Painting"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "License",
+      "name": "Licensed Commercial Contractor",
+      "recognizedBy": {
+        "@type": "GovernmentOrganization",
+        "name": "State of Georgia"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- =========================
+     SCHEMA BLOCK 2: SERVICE
+========================= -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Commercial Floor Epoxy Coating Installation",
-  "name": "Commercial Floor Epoxy Coating Installation",
-  "description": "Southeast Commercial Painting installs high-performance commercial floor epoxy coatings throughout Atlanta. Our services include professional surface preparation, moisture mitigation, crack repair, and durable, chemical-resistant epoxy applications for warehouses, manufacturing facilities, and commercial buildings.",
+  "name": "Atlanta Commercial Floor Epoxy Coating Installation",
+  "description": "Southeast Commercial Services installs professionally engineered commercial floor epoxy systems in Atlanta including high-build epoxy coatings, decorative quartz and flake systems, chemical-resistant novolac epoxy, and self-leveling epoxy for warehouses, manufacturing plants, food and beverage facilities, healthcare buildings, and commercial properties.",
   "provider": {
-    "@type": "ProfessionalService",
-    "name": "Southeast Commercial Painting",
-    "@id": "https://southeastcommercialpainting.com/#organization",
-    "url": "https://southeastcommercialpainting.com",
-    "telephone": "(404) 446-2159",
-    "address": {
-      "@typ
-      "longitude": -84.366606661246
-    }
+    "@type": "LocalBusiness",
+    "@id": "https://southeastcommercialpainting.com/#organization"
   },
   "areaServed": {
     "@type": "Place",
-    "name": "Greater Atlanta Area"
+    "name": "Greater Atlanta Metropolitan Area"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Commercial and Industrial Facility Managers, Property Managers, General Contractors"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Epoxy Flooring Systems",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "High-Build Epoxy Coating Systems (30-50 mils)",
+          "description": "Multi-layer, high-solids epoxy system for manufacturing floors, warehouse forklift aisles, and heavy industrial use. Includes low-viscosity primer, pigmented build coats, and urethane topcoat."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Decorative Quartz and Flake Epoxy Systems",
+          "description": "Industrial-grade epoxy with decorative vinyl flake or colored quartz broadcast into wet base coat. Ideal for commercial showrooms, healthcare facilities, laboratories, and office environments."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Chemical-Resistant Novolac Epoxy Systems",
+          "description": "High cross-link density novolac epoxy resistant to 98% sulfuric acid and industrial solvents. Specified for secondary containment areas, battery charging stations, and chemical transfer pads."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Self-Leveling Epoxy Systems",
+          "description": "Ultra-smooth monolithic finish for clean rooms, pharmaceutical labs, and precision manufacturing environments requiring seamless, easy-to-sanitize flooring."
+        }
+      }
+    ]
   }
 }
 </script>
+
+<!-- =========================
+     SCHEMA BLOCK 3: FAQ PAGE
+========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much operational downtime should we expect for a commercial epoxy floor installation, and can it be done over weekends or in phases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical commercial epoxy floor installation in Atlanta takes 3 to 5 days from initial surface preparation to final cure. Southeast Commercial Services specializes in phased installations that keep critical areas of your facility running while work proceeds in isolated sections. We regularly schedule projects over weekends, holidays, and planned shutdowns to eliminate impact on your productivity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about odors and VOCs during commercial epoxy floor installation? Is it safe for employees in adjacent areas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The majority of the epoxy systems we install are 100% solids formulations, meaning they are zero or very low-VOC with minimal odor during application and curing. For projects adjacent to active operations, we establish containment zones with negative air ventilation to prevent fumes from migrating into occupied areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How slip-resistant is a commercial epoxy floor, and can it be customized for wet or oily areas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Slip resistance in an epoxy floor system is an engineered specification, not a fixed property. Southeast Commercial Services controls the slip coefficient by broadcasting specific aggregates such as quartz or aluminum oxide into the coating during installation. We engineer each floor to meet OSHA and ADA requirements for your specific environment, whether it is a dry warehouse or a frequently wet food processing zone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is commercial epoxy flooring compliant with USDA or FDA standards for food and beverage facilities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Southeast Commercial Services installs USDA-approved and FDA-compliant flooring systems for food and beverage processing, pharmaceutical, and healthcare environments in Atlanta. These systems are seamless and non-porous, preventing bacterial harborage and biofilm growth. They withstand aggressive sanitizing protocols including hot water and steam cleaning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a commercial epoxy floor handle constant heavy forklift traffic and impact from dropped tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our industrial epoxy systems are specified for heavy forklift traffic with compressive strength that far exceeds bare concrete. For high-impact areas where tools, parts, or pallets are dropped, we specify urethane cement systems which provide greater flexibility and energy absorption than standard rigid epoxy, reducing the risk of cracking or delamination under shock loading."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the resistance of commercial epoxy flooring to chemical spills and thermal shock?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chemical resistance is determined by the topcoat specification. Southeast Commercial Services selects topcoats formulated for the specific acids, alkalis, solvents, or oils present in your facility. For areas subject to thermal shock from hot water washdowns or steam cleaning, we specify polyurethane cement slurry systems engineered to expand and contract with the concrete slab, preventing cracking and delamination from rapid temperature changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a routine maintenance program for a commercial epoxy floor involve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daily maintenance involves dry dust mopping or sweeping to remove abrasive grit. Weekly cleaning uses a dual-bucket system with a pH-neutral cleaning solution. Avoid acidic, citrus-based, or highly alkaline degreasers which can damage the finish over time. Spills should be addressed promptly. Southeast Commercial Services provides a written maintenance guide at project completion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can safety lines, pedestrian walkways, and company logos be embedded directly into a commercial epoxy floor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Embedding safety markings within the flooring system is far more durable than surface-applied tape or paint, which peel and wear quickly under forklift traffic. Southeast Commercial Services integrates permanent OSHA-compliant pedestrian walkway lines, forklift lane markings, and safety zones directly into the floor system. Company logos and complex graphics can also be embedded for professional branding that lasts the life of the floor."
+      }
+    }
+  ]
+}
+</script>
+
 <!-- Head Tracking - Fast & Clean Version -->
 
 <!-- Preload important CSS (optional but good for speed) -->
