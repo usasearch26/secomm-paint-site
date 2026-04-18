@@ -195,7 +195,12 @@
   /* ================== CONTENT SECTIONS — PLAIN CSS (NO TAILWIND) ================== */
   .cs-section { padding: 60px 20px; }
   .cs-section-white { background: #ffffff; }
-  .cs-section-gray { background: #f3f4f6; }
+    .cs-section-gray {
+    background-color: #f3f4f6;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23334155' stroke-width='0.4' opacity='0.12'%3E%3Cpath d='M0 40L40 0M-5 5L5-5M35 45L45 35'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+
   .cs-container { max-width: 1200px; margin: 0 auto; }
   .cs-container-narrow { max-width: 860px; margin: 0 auto; }
   .cs-h2 { font-size: 28px; font-weight: 800; color: #008000; line-height: 1.2; margin: 0 0 16px 0; text-shadow: 0 2px 8px rgba(0,0,0,0.08); }
@@ -632,9 +637,13 @@
             <a href="#quote-form" style="min-height:58px;padding:0 30px;background:#2ea44f;color:#0a1628;font-weight:900;text-transform:uppercase;border-radius:14px;display:flex;align-items:center;">Request a Free Quote</a>
             <a href="tel:+14043482244" style="min-height:58px;padding:0 30px;border:2px solid #fff;border-radius:14px;display:flex;align-items:center;color:#fff;font-weight:900;">(404) 348-2244</a>
           </div>
-          <div style="font-size:12px;font-weight:800;text-transform:uppercase;color:#97a7c0;">
-            No Residential Requests • Commercial Facilities Only
+                    <div style="margin-top:4px;">
+            <span style="display:inline-flex;align-items:center;gap:7px;background:rgba(15,23,42,0.7);color:#ffffff;font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border-radius:999px;border:1px solid rgba(255,255,255,0.18);">
+              <span style="width:7px;height:7px;background:#2ea44f;border-radius:50%;display:inline-block;"></span>
+              Commercial &amp; Industrial Facilities Only — No Residential
+            </span>
           </div>
+
         </div>
       </div>
 
@@ -1061,7 +1070,14 @@
   <div class="cs-container cs-container-narrow cs-midcta">
     <h2 class="cs-h2 cs-h2-center">Schedule a Site Assessment for Your Atlanta Facility</h2>
     <p class="cs-p-lead cs-p-center" style="max-width:680px;margin:0 auto 28px auto;">The first step is a walkthrough of your facility — no cost, no obligation. We look at your concrete, your operations, and your specific requirements, then give you a system recommendation and a detailed project plan built around your schedule.</p>
-    <a href="#quote-form" class="cs-midcta-btn">Request a Free On-Site Assessment</a>
+        <a href="#quote-form" class="cs-midcta-btn">Request a Free On-Site Assessment</a>
+    <div style="margin-top:16px;">
+      <span style="display:inline-flex;align-items:center;gap:7px;background:#0f172a;color:#ffffff;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:7px 16px;border-radius:999px;border:1px solid rgba(0,128,0,0.4);">
+        <span style="width:7px;height:7px;background:#2ea44f;border-radius:50%;display:inline-block;"></span>
+        Commercial &amp; Industrial Facilities Only — No Residential
+      </span>
+    </div>
+
   </div>
 </section>
 
