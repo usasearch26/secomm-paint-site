@@ -268,13 +268,13 @@
   }
   .cs-midcta-btn:hover { transform: translateY(-2px); background: #006400; box-shadow: 0 14px 30px rgba(0,128,0,0.28); }
 
-    /* ================== VISUAL POLISH ================== */
+      /* ================== VISUAL POLISH ================== */
 
-  /* H2 accent underline */
+  /* H2 accent underline — blue structural signal */
   .cs-h2 {
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 3px solid rgba(0,128,0,0.25);
+    border-bottom: 3px solid rgba(15,23,42,0.20);
     margin-bottom: 20px;
   }
   .cs-h2-center {
@@ -282,7 +282,7 @@
     text-align: center;
   }
 
-  /* Why Us 2-col items — subtle card treatment */
+  /* Why Us 2-col items — green top border (selling points) */
   .cs-2col-item {
     background: #ffffff;
     border: 1px solid #e5e7eb;
@@ -297,11 +297,12 @@
     box-shadow: 0 14px 32px rgba(2,6,23,0.11);
   }
 
-  /* Epoxy systems — styled panels */
+  /* Epoxy systems — blue left border (technical/informational) */
   .cs-system-item {
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    border-left: 5px solid #008000;
+    border-left: 5px solid #1e3a5f;
+    border-top: none;
     border-radius: 12px;
     padding: 28px 26px;
     box-shadow: 0 6px 18px rgba(2,6,23,0.06);
@@ -311,13 +312,12 @@
     transform: translateY(-4px);
     box-shadow: 0 14px 32px rgba(2,6,23,0.11);
   }
-  .cs-system-item { border-top: none; }
 
-  /* Failure point blocks — fuller card treatment */
+  /* Failure point blocks — blue left border (diagnostic/informational) */
   .cs-stack-item {
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    border-left: 5px solid #008000;
+    border-left: 5px solid #1e3a5f;
     border-radius: 12px;
     padding: 26px 24px;
     box-shadow: 0 6px 18px rgba(2,6,23,0.06);
@@ -328,9 +328,9 @@
     box-shadow: 0 14px 32px rgba(2,6,23,0.11);
   }
 
-  /* FAQ — Q and A visual hierarchy */
+  /* FAQ — blue tint background, green left border on question */
   .cs-faq-q {
-    background: #f0fdf4;
+    background: #eff6ff;
     border-left: 4px solid #008000;
     border-radius: 6px;
     padding: 10px 14px;
@@ -341,14 +341,24 @@
   }
   .cs-faq-a {
     padding-left: 14px;
-    border-left: 2px solid #e5e7eb;
+    border-left: 2px solid #cbd5e1;
     font-size: 15px;
     color: #374151;
     line-height: 1.75;
     margin: 0;
   }
 
-  /* Image grid label polish */
+  /* FAQ topic heading — blue instead of green */
+  .cs-faq-topic {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e3a5f;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 10px;
+    margin: 0 0 24px 0;
+  }
+
+  /* Image grid label — alternating green and blue */
   .cs-img-label {
     margin-top: 10px;
     font-size: 12px;
@@ -356,23 +366,18 @@
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    background: #008000;
+    background: #1e3a5f;
     display: inline-block;
     padding: 4px 12px;
     border-radius: 999px;
   }
-  
-  /* Answer Capsule — AEO Direct Answer Block */
-  .cs-answer-capsule {
-    background: #f0fdf4;
-    border-left: 4px solid #008000;
-    border-radius: 8px;
-    padding: 14px 18px;
-    margin-bottom: 28px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a3a1a;
-    line-height: 1.6;
+
+  .cs-img-card:nth-child(odd) .cs-img-label {
+    background: #008000;
+  }
+
+  .cs-img-card:nth-child(even) .cs-img-label {
+    background: #1e3a5f;
   }
 
 
