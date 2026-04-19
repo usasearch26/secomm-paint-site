@@ -203,7 +203,9 @@
 
   .cs-container { max-width: 1200px; margin: 0 auto; }
   .cs-container-narrow { max-width: 860px; margin: 0 auto; }
-  .cs-h2 { font-size: 28px; font-weight: 800; color: #008000; line-height: 1.2; margin: 0 0 16px 0; text-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .cs-h2 { font-size: 28px; font-weight: 800; color: #008000; line-height: 1.2; margin: 0 0 16px 0; text-shadow: 0 2px 8px rgba(0,0,0,0.08); display: inline-block; padding-bottom: 10px; border-bottom: 3px solid rgba(15,23,42,0.20); }
+  .cs-h2-center { display: block; text-align: center; }
+
   .cs-h2-center { text-align: center; }
   .cs-h3 { font-size: 20px; font-weight: 700; color: #008000; margin: 0 0 10px 0; }
   .cs-h4 { font-size: 17px; font-weight: 700; color: #1f2937; margin: 0 0 8px 0; }
@@ -219,7 +221,17 @@
 
   /* Failure points stacked */
   .cs-stack { display: grid; gap: 40px; }
-  .cs-stack-item { border-left: 4px solid #008000; padding-left: 20px; }
+    .cs-stack-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #1e3a5f;
+    border-radius: 12px;
+    padding: 26px 24px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cs-stack-item:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(2,6,23,0.11); }
+
 
   /* Image grid */
   .cs-img-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
@@ -232,18 +244,40 @@
 
   /* Why Us 2-col grid */
   .cs-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; }
-  .cs-2col-item { }
+    .cs-2col-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-top: 3px solid #008000;
+    border-radius: 12px;
+    padding: 24px 22px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cs-2col-item:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(2,6,23,0.11); }
+
 
   /* Systems list */
   .cs-systems { display: grid; gap: 36px; }
-  .cs-system-item { border-top: 2px solid #e5e7eb; padding-top: 24px; }
+    .cs-system-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #1e3a5f;
+    border-top: none;
+    border-radius: 12px;
+    padding: 28px 26px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cs-system-item:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(2,6,23,0.11); }
+
 
   /* FAQ */
   .cs-faq-group { margin-bottom: 48px; }
-  .cs-faq-topic { font-size: 18px; font-weight: 800; color: #008000; border-bottom: 2px solid #d1fae5; padding-bottom: 10px; margin: 0 0 24px 0; }
+  .cs-faq-topic { font-size: 18px; font-weight: 800; color: #1e3a5f; border-bottom: 2px solid #bfdbfe; padding-bottom: 10px; margin: 0 0 24px 0; }
   .cs-faq-item { margin-bottom: 28px; }
-  .cs-faq-q { font-size: 16px; font-weight: 700; color: #1f2937; margin: 0 0 8px 0; }
-  .cs-faq-a { font-size: 15px; color: #374151; line-height: 1.75; margin: 0; }
+  .cs-faq-q { background: #eff6ff; border-left: 4px solid #008000; border-radius: 6px; padding: 10px 14px; font-size: 16px; font-weight: 700; color: #1f2937; margin: 0 0 10px 0; }
+  .cs-faq-a { padding-left: 14px; border-left: 2px solid #cbd5e1; font-size: 15px; color: #374151; line-height: 1.75; margin: 0; }
+
 
   /* Trust cards */
   .cs-trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
@@ -268,115 +302,18 @@
   }
   .cs-midcta-btn:hover { transform: translateY(-2px); background: #006400; box-shadow: 0 14px 30px rgba(0,128,0,0.28); }
 
-      /* ================== VISUAL POLISH ================== */
-
-  /* H2 accent underline — blue structural signal */
-  .cs-h2 {
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgba(15,23,42,0.20);
-    margin-bottom: 20px;
-  }
-  .cs-h2-center {
-    display: block;
-    text-align: center;
-  }
-
-  /* Why Us 2-col items — green top border (selling points) */
-  .cs-2col-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-top: 3px solid #008000;
-    border-radius: 12px;
-    padding: 24px 22px;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .cs-2col-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(2,6,23,0.11);
-  }
-
-  /* Epoxy systems — blue left border (technical/informational) */
-  .cs-system-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-left: 5px solid #1e3a5f;
-    border-top: none;
-    border-radius: 12px;
-    padding: 28px 26px;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .cs-system-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(2,6,23,0.11);
-  }
-
-  /* Failure point blocks — blue left border (diagnostic/informational) */
-  .cs-stack-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-left: 5px solid #1e3a5f;
-    border-radius: 12px;
-    padding: 26px 24px;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .cs-stack-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(2,6,23,0.11);
-  }
-
-  /* FAQ — blue tint background, green left border on question */
-  .cs-faq-q {
-    background: #eff6ff;
+      /* Answer Capsule — AEO Direct Answer Block */
+  .cs-answer-capsule {
+    background: #f0fdf4;
     border-left: 4px solid #008000;
-    border-radius: 6px;
-    padding: 10px 14px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 10px 0;
-  }
-  .cs-faq-a {
-    padding-left: 14px;
-    border-left: 2px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 28px;
     font-size: 15px;
-    color: #374151;
-    line-height: 1.75;
-    margin: 0;
+    font-weight: 600;
+    color: #1a3a1a;
+    line-height: 1.6;
   }
-
-  /* FAQ topic heading — blue instead of green */
-  .cs-faq-topic {
-    font-size: 18px;
-    font-weight: 800;
-    color: #1e3a5f;
-    border-bottom: 2px solid #bfdbfe;
-    padding-bottom: 10px;
-    margin: 0 0 24px 0;
-  }
-
-          .cs-img-card:nth-child(odd) .cs-img-label,
-  .cs-img-card:nth-child(even) .cs-img-label {
-    background: none;
-    color: #111827;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 10px;
-    box-shadow: none;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
-  }
-
-
-
 
 
   /* ================== RESPONSIVE ================== */
