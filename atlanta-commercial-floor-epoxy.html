@@ -1329,19 +1329,50 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    var s1 = document.createElement('script');
-    s1.src = 'https://s.ksrndkehqnwntyxlhgto.com/99626.js';
-    s1.async = true;
-    document.body.appendChild(s1);
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    
+    // Fields we care about for Google Ads + Bing + Meta attribution
+    const trackingKeys = [
+        'gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign',
+        'utm_term', 'utm_content', 'utm_adgroup', 'utm_campaignid', 'utm_adid',
+        'fbclid', 'msclkid'
+    ];
 
-    var s2 = document.createElement('script');
-    s2.src = 'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo';
-    s2.async = true;
-    document.body.appendChild(s2);
-  }, 4000);
+    trackingKeys.forEach(function(key) {
+        let value = params.get(key) || '';
+        
+        // Fallback: Pull from localStorage or cookie if URL param is missing
+        if (!value) {
+            value = localStorage.getItem(key) || getCookie(key) || '';
+        } else {
+            // Store immediately so it survives refreshes or GHL redirects
+            localStorage.setItem(key, value);
+            setCookie(key, value, 90);
+        }
+
+        // Populate EVERY hidden field with this name (handles all forms on the page)
+        document.querySelectorAll(`input[name="${key}"]`).forEach(function(input) {
+            input.value = value;
+        });
+    });
+
+    // Optional debug — remove after 1 week of successful testing
+    console.log('✅ GCLID & tracking params populated successfully');
 });
+
+// Helper functions
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return '';
+}
+
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax`;
+}
 </script>
 
 
