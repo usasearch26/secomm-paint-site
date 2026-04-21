@@ -614,6 +614,125 @@
         padding: 5px 8px;
     }
 }
+    /* ============================================
+   CS IMAGE GALLERY - ENVIRONMENTS WE SERVE
+   ============================================ */
+.cs-section {
+  padding: 60px 20px;
+}
+.cs-section-white {
+  background: #ffffff;
+}
+.cs-section-gray {
+  background: #f3f4f6;
+}
+.cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cs-h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px 0;
+}
+.cs-h2-center {
+  text-align: center;
+}
+
+/* --- THE GRID --- */
+.cs-img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* --- EACH CARD --- */
+.cs-img-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cs-img-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* --- IMAGE WRAPPER (maintains aspect ratio) --- */
+.cs-img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 70%; /* ~4:3 aspect ratio */
+  overflow: hidden;
+}
+.cs-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.cs-img-card:hover .cs-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* --- DARK OVERLAY --- */
+.cs-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.10) 55%, transparent 100%);
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+.cs-img-card:hover .cs-img-overlay {
+  background: linear-gradient(to top, rgba(0, 100, 0, 0.65) 0%, rgba(0, 0, 0, 0.15) 60%, transparent 100%);
+}
+
+/* --- LABEL --- */
+.cs-img-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1024px) {
+  .cs-img-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .cs-img-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .cs-section {
+    padding: 40px 16px;
+  }
+}
+@media (max-width: 380px) {
+  .cs-img-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
 </style>
 <!-- =========================
      PROFESSIONAL SERVICE SCHEMA
