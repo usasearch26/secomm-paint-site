@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Warehouse Line Striping</title>
   <meta name="description" content="Atlanta's trusted warehouse line striping experts since 1991. OSHA-compliant safety markings, 5S floor layouts & industrial coatings. Get a free quote today! (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <!-- OPT 1: fetchpriority=high on hero preload -->
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" fetchpriority="high">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- OPT 2: Google Fonts preconnects removed — no web font loads on this page -->
 
   <style>
   :root {
@@ -286,16 +286,21 @@
 
 /* Extra small phones */
 @media (max-width: 480px) {
-    .main-nav > div {
-        gap: 4px;
-        font-size: 13.5px;
-    }
-    
-    .main-nav a,
-    .dropbtn {
-        padding: 5px 8px;
-    }
-}  
+    .main-nav > div { gap: 4px; font-size: 13.5px; }
+    .main-nav a, .dropbtn { padding: 5px 8px; }
+}
+
+/* OPT 9: CSS hover classes replace inline onmouseover/onmouseout JS */
+.card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 25px 50px -12px rgba(0,0,0,.25) !important; }
+.btn-hover-scale { transition: transform .2s ease, background-color .2s ease; }
+.btn-hover-scale:hover { transform: scale(1.05); background-color: #15803d !important; }
+
+/* OPT 10: Stray #quote-cta media query consolidated here */
+@media (min-width: 768px) {
+  #quote-cta h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+  #quote-cta > div > div:nth-child(2) { grid-template-columns: 1fr 1fr !important; }
+}
   </style>
 
 <!-- =========================
@@ -435,53 +440,45 @@
 </script>
 <!-- Head Tracking - Fast & Clean Version -->
 
-<!-- Preload important CSS (optional but good for speed) -->
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/_preview/entry.IgpDOq8p.css" as="style">
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/intl-tel-input/1.10.60/css/intlTelInput.min.css" as="style">
+<!-- OPT 3: LeadConnector CSS preloads removed — loaded by GHL JS, not this document; caused unused-preload warnings -->
 
-<!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
-<script>
-(function () {
-  // Capture GCLID immediately and save to cookie + localStorage
-  try {
-    var params = new URLSearchParams(window.location.search);
-    var gclid = params.get('gclid');
-    if (gclid) {
-      localStorage.setItem('gclid', gclid);
-      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
-      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
-    }
-  } catch(e) {}
+<!-- OPT 4: GCLID capture moved to deferred script before </body> — URL params always available, never needs to block render -->
 
-  // Load GHL session early (needed for number pool and attribution)
-  var ghlSession = document.createElement("script");
-  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
-  ghlSession.defer = true;
-  document.head.appendChild(ghlSession);
-})();
-</script>
-
-<!-- Google Analytics + Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
+<!-- OPT 5: GTM deferred 1s after load — dataLayer initialized immediately so no conversion data lost -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      document.head.appendChild(s);
+    }, 1000);
+  });
 </script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
 
-<!-- Other tracking scripts (RevealID, Ksrndkehqnwntyxlhgto, etc.) -->
-<script async src="https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0"></script>
-<script async src="https://s.ksrndkehqnwntyxlhgto.com/99626.js"></script>
-<script async src="https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo"></script>
-<script async src="https://cdn.growify.ai/pixel.min.js" 
-        data-website-id="252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5"
-        data-endpoint="api_v2"
-        data-platform="web"></script>
+<!-- OPT 6: RevealID/KSRND/FraudBlocker/Growify load on first user interaction (or 5s fallback) -->
+<script>
+(function() {
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return; loaded = true;
+    var s1=document.createElement('script'); s1.async=true; s1.src='https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0'; document.head.appendChild(s1);
+    var s2=document.createElement('script'); s2.async=true; s2.src='https://s.ksrndkehqnwntyxlhgto.com/99626.js'; document.head.appendChild(s2);
+    var s3=document.createElement('script'); s3.async=true; s3.src='https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'; document.head.appendChild(s3);
+    var s4=document.createElement('script'); s4.async=true; s4.setAttribute('data-website-id','252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5'); s4.setAttribute('data-endpoint','api_v2'); s4.setAttribute('data-platform','web'); s4.src='https://cdn.growify.ai/pixel.min.js'; document.head.appendChild(s4);
+  }
+  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e){ window.addEventListener(e,loadTrackers,{once:true,passive:true}); });
+  setTimeout(loadTrackers, 5000);
+})();
+</script>
 </head>
 <body>
 
@@ -531,10 +528,8 @@
       <!-- Logo + Phone Row -->
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/">
-            <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp"
-                 alt="Southeast Commercial Services Logo">
-          </a>
+          <!-- OPT 7: Smaller logo (800x117 WebP) + explicit dimensions prevent CLS -->
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69e7fc8dda11eeea68f4195d.webp" alt="Southeast Commercial Services Logo" width="800" height="117" loading="eager" fetchpriority="high"></a>
         </div>
         <div class="header-spacer"></div>
         <div class="phone">
@@ -588,21 +583,9 @@
 </header>
 
 <!-- HERO -->
-<section style="
-  width:100vw;
-  position:relative;
-  left:50%;
-  right:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  height:auto;
-  background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
-  background-size:cover;
-  background-position:center;
-  color:#ffffff;
-  padding:60px 16px 40px 16px;
-  box-sizing:border-box;
-">
+<!-- OPT 8: Hero background-image → real <img> with fetchpriority=high for faster LCP -->
+<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; overflow:hidden; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" alt="" fetchpriority="high" loading="eager" decoding="async" width="1280" height="600" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; z-index:0; display:block;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -881,7 +864,7 @@
       </div>
       <div style="flex:0 0 auto; width:100%; max-width:448px; margin-top:32px;">
         <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6997968d8523c58d94e7de1f.webp"
-             alt="Warehouse line striping services example" width="448" height="300" loading="lazy"
+             alt="Warehouse line striping services example" width="448" height="300" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 448px"
              style="width:100%; height:auto; border-radius:12px; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); border-left:8px solid #008000; margin-left:auto; margin-right:auto; display:block;">
       </div>
     </div>
@@ -944,7 +927,7 @@
       </div>
       <div style="flex:0 0 auto; width:100%; max-width:448px; margin-top:32px;">
         <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp"
-             alt="Precision line striping process" width="448" height="300" loading="lazy"
+             alt="Precision line striping process" width="448" height="300" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 448px"
              style="width:100%; height:auto; border-radius:12px; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); border-left:8px solid #008000; margin-left:auto; margin-right:auto; display:block;">
       </div>
     </div>
@@ -1173,55 +1156,43 @@
                 gap:40px;">
       
       <a href="/high-rise-painters" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp" alt="High Rise Painting" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp" alt="High Rise Painting" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">High-Rise Painting</p>
       </div></a>
       
       <a href="/exterior-commercial-painting" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Exterior Painting" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Exterior Painting" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Exterior Painting</p>
       </div></a>
       
       <a href="/interior-commercial-painting" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp" alt="Interior Painting" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp" alt="Interior Painting" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Interior Painting</p>
       </div></a>
       
       <a href="/atlanta-industrial-painting" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6845dd82e8861b3e2a3d3f38.png" alt="Industrial Painting" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp" alt="Industrial Painting" width="400" height="192" loading="lazy" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Industrial Painting</p>
       </div></a>
       
       <a href="/atlanta-commercial-floor-epoxy" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f855c14c4293ed957b1d9.webp" alt="Epoxy Floor Coatings" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f855c14c4293ed957b1d9.webp" alt="Epoxy Floor Coatings" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Epoxy Floor Coatings</p>
       </div></a>
       
       <a href="/construction-painting" style="display:block; text-decoration:none;">
-<div style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center; transition:transform .2s ease, box-shadow .2s ease;" 
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 25px 50px -12px rgba(0,0,0,.25)';" 
-           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 15px -3px rgba(0,0,0,.10)';">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69de6f02d8d5f6ae8372e323.webp" alt="Parking & Loading Areas" width="400" height="192" loading="lazy" 
+<div class="card-hover" style="background:#f9fafb; padding:24px; border-radius:12px; box-shadow:0 10px 15px -3px rgba(0,0,0,.10); text-align:center;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69de6f02d8d5f6ae8372e323.webp" alt="Parking & Loading Areas" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" 
              style="width:100%; height:192px; object-fit:cover; border-radius:8px; margin-bottom:16px;">
         <p style="font-weight:700; color:#1f2937; font-size:18px; margin:0;">Parking &amp; Loading Areas</p>
       </div></a>
@@ -1403,8 +1374,7 @@
         <p style="margin:0 0 2rem 0; color:#4b5563;">Call us Now to Set Up a Free On-Site Walk Thru &amp; Quote</p>
         <a href="tel:+14704582322"
           style="display:block; width:100%; background:#008000; color:#ffffff; font-size:1.5rem; line-height:2rem; font-weight:700; padding:1rem; border-radius:0.5rem; text-decoration:none; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);"
-          onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
-          onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
+          class="btn-hover-scale">
           (470) 458-2322
         </a>
         <p style="margin:1rem 0 0 0; font-size:0.875rem; color:#6b7280; font-style:italic;">Click to Call &amp; Schedule Your Assessment &amp; Quote</p>
@@ -1419,12 +1389,7 @@
       </p>
     </div>
   </div>
-  <style>
-    @media (min-width: 768px) {
-      #quote-cta h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-      #quote-cta > div > div:nth-child(2) { grid-template-columns: 1fr 1fr !important; }
-    }
-  </style>
+  <!-- OPT 10: stray style block removed, media query moved to main <style> in <head> -->
 </section>
 
 <!-- CONTACT SECTION -->
@@ -1563,5 +1528,23 @@ function setCookie(name, value, days) {
 }
 </script>
 
+<!-- OPT 4 (deferred): GCLID capture + GHL session — runs after HTML parsing, never blocks rendering -->
+<script>
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var gclid = params.get('gclid');
+    if (gclid) {
+      localStorage.setItem('gclid', gclid);
+      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
+      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
+    }
+  } catch(e) {}
+  var ghlSession = document.createElement("script");
+  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
+  ghlSession.defer = true;
+  document.head.appendChild(ghlSession);
+})();
+</script>
 </body>
 </html>
