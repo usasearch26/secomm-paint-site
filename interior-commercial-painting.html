@@ -6,8 +6,6 @@
   <title>Atlanta Interior Commercial Painting Services</title>
   <meta name="description" content="Atlanta Interior Commercial Painting Services. Southeast Commercial Services Serves the Greater Metro Atlanta Area. No residential. Get a free quote: (470) 458-2322.">
   <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <style>
   /* =========================================
@@ -287,7 +285,21 @@
         padding: 5px 8px;
     }
 }
-  </style>
+  
+  /* Card hover via CSS - replaces onmouseover/onmouseout JS */
+  .card-hover-link > *:first-child { transition: transform .2s ease, box-shadow .2s ease; }
+  .card-hover-link:hover > *:first-child { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(2,6,23,.14); }
+  .stat-hover-box { transition: background .2s ease; }
+  .stat-hover-box:hover { background: rgba(255,255,255,0.10) !important; }
+  .cta-hover-btn { transition: transform .2s ease, background-color .2s ease; }
+  .cta-hover-btn:hover { transform: scale(1.05); background-color: #15803d !important; }
+@media (min-width: 768px) {
+      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+      #quote > div > div:nth-child(3) {
+        grid-template-columns: 1fr 1fr !important;
+      }
+    }
+</style>
 
 <!-- ========================= SCHEMA ========================= -->
 <script type="application/ld+json">
@@ -326,8 +338,6 @@
 <!-- Head Tracking - Fast & Clean Version -->
 
 <!-- Preload important CSS (optional but good for speed) -->
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/_preview/entry.IgpDOq8p.css" as="style">
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/intl-tel-input/1.10.60/css/intlTelInput.min.css" as="style">
 
 <!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
 <script>
@@ -352,26 +362,33 @@
 </script>
 
 <!-- Google Analytics + Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KEH5L41ZYX');
-  gtag('config', 'AW-784863985');
-</script>
+<!-- GA: dataLayer initialized inline; script deferred to first interaction -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KEH5L41ZYX');gtag('config','AW-784863985');</script>
+<script>(function(){var gaLoaded=false;function loadGA(){if(gaLoaded)return;gaLoaded=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';s.async=true;document.head.appendChild(s);}['scroll','click','keydown','touchstart','mousemove'].forEach(function(e){window.addEventListener(e,loadGA,{once:true,passive:true});});setTimeout(loadGA,5000);})();</script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
 
-<!-- Other tracking scripts (RevealID, Ksrndkehqnwntyxlhgto, etc.) -->
-<script async src="https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0"></script>
-<script async src="https://s.ksrndkehqnwntyxlhgto.com/99626.js"></script>
-<script async src="https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo"></script>
-<script async src="https://cdn.growify.ai/pixel.min.js" 
-        data-website-id="252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5"
-        data-endpoint="api_v2"
-        data-platform="web"></script>
+<!-- Third-party trackers deferred to first user interaction -->
+<script>(function(){
+  var loaded=false;
+  function loadTrackers(){
+    if(loaded)return;loaded=true;
+    var scripts=[
+      'https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
+      'https://s.ksrndkehqnwntyxlhgto.com/99626.js',
+      'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
+    ];
+    scripts.forEach(function(src){var s=document.createElement('script');s.src=src;s.async=true;document.head.appendChild(s);});
+    var g=document.createElement('script');
+    g.src='https://cdn.growify.ai/pixel.min.js';g.async=true;
+    g.setAttribute('data-website-id','252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5');
+    g.setAttribute('data-endpoint','api_v2');g.setAttribute('data-platform','web');
+    document.head.appendChild(g);
+  }
+  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e){window.addEventListener(e,loadTrackers,{once:true,passive:true});});
+  setTimeout(loadTrackers,5000);
+})();</script>
 </head>
 <body>
 
@@ -402,7 +419,7 @@
     <div class="container">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo"></a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="220" height="95" loading="eager"></a>
         </div>
         <div class="header-spacer"></div>
         <div class="phone">
@@ -456,7 +473,8 @@
 </header>
 
 <!-- HERO -->
-<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp'); background-size:cover; background-position:center; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" alt="Atlanta interior commercial painting services" width="1440" height="700" fetchpriority="high" loading="eager" decoding="sync" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -671,7 +689,7 @@
     <div class="int-services-grid" style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:28px;">
 
       <!-- 1 Interior Painting (HERO) -->
-      <a href="https://southeastcommercialpainting.com/interior-commercial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/interior-commercial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:2px solid #334155; border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transform:translateY(0); transition:transform .18s ease, box-shadow .18s ease;">
           <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949849c547053b05c9f121.webp" alt="Commercial interior painting Atlanta - office space" width="400" height="192" loading="eager" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
@@ -684,9 +702,9 @@
       </a>
 
       <!-- 2 Office Painting -->
-      <a href="https://southeastcommercialpainting.com/commercial-office-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/commercial-office-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp" alt="Office interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497ee5c226518cee02dde.webp" alt="Office interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Office Painting</h3>
@@ -696,9 +714,9 @@
       </a>
 
       <!-- 3 Building Interior -->
-      <a href="https://southeastcommercialpainting.com/commercial-building-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/commercial-building-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699492566bac24485c04e564.webp" alt="Commercial building interior painting Atlanta" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699492566bac24485c04e564.webp" alt="Commercial building interior painting Atlanta" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Building Interior Painting</h3>
@@ -708,9 +726,9 @@
       </a>
 
       <!-- 4 Warehouse Interior -->
-      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e2f6bac24edfaace3b1.webp" alt="Warehouse interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e2f6bac24edfaace3b1.webp" alt="Warehouse interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Warehouse Interior Painting</h3>
@@ -720,9 +738,9 @@
       </a>
 
       <!-- 5 Industrial Interior -->
-      <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f8553fb408f3334d79374.webp" alt="Industrial interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f8553fb408f3334d79374.webp" alt="Industrial interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Industrial Interior Painting</h3>
@@ -732,9 +750,9 @@
       </a>
 
       <!-- 6 Floor Coatings -->
-      <a href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04158787d9e1.webp" alt="Commercial floor epoxy coatings Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949f7854da04158787d9e1.webp" alt="Commercial floor epoxy coatings Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Floor Coatings</h3>
@@ -744,9 +762,9 @@
       </a>
 
       <!-- 7 High-Rise Interior -->
-      <a href="https://southeastcommercialpainting.com/high-rise-painters" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/high-rise-painters" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp" alt="High-rise interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699495d58575951a68d70ac4.webp" alt="High-rise interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">High-Rise Interior Painting</h3>
@@ -756,9 +774,9 @@
       </a>
 
       <!-- 8 Line Striping -->
-      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f856814c429054c57b329.webp" alt="Interior line striping Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f856814c429054c57b329.webp" alt="Interior line striping Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Interior Line Striping</h3>
@@ -768,9 +786,9 @@
       </a>
 
       <!-- 9 New Construction -->
-      <a href="https://southeastcommercialpainting.com/construction-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/construction-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7d8c7d68776cc2cb4e65.webp" alt="New construction interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f7d8c7d68776cc2cb4e65.webp" alt="New construction interior painting Atlanta commercial contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">New Construction Painting</h3>
@@ -780,9 +798,9 @@
       </a>
 
       <!-- 10 Concrete Polishing -->
-      <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949278d614c93a76f3d7d5.webp" alt="Commercial concrete polishing Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69949278d614c93a76f3d7d5.webp" alt="Commercial concrete polishing Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Concrete Polishing</h3>
@@ -792,9 +810,9 @@
       </a>
 
       <!-- 11 Tank Painting -->
-      <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f854f899b88380c67532b.webp" alt="Industrial tank interior painting Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/698f854f899b88380c67532b.webp" alt="Industrial tank interior painting Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Tank &amp; Vessel Interior Coating</h3>
@@ -804,9 +822,9 @@
       </a>
 
       <!-- 12 Exterior Painting -->
-      <a href="https://southeastcommercialpainting.com/exterior-commercial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
+      <a href="https://southeastcommercialpainting.com/exterior-commercial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" class="card-hover-link">
         <div style="background:#ffffff; border:1px solid rgba(226,232,240,1); border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Commercial exterior painting Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Commercial exterior painting Atlanta contractors" width="400" height="192" loading="lazy" decoding="async" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#008000; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 8px 0; font-size:20px; font-weight:900; color:#333333;">Exterior Painting</h3>
@@ -932,42 +950,42 @@
       </div>
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px;">
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏢</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Office Buildings</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">Class A, B, and C office towers, corporate campuses, suburban office parks, and single-tenant buildings across Buckhead, Midtown, Perimeter, and Gwinnett.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏥</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Medical &amp; Healthcare</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">Hospitals, medical office buildings, outpatient clinics, and surgical centers requiring low-VOC, washable, and infection-control-compliant interior coating systems.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🛍️</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Retail &amp; Shopping Centers</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">Strip centers, big-box retail, inline tenant spaces, and shopping mall interiors—scheduled around store hours and tenant operations.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏨</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Hotels &amp; Hospitality</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">Guest rooms, corridors, lobbies, conference centers, and common areas for full-service and limited-service hotel properties across Atlanta.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🎓</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Educational Facilities</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">K-12 schools, universities, and private campuses—interior repaints scheduled during breaks, summers, and off-hours to avoid disrupting students and staff.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏭</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Warehouses &amp; Distribution</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">High-bay interiors, dock areas, mezzanines, and structural steel along Atlanta's I-85, I-20, and Fulton Industrial distribution corridors.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏗️</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Multi-Family &amp; HOA</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">Apartment community common areas, leasing offices, clubhouses, corridors, and amenity spaces—not individual residential units.</p>
       </div>
-      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+      <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:22px;" class="stat-hover-box">
         <div style="font-size:28px; margin-bottom:10px;">🏛️</div>
         <h3 style="margin:0 0 8px 0; font-size:18px; font-weight:900; color:#ffffff !important;">Government &amp; Municipal</h3>
         <p style="margin:0; font-size:14px; color:#cbd5e1 !important; line-height:1.65;">City, county, and state facilities, courthouses, public safety buildings, and municipal offices requiring bonded, insured, and compliant contractors.</p>
@@ -1165,9 +1183,7 @@
               text-decoration:none;
               box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
               transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
-            "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
-            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
+            " class="cta-hover-btn">
             (470) 458-2322
           </a>
 
@@ -1207,16 +1223,6 @@
       </p>
     </div>
   </div>
-
-  <!-- Responsive (replaces md:grid-cols-2 + md:text-4xl) -->
-  <style>
-    @media (min-width: 768px) {
-      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-      #quote > div > div:nth-child(3) {
-        grid-template-columns: 1fr 1fr !important;
-      }
-    }
-  </style>
 </section>
 
 
@@ -1404,4 +1410,3 @@ function setCookie(name, value, days) {
 </script>
 </body>
 </html>
-	
