@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlanta Commercial Floor Epoxy Contractors</title>
-  <meta name="description" content="Atlanta Commercial Epoxy Floor Coatings.  Southeast Commercial Services Serves the Greater Metro Atlanta Area. No Residential. Get a free quote: (470) 458-2322.">
-<link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <title>Atlanta Warehouse Floor Epoxy Contractors</title>
+  <meta name="description" content="Atlanta Warehouse Floor Epoxy Coatings.  Southeast Commercial Services Serves the Greater Metro Atlanta Area. No Residential. Get a free quote: (470) 458-2322.">
+<link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp" fetchpriority="high">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -614,7 +614,26 @@
         padding: 5px 8px;
     }
 }
-</style>
+
+  /* =========================================
+     RESPONSIVE OVERRIDES (consolidated)
+  ========================================= */
+  @media (min-width: 768px) {
+    #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+    #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+  }
+
+  /* CTA phone button hover (replaces inline onmouseover/onmouseout) */
+  .cta-phone-btn {
+    display: block; width: 100%;
+    background: #008000; color: #ffffff;
+    font-size: 1.5rem; line-height: 2rem; font-weight: 700; padding: 1rem;
+    border-radius: 0.5rem; text-decoration: none;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
+    transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+  }
+  .cta-phone-btn:hover { transform: scale(1.05); background-color: #15803d; }
+  </style>
 <!-- =========================
      PROFESSIONAL SERVICE SCHEMA
 ========================= -->
@@ -644,9 +663,6 @@
 </script>
 <!-- Head Tracking - Fast & Clean Version -->
 
-<!-- Preload important CSS (optional but good for speed) -->
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/_preview/entry.IgpDOq8p.css" as="style">
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/intl-tel-input/1.10.60/css/intlTelInput.min.css" as="style">
 
 <!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
 <script>
@@ -670,27 +686,64 @@
 })();
 </script>
 
-<!-- Google Analytics + Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
+<!-- Google Analytics + Google Ads — dataLayer init immediate; gtag.js loads on first user interaction -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
+  (function() {
+    var gaLoaded = false;
+    function loadGA() {
+      if (gaLoaded) return;
+      gaLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+    ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e) {
+      window.addEventListener(e, loadGA, {once:true, passive:true});
+    });
+    setTimeout(loadGA, 5000);
+  })();
 </script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
 
-<!-- Other tracking scripts (RevealID, Ksrndkehqnwntyxlhgto, etc.) -->
-<script async src="https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0"></script>
-<script async src="https://s.ksrndkehqnwntyxlhgto.com/99626.js"></script>
-<script async src="https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo"></script>
-<script async src="https://cdn.growify.ai/pixel.min.js" 
-        data-website-id="252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5"
-        data-endpoint="api_v2"
-        data-platform="web"></script> 
+<!-- Third-party trackers — deferred to first user interaction with 5s fallback -->
+<script>
+(function() {
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return;
+    loaded = true;
+    var srcs = [
+      'https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
+      'https://s.ksrndkehqnwntyxlhgto.com/99626.js',
+      'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
+    ];
+    srcs.forEach(function(src) {
+      var s = document.createElement('script');
+      s.src = src; s.async = true;
+      document.head.appendChild(s);
+    });
+    var g = document.createElement('script');
+    g.src = 'https://cdn.growify.ai/pixel.min.js';
+    g.async = true;
+    g.setAttribute('data-website-id', '252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5');
+    g.setAttribute('data-endpoint', 'api_v2');
+    g.setAttribute('data-platform', 'web');
+    document.head.appendChild(g);
+  }
+  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e) {
+    window.addEventListener(e, loadTrackers, {once:true, passive:true});
+  });
+  setTimeout(loadTrackers, 5000);
+})();
+</script>
 </head>
 <body>
 
@@ -751,7 +804,8 @@
               <div class="logo">
                   <a href="/">
                       <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp"
-                           alt="Southeast Commercial Services Logo">
+                           alt="Southeast Commercial Services Logo" width="300" height="95" loading="eager"
+                           sizes="(min-width:1024px) 300px, (min-width:768px) 250px, 200px">
                   </a>
               </div>
 
@@ -809,21 +863,12 @@
   </div>
 </header>
   <!-- HERO -->
-<section style="
-  width:100vw;
-  position:relative;
-  left:50%;
-  right:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  height:auto;
-  background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp');
-  background-size:cover;
-  background-position:center;
-  color:#ffffff;
-  padding:60px 16px 40px 16px;
-  box-sizing:border-box;
-">
+<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box; overflow:hidden;">
+  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp"
+       alt="Atlanta warehouse floor epoxy coating contractors at work"
+       fetchpriority="high" loading="eager" decoding="sync"
+       width="1440" height="810"
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; z-index:0;">
   <div style="
     position:absolute;
     inset:0;
@@ -955,8 +1000,6 @@
     <title>Atlanta Warehouse Floor Epoxy & Coatings | Southeast Commercial Services</title>
     <meta name="description" content="Southeast Commercial Services installs high-performance warehouse floor epoxy and floor coating systems in Atlanta. Engineered for heavy forklift traffic, chemical resistance, and long-term durability.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD Schema: Warehouse Floor Epoxy / ProfessionalService -->
@@ -1045,7 +1088,7 @@
                         <p class="text-gray-700 space-y-4">In a distribution center or manufacturing warehouse, the concrete slab isn't just a floor — it is the operating platform for every piece of material handling equipment, every racked pallet, and every employee on foot. An unprotected or under-specified warehouse floor is not a static problem. It degrades progressively, generating dust, surface defects, trip hazards, and equipment wear that compound daily into measurable operational and financial losses. A correctly engineered <strong><u>warehouse floor epoxy system</u></strong> is not a cosmetic upgrade — it is a infrastructure protection investment.</p>
                     </div>
                     <div class="w-full md:w-2/5 mt-8 md:mt-0">
-                        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" class="rounded-lg shadow-xl" alt="Warehouse floor epoxy coating installation in Atlanta">
+                        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" class="rounded-lg shadow-xl" alt="Warehouse floor epoxy coating installation in Atlanta" width="440" height="330" loading="lazy" sizes="(min-width:768px) 40vw, 100vw">
                     </div>
                 </div>
             </section>
@@ -1085,84 +1128,84 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29080b4d553e7072c0.png" alt="Distribution center warehouse floor epoxy coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29080b4d553e7072c0.png" alt="Distribution center warehouse floor epoxy coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Distribution Centers</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" alt="Manufacturing plant warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59b68398bddb0c470b.png" alt="Manufacturing plant warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Manufacturing Plants</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59080b4d4ea1707088.png" alt="Cold storage warehouse floor coating system" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a59080b4d4ea1707088.png" alt="Cold storage warehouse floor coating system" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Cold Storage & Food-Grade</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29625d6735c8f01555.png" alt="Fleet maintenance bay warehouse floor epoxy" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29625d6735c8f01555.png" alt="Fleet maintenance bay warehouse floor epoxy" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Fleet & Maintenance Bays</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b81d6e3c40977e1c71efe.png" alt="Cross dock logistics warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b81d6e3c40977e1c71efe.png" alt="Cross dock logistics warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Cross-Dock & Logistics</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29bd9c141e302a5ea0.png" alt="High heat manufacturing floor with thermal shock resistant coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7d29bd9c141e302a5ea0.png" alt="High heat manufacturing floor with thermal shock resistant coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">High-Heat Production Areas</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a595188d832e175e24d.png" alt="3PL third party logistics warehouse floor epoxy" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a595188d832e175e24d.png" alt="3PL third party logistics warehouse floor epoxy" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">3PL Warehouses</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3c5d95be339.png" alt="Fulfillment center warehouse floor epoxy coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3c5d95be339.png" alt="Fulfillment center warehouse floor epoxy coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">E-Commerce Fulfillment Centers</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c059599e9456.png" alt="Chemical and battery storage warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c059599e9456.png" alt="Chemical and battery storage warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Battery Charging Stations</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd36f165be33c.png" alt="Loading dock warehouse floor coating system" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd36f165be33c.png" alt="Loading dock warehouse floor coating system" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Loading Dock Areas</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd385ea5be33b.png" alt="Pharmaceutical warehouse floor epoxy GMP compliant" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd385ea5be33b.png" alt="Pharmaceutical warehouse floor epoxy GMP compliant" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Pharmaceutical & GMP</h3>
                         </div>
                         <div class="group text-center">
                             <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c0c7bc9e9454.png" alt="Aircraft and aerospace warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
+                                <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a598467c0c7bc9e9454.png" alt="Aircraft and aerospace warehouse floor coating" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" width="400" height="192" loading="lazy" sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/334155?text=Image+Not+Found';">
                                 <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             </div>
                             <h3 class="mt-4 text-sm font-semibold text-gray-700 tracking-wide uppercase">Aerospace & Defense</h3>
@@ -1232,7 +1275,7 @@
             <section class="py-10 bg-gray-50">
                 <div class="px-4 flex flex-wrap items-center">
                     <div class="w-full md:w-2/5 mb-6 md:mb-0">
-                        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3c5d95be339.png" class="rounded-lg shadow-xl" alt="Warehouse floor epoxy installation in progress Atlanta">
+                        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/684b7a5907bcd3c5d95be339.png" class="rounded-lg shadow-xl" alt="Warehouse floor epoxy installation in progress Atlanta" width="440" height="330" loading="lazy" sizes="(min-width:768px) 40vw, 100vw">
                     </div>
                     <div class="w-full md:w-3/5 md:pl-12 space-y-4">
                         <h2 class="text-2xl font-bold text-shadow-soft text-brand-green">Minimizing Operational Downtime for Active Atlanta Warehouse Facilities</h2>
@@ -1473,23 +1516,7 @@
         </p>
 
         <div style="margin-top:0;">
-          <a href="tel:+14704582322"
-            style="
-              display:block;
-              width:100%;
-              background:#008000;
-              color:#ffffff;
-              font-size:1.5rem;
-              line-height:2rem;
-              font-weight:700;
-              padding:1rem;
-              border-radius:0.5rem;
-              text-decoration:none;
-              box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
-              transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
-            "
-            onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
-            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
+          <a href="tel:+14704582322" class="cta-phone-btn">
             (470) 458-2322
           </a>
 
@@ -1532,15 +1559,6 @@
     </div>
   </div>
 
-  <!-- Responsive (replaces md:grid-cols-2 + md:text-4xl) -->
-  <style>
-    @media (min-width: 768px) {
-      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-      #quote > div > div:nth-child(3) {
-        grid-template-columns: 1fr 1fr !important;
-      }
-    }
-  </style>
 </section>
 
 
