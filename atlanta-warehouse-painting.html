@@ -478,17 +478,54 @@
   });
 </script>
 
-<!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
+<!-- GHL Number Pool (Call Tracking) -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
 
-<!-- Other tracking scripts (RevealID, Ksrndkehqnwntyxlhgto, etc.) -->
-<script async src="https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0"></script>
-<script async src="https://s.ksrndkehqnwntyxlhgto.com/99626.js"></script>
-<script async src="https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo"></script>
-<script async src="https://cdn.growify.ai/pixel.min.js" 
-        data-website-id="252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5"
-        data-endpoint="api_v2"
-        data-platform="web"></script>
+<!-- OPTIMIZATION #11: RevealID, KSRND, FraudBlocker, Growify deferred until after first user interaction
+     (scroll, click, keypress, or touch). On mobile especially these scripts were consuming main-thread
+     time during page load. They fire immediately on any interaction so no tracking data is lost. -->
+<script>
+(function() {
+  var loaded = false;
+  function loadTrackers() {
+    if (loaded) return;
+    loaded = true;
+
+    // RevealID
+    var s1 = document.createElement('script');
+    s1.async = true;
+    s1.src = 'https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0';
+    document.head.appendChild(s1);
+
+    // KSRND
+    var s2 = document.createElement('script');
+    s2.async = true;
+    s2.src = 'https://s.ksrndkehqnwntyxlhgto.com/99626.js';
+    document.head.appendChild(s2);
+
+    // FraudBlocker
+    var s3 = document.createElement('script');
+    s3.async = true;
+    s3.src = 'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo';
+    document.head.appendChild(s3);
+
+    // Growify
+    var s4 = document.createElement('script');
+    s4.async = true;
+    s4.setAttribute('data-website-id','252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5');
+    s4.setAttribute('data-endpoint','api_v2');
+    s4.setAttribute('data-platform','web');
+    s4.src = 'https://cdn.growify.ai/pixel.min.js';
+    document.head.appendChild(s4);
+  }
+
+  // Fire on first interaction OR after 5 seconds as a fallback (catches users who don't interact)
+  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(evt) {
+    window.addEventListener(evt, loadTrackers, {once: true, passive: true});
+  });
+  setTimeout(loadTrackers, 5000);
+})();
+</script>
 </head>
 <body>
 
@@ -682,7 +719,7 @@
         Atlanta Warehouse Painting Contractors - Southeast Commercial Services
       </h2>
       <div style="margin-top:0.75rem; display:inline-flex; align-items:center; gap:0.5rem; padding:0.5rem 0.9rem; border-radius:9999px; background:rgba(51,65,85,0.08); border:1px solid rgba(51,65,85,0.18); color:#111827; font-weight:800; font-size:0.95rem; line-height:1.2;">
-        $Multi-Million Insured • Bondable • Commercial &amp; Industrial Only
+        $2M Insured • Bondable • Commercial &amp; Industrial Only
       </div>
     </div>
     <div style="display:flex; flex-wrap:wrap; gap:2.5rem; align-items:center;">
@@ -788,32 +825,32 @@
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2.5rem;">
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
-        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af661ecd7122fb572cf5.webp" alt="Warehouse interior painting" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af661ecd7122fb572cf5.webp" alt="Warehouse interior painting" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
         <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Interior Warehouse Painting</h3><p style="margin:0; color:#4b5563;">Walls, high-bay ceilings, columns, mezzanines, and office areas.</p></div>
       </div>
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
-        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994b08e6bac24c72c0d36e7.webp" alt="Warehouse exterior painting" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994b08e6bac24c72c0d36e7.webp" alt="Warehouse exterior painting" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
         <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Exterior Warehouse Painting</h3><p style="margin:0; color:#4b5563;">Metal siding, loading docks, doors, and exterior protection for high-exposure areas.</p></div>
       </div>
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
-        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69eb614b9fe87a9994a00301.webp" alt="Structural steel coatings in warehouses" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+        <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69eb614b9fe87a9994a00301.webp" alt="Structural steel coatings in warehouses" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
         <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Structural Steel Coatings</h3><p style="margin:0; color:#4b5563;">Steel columns, frames, and exposed members protected for durability in industrial environments.</p></div>
       </div>
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
         <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" style="text-decoration:none; color:inherit;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp" alt="Warehouse line striping" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699525465c22659bad085d19.webp" alt="Warehouse line striping" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
           <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Warehouse Line Striping</h3><p style="margin:0; color:#4b5563;">Safety striping, lane marking, and operational layout painting to support traffic flow and OSHA visibility requirements.</p></div>
         </a>
       </div>
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
         <a href="https://southeastcommercialpainting.com/atlanta-industrial-floor-coatings" style="text-decoration:none; color:inherit;">
-          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp" alt="Warehouse epoxy floor coatings" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/6995274f3a96e585c23bf564.webp" alt="Warehouse epoxy floor coatings" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
           <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Industrial Floor Coatings</h3><p style="margin:0; color:#4b5563;"><strong>Epoxy and urethane systems</strong> designed for heavy forklift traffic.</p></div>
         </a>
       </div>
       <div style="background:#ffffff; border-radius:1rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); overflow:hidden; border:1px solid #f3f4f6;">
         <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" style="text-decoration:none; color:inherit;">
-          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f8545899b885ed767513e.webp" alt="Commercial concrete polishing" width="400" height="192" loading="lazy" style="width:100%; height:12rem; object-fit:cover; display:block;">
+          <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/698f8545899b885ed767513e.webp" alt="Commercial concrete polishing" width="400" height="192" loading="lazy" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" style="width:100%; height:12rem; object-fit:cover; display:block;">
           <div style="padding:2rem;"><h3 style="margin:0 0 0.5rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Commercial Concrete Polishing</h3><p style="margin:0; color:#4b5563;">Mechanically polished concrete for dust control, durability, and a clean, low-maintenance floor finish.</p></div>
         </a>
       </div>
