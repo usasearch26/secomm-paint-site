@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Warehouse Painting Contractors | Southeast Commercial Services</title>
   <meta name="description" content="Professional Atlanta warehouse painting contractors specializing in industrial coatings, epoxy floors, and OSHA-compliant safety striping. Serving Greater Atlanta since 1991. Get a free B2B quote today.. No residential. Get a free quote: (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <!-- OPTIMIZATION #8: fetchpriority added to hero image preload so browser fetches it at highest priority -->
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" fetchpriority="high">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- OPTIMIZATION #1: Google Fonts preconnects removed — no Google Font stylesheet loads on this page, so these caused wasted DNS lookups -->
 
   <style>
   :root {
@@ -240,6 +240,21 @@
   @media (min-width: 1024px) {
     .process-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
   }
+
+  /* OPTIMIZATION #5: Hover effects moved from inline onmouseover/onmouseout JS to CSS — eliminates inline JS event handlers flagged by PageSpeed */
+  .btn-hover-lift { transition: transform .2s ease, background-color .2s ease; }
+  .btn-hover-lift:hover { transform: translateY(-4px); background-color: #1f2937 !important; }
+  .btn-hover-scale { transition: transform .2s ease, background-color .2s ease; }
+  .btn-hover-scale:hover { transform: scale(1.05); background-color: #15803d !important; }
+  .link-hover-green { transition: color .15s ease; }
+  .link-hover-green:hover { color: #008000 !important; }
+
+  /* OPTIMIZATION #6: Stray media query from #quote section moved here into main stylesheet */
+  @media (min-width: 768px) {
+    #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
+    #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+  }
+
  /* =============== MOBILE FIXES FOR HEADER & NAV =============== */
 
 @media (max-width: 768px) {
@@ -439,40 +454,28 @@
 </script>
 <!-- Head Tracking - Fast & Clean Version -->
 
-<!-- Preload important CSS (optional but good for speed) -->
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/_preview/entry.IgpDOq8p.css" as="style">
-<link rel="preload" href="https://stcdn.leadconnectorhq.com/intl-tel-input/1.10.60/css/intlTelInput.min.css" as="style">
+<!-- OPTIMIZATION #2: LeadConnector CSS preloads removed — these stylesheets are loaded by GHL JavaScript, not by this document directly. Preloading them triggered "preload not used" warnings in Google PageSpeed, consuming bandwidth with no benefit -->
 
-<!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
-<script>
-(function () {
-  // Capture GCLID immediately and save to cookie + localStorage
-  try {
-    var params = new URLSearchParams(window.location.search);
-    var gclid = params.get('gclid');
-    if (gclid) {
-      localStorage.setItem('gclid', gclid);
-      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
-      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
-    }
-  } catch(e) {}
+<!-- OPTIMIZATION #3: GCLID capture moved to deferred script before </body> — URL params are always available from window.location.search so this does NOT need to block rendering. See deferred script near </body> -->
 
-  // Load GHL session early (needed for number pool and attribution)
-  var ghlSession = document.createElement("script");
-  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
-  ghlSession.defer = true;
-  document.head.appendChild(ghlSession);
-})();
-</script>
-
-<!-- Google Analytics + Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
+<!-- OPTIMIZATION #10: GTM deferred until after page load.
+     GTM was consuming 402ms of main thread time and blocking rendering.
+     dataLayer is initialized immediately so no conversion data is lost —
+     the actual 336 KiB script file loads 1 second after the page becomes interactive. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      document.head.appendChild(s);
+    }, 1000);
+  });
 </script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
@@ -525,7 +528,8 @@
     <div class="container">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo"></a>
+          <!-- OPTIMIZATION #4 updated: Smaller logo (800x117) replaces oversized original (1398x205) — saves ~14.5 KiB. Intrinsic dimensions set for correct aspect ratio to prevent CLS -->
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69e7fc8dda11eeea68f4195d.webp" alt="Southeast Commercial Services Logo" width="800" height="117" loading="eager" fetchpriority="high"></a>
         </div>
         <div class="header-spacer"></div>
         <div class="phone">
@@ -579,7 +583,18 @@
 </header>
 
 <!-- HERO -->
-<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp'); background-size:cover; background-position:center; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+<!-- OPTIMIZATION #9: Hero converted from CSS background-image to real <img> tag.
+     CSS backgrounds cannot receive fetchpriority="high" and are discovered late by the browser,
+     causing the 7.1s LCP. A real <img> with fetchpriority="high" is discoverable immediately
+     from the HTML and can be prioritized by the browser's preload scanner. -->
+<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; overflow:hidden; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp"
+       alt=""
+       fetchpriority="high"
+       loading="eager"
+       decoding="async"
+       width="1280" height="600"
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; z-index:0; display:block;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -714,9 +729,7 @@
         </div>
         <p style="margin:0 0 1rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">A warehouse repaint isn't cosmetic. It's about <strong>asset protection</strong> and maintaining a facility that meets <strong>OSHA standards</strong> and client expectations.</p>
         <p style="margin:0 0 1.5rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">Properly applied <strong>industrial coatings</strong> extend the life of your building, reduce maintenance costs, and create a cleaner, brighter, safer work environment for your team.</p>
-        <a href="#quote-form" style="display:inline-flex; align-items:center; background:#334155; color:#ffffff; font-weight:800; padding:1.25rem 2.5rem; border-radius:9999px; text-decoration:none; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);"
-           onmouseover="this.style.transform='translateY(-4px)'; this.style.backgroundColor='#1f2937';"
-           onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#334155';">
+        <a href="#quote-form" class="btn-hover-lift" style="display:inline-flex; align-items:center; background:#334155; color:#ffffff; font-weight:800; padding:1.25rem 2.5rem; border-radius:9999px; text-decoration:none; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);">
           Schedule a Free Warehouse Assessment
           <span style="margin-left:0.75rem; display:inline-flex; align-items:center; padding:0.3rem 0.6rem; border-radius:9999px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); color:#ffffff; font-size:0.75rem; font-weight:900; white-space:nowrap;">B2B ONLY</span>
         </a>
@@ -923,17 +936,17 @@
       <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
         <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Related Services</h3>
         <ul style="margin:0; padding:0; list-style:none; color:#374151;">
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Painting</a></li>
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Warehouse Line Striping</a></li>
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-floor-coatings" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Floor Coatings</a></li>
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Commercial Concrete Polishing</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-painting" class="link-hover-green" style="color:#111827; text-decoration:underline;">Industrial Painting</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-warehouse-line-striping-painting" class="link-hover-green" style="color:#111827; text-decoration:underline;">Warehouse Line Striping</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-floor-coatings" class="link-hover-green" style="color:#111827; text-decoration:underline;">Industrial Floor Coatings</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing" class="link-hover-green" style="color:#111827; text-decoration:underline;">Commercial Concrete Polishing</a></li>
         </ul>
       </div>
       <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; box-shadow:0 4px 6px -1px rgba(0,0,0,0.10); border:1px solid #e5e7eb;">
         <h3 style="margin:0 0 1rem 0; font-size:1.25rem; font-weight:800; color:#111827;">Specialized Solutions</h3>
         <ul style="margin:0; padding:0; list-style:none; color:#374151;">
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Tank Painting</a></li>
-          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/industrial-floor-coatings" style="color:#111827; text-decoration:underline;" onmouseover="this.style.color='#008000';" onmouseout="this.style.color='#111827';">Industrial Floor Coatings</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/atlanta-industrial-tank-painting" class="link-hover-green" style="color:#111827; text-decoration:underline;">Industrial Tank Painting</a></li>
+          <li style="margin-top:0.75rem;">• <a href="https://southeastcommercialpainting.com/industrial-floor-coatings" class="link-hover-green" style="color:#111827; text-decoration:underline;">Industrial Floor Coatings</a></li>
         </ul>
       </div>
     </div>
@@ -980,10 +993,7 @@
   <div style="max-width:64rem; margin:0 auto; padding:0 2rem; text-align:center;">
     <h2 style="margin:0 0 1.5rem 0; color:#008000; font-size:2.25rem; font-weight:900;">Serving Greater Atlanta Warehouses</h2>
     <p style="margin:0 0 2rem 0; font-size:1.125rem; line-height:1.75; color:#374151;">From <strong>Fulton Industrial to the I-85 corridor</strong>, we help warehouse operators maintain <strong>durable, safe, and compliant facilities</strong>.</p>
-    <a href="tel:4704582322"
-       style="display:inline-block; background:#334155; color:#ffffff; font-weight:600; padding:1rem 2.5rem; border-radius:0.5rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); font-size:1.25rem; text-decoration:none;"
-       onmouseover="this.style.transform='translateY(-4px)'; this.style.backgroundColor='#1f2937';"
-       onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='#334155';">
+    <a href="tel:4704582322" class="btn-hover-lift" style="display:inline-block; background:#334155; color:#ffffff; font-weight:600; padding:1rem 2.5rem; border-radius:0.5rem; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10); font-size:1.25rem; text-decoration:none;">
       Call (470) 458-2322 for a Free Warehouse Assessment
       <span style="margin-left:0.75rem; display:inline-flex; align-items:center; padding:0.3rem 0.6rem; border-radius:9999px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); color:#ffffff; font-size:0.75rem; font-weight:900; white-space:nowrap;">B2B ONLY</span>
     </a>
@@ -1017,9 +1027,7 @@
         <h3 style="margin:0 0 1rem 0; font-size:1.5rem; font-weight:700; color:#111827;">Ready to Start Your Project?</h3>
         <p style="margin:0 0 2rem 0; color:#4b5563;">Call us Now to Set Up a Free On-Site Walk Thru &amp; Quote</p>
         <a href="tel:+14704582322"
-           style="display:block; width:100%; background:#008000; color:#ffffff; font-size:1.5rem; font-weight:700; padding:1rem; border-radius:0.5rem; text-decoration:none; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10);"
-           onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#15803d';"
-           onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#008000';">
+           class="btn-hover-scale" style="display:block; width:100%; background:#008000; color:#ffffff; font-size:1.5rem; font-weight:700; padding:1rem; border-radius:0.5rem; text-decoration:none; box-shadow:0 10px 15px -3px rgba(0,0,0,0.10);">
           (470) 458-2322
         </a>
         <p style="margin:1rem 0 0 0; font-size:0.875rem; color:#6b7280; font-style:italic;">Click to Call &amp; Schedule Your Assessment &amp; Quote</p>
@@ -1032,12 +1040,7 @@
       <p style="margin:0; font-size:0.875rem; color:#6b7280;">Serving the entire Metro Atlanta area including <strong>Buckhead, Midtown, Fulton Industrial Blvd, and the I-85 NE Corridor.</strong></p>
     </div>
   </div>
-  <style>
-    @media (min-width: 768px) {
-      #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-      #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
-    }
-  </style>
+  <!-- OPTIMIZATION #6: Stray <style> block removed — media queries consolidated into main <style> in <head> -->
 </section>
 
 <!-- CONTACT SECTION -->
@@ -1158,8 +1161,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional debug — remove after 1 week of successful testing
-    console.log('✅ GCLID & tracking params populated successfully');
+    // OPTIMIZATION #7: console.log removed from production code
 });
 
 // Helper functions
@@ -1174,6 +1176,25 @@ function setCookie(name, value, days) {
     const expires = new Date(Date.now() + days * 864e5).toUTCString();
     document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax`;
 }
+</script>
+
+<!-- OPTIMIZATION #3 (deferred): GCLID capture + GHL session moved here from <head> — runs after HTML parsing, never blocks rendering -->
+<script>
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var gclid = params.get('gclid');
+    if (gclid) {
+      localStorage.setItem('gclid', gclid);
+      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
+      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
+    }
+  } catch(e) {}
+  var ghlSession = document.createElement("script");
+  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
+  ghlSession.defer = true;
+  document.head.appendChild(ghlSession);
+})();
 </script>
 
 </body>
