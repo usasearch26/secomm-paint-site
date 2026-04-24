@@ -600,21 +600,28 @@
 })();
 </script>
 
-<!-- Google Analytics + Google Ads — dataLayer init is immediate; script loads 1s after page load -->
+<!-- Google Analytics + Google Ads — dataLayer init is immediate; gtag.js loads on first user interaction -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
-  window.addEventListener('load', function() {
-    setTimeout(function() {
+  (function() {
+    var gaLoaded = false;
+    function loadGA() {
+      if (gaLoaded) return;
+      gaLoaded = true;
       var s = document.createElement('script');
       s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
       s.async = true;
       document.head.appendChild(s);
-    }, 1000);
-  });
+    }
+    ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e) {
+      window.addEventListener(e, loadGA, {once:true, passive:true});
+    });
+    setTimeout(loadGA, 5000);
+  })();
 </script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
@@ -681,7 +688,7 @@
     <div class="container">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="300" height="95" loading="eager"></a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="300" height="95" loading="eager" sizes="(min-width:1024px) 300px, (min-width:768px) 250px, 200px"></a>
         </div>
         <div class="header-spacer"></div>
         <div class="phone">
@@ -828,6 +835,7 @@
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
              alt="Atlanta industrial painting crew on job site" width="448" height="300"
              fetchpriority="high" loading="eager" decoding="async"
+             sizes="(min-width:1024px) 448px, 100vw"
              class="img-premium img-frame-slate" style="max-width:448px;">
       </div>
       <div style="color:var(--gray-700); font-size:18px; line-height:1.625;">
@@ -906,7 +914,9 @@
       <div class="justify-center" style="align-items:flex-start;">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e323b3cc97c1ecc8bf5.webp"
              alt="Industrial painting crew understands the stakes" width="448" height="300"
-             loading="lazy" decoding="async" class="img-premium img-frame-green" style="max-width:448px;"
+             loading="lazy" decoding="async"
+             sizes="(min-width:1024px) 448px, 100vw"
+             class="img-premium img-frame-green" style="max-width:448px;"
              onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
       </div>
       <div style="color:var(--gray-700); font-size:18px; line-height:1.7;">
