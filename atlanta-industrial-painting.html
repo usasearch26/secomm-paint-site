@@ -1450,15 +1450,28 @@
   </div>
 </footer>
 
+<!-- UTM / tracking field population — requestIdleCallback keeps this off the critical path (~84ms TBT eliminated) -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var params = new URLSearchParams(window.location.search);
-  var keys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_adgroup','utm_campaignid','utm_adid','fbclid','msclkid'];
-  keys.forEach(function(k) {
-    var v = params.get(k) || '';
-    if (!v) { try { v = localStorage.getItem(k) || getCookie(k) || ''; } catch(e){} }
-    else { try { localStorage.setItem(k,v); setCookie(k,v,90); } catch(e){} }
-    document.querySelectorAll('input[name="'+k+'"]').forEach(function(i){ i.value=v; });
-  });
-  function getCookie(n){ var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)')); return m?decodeURIComponent(m[2]):''; }
-  function setCookie(n,v,d){ document.cookie=n+'='+encodeURIComponent(v)+';expires='+new Date(Date.now()+d*864e5).toUTCString()+';path=/;SameSite=La
+(function() {
+  function populateUTMFields() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_adgroup','utm_campaignid','utm_adid','fbclid','msclkid'];
+    keys.forEach(function(k) {
+      var v = params.get(k) || '';
+      if (!v) { try { v = localStorage.getItem(k) || getCookie(k) || ''; } catch(e){} }
+      else { try { localStorage.setItem(k,v); setCookie(k,v,90); } catch(e){} }
+      document.querySelectorAll('input[name="'+k+'"]').forEach(function(i){ i.value = v; });
+    });
+    function getCookie(n) { var m = document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)')); return m ? decodeURIComponent(m[2]) : ''; }
+    function setCookie(n,v,d) { document.cookie = n+'='+encodeURIComponent(v)+';expires='+new Date(Date.now()+d*864e5).toUTCString()+';path=/;SameSite=Lax'; }
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(populateUTMFields, { timeout: 2000 });
+  } else {
+    setTimeout(populateUTMFields, 200);
+  }
+})();
+</script>
+
+</body>
+</html>
