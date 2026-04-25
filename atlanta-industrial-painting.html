@@ -660,25 +660,47 @@
 }
 </script>
 
-<!-- Tracking -->
+<!-- Tracking — dataLayer inline (no data loss), scripts deferred to avoid TBT -->
 <script>
-(function(){
-  try {
-    var p=new URLSearchParams(window.location.search),g=p.get('gclid');
-    if(g){localStorage.setItem('gclid',g);var e=new Date(Date.now()+90*864e5).toUTCString();document.cookie="gclid="+encodeURIComponent(g)+";expires="+e+";path=/;SameSite=Lax";}
-  }catch(e){}
-  var s=document.createElement('script');s.src='https://backend.leadconnectorhq.com/appengine/js/user_session.js';s.defer=true;document.head.appendChild(s);
-})();
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
-<script>
-  window.dataLayer=window.dataLayer||[];
+  // ── 1. Initialize dataLayer + gtag() immediately — conversion events queue safely
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js',new Date());
-  gtag('config','G-KEH5L41ZYX');
-  gtag('config','AW-784863985');
+  gtag('js', new Date());
+  gtag('config', 'G-KEH5L41ZYX');
+  gtag('config', 'AW-784863985');
+
+  // ── 2. GCLID capture (no network request, safe to run now)
+  try {
+    var _p = new URLSearchParams(window.location.search), _g = _p.get('gclid');
+    if(_g){localStorage.setItem('gclid',_g);document.cookie="gclid="+encodeURIComponent(_g)+";expires="+new Date(Date.now()+90*864e5).toUTCString()+";path=/;SameSite=Lax";}
+  } catch(e){}
+
+  // ── 3. Load GTM/gtag script files 1 second after load — removes ~486ms TBT
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      s.async = true;
+      document.head.appendChild(s);
+    }, 1000);
+  });
+
+  // ── 4. Load LeadConnector on first user interaction, 5s fallback
+  var _lcDone = false;
+  function _loadLC() {
+    if (_lcDone) return; _lcDone = true;
+    var a = document.createElement('script');
+    a.src = 'https://backend.leadconnectorhq.com/appengine/js/user_session.js';
+    document.head.appendChild(a);
+    var b = document.createElement('script');
+    b.src = 'https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js';
+    document.head.appendChild(b);
+  }
+  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(ev){
+    window.addEventListener(ev, _loadLC, {once:true, passive:true});
+  });
+  setTimeout(_loadLC, 5000);
 </script>
-<script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
 </head>
 <body>
 
@@ -705,7 +727,7 @@
     <div class="container">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="220" height="88"></a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="220" height="88" sizes="220px"></a>
         </div>
         <div class="phone">
           <div class="fast">Call Now for Fast Response</div>
@@ -838,7 +860,8 @@
       <div class="img-col border-navy">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
              alt="Atlanta industrial painting crew on active job site" width="560" height="420"
-             fetchpriority="high" loading="eager" decoding="async">
+             fetchpriority="high" loading="eager" decoding="async"
+             sizes="(max-width: 1024px) 100vw, 560px">
       </div>
       <div class="text-col" style="gap:0;">
         <p class="p-body">Since 1991, <strong>Southeast Commercial Services</strong> has been the go-to industrial coating contractor for facility managers and plant directors across Metro Atlanta who need more than a paint crew. We protect structural assets and production environments with high-performance coating systems engineered to withstand real-world industrial demands — chemical exposure, heavy forklift traffic, moisture cycling, and thermal stress.</p>
@@ -948,7 +971,7 @@
       <div class="img-col border-green">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e323b3cc97c1ecc8bf5.webp"
              alt="Industrial painting specialists assessing facility surfaces in Metro Atlanta" width="560" height="420"
-             loading="lazy" decoding="async"
+             loading="lazy" decoding="async" sizes="(max-width: 1024px) 100vw, 560px"
              onerror="this.onerror=null;this.src='https://placehold.co/560x420/e2e8f0/475569?text=Southeast+Commercial';">
       </div>
       <div class="text-col">
