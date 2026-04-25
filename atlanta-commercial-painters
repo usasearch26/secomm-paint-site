@@ -785,7 +785,7 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
       "name": "Do you use your own employees or subcontractors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We use our own experienced painting crews â not subcontractors, not staffing agency labor. The same team that starts your project finishes it. This consistency in crew means consistency in quality and accountability from day one to final walkthrough."
+        "text": "We use our own experienced painting crews — not subcontractors, not staffing agency labor. The same team that starts your project finishes it. This consistency in crew means consistency in quality and accountability from day one to final walkthrough."
       }
     },
     {
@@ -940,7 +940,7 @@ setTimeout(load,5000);})();
     <a href="/high-rise-painters.html">High-Rise</a>
 
     <div class="dropdown">
-      <a href="#" class="dropbtn">Industrial &amp; Warehouse â¼</a>
+      <a href="#" class="dropbtn">Industrial &amp; Warehouse ▼</a>
       <div class="dropdown-content">
         <a href="/atlanta-industrial-painting.html">Industrial Painting</a>
         <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
@@ -952,7 +952,7 @@ setTimeout(load,5000);})();
     </div>
 
     <div class="dropdown">
-      <a href="#" class="dropbtn">Floor Coatings â¼</a>
+      <a href="#" class="dropbtn">Floor Coatings ▼</a>
       <div class="dropdown-content">
         <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
         <a href="/warehouse-floor-epoxy">Warehouse Floor Epoxy</a>
@@ -1009,7 +1009,7 @@ setTimeout(load,5000);})();
         <div style="width:100%; max-width:760px; margin:0 auto;">
           <div style="margin-bottom:14px;">
             <span style="font-size:14px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#2ea44f;">
-              Commercial Painters â¢ Atlanta, GA â¢ Est. 1991
+              Commercial Painters • Atlanta, GA • Est. 1991
             </span>
           </div>
           <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase;">
@@ -1021,7 +1021,7 @@ setTimeout(load,5000);})();
           <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
             Interior repainting. Exterior coatings. Industrial surfaces. Office, retail, 
             warehouse, and facility painting. <strong style="color:#ffffff;">Southeast Commercial Services</strong> provides professional commercial painting crews for facility owners and operations 
-            managers across Atlanta who need reliable painters â not excuses.
+            managers across Atlanta who need reliable painters — not excuses.
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
             <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">
@@ -1032,7 +1032,7 @@ setTimeout(load,5000);})();
             </a>
           </div>
           <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:#97a7c0;">
-            No Residential Requests â¢ Commercial Facilities Only
+            No Residential Requests • Commercial Facilities Only
           </div>
         </div>
       </div>
@@ -1098,7 +1098,7 @@ setTimeout(load,5000);})();
     </button>
 
     <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">
-      Commercial projects only â¢ No residential
+      Commercial projects only • No residential
     </div>
 </form>
         </div>
@@ -1118,7 +1118,7 @@ setTimeout(load,5000);})();
       <div style="margin-top:12px; display:inline-flex; align-items:center; gap:10px; justify-content:center;">
         <span style="display:inline-block; width:10px; height:10px; border-radius:999px; background:#008000;"></span>
         <span style="font-size:15px; font-weight:800; letter-spacing:.10em; text-transform:uppercase; color:#475569;">
-          Commercial & Industrial Only â¢ Greater Atlanta
+          Commercial & Industrial Only • Greater Atlanta
         </span>
       </div>
     </div>
@@ -1147,7 +1147,7 @@ setTimeout(load,5000);})();
           <strong>Southeast Commercial Services</strong> serves the <strong>greater Atlanta area</strong>. We offer a broad range of <strong>commercial & industrial painting services</strong> to meet the needs of Atlanta's growing <strong>commercial & industrial sector</strong>.
         </p>
         <p style="font-size:18px; color:#374151; margin-bottom:32px; line-height:1.65;">
-          If itâs time to brighten up the appearance of your building or facility, <strong>Southeast Commercial Services</strong> can be your partner for <strong>Commercial Painting in Atlanta, GA</strong> & surrounding cities & communities. Our mission is to deliver an <strong>exceptional appearance & image</strong> for your business with <strong>unsurpassed quality, attention-to-detail & value</strong>.
+          If it’s time to brighten up the appearance of your building or facility, <strong>Southeast Commercial Services</strong> can be your partner for <strong>Commercial Painting in Atlanta, GA</strong> & surrounding cities & communities. Our mission is to deliver an <strong>exceptional appearance & image</strong> for your business with <strong>unsurpassed quality, attention-to-detail & value</strong>.
         </p>
 
         <!-- Centered Stats Grid -->
@@ -1173,7 +1173,7 @@ setTimeout(load,5000);})();
 </section>
 
 <!-- ========================================
-     WHY SOUTHEAST â AUTHORITY + QUALIFIER
+     WHY SOUTHEAST — AUTHORITY + QUALIFIER
      Replaces: Authority Proof Strip + Answer Box
      Clean, human, conversion-focused
 ======================================== -->
@@ -1211,7 +1211,7 @@ setTimeout(load,5000);})();
       Atlanta's Commercial Painters Since 1991
     </h2>
 
-    <!-- Direct human statement â no "Direct Answer:" label -->
+    <!-- Direct human statement — no "Direct Answer:" label -->
     <p style="
       font-size:18px;
       color:#374151;
@@ -1220,48 +1220,48 @@ setTimeout(load,5000);})();
       margin:0 0 32px 0;
     ">
       We work exclusively with facility owners and operations managers 
-who need professional commercial painting crews â not day laborers, 
+who need professional commercial painting crews — not day laborers, 
 not subcontracted strangers, not residential painters running 
 a side operation. If your building needs to look right and 
 stay that way, this is what we do every day.
 
     </p>
 
-<!-- Credential Bar â 3x3 Grid -->
+<!-- Credential Bar — 3x3 Grid -->
 <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:36px;">
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Manufacturer Certified Installer
+    ✓ Manufacturer Certified Installer
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â $2M+ General Liability
+    ✓ $2M+ General Liability
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Licensed &amp; Bonded â Georgia
+    ✓ Licensed &amp; Bonded — Georgia
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â OSHA Compliant â Active Facilities
+    ✓ OSHA Compliant — Active Facilities
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Warehouse Â· Manufacturing Â· Food &amp; Beverage
+    ✓ Warehouse · Manufacturing · Food &amp; Beverage
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Phased Scheduling â Minimal Downtime
+    ✓ Phased Scheduling — Minimal Downtime
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Written Warranty â Materials &amp; Labor
+    ✓ Written Warranty — Materials &amp; Labor
   </div>
   <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    â Serving Atlanta Since 1991
+    ✓ Serving Atlanta Since 1991
   </div>
   <a href="https://network.procore.com/p/southeast-commercial-services-of-georgia-llc-decatur"
      target="_blank"
      rel="noopener noreferrer"
      style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center; text-decoration:none; display:block;">
-    â Verified on Procore Network
+    ✓ Verified on Procore Network
   </a>
 </div>
 
-    <!-- 3-Column Differentiator Cards â no "answer capsule" framing -->
+    <!-- 3-Column Differentiator Cards — no "answer capsule" framing -->
     <div style="
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
@@ -1317,7 +1317,7 @@ stay that way, this is what we do every day.
         ">
           Sherwin-Williams and PPG systems selected for your 
           specific exposure, washability, abrasion, and 
-          finish requirements â applied to manufacturer spec.
+          finish requirements — applied to manufacturer spec.
         </p>
       </div>
 
@@ -1349,7 +1349,7 @@ stay that way, this is what we do every day.
 
     </div>
 
-    <!-- B2B Disqualifier â firm but brief -->
+    <!-- B2B Disqualifier — firm but brief -->
     <div style="
       padding:14px 20px;
       background:#fafafa;
@@ -1367,7 +1367,7 @@ stay that way, this is what we do every day.
   </div>
 </section>
 <!-- ========================================
-     BUSINESS CASE â WHO THIS IS FOR
+     BUSINESS CASE — WHO THIS IS FOR
      Follows: Why Southeast section
      Story position: "I understand your situation"
 ======================================== -->
@@ -1440,7 +1440,7 @@ stay that way, this is what we do every day.
         Facility owners and operations managers don't have time 
 for painters who show up late, cut corners on prep, or 
 send a different crew every day. You need painters who 
-treat your building like a professional jobsite â not 
+treat your building like a professional jobsite — not 
 a side job they're squeezing in between residential work.
 
       </p>
@@ -1454,12 +1454,12 @@ a side job they're squeezing in between residential work.
         That's who we've been in Atlanta since 1991. 
 Not house painters. Not residential crews doing 
 commercial on the side. Dedicated commercial painting 
-teams â offices, warehouses, industrial buildings, 
+teams — offices, warehouses, industrial buildings, 
 and everything in between.
 
       </p>
 
-      <!-- 3 tight proof points â no "Direct Answer" labels -->
+      <!-- 3 tight proof points — no "Direct Answer" labels -->
       <div style="display:grid; gap:14px;">
 
         <div style="
@@ -1484,14 +1484,14 @@ and everything in between.
             align-items:center;
             justify-content:center;
             font-weight:900;
-          ">â</div>
+          ">✓</div>
           <div>
             <strong style="font-size:15px; color:#111827; display:block; margin-bottom:3px;">
-              Consistent crews â not strangers every day
+              Consistent crews — not strangers every day
             </strong>
             <span style="font-size:14px; color:#475569; line-height:1.6;">
               You get the same experienced painters from 
-              day one to final walkthrough â not whoever showed up at the labor yard that morning.
+              day one to final walkthrough — not whoever showed up at the labor yard that morning.
             </span>
           </div>
         </div>
@@ -1518,7 +1518,7 @@ and everything in between.
             align-items:center;
             justify-content:center;
             font-weight:900;
-          ">â</div>
+          ">✓</div>
           <div>
             <strong style="font-size:15px; color:#111827; display:block; margin-bottom:3px;">
               Correct prep. Every time.
@@ -1552,13 +1552,13 @@ and everything in between.
             align-items:center;
             justify-content:center;
             font-weight:900;
-          ">â</div>
+          ">✓</div>
           <div>
             <strong style="font-size:15px; color:#111827; display:block; margin-bottom:3px;">
               You know exactly what you're getting
             </strong>
             <span style="font-size:14px; color:#475569; line-height:1.6;">
-              Every quote is written out in plain language â 
+              Every quote is written out in plain language — 
 what gets painted, how it gets prepped, 
 what products get used, and when 
 it gets done.
@@ -1573,7 +1573,7 @@ it gets done.
 </section>
 
 <!-- ========================================
-     SERVICES â WHAT WE DO
+     SERVICES — WHAT WE DO
      Follows: Business Case section
      Story position: "Here's what we actually do"
      Reduced from 12 cards to 6 core services
@@ -1617,12 +1617,12 @@ it gets done.
       ">
         Every service below is commercial and industrial only. 
         We bring the same preparation standards, coating systems, 
-        and project discipline to every scope â regardless of size.
+        and project discipline to every scope — regardless of size.
       </p>
 
     </div>
 
-    <!-- 6 Service Cards â 3 columns desktop, 1 mobile -->
+    <!-- 6 Service Cards — 3 columns desktop, 1 mobile -->
     <div style="
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
@@ -1706,8 +1706,8 @@ it gets done.
               color:#475569;
               line-height:1.65;
             ">
-              FaÃ§ades, loading docks, metal panels, 
-              tilt-wall, masonry, and siding â 
+              Façades, loading docks, metal panels, 
+              tilt-wall, masonry, and siding — 
               with containment and weather planning.
             </p>
           </div>
@@ -1884,7 +1884,7 @@ it gets done.
 
     </div>
 
-    <!-- More Services Footer â keeps SEO links without bloating the grid -->
+    <!-- More Services Footer — keeps SEO links without bloating the grid -->
     <div style="
       padding:20px 24px;
       background:#f1f5f9;
@@ -1910,22 +1910,22 @@ it gets done.
            style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
            Tank Painting
         </a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="https://southeastcommercialpainting.com/construction-painting.html"
            style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
            Construction Painting
         </a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="https://southeastcommercialpainting.com/commercial-sandblasting.html"
            style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
            Commercial Sandblasting
         </a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="https://southeastcommercialpainting.com/commercial-concrete-polishing.html"
            style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
            Concrete Polishing
         </a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="https://southeastcommercialpainting.com/commercial-office-painting.html"
            style="font-size:14px; color:#008000; font-weight:700; text-decoration:underline;">
            Office Painting
@@ -1937,7 +1937,7 @@ it gets done.
 </section>
 
 <!-- ========================================
-     PROCESS â HOW IT WORKS
+     PROCESS — HOW IT WORKS
      Follows: Services section
      Story position: "Here's exactly what happens next"
 ======================================== -->
@@ -1979,7 +1979,7 @@ it gets done.
         margin:0 auto;
         max-width:58ch;
       ">
-        From the first call to final walkthrough â 
+        From the first call to final walkthrough — 
         here is exactly what to expect when you work 
         with Southeast Commercial Services.
       </p>
@@ -2069,7 +2069,7 @@ it gets done.
           color:#475569;
           line-height:1.65;
         ">
-          You receive a detailed written proposal â 
+          You receive a detailed written proposal — 
           prep steps, coating system, schedule, 
           exclusions, and warranty terms. 
           No ballparks.
@@ -2152,7 +2152,7 @@ it gets done.
           line-height:1.65;
         ">
           Coatings applied to manufacturer 
-          specification â correct mil thickness, 
+          specification — correct mil thickness, 
           correct method, correct sequence. 
           Your facility stays operational throughout.
         </p>
@@ -2251,7 +2251,7 @@ it gets done.
         color:#94a3b8;
         line-height:1.6;
       ">
-        Licensed Â· Bonded Â· Insured Â· Serving Greater Atlanta Since 1991
+        Licensed · Bonded · Insured · Serving Greater Atlanta Since 1991
       </p>
     </div>
 
@@ -2315,7 +2315,7 @@ Commercial Painters Apart
           margin:0 0 16px 0;
         ">
           Most painting problems aren't coating 
-problems â they're crew problems. 
+problems — they're crew problems. 
 Wrong prep. Wrong product. Wrong 
 application method. A professional 
 commercial painting crew knows the 
@@ -2333,7 +2333,7 @@ brush does not.
         ">
           This is the difference you're paying for 
 when you hire Southeast Commercial Services. 
-Crews who know what they're doing â 
+Crews who know what they're doing — 
 and a company that stands behind them.
 
         </p>
@@ -2483,7 +2483,7 @@ We do it right the first time.
           line-height:1.7;
         ">
           Concrete, steel, drywall, masonry, 
-CMU block â each requires a different 
+CMU block — each requires a different 
 coating system. Our crews know the 
 difference and apply accordingly, 
 not just whatever is on the truck.
@@ -2533,7 +2533,7 @@ not just whatever is on the truck.
           color:#475569;
           line-height:1.7;
         ">
-          Brush, roll, or spray â the method 
+          Brush, roll, or spray — the method 
 matters as much as the product. 
 Our crews apply coatings the way 
 the manufacturer specifies, not 
@@ -2587,7 +2587,7 @@ the fastest way possible.
           Floors protected. Fixtures masked. 
 Adjacent surfaces covered. At the 
 end of every day the site is left 
-clean â because your building is 
+clean — because your building is 
 still a working facility, not 
 a construction zone.
 
@@ -2627,7 +2627,7 @@ a construction zone.
             font-size:17px;
             font-weight:900;
             color:#111827;
-          ">Consistent Crew â Start to Finish
+          ">Consistent Crew — Start to Finish
 </h3>
         </div>
         <p style="
@@ -2692,7 +2692,7 @@ from day one to final walkthrough.
 with you. If something isn't right 
 we fix it before we leave. 
 One-year workmanship warranty 
-on every project â no argument, 
+on every project — no argument, 
 no runaround.
 
         </p>
@@ -2720,7 +2720,7 @@ no runaround.
 on time, prep correctly, apply to spec, 
 keep the site clean, and finish what 
 they started. That is the standard 
-we hold ourselves to on every project â 
+we hold ourselves to on every project — 
 regardless of size.
 
       </p>
@@ -2736,7 +2736,7 @@ regardless of size.
      Will sit BELOW Proof section once added
      Story position: "We know your world 
      and we work where your buildings are"
-     IMAGE: Real on-site photo â contractor
+     IMAGE: Real on-site photo — contractor
      reviewing scope with facility manager
 ======================================== -->
 <section style="
@@ -2828,7 +2828,7 @@ regardless of size.
           is what the building requires.
         </p>
 
-        <!-- Operational specifics â no AI labels -->
+        <!-- Operational specifics — no AI labels -->
         <div style="display:grid; gap:12px;">
 
           <div style="
@@ -2847,7 +2847,7 @@ regardless of size.
               font-weight:900;
               color:#008000;
               margin-top:1px;
-            ">â</span>
+            ">✓</span>
             <div>
               <strong style="
                 font-size:15px;
@@ -2883,7 +2883,7 @@ regardless of size.
               font-weight:900;
               color:#008000;
               margin-top:1px;
-            ">â</span>
+            ">✓</span>
             <div>
               <strong style="
                 font-size:15px;
@@ -2897,7 +2897,7 @@ regardless of size.
                 line-height:1.6;
               ">
                 Coatings matched to your substrate, exposure, 
-                and performance requirements â applied to 
+                and performance requirements — applied to 
                 manufacturer specification.
               </span>
             </div>
@@ -2919,14 +2919,14 @@ regardless of size.
               font-weight:900;
               color:#008000;
               margin-top:1px;
-            ">â</span>
+            ">✓</span>
             <div>
               <strong style="
                 font-size:15px;
                 color:#111827;
                 display:block;
                 margin-bottom:2px;
-              ">Licensed, Bonded &amp; Insured â Georgia</strong>
+              ">Licensed, Bonded &amp; Insured — Georgia</strong>
               <span style="
                 font-size:14px;
                 color:#475569;
@@ -3029,7 +3029,7 @@ regardless of size.
             color:#94a3b8;
             line-height:1.6;
           ">
-            Fulton Â· Cobb Â· Gwinnett Â· DeKalb Â· Cherokee
+            Fulton · Cobb · Gwinnett · DeKalb · Cherokee
           </p>
           <a href="tel:4704582322" style="
             display:inline-flex;
@@ -3044,7 +3044,7 @@ regardless of size.
             text-decoration:none;
             box-shadow:0 8px 20px rgba(0,128,0,.28);
           ">
-            ð (470) 458-2322
+            📞 (470) 458-2322
           </a>
         </div>
 
@@ -3101,7 +3101,7 @@ regardless of size.
      Follows: Built for Your Site + Service Area
      Story position: "You'll recognize your 
      building type here"
-     Condensed from 12 to 8 â scannable only
+     Condensed from 12 to 8 — scannable only
 ======================================== -->
 <section style="
   display:block;
@@ -3149,7 +3149,7 @@ regardless of size.
 
     </div>
 
-    <!-- 8 Facility Type Cards â 4 columns desktop -->
+    <!-- 8 Facility Type Cards — 4 columns desktop -->
     <div style="
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
@@ -3375,7 +3375,7 @@ regardless of size.
 
     </div>
 
-    <!-- B2B disqualifier â brief, firm -->
+    <!-- B2B disqualifier — brief, firm -->
     <div style="
       max-width:720px;
       margin:0 auto;
@@ -3400,7 +3400,7 @@ regardless of size.
 
 
 <!-- ========================================
-     FAQ â WITH INTERNAL LINKS
+     FAQ — WITH INTERNAL LINKS
      Follows: Facility Types section
      Story position: "Last objections resolved 
      before the final decision"
@@ -3484,8 +3484,8 @@ regardless of size.
           out access, occupant flow, noise 
           sensitivity, and any areas that need 
           to stay completely off-limits. From there 
-          we sequence the work by zone â one section 
-          at a time â and contain dust and overspray 
+          we sequence the work by zone — one section 
+          at a time — and contain dust and overspray 
           before it becomes your problem. If your 
           building needs night or weekend work, 
           that is what we schedule.
@@ -3502,14 +3502,14 @@ regardless of size.
             color:#008000;
             text-decoration:underline;
           ">Interior Commercial Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/commercial-office-painting.html" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
           ">Office Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/high-rise-painters.html" style="
             font-size:13px;
             font-weight:700;
@@ -3545,12 +3545,12 @@ actually experienced commercial crews?
           line-height:1.75;
         ">
           Our painters work commercial and industrial 
-projects exclusively â no residential side 
+projects exclusively — no residential side 
 work, no day laborers pulled from a hiring 
 lot. Most of our crew members have been 
 with us for years. They know the difference 
 between a tilt-wall warehouse, a CMU block 
-facility, and an occupied office building â 
+facility, and an occupied office building — 
 and how to approach each one correctly. 
 That experience is not something you can 
 fake on a jobsite.
@@ -3567,14 +3567,14 @@ fake on a jobsite.
             color:#008000;
             text-decoration:underline;
           ">Contstruction Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-warehouse-painting" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
           ">Warehouse Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-warehouse-line-striping-painting" style="
             font-size:13px;
             font-weight:700;
@@ -3618,7 +3618,7 @@ application methods by surface type, OSHA
 jobsite compliance, and how to work inside 
 an occupied facility without shutting it 
 down. The price difference between the two 
-is real â so is the difference in how long 
+is real — so is the difference in how long 
 the work lasts and what your building 
 looks like at the end.
 
@@ -3634,14 +3634,14 @@ looks like at the end.
             color:#008000;
             text-decoration:underline;
           ">Exterior Commercial Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/commercial-building-painting" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
           ">Commercial Building Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/high-rise-painters" style="
             font-size:13px;
             font-weight:700;
@@ -3666,7 +3666,7 @@ looks like at the end.
           color:#111827;
           line-height:1.2;
         ">
-          Are you licensed, bonded, and insured â 
+          Are you licensed, bonded, and insured — 
           and can you meet our insurance 
           requirements?
         </h3>
@@ -3683,7 +3683,7 @@ looks like at the end.
           capacity for qualifying commercial scopes. 
           We can provide certificates of insurance 
           naming your organization as an additional 
-          insured â a standard requirement we 
+          insured — a standard requirement we 
           fulfill regularly.
         </p>
         <div style="
@@ -3697,14 +3697,14 @@ looks like at the end.
             color:#008000;
             text-decoration:underline;
           ">Industrial Floor Coatings</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-commercial-floor-epoxy" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
           ">Commercial Floor Epoxy</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-tank-painting" style="
             font-size:13px;
             font-weight:700;
@@ -3739,7 +3739,7 @@ do you subcontract the painting work?
           color:#475569;
           line-height:1.75;
         ">
-          We use our own experienced painting crews â 
+          We use our own experienced painting crews — 
 not subcontractors, not staffing agency 
 labor, not whoever is available that week. 
 When you hire Southeast Commercial Services 
@@ -3747,7 +3747,7 @@ you get the same team from start to finish.
 This matters because consistency in crew 
 means consistency in quality. The painter 
 who does your prep is the same one 
-applying your finish coat â and they 
+applying your finish coat — and they 
 are accountable for both.
 
         </p>
@@ -3762,14 +3762,14 @@ are accountable for both.
             color:#008000;
             text-decoration:underline;
           ">Industrial Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/atlanta-warehouse-painting" style="
             font-size:13px;
             font-weight:700;
             color:#008000;
             text-decoration:underline;
           ">Warehouse Painting</a>
-          <span style="color:#cbd5e1; font-size:13px;">Â·</span>
+          <span style="color:#cbd5e1; font-size:13px;">·</span>
           <a href="/commercial-sandblasting" style="
             font-size:13px;
             font-weight:700;
@@ -3781,7 +3781,7 @@ are accountable for both.
 
     </div>
 
-    <!-- Internal Link Footer â full site coverage -->
+    <!-- Internal Link Footer — full site coverage -->
     <div style="
       margin-top:40px;
       padding:24px 28px;
@@ -3804,37 +3804,37 @@ are accountable for both.
         align-items:center;
       ">
         <a href="/interior-commercial-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Interior Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/exterior-commercial-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Exterior Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-building-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Building Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-office-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Office Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/high-rise-painters.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">High-Rise Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-industrial-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Industrial Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-warehouse-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Warehouse Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-warehouse-line-striping-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Line Striping</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-industrial-floor-coatings.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Industrial Floor Coatings</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-commercial-floor-epoxy.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Commercial Floor Epoxy</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/warehouse-floor-epoxy" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Warehouse Floor Epoxy</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-concrete-polishing.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Concrete Polishing</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/atlanta-tank-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Tank Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/construction-painting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Construction Painting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-sandblasting.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Commercial Sandblasting</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-kitchen-epoxy-floor-coatings.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Kitchen Epoxy Floors</a>
-        <span style="color:#cbd5e1;">Â·</span>
+        <span style="color:#cbd5e1;">·</span>
         <a href="/commercial-garage-epoxy-floor-coatings.html" style="font-size:13px; font-weight:700; color:#334155; text-decoration:underline;">Garage Epoxy Floors</a>
       </div>
     </div>
@@ -3843,10 +3843,10 @@ are accountable for both.
 </section>
 
 <!-- ========================================
-     WE BACK OUR WORK â WARRANTY & TRUST
+     WE BACK OUR WORK — WARRANTY & TRUST
      Follows: FAQ section
      Story position: "What if something 
-     goes wrong?" â answered before the 
+     goes wrong?" — answered before the 
      final CTA removes the last hesitation
 ======================================== -->
 <section style="
@@ -3922,7 +3922,7 @@ are accountable for both.
           background:#ecfdf5;
           margin-bottom:16px;
         ">
-          <span style="font-size:26px;">ð¡ï¸</span>
+          <span style="font-size:26px;">🛡️</span>
         </div>
         <h3 style="
           margin:0 0 10px 0;
@@ -3964,7 +3964,7 @@ are accountable for both.
           background:#ecfdf5;
           margin-bottom:16px;
         ">
-          <span style="font-size:26px;">â</span>
+          <span style="font-size:26px;">✅</span>
         </div>
         <h3 style="
           margin:0 0 10px 0;
@@ -4010,7 +4010,7 @@ are accountable for both.
         Your estimate includes coating options matched 
         to your performance requirements and budget. 
         We will tell you plainly what each system 
-        covers â and what it does not â 
+        covers — and what it does not — 
         so you can make the right call for 
         your facility.
       </p>
@@ -4024,7 +4024,7 @@ are accountable for both.
 <!-- ========================================
      FINAL CTA
      Follows: We Back Our Work section
-     Story position: "I'm ready â tell me 
+     Story position: "I'm ready — tell me 
      exactly what to do next"
      One action. One phone number. 
      One form link. Nothing else.
@@ -4079,7 +4079,7 @@ are accountable for both.
       take less than an hour.
     </p>
 
-    <!-- Two actions â call primary, form secondary -->
+    <!-- Two actions — call primary, form secondary -->
     <div style="
       display:flex;
       flex-wrap:wrap;
@@ -4106,7 +4106,7 @@ are accountable for both.
         letter-spacing:-0.01em;
         white-space:nowrap;
       ">
-        ð (470) 458-2322
+        📞 (470) 458-2322
       </a>
 
       <!-- Secondary: Form -->
@@ -4126,7 +4126,7 @@ are accountable for both.
         white-space:nowrap;
       ">
         Request a Quote Online
-        <span style="font-size:20px;">â</span>
+        <span style="font-size:20px;">→</span>
       </a>
 
     </div>
@@ -4149,7 +4149,7 @@ are accountable for both.
         font-weight:700;
         color:#cbd5e1;
         white-space:nowrap;
-      ">Licensed &amp; Bonded â Georgia</span>
+      ">Licensed &amp; Bonded — Georgia</span>
 
       <span style="
         padding:7px 16px;
@@ -4289,7 +4289,7 @@ are accountable for both.
         Professional commercial and industrial painting services for buildings, facilities, warehouses, offices, and industrial properties throughout the Greater Atlanta area.
       </p>
       <p class="footer-text">
-        Commercial &amp; Industrial Only â¢ Serving Greater Atlanta Since 1991
+        Commercial &amp; Industrial Only • Serving Greater Atlanta Since 1991
       </p>
     </div>
 
@@ -4329,8 +4329,8 @@ Decatur, GA 30033
   </div>
 
   <div class="footer-bottom">
-    Â© 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
-    Licensed â¢ Bonded â¢ Insured â¢ Commercial &amp; Industrial Projects Only
+    © 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
+    Licensed • Bonded • Insured • Commercial &amp; Industrial Projects Only
     
     <div style="margin-top: 18px; font-size: 11px;">
         <a href="/privacy-policy.html" style="color:#94a3b8; text-decoration:none; margin-right: 20px;">Privacy Policy</a>
@@ -4367,8 +4367,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional debug â remove after 1 week of successful testing
-    console.log('â GCLID & tracking params populated successfully');
+    // Optional debug — remove after 1 week of successful testing
+    console.log('✅ GCLID & tracking params populated successfully');
 });
 
 // Helper functions
