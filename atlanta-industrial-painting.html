@@ -3,261 +3,514 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlanta Industrial Painting Contractors</title>
-  <meta name="description" content="Atlanta's trusted industrial painting contractors. Providing high-performance coatings, warehouse painting, and machinery finishes since 1991. Get a durable finish and a free quote today! (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <title>Atlanta Industrial Painting Contractors | Southeast Commercial Services</title>
+  <meta name="description" content="Industrial painting contractors serving Metro Atlanta since 1991. Protective coatings for manufacturing plants, warehouses & industrial facilities. Procore Verified. $2M GL. (470) 458-2322.">
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" fetchpriority="high">
 
   <style>
-  /* =========================================
-     GLOBAL TOKENS + RESETS
-  ========================================= */
+  /* =============================================
+     PREMIUM DESIGN SYSTEM — v3
+  ============================================= */
   :root {
-    --green: #008000;
-    --green-dark: #006400;
-    --blue-dark: #0f172a;
-    --slate: #334155;
-    --text: #1f2937;
-    --muted: #64748b;
-    --border: #e5e7eb;
-    --bg: #f3f4f6;
-    --white: #ffffff;
-    --shadow: 0 12px 30px rgba(2, 6, 23, 0.10);
-    --shadow-lg: 0 18px 50px rgba(2, 6, 23, 0.18);
+    /* Core palette — deep royal blue replaces near-black */
+    --navy:        #1a3461;   /* deep royal blue — clearly blue, not black */
+    --navy-800:    #1d3d72;   /* slightly lighter deep blue */
+    --navy-700:    #234b8a;   /* medium deep blue */
+    --green-900:   #14532d;
+    --green-700:   #15803d;
+    --green-600:   #16a34a;
+    --green-500:   #22c55e;
+    --green-50:    #f0fdf4;
+    --cream:       #fafaf8;
+    --warm-100:    #f3f4f0;
+    --warm-200:    #e8e9e4;
+    --white:       #ffffff;
+    --text:        #1a2332;
+    --text-muted:  #4a5568;
+    --text-light:  #718096;
+    --border:      rgba(15,23,42,.10);
+    --border-mid:  rgba(15,23,42,.16);
 
-    --slate-900: #0f172a;
-    --slate-800: #1f2937;
-    --slate-700: #334155;
-    --gray-900: #111827;
-    --gray-800: #1f2937;
-    --gray-700: #374151;
-    --gray-600: #4b5563;
-    --gray-500: #6b7280;
-    --gray-200: #e5e7eb;
-    --gray-100: #f3f4f6;
-    --gray-50: #f9fafb;
-    --blue-50: #eff6ff;
-    --blue-200: #bfdbfe;
-    --blue-600: #2563eb;
-    --blue-800: #1e40af;
-    --blue-900: #1e3a8a;
-    --green-50: #ecfdf5;
-    --green-900: #064e3b;
-    --shadow-sm: 0 1px 2px rgba(0,0,0,.06);
-    --shadow-md: 0 10px 15px -3px rgba(0,0,0,.10), 0 4px 6px -4px rgba(0,0,0,.10);
-    --shadow-2xl: 0 25px 50px -12px rgba(0,0,0,.25);
-    --ink: #0f172a;
-    --navy: #0b1220;
-    --card: #ffffff;
-    --line: rgba(15,23,42,.10);
-    --accent: #0ea5e9;
-    --headline: #333333;
+    /* Shadows */
+    --shadow-sm:   0 1px 3px rgba(11,18,32,.08);
+    --shadow-md:   0 4px 16px rgba(11,18,32,.10);
+    --shadow-lg:   0 12px 36px rgba(11,18,32,.14);
+    --shadow-xl:   0 20px 60px rgba(11,18,32,.18);
+
+    /* Legacy compatibility */
+    --green:       #15803d;
+    --green-dark:  #14532d;
+    --slate-700:   #334155;
+    --slate-800:   #1f2937;
+    --gray-50:     #f9fafb;
+    --gray-100:    #f3f4f6;
+    --gray-200:    #e5e7eb;
+    --gray-600:    #4b5563;
+    --gray-700:    #374151;
+    --gray-900:    #111827;
+    --headline:    #1a2332;
+    --shadow-2xl:  0 25px 50px -12px rgba(0,0,0,.22);
   }
 
   * { box-sizing: border-box; }
 
   body {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
     margin: 0;
-    background: var(--bg);
+    background: var(--cream);
     color: var(--text);
     line-height: 1.6;
   }
   img { max-width: 100%; display: block; }
-  a { text-decoration: none; color: inherit; }
+  a   { text-decoration: none; color: inherit; }
 
-  .text-shadow-md { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
-  .metallic-gold-text {
-    background-image: linear-gradient(145deg, #ffd700, #f0c000, #daa520, #b8860b, #daa520, #f0c000, #ffd700);
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent; -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  /* =========================================
-     LAYOUT HELPERS
-  ========================================= */
-  .container { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
-  .container-5xl { max-width: 1024px; margin: 0 auto; position: relative; z-index: 10; }
-  .container-7xl { max-width: 1280px; margin: 0 auto; position: relative; z-index: 10; }
+  /* =============================================
+     LAYOUT
+  ============================================= */
+  .container      { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+  .container-5xl  { max-width: 1024px; margin: 0 auto; }
+  .container-7xl  { max-width: 1280px; margin: 0 auto; }
   .container-main { max-width: 1200px; margin: 0 auto; }
 
   .section { position: relative; overflow: hidden; }
-  .pad-24 { padding: 96px 24px; background: #fff; }
-  .pad-24-gray {
-    padding: 96px 24px; background: var(--gray-100);
-    border-top: 1px solid rgba(209,213,219,.30);
-    border-bottom: 1px solid rgba(209,213,219,.30);
-  }
-  .section-wrap { padding: 72px 20px; }
+
+  /* Section backgrounds — premium rhythm */
+  .sec-white     { padding: 88px 24px; background: var(--white); }
+  .sec-cream     { padding: 88px 24px; background: var(--cream); border-top: 1px solid var(--warm-200); border-bottom: 1px solid var(--warm-200); }
+  .sec-navy      { padding: 88px 24px; background: #0f2547; }
+  .sec-navy-mid  { padding: 88px 24px; background: #080808; }
+  .sec-wrap      { padding: 72px 20px; }
 
   .text-center { text-align: center; }
-  .text-left { text-align: left; }
-  .mb-16 { margin-bottom: 64px; }
+  .text-left   { text-align: left; }
+
   .mb-12 { margin-bottom: 48px; }
   .mb-8  { margin-bottom: 32px; }
   .mb-6  { margin-bottom: 24px; }
   .mb-4  { margin-bottom: 16px; }
-  .mt-8  { margin-top: 32px; }
-  .mt-16 { margin-top: 64px; }
 
-  .max-w-3xl { max-width: 768px; margin-left: auto; margin-right: auto; }
-  .max-w-4xl { max-width: 896px; margin-left: auto; margin-right: auto; }
-  .max-w-md  { max-width: 448px; }
+  .max-w-3xl { max-width: 768px;  margin-left: auto; margin-right: auto; }
+  .max-w-4xl { max-width: 896px;  margin-left: auto; margin-right: auto; }
 
-  /* =========================================
+  /* =============================================
      TYPOGRAPHY
-  ========================================= */
+  ============================================= */
+  .h1-display {
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 900;
+    line-height: .90;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+  }
   .h2 {
-    font-size: 32px; font-weight: 900; margin: 0 0 16px 0;
-    line-height: 1.15; letter-spacing: -0.02em; color: var(--headline);
+    font-size: clamp(26px, 3.2vw, 40px);
+    font-weight: 900;
+    line-height: 1.10;
+    letter-spacing: -.025em;
+    color: var(--headline);
+    margin: 0 0 18px 0;
   }
-  @media (min-width: 1024px) { .h2 { font-size: 40px; } }
-  .h3 { font-size: 20px; font-weight: 800; margin: 0 0 12px 0; color: var(--headline); }
-  .p-lg { font-size: 18px; color: var(--gray-700); margin: 0; }
-  .section p { margin: 0 0 16px 0; }
-  .section p:last-child { margin-bottom: 0; }
+  .h2-light { color: #ffffff; }
+  .h3 {
+    font-size: 20px; font-weight: 800;
+    margin: 0 0 10px 0; color: var(--headline);
+    letter-spacing: -.01em;
+  }
+  .p-lg  { font-size: 18px; color: var(--text-muted); margin: 0; line-height: 1.7; }
+  .p-body { font-size: 17px; color: var(--text-muted); line-height: 1.75; margin: 0 0 16px 0; }
+  .p-body:last-child { margin-bottom: 0; }
+  .p-light { color: #cbd5e1; }
 
-  /* =========================================
-     GRID
-  ========================================= */
-  .grid { display: grid; }
-  .gap-10 { gap: 40px; } .gap-8 { gap: 32px; } .gap-6 { gap: 24px; } .gap-12 { gap: 48px; }
-  @media (min-width: 768px)  { .md-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px; font-weight: 800;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 14px;
+  }
+  .eyebrow-dark { color: #93c5fd; }
+
+  .accent-bar {
+    height: 5px; width: 52px;
+    background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+    border-radius: 999px; margin: 0 auto 16px auto;
+  }
+  .accent-bar-left { margin-left: 0; margin-right: auto; }
+
+  /* =============================================
+     GRID & TWO-COL MEDIA (image-height balanced)
+  ============================================= */
+  .grid   { display: grid; }
+  .gap-6  { gap: 24px; }
+  .gap-8  { gap: 32px; }
+  .gap-10 { gap: 40px; }
+
+  /* Balanced media column — image matches text height */
+  .media-row {
+    display: grid;
+    gap: 48px;
+    align-items: stretch;
+  }
   @media (min-width: 1024px) {
-    .lg-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .lg-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .lg-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .lg-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .media-row { grid-template-columns: 1fr 1fr; }
+    .media-row.media-60-40 { grid-template-columns: 3fr 2fr; }
+    .media-row.media-40-60 { grid-template-columns: 2fr 3fr; }
   }
 
-  /* =========================================
-     COMPONENTS
-  ========================================= */
+  .img-col {
+    display: flex;
+    align-items: stretch;
+    min-height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: var(--shadow-xl);
+  }
+  .img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    flex: 1;
+    border-radius: 20px;
+  }
+  .img-col.border-green { border-left: 7px solid var(--green-600); border-radius: 3px 20px 20px 3px; }
+  .img-col.border-navy  { border-left: 7px solid var(--navy-700);   border-radius: 3px 20px 20px 3px; }
+
+  .text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* =============================================
+     PREMIUM CARD
+  ============================================= */
   .card {
-    background: #fff; border: 1px solid var(--gray-200); border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(2,6,23,.10); padding: 22px;
-    transition: transform .18s ease, box-shadow .18s ease;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    padding: 24px;
   }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 18px 52px rgba(2,6,23,.12); }
-
-  .answer-box {
-    background: rgba(255,255,255,.92); border: 1px solid rgba(226,232,240,1);
-    border-left: 6px solid var(--slate-700); padding: 18px; border-radius: 14px;
-    box-shadow: 0 10px 18px rgba(2,6,23,.08); margin: 0 auto 22px auto;
+  .card-navy {
+    background: var(--navy-800);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 20px;
+    box-shadow: var(--shadow-xl);
+    padding: 24px;
   }
-  .answer-box p { margin: 0; font-size: 16px; color: var(--gray-700); font-style: normal; line-height: 1.7; }
 
-  .accent-bar { height: 6px; width: 60px; background: var(--green); border-radius: 999px; margin: 0 auto 14px auto; }
-
-  .img-premium {
-    width: 100%; height: auto; border-radius: 18px;
-    border: 1px solid rgba(15,23,42,.10); box-shadow: 0 18px 60px rgba(2,6,23,.18); object-fit: cover;
+  /* =============================================
+     CALLOUT BOX
+  ============================================= */
+  .callout {
+    background: #eff6ff;
+    border-left: 5px solid #1d4ed8;
+    border-radius: 0 14px 14px 0;
+    padding: 18px 20px;
+    margin: 20px 0;
   }
-  .img-frame-green { border-left: 8px solid var(--green); }
-  .img-frame-slate { border-left: 8px solid var(--slate-700); }
+  .callout p { margin: 0; font-size: 16px; color: #1e3a8a; line-height: 1.7; }
+  .callout-dark {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-left: 5px solid #93c5fd;
+    border-radius: 0 14px 14px 0;
+    padding: 18px 20px;
+    margin: 20px auto;
+  }
+  .callout-dark p { margin: 0; font-size: 16px; color: #e2e8f0; line-height: 1.7; }
 
-  .two-col { display: grid; gap: 48px; align-items: start; }
-  @media (min-width: 1024px) { .two-col { grid-template-columns: repeat(2, minmax(0,1fr)); } }
-  .justify-center { display: flex; justify-content: center; }
-  .justify-start  { display: flex; justify-content: flex-start; }
-  .justify-end    { display: flex; justify-content: flex-end; }
+  /* =============================================
+     LIST
+  ============================================= */
+  .premium-list { margin: 0; padding: 0; list-style: none; }
+  .premium-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px solid var(--border);
+    font-size: 16px; color: var(--text-muted); line-height: 1.6;
+  }
+  .premium-list li:last-child { border-bottom: none; }
+  .premium-list li::before {
+    content: '';
+    display: block; flex-shrink: 0;
+    width: 20px; height: 20px; margin-top: 2px;
+    background: var(--green-600);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z' clip-rule='evenodd'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z' clip-rule='evenodd'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
 
-  .list-spaced { margin: 0; padding-left: 18px; }
-  .list-spaced li { margin: 10px 0; color: var(--gray-700); }
-  .cols-wrap { column-count: 1; column-gap: 24px; }
-  @media (min-width: 640px) { .cols-wrap { column-count: 2; } }
-  @media (min-width: 768px) { .cols-wrap { column-count: 3; } }
-  .cols-wrap li { break-inside: avoid; }
+  /* =============================================
+     STATS DASHBOARD
+  ============================================= */
+  .stats-dash {
+    background: #f1f5f9;
+    border-radius: 24px;
+    padding: 32px 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    box-shadow: var(--shadow-xl);
+  }
+  .stat-item {
+    text-align: center;
+    padding: 16px 12px;
+    position: relative;
+  }
+  .stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute; right: 0; top: 20%; bottom: 20%;
+    width: 1px; background: rgba(15,23,42,.12);
+  }
+  .stat-num {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 900;
+    color: var(--green-700);
+    text-shadow: 0 2px 8px rgba(21,128,61,.25);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    margin: 0;
+  }
+  .stat-label {
+    font-size: 13px; font-weight: 700;
+    color: #111827; letter-spacing: .04em;
+    text-transform: uppercase; margin: 6px 0 0 0;
+  }
+  .stat-sub {
+    font-size: 11px; color: #374151;
+    margin: 3px 0 0 0; font-weight: 500;
+  }
 
-  .dark-section { background: var(--slate-800); color: #fff; }
-  .dark-section * { color: #fff; }
-  .text-shadow-pop { text-shadow: 0 2px 10px rgba(0,0,0,.30); }
-
+  /* =============================================
+     B2B STRIP
+  ============================================= */
   .b2b-strip {
-    background: #0b1220; color: #fff; border: 3px solid var(--green);
-    border-radius: 16px; padding: 18px 20px; text-align: center;
-    box-shadow: 0 18px 52px rgba(2,6,23,.24);
+    background: var(--navy);
+    border: 2px solid var(--green-700);
+    border-radius: 14px;
+    padding: 16px 20px;
+    text-align: center;
   }
-  .b2b-strip p { margin: 0; font-size: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: .06em; }
+  .b2b-strip p {
+    margin: 0; font-size: 14px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: .08em;
+    color: var(--green-500);
+  }
 
+  /* =============================================
+     PROCESS STEPS
+  ============================================= */
+  .steps-grid { display: grid; gap: 0; }
+  @media (min-width: 1024px) { .steps-grid { grid-template-columns: repeat(3,1fr); gap: 28px; } }
+
+  .step-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1024px) { .step-card { margin-bottom: 0; } }
+  .step-num {
+    font-size: 42px;
+    font-weight: 300;
+    color: #9ca3af;
+    line-height: 1;
+    margin-bottom: 16px;
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .step-card h3 {
+    font-size: 18px; font-weight: 800; color: var(--headline);
+    margin: 0 0 12px 0; line-height: 1.3; letter-spacing: -.01em;
+  }
+  .step-card p { margin: 0; font-size: 15px; color: var(--text-muted); line-height: 1.7; }
+  .step-card .step-tag {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 11px; font-weight: 800;
+    letter-spacing: .10em; text-transform: uppercase;
+    color: #1d4ed8;
+    background: #eff6ff;
+    padding: 4px 10px; border-radius: 999px;
+  }
+
+  /* =============================================
+     CREDENTIALS GRID
+  ============================================= */
+  .cred-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 36px;
+  }
+  .cred-card {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 18px;
+    padding: 22px 20px;
+    display: flex; gap: 16px; align-items: flex-start;
+    transition: background .2s;
+  }
+  .cred-card:hover { background: rgba(255,255,255,.10); }
+  .cred-icon-wrap {
+    width: 46px; height: 46px; flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(147,197,253,.12);
+    border: 1px solid rgba(147,197,253,.25);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cred-icon-wrap svg { width: 22px; height: 22px; stroke: #93c5fd; fill: none; stroke-width: 1.8; }
+  .cred-label { font-size: 14px; font-weight: 800; color: #f1f5f9; margin: 0 0 5px 0; }
+  .cred-detail { font-size: 13px; color: #94a3b8; margin: 0; line-height: 1.55; }
+
+  /* =============================================
+     INDUSTRY GRID
+  ============================================= */
+  .industry-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    margin-top: 32px;
+  }
+  .industry-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 16px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .18s, transform .18s;
+  }
+  .industry-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+  }
+  .industry-icon {
+    width: 44px; height: 44px;
+    margin: 0 auto 12px auto;
+    background: #eff6ff;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(30,64,175,.14);
+  }
+  .industry-icon svg { width: 22px; height: 22px; stroke: var(--navy); fill: none; stroke-width: 1.8; }
+  .industry-label {
+    font-size: 13px; font-weight: 700;
+    color: var(--text); line-height: 1.4;
+  }
+
+  /* =============================================
+     FAQ
+  ============================================= */
   details.faq {
-    background: var(--gray-50); border: 1px solid var(--gray-200);
-    border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow-sm);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
   }
   details.faq summary {
-    list-style: none; cursor: pointer; display: flex; align-items: center;
-    justify-content: space-between; gap: 8px; font-size: 18px; font-weight: 700; color: var(--headline);
+    list-style: none; cursor: pointer;
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 12px;
+    padding: 20px 22px;
+    font-size: 17px; font-weight: 700; color: var(--headline);
+    border-bottom: 1px solid transparent;
+    transition: background .15s;
+  }
+  details[open].faq summary {
+    background: #eff6ff;
+    border-bottom-color: rgba(37,99,235,.15);
+    color: #1e3a8a;
   }
   details.faq summary::-webkit-details-marker { display: none; }
-  .faq-icon { width: 20px; height: 20px; flex: 0 0 auto; transition: transform .3s ease; }
-  details[open] .faq-icon { transform: rotate(180deg); }
-  .faq-body { margin-top: 14px; color: var(--gray-700); line-height: 1.7; font-size: 16px; }
+  .faq-chevron { width: 18px; height: 18px; flex-shrink: 0; stroke: var(--text-light); stroke-width: 2; fill: none; transition: transform .25s; }
+  details[open] .faq-chevron { transform: rotate(180deg); stroke: #1d4ed8; }
+  .faq-body { padding: 18px 22px 20px; color: var(--text-muted); line-height: 1.75; font-size: 16px; }
 
-  /* =========================================
-     FORM COMPONENTS
-  ========================================= */
-  .form-card {
-    background: rgba(241, 245, 249, 0.94); border: 1px solid rgba(255,255,255,0.28);
-    border-radius: 20px; box-shadow: 0 20px 60px rgba(2, 6, 23, 0.24);
-    padding: 28px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  }
-  .form-title { margin: 0 0 8px 0; font-size: 30px; font-weight: 900; color: #0f172a; line-height: 1.08; letter-spacing: -0.02em; text-align: center; }
-  .form-subtitle { margin: 0 0 20px 0; font-size: 15px; color: #475569; line-height: 1.6; text-align: center; }
-  .lead-form { display: grid; gap: 14px; }
-  .lead-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  /* =============================================
+     FORM
+  ============================================= */
+  .lead-form { display: grid; gap: 12px; }
+  .lead-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .lead-form input, .lead-form textarea {
-    width: 100%; padding: 14px 15px; border: 1px solid rgba(148, 163, 184, 0.45);
-    border-radius: 12px; font: inherit; color: #0f172a;
-    background: rgba(255,255,255,0.78); box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
+    width: 100%; padding: 13px 15px;
+    border: 1px solid rgba(148,163,184,.4);
+    border-radius: 10px; font: inherit;
+    color: #0f172a; font-size: 15px;
+    background: rgba(255,255,255,.82);
   }
-  .lead-form input::placeholder, .lead-form textarea::placeholder { color: #64748b; }
-  .lead-form textarea { min-height: 120px; resize: vertical; }
+  .lead-form textarea { min-height: 110px; resize: vertical; }
   .lead-form input:focus, .lead-form textarea:focus {
-    outline: none; border-color: rgba(0,128,0,.55);
-    box-shadow: 0 0 0 3px rgba(0,128,0,.10), inset 0 1px 2px rgba(15, 23, 42, 0.03);
-    background: rgba(255,255,255,0.92);
+    outline: none;
+    border-color: var(--green-600);
+    box-shadow: 0 0 0 3px rgba(22,163,74,.12);
+    background: #fff;
   }
-  .form-button {
-    display: inline-block; width: 100%; border: 0; border-radius: 12px;
-    background: linear-gradient(180deg, #008000 0%, #006400 100%);
-    color: #ffffff; font-weight: 800; font-size: 16px; padding: 16px 20px;
-    cursor: pointer; box-shadow: 0 18px 40px rgba(2,6,23,.18);
-    transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+  .form-btn {
+    width: 100%; border: 0; border-radius: 12px;
+    background: linear-gradient(160deg, var(--green-600) 0%, var(--green-900) 100%);
+    color: #fff; font-weight: 800; font-size: 16px;
+    padding: 16px 20px; cursor: pointer;
+    box-shadow: 0 8px 28px rgba(21,128,61,.35);
+    transition: transform .18s, box-shadow .18s;
+    letter-spacing: .02em;
   }
-  .form-button:hover { transform: translateY(-1px); box-shadow: 0 20px 44px rgba(2,6,23,.22); opacity: .98; }
-  .form-note { margin-top: 10px; font-size: 12px; color: #64748b; line-height: 1.5; text-align: center; }
+  .form-btn:hover { transform: translateY(-1px); box-shadow: 0 12px 36px rgba(21,128,61,.40); }
+  .form-note { font-size: 11px; color: #94a3b8; text-align: center; margin-top: 10px; line-height: 1.5; }
 
-  /* =========================================
-     CONTACT SECTION
-  ========================================= */
-  .contact-section { background: linear-gradient(to bottom, #f8fafc, #ffffff); border-top: 1px solid rgba(209,213,219,.35); }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
-  .contact-copy h2 { margin: 0 0 12px 0; font-size: 40px; font-weight: 900; color: #333333; line-height: 1.08; letter-spacing: -0.02em; }
-  .contact-copy p { margin: 0 0 16px 0; font-size: 18px; color: #475569; line-height: 1.7; }
-  .contact-points { display: grid; gap: 12px; margin-top: 22px; }
-  .contact-point {
-    background: #ffffff; border: 1px solid #e5e7eb; border-left: 5px solid #008000;
-    border-radius: 14px; padding: 14px 16px; box-shadow: 0 8px 18px rgba(2,6,23,.06);
-    font-size: 15px; color: #334155; line-height: 1.6;
+  /* =============================================
+     TOP BAR — original light scheme
+  ============================================= */
+  .top-bar {
+    background: #f8f8f8;
+    padding: 10px 0 14px;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.03);
   }
-
-  /* =========================================
-     TOP BAR
-  ========================================= */
-  .top-bar { background: #f8f8f8; border-bottom: 1px solid #e6e6e6; padding: 10px 0 14px; box-shadow: inset 0 -1px 0 rgba(0,0,0,0.03); }
-  .top-bar-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
-  .trust-items { display: flex; justify-content: center; gap: 36px; text-align: center; }
+  .top-bar-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 48px;
+  }
+  .trust-items {
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    display: flex; gap: 36px;
+    white-space: nowrap;
+  }
+  .trust-item { text-align: center; }
   .trust-item strong { display: block; font-size: 13px; font-weight: 700; color: #0f172a; line-height: 1.2; }
-  .trust-item span { display: block; margin-top: 4px; font-size: 12px; color: #008000; font-weight: 600; line-height: 1.2; }
-  .social-icons { display: flex; justify-content: flex-end; gap: 12px; }
-  .social-icons a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #fff; border: 1px solid #e6e6e6; }
-  .social-icons svg { width: 14px; height: 14px; fill: #333; }
+  .trust-item span  { display: block; margin-top: 4px; font-size: 12px; color: var(--green-700); font-weight: 600; line-height: 1.2; }
+  .social-icons { display: flex; gap: 8px; margin-left: auto; }
+  .social-icons a {
+    width: 32px; height: 32px; display: flex;
+    align-items: center; justify-content: center;
+    border-radius: 6px; font-size: 12px; font-weight: 800;
+    color: #fff; text-decoration: none;
+    transition: opacity .15s;
+  }
+  .social-icons a:hover { opacity: .85; }
 
-  /* =========================================
-     HEADER
-  ========================================= */
-  .main-header { background: #ffffff; padding: 20px 0 12px; border-bottom: 1px solid #e6e6e6; }
+  /* =============================================
+     MAIN HEADER
+  ============================================= */
+  .main-header {
+    background: #ffffff;
+    padding: 20px 0 12px;
+    border-bottom: 1px solid #e6e6e6;
+  }
   .main-header-inner {
     display: flex; align-items: center; justify-content: space-between;
     max-width: 1280px; margin: 0 auto; padding: 0 20px; gap: 30px;
@@ -265,14 +518,17 @@
   .logo img { max-height: 95px; width: auto; }
   .phone { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
   .phone .fast { font-size: 20px; font-weight: 700; color: #000000; margin-bottom: 3px; white-space: nowrap; }
-  .phone a { font-size: 29px; font-weight: 900; color: #008000; text-decoration: none; white-space: nowrap; }
+  .phone a { font-size: 29px; font-weight: 900; color: var(--green-700); text-decoration: none; white-space: nowrap; }
+  .phone .lic { font-size: 12px; color: var(--text-light); font-weight: 600; margin-top: 2px; }
 
-  /* =========================================
-     NAV WITH DROPDOWNS
-  ========================================= */
+  /* =============================================
+     NAV
+  ============================================= */
   .main-nav {
-    background: #ffffff; padding: 14px 0 10px;
-    border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e5e7eb;
+    background: #ffffff;
+    padding: 14px 0 10px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e5e7eb;
   }
   .main-nav > div {
     max-width: 1280px; margin: 0 auto; padding: 0 20px;
@@ -280,405 +536,166 @@
     justify-content: center; align-items: center;
     font-size: 15px; font-weight: 600;
   }
-  .main-nav a, .dropbtn { color: #0f172a; text-decoration: none; white-space: nowrap; padding: 8px 11px; }
-  .main-nav a:hover, .dropbtn:hover { color: #008000; }
-  .main-nav a:last-child { color: #008000; font-weight: 700; }
-  .dropdown { position: relative; display: inline-block; z-index: 9999 !important; }
+  .main-nav a, .dropbtn {
+    color: #0f172a; font-size: 15px; font-weight: 600;
+    white-space: nowrap; padding: 8px 11px;
+    transition: color .15s;
+  }
+  .main-nav a:hover, .dropbtn:hover { color: var(--green-700); }
+  .main-nav a.nav-cta {
+    color: var(--green-700) !important; font-weight: 700;
+  }
+  .main-nav a.nav-cta:hover { color: var(--green-900) !important; }
+  .dropdown { position: relative; display: inline-block; z-index: 9999; }
   .dropdown-content {
-    display: none; position: absolute; background-color: white; min-width: 240px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 10000 !important;
-    border-radius: 8px; margin-top: 8px; padding: 10px 0; border: 1px solid #ddd;
+    display: none; position: absolute; background: var(--white);
+    min-width: 240px; box-shadow: var(--shadow-xl); z-index: 10000;
+    border-radius: 12px; margin-top: 6px; padding: 8px;
+    border: 1px solid var(--border);
   }
-  .dropdown:hover .dropdown-content { display: block !important; }
-  .dropdown-content a { color: #0f172a; padding: 12px 20px; text-decoration: none; display: block; white-space: nowrap; }
-  .dropdown-content a:hover { background-color: #f8fafc; color: #008000; }
+  .dropdown:hover .dropdown-content { display: block; }
+  .dropdown-content a {
+    color: var(--text); padding: 10px 14px; display: block;
+    border-radius: 8px; font-size: 14px; font-weight: 600;
+  }
+  .dropdown-content a:hover { background: var(--green-50); color: var(--green-700); }
 
-  @media (max-width: 1024px) { .main-nav { font-size: 15px; } .logo img { max-height: 78px; } .phone a { font-size: 24px; } }
-  @media (max-width: 768px)  { .main-nav { font-size: 14.5px; } .logo img { max-height: 70px; } }
-
-  /* =========================================
+  /* =============================================
      FOOTER
-  ========================================= */
-  .site-footer { background: #111827; color: #e5e7eb; padding: 70px 20px 40px; }
-  .site-footer a { color: #f8fafc; text-decoration: none; }
-  .site-footer a:hover { text-decoration: underline; }
-  .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 50px; }
-  .footer-title { margin: 0 0 16px 0; font-size: 24px; font-weight: 900; color: #ffffff; line-height: 1.1; }
-  .footer-heading { margin: 0 0 16px 0; font-size: 15px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #ffffff; }
-  .footer-text { margin: 0 0 18px 0; font-size: 15px; line-height: 1.65; color: #cbd5e1; }
-  .footer-list { display: flex; flex-direction: column; gap: 8px; line-height: 1.5; }
-  .footer-list a { color: #cbd5e1; text-decoration: none; }
-  .footer-list a:hover { color: #2ea44f; }
-  .footer-list strong { color: #ffffff; font-weight: 700; }
-  .footer-list br { display: none; }
-  .footer-bottom { max-width: 1200px; margin: 50px auto 0; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 13.5px; color: #94a3b8; text-align: center; line-height: 1.6; }
-  @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } .footer-bottom { margin-top: 40px; } }
-  /* =============== MOBILE FIXES FOR HEADER & NAV =============== */
+  ============================================= */
+  .site-footer { background: #111827; color: #e2e8f0; padding: 64px 20px 36px; }
+  .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 48px; }
+  .footer-title { margin: 0 0 14px; font-size: 20px; font-weight: 900; color: #fff; }
+  .footer-heading { margin: 0 0 14px; font-size: 11px; font-weight: 800; letter-spacing: .10em; text-transform: uppercase; color: var(--green-500); }
+  .footer-text { margin: 0 0 14px; font-size: 14px; line-height: 1.65; color: #94a3b8; }
+  .footer-list { display: flex; flex-direction: column; gap: 7px; }
+  .footer-list a { color: #94a3b8; font-size: 14px; transition: color .15s; }
+  .footer-list a:hover { color: var(--green-500); }
+  .footer-list strong { color: #e2e8f0; font-size: 14px; }
+  .footer-bottom { max-width: 1200px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: 13px; color: #64748b; text-align: center; line-height: 1.6; }
 
-@media (max-width: 768px) {
-    
-    /* Top Bar - tighter and centered */
-    .top-bar-inner {
-        grid-template-columns: 1fr auto 1fr;
-        gap: 10px;
-        padding: 0 12px;
-    }
-    
-    .trust-items {
-        gap: 20px;
-        font-size: 12px;
-    }
-    
-    .trust-item strong {
-        font-size: 12px;
-    }
-    
-    .social-icons {
-        gap: 8px;
-    }
-    .social-icons a {
-        width: 28px;
-        height: 28px;
-        font-size: 13px;
-    }
-
-    /* Main Header - stack logo and phone vertically */
-    .main-header-inner {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-        padding: 16px 12px;
-    }
-    
-    .logo img {
-        max-height: 72px;
-    }
-    
-    .phone {
-        align-items: center;
-        text-align: center;
-    }
-    
-    .phone .fast {
-        font-size: 17px;
-        margin-bottom: 4px;
-    }
-    
-    .phone a {
-        font-size: 26px;
-    }
-
-    /* NAV MENU - Much tighter on mobile */
-    .main-nav {
-        padding: 10px 0 8px;
-    }
-    
-    .main-nav > div {
-        gap: 6px;           /* very tight gap */
-        padding: 0 10px;
-        font-size: 14px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .main-nav a,
-    .dropbtn {
-        padding: 6px 9px;
-        font-size: 14px;
-    }
-
-    /* Dropdowns on mobile */
-    .dropdown-content {
-        position: static;
-        box-shadow: none;
-        border: none;
-        margin-top: 4px;
-        min-width: 100%;
-        background: #f8fafc;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block !important;
-    }
-}
-
-/* Extra small phones */
-@media (max-width: 480px) {
-    .main-nav > div {
-        gap: 4px;
-        font-size: 13.5px;
-    }
-    
-    .main-nav a,
-    .dropbtn {
-        padding: 5px 8px;
-    }
-}  
-  
-  /* =========================================
-     RESPONSIVE OVERRIDES (consolidated)
-  ========================================= */
-  @media (min-width: 1024px) {
-    .two-col.two-col--fixed { grid-template-columns: 448px minmax(0, 1fr) !important; gap: 40px !important; align-items: start !important; }
-  }
-  @media (min-width: 768px) {
-    #quote h2 { font-size: 2.25rem !important; line-height: 2.5rem !important; }
-    #quote > div > div:nth-child(3) { grid-template-columns: 1fr 1fr !important; }
+  /* =============================================
+     CONTACT SECTION
+  ============================================= */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .contact-copy h2 { margin: 0 0 14px; font-size: clamp(26px,3vw,38px); font-weight: 900; color: var(--headline); line-height: 1.1; letter-spacing: -.025em; }
+  .contact-copy p { margin: 0 0 14px; font-size: 17px; color: var(--text-muted); line-height: 1.7; }
+  .contact-points { display: grid; gap: 10px; margin-top: 20px; }
+  .contact-point {
+    background: var(--white); border: 1px solid var(--border);
+    border-left: 4px solid var(--green-700);
+    border-radius: 12px; padding: 13px 16px;
+    font-size: 14px; color: var(--text-muted); line-height: 1.6;
+    box-shadow: var(--shadow-sm);
   }
 
-  /* CTA phone button hover (replaces inline onmouseover/onmouseout) */
+  /* =============================================
+     FINAL CTA DARK
+  ============================================= */
+  .cta-dark {
+    background: #0f2547;
+    position: relative; overflow: hidden;
+  }
+  .cta-dark::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(21,128,61,.18) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  /* CTA phone link — CSS hover replaces inline JS */
   .cta-phone-btn {
     display: block; width: 100%;
-    background: #008000; color: #ffffff;
-    font-size: 1.5rem; font-weight: 700; padding: 1rem;
-    border-radius: 0.5rem; text-decoration: none;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10);
-    transition: transform .2s ease, background-color .2s ease;
+    background: linear-gradient(160deg, var(--green-600), var(--green-900));
+    color: #fff; font-size: 26px; font-weight: 900;
+    padding: 18px 20px; border-radius: 14px;
+    text-decoration: none; letter-spacing: -.02em;
+    box-shadow: 0 12px 36px rgba(21,128,61,.40);
+    transition: transform .2s, box-shadow .2s;
   }
-  .cta-phone-btn:hover { transform: scale(1.05); background-color: #15803d; }
+  .cta-phone-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 48px rgba(21,128,61,.50);
+  }
+
+  /* =============================================
+     MOBILE
+  ============================================= */
+  @media (max-width: 768px) {
+    .top-bar-inner { padding: 0 14px; min-height: 44px; }
+    .trust-items { gap: 16px; position: absolute; left: 50%; transform: translateX(-50%); }
+    .trust-item strong { font-size: 11px; }
+    .social-icons { display: none; }
+    .main-header-inner { flex-direction: column; gap: 14px; text-align: center; padding: 14px 16px; }
+    .phone { align-items: center; }
+    .phone a { font-size: 24px; }
+    .media-row { gap: 28px; }
+    .img-col { min-height: 240px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .lead-form-row { grid-template-columns: 1fr; }
+    .cred-grid { grid-template-columns: 1fr; }
+    .industry-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .stats-dash { grid-template-columns: 1fr; }
+    .stat-item::after { display: none; }
+    .sec-white, .sec-cream, .sec-navy, .sec-navy-mid { padding: 60px 20px; }
+  }
+  @media (max-width: 480px) {
+    .industry-grid { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .trust-items { gap: 12px; }
+  }
   </style>
 
-<!-- ========================= SCHEMA ========================= -->
+<!-- SCHEMA — preserved from v2 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://southeastcommercialpainting.com/#organization",
-      "name": "Southeast Commercial Services",
-      "url": "https://southeastcommercialpainting.com/",
-      "telephone": "+1-470-458-2322",
-      "foundingDate": "1991",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2785 Lawrenceville Hwy",
-        "addressLocality": "Decatur",
-        "addressRegion": "GA",
-        "postalCode": "30033",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://southeastcommercialpainting.com/#professionalservice",
-      "name": "Southeast Commercial Services",
-      "url": "https://southeastcommercialpainting.com/",
-      "telephone": "+1-470-458-2322",
-      "foundingDate": "1991",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2785 Lawrenceville Hwy",
-        "addressLocality": "Decatur",
-        "addressRegion": "GA",
-        "postalCode": "30033",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Atlanta" },
-        { "@type": "AdministrativeArea", "name": "Greater Atlanta" },
-        { "@type": "City", "name": "Gainesville" },
-        { "@type": "City", "name": "Athens" },
-        { "@type": "AdministrativeArea", "name": "Georgia" }
-      ],
-      "audience": { "@type": "BusinessAudience", "audienceType": "Commercial & Industrial Only" },
-      "provider": { "@id": "https://southeastcommercialpainting.com/#organization" },
-      "serviceType": "Industrial Painting",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Industrial Painting Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Painting" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Protective Coatings" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Steel Painting" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Epoxy Floor Systems" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surface Preparation (Sandblasting / Abrasive Blasting)" } }
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://southeastcommercialpainting.com/#service-industrial-painting",
-      "name": "Industrial Painting",
-      "serviceType": "Industrial Painting",
-      "provider": { "@id": "https://southeastcommercialpainting.com/#professionalservice" },
-      "areaServed": [
-        { "@type": "City", "name": "Atlanta" },
-        { "@type": "AdministrativeArea", "name": "Greater Atlanta" },
-        { "@type": "AdministrativeArea", "name": "Georgia" }
-      ],
-      "audience": { "@type": "BusinessAudience", "audienceType": "Commercial & Industrial Only" }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#webpage-industrial-painting-atlanta",
-      "url": "https://southeastcommercialpainting.com/atlanta-industrial-painting/",
-      "name": "Atlanta Industrial Painting Contractors - Southeast Commercial Services",
-      "isPartOf": { "@id": "https://southeastcommercialpainting.com/#website" },
-      "about": [
-        { "@id": "https://southeastcommercialpainting.com/#professionalservice" },
-        { "@id": "https://southeastcommercialpainting.com/#service-industrial-painting" }
-      ],
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "contentUrl": "https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#faq-industrial-painting-georgia",
-      "about": { "@id": "https://southeastcommercialpainting.com/#service-industrial-painting" },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What types of industrial facilities do you paint?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We paint everything from large-scale warehouses and food processing plants to utility infrastructure, steel structures, and production floors. If it has structural steel, concrete, corrugated siding, or machinery that needs protective coatings, we've likely painted it. Our team is built for high-access, high-demand, and high-risk environments where performance matters." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work during nights or weekends?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Many of our projects are scheduled for off-hours, including nights, weekends, and plant shutdowns, to keep your operations running without interruption. We understand how critical uptime is in 24/7 facilities, and we tailor our schedule to yours." }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you handle surface preparation for industrial painting?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Surface prep is the backbone of any lasting paint job. We use abrasive blasting, power washing, degreasing, grinding, and other prep methods depending on the substrate and coating requirements. Our crew ensures each surface is clean, dry, and properly profiled for adhesion—no shortcuts." }
-        },
-        {
-          "@type": "Question",
-          "name": "What types of coatings do you use?",
-          "acceptedAnswer": { "@type": "Answer", "text": "That depends on the application. We regularly use epoxies, urethanes, polyaspartics, elastomerics, and food-grade finishes—each selected for chemical resistance, moisture tolerance, traffic durability, or UV protection. We spec systems based on what your surfaces actually face." }
-        },
-        {
-          "@type": "Question",
-          "name": "Are you licensed and insured for industrial work?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We're fully licensed in Georgia, insured for industrial and commercial projects, and follow all applicable safety and environmental regulations. When we're on your site, we treat your risk profile like it's our own." }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#breadcrumb-industrial-painting-atlanta",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southeastcommercialpainting.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Industrial Painting", "item": "https://southeastcommercialpainting.com/atlanta-industrial-painting/" },
-        { "@type": "ListItem", "position": 3, "name": "Atlanta Industrial Painting Contractors", "item": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#webpage-industrial-painting-atlanta" }
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://southeastcommercialpainting.com/#website",
-      "name": "Southeast Commercial Services",
-      "url": "https://southeastcommercialpainting.com/",
-      "publisher": { "@id": "https://southeastcommercialpainting.com/#organization" }
-    }
+    { "@type": "Organization", "@id": "https://southeastcommercialpainting.com/#organization", "name": "Southeast Commercial Services", "url": "https://southeastcommercialpainting.com/", "telephone": "+1-470-458-2322", "foundingDate": "1991", "address": { "@type": "PostalAddress", "streetAddress": "2785 Lawrenceville Hwy", "addressLocality": "Decatur", "addressRegion": "GA", "postalCode": "30033", "addressCountry": "US" } },
+    { "@type": "ProfessionalService", "@id": "https://southeastcommercialpainting.com/#professionalservice", "name": "Southeast Commercial Services", "url": "https://southeastcommercialpainting.com/", "telephone": "+1-470-458-2322", "foundingDate": "1991", "address": { "@type": "PostalAddress", "streetAddress": "2785 Lawrenceville Hwy", "addressLocality": "Decatur", "addressRegion": "GA", "postalCode": "30033", "addressCountry": "US" }, "areaServed": [ { "@type": "City", "name": "Atlanta" }, { "@type": "AdministrativeArea", "name": "Greater Atlanta" }, { "@type": "City", "name": "Gainesville" }, { "@type": "City", "name": "Athens" }, { "@type": "AdministrativeArea", "name": "Georgia" } ], "serviceType": "Industrial Painting", "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Industrial Painting Services", "itemListElement": [ { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial Painting" } }, { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Steel Coating" } }, { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Epoxy Floor Systems" } }, { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surface Preparation and Abrasive Blasting" } } ] } },
+    { "@type": "FAQPage", "@id": "https://southeastcommercialpainting.com/atlanta-industrial-painting/#faq", "mainEntity": [ { "@type": "Question", "name": "What types of industrial facilities do you paint in Metro Atlanta?", "acceptedAnswer": { "@type": "Answer", "text": "Southeast Commercial Services paints manufacturing plants, warehouses, food processing facilities, distribution centers, pharmaceutical operations, water treatment infrastructure, chemical plants, parking structures, and steel-frame buildings throughout Metro Atlanta, Gainesville, Athens, and surrounding industrial corridors." } }, { "@type": "Question", "name": "How do you schedule work without disrupting operations?", "acceptedAnswer": { "@type": "Answer", "text": "We build the project schedule around your production calendar. Off-hours, overnight windows, weekends, and plant shutdowns are all standard. We phase work in zones so adjacent operations stay live and coordinate directly with your facility manager or safety officer." } }, { "@type": "Question", "name": "What coating systems and product brands do you use?", "acceptedAnswer": { "@type": "Answer", "text": "We work with Sherwin-Williams Industrial, PPG Amercoat, and Benjamin Moore commercial-grade coating systems. Products are selected based on your facility's specific exposure conditions — chemical resistance, traffic load, moisture, UV, or regulatory compliance requirements." } }, { "@type": "Question", "name": "Are you licensed, insured, and Procore Verified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Southeast Commercial Services is a Georgia-registered business operating since 1991. We carry $2 million general liability insurance, full workers' compensation, and hold Procore Verified contractor status." } }, { "@type": "Question", "name": "What does the quoting process look like?", "acceptedAnswer": { "@type": "Answer", "text": "We start with an on-site facility walk. An estimator assesses surface conditions, reviews your operational constraints, and identifies compliance considerations. We then produce a line-item estimate covering surface preparation, coating system specification, labor, and a project schedule." } } ] },
+    { "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://southeastcommercialpainting.com/" }, { "@type": "ListItem", "position": 2, "name": "Industrial Painting", "item": "https://southeastcommercialpainting.com/atlanta-industrial-painting/" } ] }
   ]
 }
 </script>
-<!-- Head Tracking - Fast & Clean Version -->
 
-
-<!-- Immediate GCLID Capture + GHL Session (Critical for attribution) -->
+<!-- Tracking -->
 <script>
-(function () {
-  // Capture GCLID immediately and save to cookie + localStorage
+(function(){
   try {
-    var params = new URLSearchParams(window.location.search);
-    var gclid = params.get('gclid');
-    if (gclid) {
-      localStorage.setItem('gclid', gclid);
-      var expires = new Date(Date.now() + 90*24*60*60*1000).toUTCString();
-      document.cookie = "gclid=" + encodeURIComponent(gclid) + "; expires=" + expires + "; path=/; SameSite=Lax";
-    }
-  } catch(e) {}
-
-  // Load GHL session early (needed for number pool and attribution)
-  var ghlSession = document.createElement("script");
-  ghlSession.src = "https://backend.leadconnectorhq.com/appengine/js/user_session.js";
-  ghlSession.defer = true;
-  document.head.appendChild(ghlSession);
+    var p=new URLSearchParams(window.location.search),g=p.get('gclid');
+    if(g){localStorage.setItem('gclid',g);var e=new Date(Date.now()+90*864e5).toUTCString();document.cookie="gclid="+encodeURIComponent(g)+";expires="+e+";path=/;SameSite=Lax";}
+  }catch(e){}
+  var s=document.createElement('script');s.src='https://backend.leadconnectorhq.com/appengine/js/user_session.js';s.defer=true;document.head.appendChild(s);
 })();
 </script>
-
-<!-- Google Analytics + Google Ads — dataLayer init is immediate; gtag.js loads on first user interaction -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+  window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KEH5L41ZYX');
-  gtag('config', 'AW-784863985');
-  (function() {
-    var gaLoaded = false;
-    function loadGA() {
-      if (gaLoaded) return;
-      gaLoaded = true;
-      var s = document.createElement('script');
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
-      s.async = true;
-      document.head.appendChild(s);
-    }
-    ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e) {
-      window.addEventListener(e, loadGA, {once:true, passive:true});
-    });
-    setTimeout(loadGA, 5000);
-  })();
+  gtag('js',new Date());
+  gtag('config','G-KEH5L41ZYX');
+  gtag('config','AW-784863985');
 </script>
-
-<!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
-
-<!-- Third-party trackers — deferred to first user interaction (scroll/click/etc.) with 5s fallback -->
-<script>
-(function() {
-  var loaded = false;
-  function loadTrackers() {
-    if (loaded) return;
-    loaded = true;
-    var srcs = [
-      'https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
-      'https://s.ksrndkehqnwntyxlhgto.com/99626.js',
-      'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
-    ];
-    srcs.forEach(function(src) {
-      var s = document.createElement('script');
-      s.src = src; s.async = true;
-      document.head.appendChild(s);
-    });
-    var g = document.createElement('script');
-    g.src = 'https://cdn.growify.ai/pixel.min.js';
-    g.async = true;
-    g.setAttribute('data-website-id', '252abcccfe19851fad9cb6d2f8b56fdc:cff011d016d5f853a6f3a9e1f7084fcab277205700747a42f482211500a86d15c267f1a30512827b49b379acca15d2b5');
-    g.setAttribute('data-endpoint', 'api_v2');
-    g.setAttribute('data-platform', 'web');
-    document.head.appendChild(g);
-  }
-  ['scroll','click','keydown','touchstart','mousemove'].forEach(function(e) {
-    window.addEventListener(e, loadTrackers, {once:true, passive:true});
-  });
-  setTimeout(loadTrackers, 5000);
-})();
-</script>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ══════════════════════════════════════
+     TOP BAR — dark authority anchor
+══════════════════════════════════════ -->
 <header>
-  <!-- TOP BAR -->
   <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-inner">
-        <div></div>
-        <div class="trust-items">
-          <div class="trust-item"><strong>100% Customer Satisfaction</strong><span>With Every Job We Do</span></div>
-          <div class="trust-item"><strong>Proudly Serving Atlanta</strong><span>Greater Atlanta Area</span></div>
-          <div class="trust-item"><strong>Expert Commercial Crews</strong><span>Fully Insured &amp; Reliable</span></div>
-        </div>
-        <div class="social-icons" style="display:flex; gap:10px;">
-          <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#1877F2; color:white; font-size:15px; font-weight:700; text-decoration:none;">f</a>
-          <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-             style="width:28px; height:28px; display:flex; align-items:center; justify-content:center; border-radius:6px; background:#0A66C2; color:white; font-size:14px; font-weight:700; text-decoration:none;">in</a>
-        </div>
+    <div class="top-bar-inner">
+      <div class="trust-items">
+        <div class="trust-item"><strong>Procore Verified</strong><span>Contractor Qualified</span></div>
+        <div class="trust-item"><strong>Serving Metro Atlanta</strong><span>Since 1991</span></div>
+        <div class="trust-item"><strong>$2M General Liability</strong><span>Fully Insured &amp; Bonded</span></div>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener" aria-label="Facebook" style="background:#1877F2;">f</a>
+        <a href="https://www.linkedin.com/company/southeast-commercial-services" target="_blank" rel="noopener" aria-label="LinkedIn" style="background:#0A66C2;">in</a>
       </div>
     </div>
   </div>
@@ -688,17 +705,15 @@
     <div class="container">
       <div class="main-header-inner">
         <div class="logo">
-          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="300" height="95" loading="eager" sizes="(min-width:1024px) 300px, (min-width:768px) 250px, 200px"></a>
+          <a href="/"><img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699494a69e9a3325753a41de.webp" alt="Southeast Commercial Services Logo" width="220" height="88"></a>
         </div>
-        <div class="header-spacer"></div>
         <div class="phone">
-          <div class="fast">Call Now for Fast Service</div>
+          <div class="fast">Call Now for Fast Response</div>
           <a href="tel:4704582322">(470) 458-2322</a>
-          <div class="Lic">Est. 1991 | Licensed | Bonded | Insured</div>
+          <div class="lic">Est. 1991 · Licensed · Bonded · Insured</div>
         </div>
       </div>
 
-      <!-- NAV WITH DROPDOWNS -->
       <nav class="main-nav">
         <div>
           <a href="/">Home</a>
@@ -706,11 +721,10 @@
           <a href="/interior-commercial-painting.html">Interior</a>
           <a href="/exterior-commercial-painting.html">Exterior</a>
           <a href="/commercial-building-painting.html">Buildings</a>
-          <a href="/commercial-office-painting.html">Office Painting</a>
+          <a href="/commercial-office-painting.html">Office</a>
           <a href="/high-rise-painters.html">High-Rise</a>
-
           <div class="dropdown">
-            <a href="#" class="dropbtn">Industrial &amp; Warehouse ▼</a>
+            <a href="#" class="dropbtn">Industrial &amp; Warehouse ▾</a>
             <div class="dropdown-content">
               <a href="/atlanta-industrial-painting.html">Industrial Painting</a>
               <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
@@ -720,95 +734,89 @@
               <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
             </div>
           </div>
-
           <div class="dropdown">
-      <a href="#" class="dropbtn">Floor Coatings ▼</a>
-      <div class="dropdown-content">
-        <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
-        <a href="/warehouse-floor-epoxy">Warehouse Floor Epoxy</a>
-        <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
-        <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
-        <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
-        <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
-      </div>
-    </div>
-
-          <a href="/contact-us.html">Contact</a>
+            <a href="#" class="dropbtn">Floor Coatings ▾</a>
+            <div class="dropdown-content">
+              <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
+              <a href="/warehouse-floor-epoxy">Warehouse Floor Epoxy</a>
+              <a href="/atlanta-commercial-floor-epoxy.html">Commercial Floor Epoxy</a>
+              <a href="/commercial-kitchen-epoxy-floor-coatings.html">Kitchen Epoxy Floors</a>
+              <a href="/commercial-garage-epoxy-floor-coatings.html">Garage Epoxy Floors</a>
+              <a href="/commercial-concrete-polishing.html">Concrete Polishing</a>
+            </div>
+          </div>
+          <a href="/contact-us.html" class="nav-cta">Contact</a>
         </div>
       </nav>
-
     </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box; overflow:hidden;">
-  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp"
-       alt="Atlanta industrial painting contractors at work in a facility"
-       fetchpriority="high" loading="eager" decoding="sync"
-       width="1440" height="810"
-       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; z-index:0;">
-  <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
-  <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');background-size:cover;background-position:center;color:#fff;padding:64px 20px 48px;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(17,24,39,.80) 0%,rgba(30,58,138,.72) 50%,rgba(49,46,129,.78) 100%);z-index:10;"></div>
+  <!-- Subtle grid texture overlay -->
+  <div style="position:absolute;inset:0;z-index:11;opacity:.04;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:48px 48px;"></div>
+  <div style="position:relative;z-index:20;max-width:1280px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:52px;align-items:start;">
 
-      <!-- LEFT COLUMN -->
-      <div style="text-align:center; padding-top:16px;">
-        <div style="width:100%; max-width:760px; margin:0 auto;">
-          <div style="margin-bottom:14px;">
-            <span style="font-size:14px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#2ea44f;">Industrial Painting Contractors • Atlanta, GA • Est. 1991</span>
-          </div>
-          <h1 style="margin:0 0 22px 0; font-size:clamp(30px, 4.5vw, 56px); line-height:.92; font-weight:900; letter-spacing:-.04em; text-transform:uppercase;">
-            Atlanta's<br /><span style="color:#2ea44f;">Industrial</span><br />Painting<br />Contractors
-          </h1>
-          <div style="max-width:720px; margin:0 auto 28px auto; font-size:clamp(18px, 2vw, 22px); line-height:1.7; color:#d8e1f0;">
-            Atlanta Industrial Painting Specialists — Delivering Heavy-Duty Coatings, Safety Compliance, and Reliable Results with Minimal Operational Disruption.
-            <strong style="color:#ffffff;">Southeast Commercial Services</strong>
-            provides high-quality industrial painting services for facility managers, contractors, and facility owners across Atlanta.
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:18px;">
-            <a href="#quote-form" style="min-height:58px; padding:0 30px; background:#2ea44f; color:#0a1628; font-weight:900; text-transform:uppercase; border-radius:14px; display:flex; align-items:center;">Request a Free Quote</a>
-            <a href="tel:+14704582322" style="min-height:58px; padding:0 30px; border:2px solid #fff; border-radius:14px; display:flex; align-items:center; color:#fff; font-weight:900;">(470) 458-2322</a>
-          </div>
-          <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:#97a7c0;">No Residential Requests • Commercial Facilities Only</div>
+      <!-- LEFT -->
+      <div style="padding-top:12px;">
+        <div style="margin-bottom:18px;">
+          <span style="font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--green-500);background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25);padding:5px 14px;border-radius:999px;">Industrial Painting Contractors · Atlanta, GA · Est. 1991</span>
         </div>
+        <h1 class="h1-display" style="color:#fff;">
+          Atlanta's<br><span style="color:var(--green-500);">Industrial</span><br>Painting<br>Contractors
+        </h1>
+        <p style="max-width:600px;font-size:clamp(16px,1.8vw,20px);line-height:1.7;color:#c8d5e8;margin:0 0 30px;">
+          Protective coatings for manufacturing plants, warehouses, and industrial facilities — engineered for operational continuity, regulatory compliance, and long-term asset performance.
+        </p>
+
+        <!-- Trust chips -->
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
+          <span style="font-size:12px;font-weight:700;color:#94a3b8;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:5px 12px;border-radius:8px;">✓ Procore Verified</span>
+          <span style="font-size:12px;font-weight:700;color:#94a3b8;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:5px 12px;border-radius:8px;">✓ $2M General Liability</span>
+          <span style="font-size:12px;font-weight:700;color:#94a3b8;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:5px 12px;border-radius:8px;">✓ OSHA Compliant</span>
+          <span style="font-size:12px;font-weight:700;color:#94a3b8;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:5px 12px;border-radius:8px;">✓ 30+ Years Metro Atlanta</span>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:14px;">
+          <a href="#quote-form" style="min-height:54px;padding:0 28px;background:linear-gradient(160deg,var(--green-600),var(--green-900));color:#fff;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em;border-radius:12px;display:flex;align-items:center;box-shadow:0 8px 28px rgba(21,128,61,.40);">Request a Site Walk</a>
+          <a href="tel:+14704582322" style="min-height:54px;padding:0 28px;border:2px solid rgba(255,255,255,.30);border-radius:12px;display:flex;align-items:center;color:#fff;font-weight:800;font-size:14px;backdrop-filter:blur(4px);">(470) 458-2322</a>
+        </div>
+        <div style="margin-top:16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.10em;color:#475569;">Commercial &amp; Industrial Facilities Only — No Residential</div>
       </div>
 
-      <!-- RIGHT COLUMN: FORM -->
-      <div style="width:100%; max-width:520px; margin:0 auto;">
-        <div id="quote-form" style="margin-top:-20px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,.32); background:rgba(10,18,40,.62); padding:10px 24px 20px 24px;">
-          <h2 style="text-align:center; font-size:36px; font-weight:800; margin:4px 0 16px 0;">Request a Free Quote</h2>
-          <p style="text-align:center; font-size:13px; color:#d1d5db; margin-bottom:24px;">We typically get back to you in minutes, to within the hour (M-F).</p>
+      <!-- RIGHT: FORM -->
+      <div style="max-width:500px;margin:0 auto;width:100%;">
+        <div id="quote-form" style="border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.40);background:rgba(20,45,90,.82);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);padding:28px 26px 24px;">
+          <div style="text-align:center;margin-bottom:20px;">
+            <h2 style="font-size:26px;font-weight:900;color:#fff;margin:0 0 6px;letter-spacing:-.02em;">Schedule a Site Walk</h2>
+            <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.5;">No commitment required. Line-item estimate, not a ballpark.</p>
+          </div>
           <form method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="heroLeadForm">
-            <input type="text" name="full_name" placeholder="Full Name" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="text" name="company" placeholder="Company Name" style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <input type="email" name="email" placeholder="Email Address" required style="width:100%; margin-bottom:12px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff;">
-            <textarea name="message" placeholder="Project details" rows="4" style="width:100%; margin-bottom:18px; padding:14px; border-radius:8px; border:none; font-size:16px; background:#ffffff; resize:vertical;"></textarea>
-            <div style="margin:20px 0; font-size:13.5px; line-height:1.5; color:#e2e8f0;">
-              <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer; user-select:none;">
-                <input type="checkbox" name="consent" required style="margin-top:4px; accent-color:#2ea44f; width:18px; height:18px; flex-shrink:0;">
-                <span>By providing my phone number and email address, I agree to receive information &amp; service-related communications from Southeast Commercial Services of Georgia LLC.</span>
+            <div style="display:grid;gap:10px;">
+              <input type="text" name="full_name" placeholder="Full Name" required style="width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.3);font-size:15px;background:rgba(255,255,255,.92);color:#0f172a;">
+              <input type="text" name="company" placeholder="Company / Facility Name" style="width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.3);font-size:15px;background:rgba(255,255,255,.92);color:#0f172a;">
+              <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.3);font-size:15px;background:rgba(255,255,255,.92);color:#0f172a;">
+              <input type="email" name="email" placeholder="Email Address" required style="width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.3);font-size:15px;background:rgba(255,255,255,.92);color:#0f172a;">
+              <textarea name="message" placeholder="Describe your scope — facility type, surface area, timeline, constraints" rows="3" style="width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(148,163,184,.3);font-size:15px;background:rgba(255,255,255,.92);color:#0f172a;resize:vertical;"></textarea>
+              <label style="display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:#94a3b8;line-height:1.5;cursor:pointer;">
+                <input type="checkbox" name="consent" required style="margin-top:3px;accent-color:var(--green-600);width:16px;height:16px;flex-shrink:0;">
+                <span>I agree to receive service communications from Southeast Commercial Services of Georgia LLC.</span>
               </label>
+              <input type="hidden" name="gclid" id="gclid"><input type="hidden" name="gbraid" id="gbraid">
+              <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium">
+              <input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term">
+              <input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="fbclid" id="fbclid">
+              <input type="hidden" name="msclkid" id="msclkid">
+              <input type="hidden" name="_subject" value="New Site Walk Request"><input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+              <button type="submit" style="width:100%;padding:15px;background:linear-gradient(160deg,var(--green-600),var(--green-900));color:#fff;border-radius:12px;font-weight:800;font-size:16px;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(21,128,61,.40);letter-spacing:.02em;">Schedule My Site Walk</button>
+              <div style="text-align:center;font-size:11px;color:#64748b;">Commercial &amp; industrial facilities only · No residential</div>
             </div>
-            <input type="hidden" name="gclid" id="gclid">
-            <input type="hidden" name="gbraid" id="gbraid">
-            <input type="hidden" name="wbraid" id="wbraid">
-            <input type="hidden" name="utm_source" id="utm_source">
-            <input type="hidden" name="utm_medium" id="utm_medium">
-            <input type="hidden" name="utm_campaign" id="utm_campaign">
-            <input type="hidden" name="utm_term" id="utm_term">
-            <input type="hidden" name="utm_content" id="utm_content">
-            <input type="hidden" name="utm_adgroup" id="utm_adgroup">
-            <input type="hidden" name="utm_campaignid" id="utm_campaignid">
-            <input type="hidden" name="utm_adid" id="utm_adid">
-            <input type="hidden" name="fbclid" id="fbclid">
-            <input type="hidden" name="msclkid" id="msclkid">
-            <input type="hidden" name="_subject" value="New Quote Request from Website!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-            <button type="submit" style="width:100%; padding:14px; background:#16a34a; color:#fff; border-radius:12px; font-weight:800; font-size:17px;">Submit Form</button>
-            <div style="text-align:center; font-size:11px; margin-top:12px; color:#a3b4d0;">Commercial projects only • No residential</div>
           </form>
         </div>
       </div>
@@ -817,586 +825,617 @@
   </div>
 </section>
 
-<!-- ========================================
-     SECTION 1: Industrial Authority Intro
-======================================== -->
-<section class="section pad-24" style="padding-top:16px; padding-bottom:44px; background:linear-gradient(to bottom,#ffffff,#f9fafb);">
+<!-- ══════════════════════════════════════
+     AUTHORITY INTRO
+══════════════════════════════════════ -->
+<section class="section sec-white">
   <div class="container-7xl">
-    <div class="text-left" style="margin-bottom:22px;">
-      <div class="accent-bar" style="margin:0 0 14px 0;"></div>
-      <h2 class="h2" style="margin-bottom:0;">Atlanta Industrial Painting Contractors - Southeast Commercial Services</h2>
-      <div style="margin-top:10px; display:inline-flex; align-items:center; gap:10px;">
-        <span style="display:inline-block; width:10px; height:10px; border-radius:999px; background:var(--green);"></span>
-        <span style="font-size:14px; font-weight:800; letter-spacing:.10em; text-transform:uppercase; color:#475569;">Commercial &amp; Industrial Only • Greater Atlanta</span>
-      </div>
+    <div style="margin-bottom:28px;">
+      <span class="eyebrow">Commercial &amp; Industrial Only · Greater Atlanta</span>
+      <h2 class="h2">Atlanta Industrial Painting Contractors — Southeast Commercial Services</h2>
     </div>
-    <div class="two-col two-col--fixed">
-      <div class="justify-center" style="align-items:flex-start;">
+    <div class="media-row media-40-60">
+      <div class="img-col border-navy">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
-             alt="Atlanta industrial painting crew on job site" width="448" height="300"
-             fetchpriority="high" loading="eager" decoding="async"
-             sizes="(min-width:1024px) 448px, 100vw"
-             class="img-premium img-frame-slate" style="max-width:448px;">
+             alt="Atlanta industrial painting crew on active job site" width="560" height="420"
+             fetchpriority="high" loading="eager" decoding="async">
       </div>
-      <div style="color:var(--gray-700); font-size:18px; line-height:1.625;">
-        <p>Since 1991, <strong>Southeast Commercial Services</strong> has been the go-to partner for plant managers, facility directors, and general contractors who need more than just a paint crew. We protect your assets with coatings engineered to withstand the real-world demands of <strong>industrial operations</strong> — chemical exposure, heavy traffic, moisture, and thermal cycling.</p>
-        <p>Our work spans <strong>Atlanta, Gainesville, Athens</strong>, and the surrounding industrial corridors. From the <strong>Fulton Industrial District</strong> to the <strong>I-85 NE manufacturing zone</strong>, we've coated structural steel, warehouse floors, production equipment, and exterior facades for facilities that can't afford downtime or substandard results.</p>
-        <p>Every project is approached with a detailed surface assessment, specification planning, and a schedule built around your operational requirements. Our crews are trained to work within active industrial environments, coordinating with safety officers and facility managers to maintain compliance while protecting production timelines.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 1A: Authority Stats -->
-<section class="section" style="padding:0 24px 14px 24px; background:linear-gradient(to bottom,#f9fafb,#ffffff);">
-  <div class="container-7xl">
-    <div class="card" style="padding:18px 18px; border-left:6px solid var(--green);">
-      <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; align-items:center;">
-        <div style="text-align:center; padding:10px 8px; border-right:1px solid rgba(229,231,235,.9);">
-          <p style="font-size:28px; font-weight:900; color:var(--green); margin:0; line-height:1;">30+</p>
-          <p style="font-size:14px; color:var(--gray-600); margin:6px 0 0 0; font-weight:700; letter-spacing:.02em;">Years Experience</p>
-        </div>
-        <div style="text-align:center; padding:10px 8px; border-right:1px solid rgba(229,231,235,.9);">
-          <p style="font-size:28px; font-weight:900; color:var(--green); margin:0; line-height:1;">OSHA</p>
-          <p style="font-size:14px; color:var(--gray-600); margin:6px 0 0 0; font-weight:700; letter-spacing:.02em;">Safety Certified</p>
-        </div>
-        <div style="text-align:center; padding:10px 8px;">
-          <p style="font-size:28px; font-weight:900; color:var(--green); margin:0; line-height:1;">GA</p>
-          <p style="font-size:14px; color:var(--gray-600); margin:6px 0 0 0; font-weight:700; letter-spacing:.02em;">Local Entity</p>
+      <div class="text-col" style="gap:0;">
+        <p class="p-body">Since 1991, <strong>Southeast Commercial Services</strong> has been the go-to industrial coating contractor for facility managers and plant directors across Metro Atlanta who need more than a paint crew. We protect structural assets and production environments with high-performance coating systems engineered to withstand real-world industrial demands — chemical exposure, heavy forklift traffic, moisture cycling, and thermal stress.</p>
+        <p class="p-body">Our work spans Atlanta, Gainesville, Athens, and the surrounding industrial corridors. From the <strong>Fulton Industrial District</strong> to the <strong>I-85 NE manufacturing zone</strong>, we've coated structural steel, warehouse floors, production equipment, and facility exteriors for operations that cannot afford downtime or substandard results.</p>
+        <p class="p-body">Every project begins with a surface assessment, a detailed coating specification matched to your environment, and a schedule built around your production calendar. Our crews are trained to work inside active industrial facilities — coordinating with your safety officer, honoring operational schedules, and delivering the documentation your records require.</p>
+        <div class="callout" style="margin-top:8px;">
+          <p>Southeast provides industrial-grade protective coatings for manufacturing plants, warehouses, and logistics facilities throughout Metro Atlanta. Procore Verified · $2M GL · OSHA compliant · Serving Atlanta since 1991.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 1B: Scopes + Direct Answer + B2B + CTA -->
-<section class="section pad-24-gray" style="padding-top:48px; padding-bottom:72px;">
+<!-- ══════════════════════════════════════
+     STATS DASHBOARD
+══════════════════════════════════════ -->
+<section style="padding:0 24px 24px;background:var(--white);">
   <div class="container-7xl">
-    <div class="card" style="padding:18px 20px; margin:0 0 22px 0; border-left:6px solid var(--slate-700);">
-      <h3 class="h3" style="margin-bottom:10px;">Typical Industrial Coating Scopes</h3>
-      <ul class="list-spaced" style="margin:0; padding-left:18px;">
-        <li><strong>Structural steel</strong> &amp; exposed metal (rust control, primers, DTM systems)</li>
-        <li><strong>Warehouse interiors</strong> (walls, ceilings, columns, safety striping)</li>
-        <li><strong>Epoxy &amp; urethane floors</strong> (high-traffic zones, forklift lanes, secondary containment)</li>
-        <li><strong>Exterior facades</strong> &amp; metal buildings (weathering + UV resistance)</li>
-        <li><strong>Equipment &amp; piping</strong> (chemical splash zones, heat cycling, moisture)</li>
-      </ul>
-    </div>
-    <div class="answer-box" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-      <p><strong>Direct Answer:</strong> Southeast Commercial Services provides industrial-grade protective coatings for manufacturing plants, warehouses, and logistics facilities across Metro Atlanta. Services include epoxy floor systems, structural steel painting, and OSHA-compliant surface preparation. Serving Atlanta since 1991. If you're comparing <strong>Atlanta industrial painting contractors</strong> for <strong>industrial painting in Atlanta</strong>, Southeast Commercial Services is built for uptime, compliance, and long-term coating performance.</p>
-    </div>
-    <div class="b2b-strip" style="margin:18px 0;">
-      <p>Industrial &amp; Commercial Facilities Only — No Residential Projects</p>
-    </div>
-    <div class="card" style="margin-top:18px; padding:18px 20px; border-left:6px solid var(--green);">
-      <p style="margin:0; font-weight:800; color:#111827; font-size:18px; line-height:1.55;">When your facility requires industrial-grade coating performance and disciplined execution, connect directly with Southeast Commercial Services at <strong>(470) 458-2322</strong> to review project scope, scheduling, and system recommendations.</p>
-      <p style="margin:10px 0 0 0; color:var(--gray-600); font-size:14px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;">Commercial &amp; Industrial Only • Metro Atlanta</p>
+    <div class="stats-dash">
+      <div class="stat-item">
+        <p class="stat-num">30+</p>
+        <p class="stat-label">Years in Metro Atlanta</p>
+        <p class="stat-sub">Continuous operation since 1991</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num" style="font-size:clamp(16px,2vw,26px);white-space:nowrap;">Procore Verified</p>
+        <p class="stat-label">Contractor Qualified</p>
+        <p class="stat-sub">Industry-standard vetting platform</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num">$2M GL</p>
+        <p class="stat-label">General Liability</p>
+        <p class="stat-sub">+ Full workers' compensation</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 2: Industrial Tagline -->
-<section class="section pad-24-gray" style="padding-top:56px; padding-bottom:56px;">
-  <div class="container-5xl text-center">
-    <div class="accent-bar"></div>
-    <h3 class="h3" style="font-size:24px; font-weight:800; color:var(--green); margin-bottom:16px;">Industrial-Strength Coatings. Built for Uptime, Engineered for Performance.</h3>
-    <p class="p-lg" style="line-height:1.625; color:var(--gray-700);">We don't just roll paint. We assess substrate chemistry, evaluate corrosion layers, and select industrial-grade epoxies or urethanes tailored to your production environment. Every coating is matched to spec and lifespan requirements — because your facility deserves more than a quick coat.</p>
+<!-- ══════════════════════════════════════
+     SCOPE + B2B
+══════════════════════════════════════ -->
+<section class="section sec-cream">
+  <div class="container-7xl">
+    <div style="display:grid;gap:32px;" class="media-row">
+      <div>
+        <span class="eyebrow">What We Cover</span>
+        <h2 class="h2">Industrial Coating Scopes</h2>
+        <ul class="premium-list">
+          <li><div><strong>Structural steel &amp; exposed metal</strong> — rust control, DTM primers, multi-coat corrosion barrier systems</div></li>
+          <li><div><strong>Warehouse and plant interiors</strong> — walls, ceilings, columns, safety striping, OSHA floor markings</div></li>
+          <li><div><strong>Epoxy and urethane floor systems</strong> — high-traffic zones, forklift lanes, secondary containment areas</div></li>
+          <li><div><strong>Exterior facades and metal buildings</strong> — weathering resistance, UV-stable topcoats, elastomeric sealers</div></li>
+          <li><div><strong>Equipment and piping</strong> — chemical splash zones, heat cycling, corrosion barrier systems</div></li>
+          <li><div><strong>Food-grade and pharmaceutical surfaces</strong> — FDA/USDA-compliant coating systems for regulated environments</div></li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;align-self:stretch;">
+        <div style="background:#0f2547;border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;justify-content:space-between;height:100%;box-shadow:var(--shadow-xl);">
+
+          <!-- Top badge -->
+          <div>
+            <span style="display:inline-block;background:rgba(22,163,74,.15);color:var(--green-500);border:1px solid rgba(22,163,74,.28);padding:5px 14px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;">Commercial &amp; Industrial Facilities Only</span>
+
+            <h3 style="font-size:22px;font-weight:900;color:#fff;margin:0 0 12px;line-height:1.25;letter-spacing:-.02em;">Ready to Scope Your Project?</h3>
+            <p style="font-size:15px;color:#94a3b8;margin:0 0 22px;line-height:1.7;">We send an estimator to your facility, assess surface conditions, and produce a line-item proposal — not a ballpark. No commitment required.</p>
+
+            <!-- What you get -->
+            <ul style="margin:0 0 26px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
+              <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#cbd5e1;line-height:1.5;">
+                <span style="color:var(--green-500);font-weight:900;flex-shrink:0;margin-top:1px;">✓</span>
+                <span>On-site facility walk at no charge</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#cbd5e1;line-height:1.5;">
+                <span style="color:var(--green-500);font-weight:900;flex-shrink:0;margin-top:1px;">✓</span>
+                <span>Line-item estimate with coating spec &amp; schedule</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#cbd5e1;line-height:1.5;">
+                <span style="color:var(--green-500);font-weight:900;flex-shrink:0;margin-top:1px;">✓</span>
+                <span>Certificates of insurance &amp; Procore Verified docs on request</span>
+              </li>
+              <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#cbd5e1;line-height:1.5;">
+                <span style="color:var(--green-500);font-weight:900;flex-shrink:0;margin-top:1px;">✓</span>
+                <span>Scheduled within a few business days</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTAs -->
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="tel:+14704582322" style="display:block;text-align:center;padding:15px 20px;background:linear-gradient(160deg,var(--green-600),var(--green-900));color:#fff;font-weight:800;font-size:18px;border-radius:12px;letter-spacing:-.01em;box-shadow:0 8px 24px rgba(21,128,61,.35);">(470) 458-2322</a>
+            <a href="#quote-form" style="display:block;text-align:center;padding:13px 20px;border:2px solid rgba(255,255,255,.20);color:#e2e8f0;font-weight:700;font-size:14px;border-radius:12px;letter-spacing:.02em;">Request a Site Walk →</a>
+            <p style="margin:8px 0 0;text-align:center;font-size:11px;color:#475569;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">Procore Verified · $2M GL · Est. 1991</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- SECTION 3: Partners Who Understand the Stakes -->
-<section class="section pad-24">
+<!-- ══════════════════════════════════════
+     COST OF FAILURE
+══════════════════════════════════════ -->
+<section class="section sec-white">
   <div class="container-7xl">
-    <div class="answer-box max-w-3xl" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-      <p><strong>What makes Southeast different?</strong> We combine technical coating expertise with operational sensitivity. Our crews understand substrate chemistry, EPA lead regulations, and how to sequence work around production shifts to minimize downtime.</p>
-    </div>
-    <div class="two-col" style="align-items:stretch;">
-      <div class="justify-center" style="height:100%;">
+    <div class="media-row">
+      <div class="img-col border-green">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/69926e323b3cc97c1ecc8bf5.webp"
-             alt="Industrial painting crew understands the stakes" width="448" height="420"
+             alt="Industrial painting specialists assessing facility surfaces in Metro Atlanta" width="560" height="420"
              loading="lazy" decoding="async"
-             sizes="(min-width:1024px) 448px, 100vw"
-             class="img-premium img-frame-green" style="max-width:448px; min-height:420px; height:100%; object-fit:cover;"
-             onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             onerror="this.onerror=null;this.src='https://placehold.co/560x420/e2e8f0/475569?text=Southeast+Commercial';">
       </div>
-      <div style="color:var(--gray-700); font-size:18px; line-height:1.7;">
-        <div class="accent-bar" style="margin-left:0; margin-right:auto;"></div>
-        <h2 class="h2" style="margin-top:0; margin-bottom:16px;">You Need More Than a Paint Crew — You Need Partners Who Understand the Stakes</h2>
-        <p>If your facility's surfaces are showing corrosion, wear from cleaning protocols, or years of operational use, a quick coat won't cut it. You need a partner who understands the science of coatings, the demands of compliance (EPA lead regulations, industrial hygiene), and the logistics of keeping your plant running during the project.</p>
-        <p>At Southeast, the difference isn't just our rollers — it's the technical know-how behind every job. Our crews assess substrate chemistry, evaluate corrosion underlayers, select industrial-grade <strong>epoxies or urethanes</strong> tailored to your production environment, and ensure every coating matches spec and lifespan requirements.</p>
-        <p>We're equally meticulous with site planning — sequencing work around shifts, staging zones to minimize downtime, and protecting ongoing processes so production stays on schedule. <strong>No surprises. No shortcuts.</strong></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 4: Facility Appearance Is Strategic -->
-<section class="section pad-24-gray">
-  <div class="container-5xl text-center">
-    <div class="accent-bar"></div>
-    <h2 class="h2" style="margin-bottom:16px;">Your Facility's Appearance Isn't Cosmetic — It's Strategic</h2>
-    <div class="answer-box max-w-3xl text-left" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-      <p><strong>Why does facility appearance matter?</strong> A well-maintained plant signals precision, reliability, and operational seriousness to regulators, auditors, and employees. Clean environments improve morale, reduce distractions, and enhance safety compliance.</p>
-    </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7; text-align:left;">
-      <p>When auditors, inspectors, or potential clients walk through your facility, they're forming judgments before you say a word. A well-maintained plant signals <strong>precision, reliability, and seriousness</strong> — to both regulators and employees.</p>
-      <p>Clean, fresh-looking environments also shape morale, reduce workplace distractions, and improve safety. Your crews perform better when they walk into orderly, well-cared-for spaces. That's why we take <strong>industrial painting</strong> seriously — not as a superficial upgrade, but as a strategic investment in your operation's reputation and performance.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 5: Precision Projects -->
-<section class="section pad-24">
-  <div class="container-7xl">
-    <div class="two-col" style="align-items:stretch;">
-      <div style="color:var(--gray-700); font-size:18px; line-height:1.7;">
-        <div class="accent-bar" style="margin-left:0; margin-right:auto;"></div>
-        <h2 class="h2" style="margin-top:0;">Precision Projects in High-Stakes Environments</h2>
-        <div class="answer-box" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-          <p><strong>What types of projects does Southeast handle?</strong> High-access structural steel, overhead ceilings, multi-stage work in live production areas, warehouses, food plants, healthcare campuses, and water treatment facilities. All projects are phased to minimize operational disruption.</p>
+      <div class="text-col">
+        <span class="eyebrow">Why Vendor Selection Matters</span>
+        <h2 class="h2">The Real Cost of a Failed Coating Project</h2>
+        <p class="p-body">When an industrial coating fails — because of inadequate surface prep, a mismatched product spec, or a contractor who walked after the check cleared — the problem isn't just a repaint. It's accelerated corrosion on structural steel that's now behind equipment. It's a failed FDA audit because floor coatings weren't food-safe compliant. It's OSHA floor markings that wear through in three months and put you in a liability position you have to explain to your safety director.</p>
+        <p class="p-body">Facility managers who've been through a bad coating contractor know the pattern: low bid, rushed schedule, shortcuts on prep that show up 18 months later as peeling, blistering, or bare metal.</p>
+        <p class="p-body">At Southeast, your production environment is the constraint — not our schedule. That means off-hours execution when needed, phased work in live facilities, documented prep for your records, and coating specs matched to what your surfaces actually face.</p>
+        <div class="callout">
+          <p>We've been called in to fix failed coating jobs more times than we can count. We'd rather be your first call than your second.</p>
         </div>
-        <p>Complex projects — high-access structural steel, overhead ceilings, or multi-stage work in live production areas — are our specialty. With <strong>30+ years of experience</strong>, we've handled tight schedules, phased turnovers, staging, and infrastructure-heavy environments across Metro Atlanta.</p>
-        <p>From warehouses and food plants to healthcare campuses and water treatment sites, we tailor our approach to your schedules, safety needs, and operational realities. <strong>On-site coordination, phased mobilization, no surprises</strong> — that's how we keep you productive and compliant.</p>
       </div>
-      <div class="justify-center" style="height:100%;">
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     HOW WE EXECUTE — 3 numbered steps
+══════════════════════════════════════ -->
+<section class="section sec-cream">
+  <div class="container-7xl">
+    <div class="text-center mb-8">
+      <span class="eyebrow">Our Process</span>
+      <h2 class="h2">How a Southeast Industrial Coating Project Works</h2>
+      <p class="p-lg" style="max-width:640px;margin:12px auto 0;">Three things determine whether an industrial coating lasts. We treat all three with the same rigor.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Surface Preparation</h3>
+        <p>The coating is only as good as what's under it. Depending on substrate and spec requirements, we use abrasive blasting, mechanical grinding, power washing, chemical degreasing, caulking, and crack repair. Containment zones are secured and adjacent operations protected before prep begins. Every step is documented.</p>
+        <span class="step-tag">The Part Most Contractors Cut Short</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Coating Specification</h3>
+        <p>We work with <strong>Sherwin-Williams Industrial</strong>, <strong>PPG Amercoat</strong>, and <strong>Benjamin Moore</strong> commercial-grade systems — selected based on your specific exposure conditions, not what's fastest to apply. Epoxy, urethane, polyaspartic, elastomeric, FDA/USDA-compliant, anti-slip, anti-static. We spec what holds.</p>
+        <span class="step-tag">Matched to Your Facility's Conditions</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Scheduling &amp; Execution</h3>
+        <p>Off-hours, overnight windows, weekends, and planned shutdowns are all standard. We phase work in zones so adjacent operations stay live, coordinate with your safety officer, and issue a project schedule with every proposal. Clean-up at shift close — every shift. No surprises.</p>
+        <span class="step-tag">Around Your Operation, Not Ours</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ACTIVE FACILITIES
+══════════════════════════════════════ -->
+<section class="section sec-white">
+  <div class="container-7xl">
+    <div class="media-row media-60-40">
+      <div class="text-col">
+        <span class="eyebrow">Complex Projects</span>
+        <h2 class="h2">Built for Active Facilities and Tight Schedules</h2>
+        <p class="p-body">High-access structural steel, overhead ceilings, multi-phase execution in live production environments — these are projects where most contractors start making exceptions. We don't. With 30+ years of industrial coating experience, we've executed tight shutdowns, phased turnovers, and multi-zone staging across Metro Atlanta's most demanding facilities.</p>
+        <p class="p-body">From food processing plants and pharmaceutical operations to water treatment infrastructure and multi-tenant warehouses, our crew coordinators work directly with your team at every stage. Mobilization plans are set before we arrive. Scope changes are documented in writing. Every project ends with a clean facility and a complete record of what was done.</p>
+        <div class="callout">
+          <p>If you've been told a project can't be done without stopping your operation, get a second opinion from us. Off-hours and phased execution are standard, not exceptions.</p>
+        </div>
+      </div>
+      <div class="img-col border-navy">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6841d61a75ad7e0ace0cab54.jpeg"
-             alt="Industrial painting project planning and coordination" width="448" height="400"
-             loading="lazy" decoding="async" class="img-premium img-frame-slate" style="max-width:448px; min-height:400px; height:100%; object-fit:cover;"
-             onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             alt="Industrial coating project coordination in active warehouse Atlanta" width="480" height="380"
+             loading="lazy" decoding="async"
+             onerror="this.onerror=null;this.src='https://placehold.co/480x380/e2e8f0/475569?text=Southeast+Commercial';">
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 6: Surface Preparation -->
-<section class="section pad-24-gray">
+<!-- ══════════════════════════════════════
+     CREDENTIALS — navy dark section
+══════════════════════════════════════ -->
+<section class="section sec-navy">
   <div class="container-7xl">
-    <div class="two-col" style="align-items:stretch;">
-      <div class="justify-center" style="height:100%;">
-        <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6845dd825d6a5907c9d6917d.png"
-             alt="Industrial surface preparation for painting" width="448" height="360"
-             loading="lazy" decoding="async" class="img-premium img-frame-green" style="max-width:448px; min-height:360px; height:100%; object-fit:cover;"
-             onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
-      </div>
-      <div style="color:var(--gray-700); font-size:18px; line-height:1.7;">
-        <div class="accent-bar" style="margin-left:0; margin-right:auto;"></div>
-        <h2 class="h2" style="margin-top:0;">Surface Preparation: The Foundation of Lasting Results</h2>
-        <div class="answer-box" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-          <p><strong>How does Southeast prepare industrial surfaces?</strong> Pressure washing, chemical degreasing, sandblasting, caulking, crack repair, and full abrasive blasting as needed. Containment zones are secured and adjacent areas are protected to ensure mission-critical prep standards.</p>
+    <div class="text-center mb-8">
+      <span class="eyebrow eyebrow-dark">Vendor Qualification</span>
+      <h2 class="h2 h2-light">Credentials, Insurance &amp; Compliance</h2>
+      <p class="p-lg p-light" style="max-width:600px;margin:12px auto 0;">Everything your procurement and risk management teams need to put us on the approved list.</p>
+    </div>
+    <div class="cred-grid">
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
         </div>
-        <p>The best coatings mean nothing if the surface is unprepared. That's why we emphasize prep — <strong>pressure washing, chemical degreasing, sandblasting, caulking, crack repair, or full abrasive blasting</strong> — as needed for your substrates and specs.</p>
-        <p>We secure containment zones, protect adjacent areas, and treat the space like a mission-critical environment — whether we're prepping steel I-beams, corrugated panels, or concrete floors. Every inch matters. Every surface gets the attention it deserves.</p>
+        <div>
+          <p class="cred-label">Procore Verified</p>
+          <p class="cred-detail">Vetted through Procore's contractor qualification process — the platform your facility and construction managers already use to manage projects.</p>
+        </div>
       </div>
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        </div>
+        <div>
+          <p class="cred-label">$2M General Liability</p>
+          <p class="cred-detail">$2 million general liability covering industrial and commercial project risk. Full workers' compensation for all crew on your site. Certificates available on request.</p>
+        </div>
+      </div>
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/></svg>
+        </div>
+        <div>
+          <p class="cred-label">OSHA Compliance</p>
+          <p class="cred-detail">All crew trained to current OSHA standards. Site-entry protocols, PPE requirements, and safety documentation followed on every project.</p>
+        </div>
+      </div>
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.589-1.202L18.75 4.97z"/></svg>
+        </div>
+        <div>
+          <p class="cred-label">EPA Lead-Safe Practices</p>
+          <p class="cred-detail">All work involving lead-based coatings conducted per EPA RRP Rule. Containment, waste disposal, and documentation handled end to end.</p>
+        </div>
+      </div>
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+        </div>
+        <div>
+          <p class="cred-label">Georgia-Registered Entity</p>
+          <p class="cred-detail">Established 1991. Georgia-registered business entity with 30+ years of continuous operation in Metro Atlanta's industrial and commercial market.</p>
+        </div>
+      </div>
+
+      <div class="cred-card">
+        <div class="cred-icon-wrap">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+        </div>
+        <div>
+          <p class="cred-label">Coating System Partners</p>
+          <p class="cred-detail">We work with Sherwin-Williams Industrial, PPG Amercoat, and Benjamin Moore commercial-grade systems. All materials in original manufacturer packaging.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SECTION 7: Industrial Coatings Gallery -->
-<section class="section pad-24">
+<!-- ══════════════════════════════════════
+     INDUSTRIES — SVG icon cards
+══════════════════════════════════════ -->
+<section class="section sec-cream">
+  <div class="container-7xl">
+    <div class="text-center mb-8">
+      <span class="eyebrow">Where We Work</span>
+      <h2 class="h2">Industries &amp; Facilities Across Metro Atlanta</h2>
+      <p class="p-lg" style="max-width:620px;margin:12px auto 0;">From food-grade production floors to water treatment infrastructure — if it requires industrial coating performance, we've handled it.</p>
+    </div>
+    <div class="industry-grid">
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <div class="industry-label">Manufacturing Plants &amp; Production Lines</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+        </div>
+        <div class="industry-label">Warehouses &amp; Fulfillment Centers</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <div class="industry-label">Distribution Hubs &amp; Loading Docks</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+        </div>
+        <div class="industry-label">Food &amp; Beverage Processing</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21a48.31 48.31 0 01-8.135-.687c-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+        </div>
+        <div class="industry-label">Pharmaceutical &amp; Chemical Operations</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+        </div>
+        <div class="industry-label">Water Treatment &amp; Utility Infrastructure</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+        </div>
+        <div class="industry-label">Steel Structures &amp; Structural Frames</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+        </div>
+        <div class="industry-label">Medical Campuses &amp; Research Facilities</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"/></svg>
+        </div>
+        <div class="industry-label">Parking Structures &amp; Concrete Decks</div>
+      </div>
+
+      <div class="industry-card">
+        <div class="industry-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <div class="industry-label">High-Rise Commercial Properties</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SAFETY / COMPLIANCE
+══════════════════════════════════════ -->
+<section class="section sec-navy-mid">
   <div class="container-5xl text-center">
-    <div class="accent-bar"></div>
-    <h2 class="h2" style="margin-bottom:16px;">Industrial Coatings Engineered for Your Environment</h2>
-    <div class="answer-box max-w-3xl text-left" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-      <p><strong>What types of coatings does Southeast use?</strong> Epoxy floor systems (chemical/impact resistance), urethanes and polyaspartics (weather protection), elastomerics (moisture sealing), anti-slip/anti-static systems, FDA/USDA-compliant finishes, and textured/reflective coatings for thermal management.</p>
+    <span class="eyebrow eyebrow-dark" style="color:#b0bec5;">Risk Management</span>
+    <h2 class="h2 h2-light" style="margin-bottom:16px;">Safety, Compliance &amp; Your Risk Profile</h2>
+    <div class="callout-dark max-w-3xl" style="margin:0 auto 24px;border-left-color:#b0bec5;">
+      <p>OSHA, EPA, AQMD, fire codes, and air-quality regulations are built into every project plan from the site walk forward. When we're on your property, we treat your risk profile like it's our own.</p>
     </div>
-    <div class="max-w-3xl text-left" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>Not all paint is created equal. And not every surface needs the same thing.</p>
-      <p>We spec systems based on what your facility faces — chemicals, foot traffic, forklifts, moisture, UV, you name it. And we don't upsell. We spec what works. What holds. What lasts.</p>
-      <p style="font-weight:800;">Our lineup includes:</p>
-      <ul class="list-spaced" style="padding-left:20px;">
-        <li><strong>Epoxy floor systems</strong> for chemical and impact resistance</li>
-        <li><strong>Urethanes and polyaspartics</strong> for long-term gloss and weather protection</li>
-        <li><strong>Elastomerics</strong> that seal out moisture and flex with structural shifts</li>
-        <li><strong>Anti-slip and anti-static systems</strong> for industrial floors</li>
-        <li><strong>FDA/USDA-compliant finishes</strong> for food or pharma environments</li>
-        <li>Special <strong>textured or reflective coatings</strong> for thermal and light management</li>
-      </ul>
+    <div class="max-w-3xl text-left" style="margin:0 auto;color:#cbd5e1;font-size:17px;line-height:1.75;">
+      <p style="margin:0 0 14px;">Lead-based paint preparation is conducted under full EPA RRP Rule compliance — worker protection, containment, waste handling, and post-project documentation. Rinse water, solvents, and unused coatings are disposed of per current AQMD and local ordinance requirements.</p>
+      <p style="margin:0;">Every crew member carries current OSHA training documentation. We can provide certificates of insurance, Procore Verified confirmation, and project-specific safety plans to your safety director or risk management team before mobilization.</p>
     </div>
   </div>
 </section>
 
-<!-- SECTION 8: Facilities We Protect -->
-<section class="section pad-24-gray">
-  <div class="container-5xl text-center">
-    <div class="accent-bar"></div>
-    <h2 class="h2" style="margin-bottom:16px;">Facilities We Protect Across Metro Atlanta</h2>
-    <div class="answer-box max-w-3xl text-left" style="background:var(--blue-50); border-left-color:var(--slate-700);">
-      <p><strong>What types of facilities does Southeast serve?</strong> Warehouses, distribution hubs, manufacturing plants, food/beverage facilities, utility infrastructure, chemical/pharmaceutical operations, high-rise commercial properties, parking structures, medical campuses, and steel structures.</p>
-    </div>
-    <p class="p-lg mb-6" style="margin-top:0; max-width:672px; margin-left:auto; margin-right:auto;">From warehouses to healthcare campuses, from water plants to parking structures, we've painted and protected facilities that present every imaginable challenge:</p>
-    <ul class="cols-wrap list-spaced text-left" style="max-width:896px; margin-left:auto; margin-right:auto; font-size:18px; color:var(--gray-700);">
-      <li><strong>Warehouses</strong> &amp; fulfillment centers</li>
-      <li><strong>Distribution hubs</strong> &amp; loading docks</li>
-      <li><strong>Manufacturing plants</strong> &amp; production lines</li>
-      <li><strong>Food and beverage</strong> facilities</li>
-      <li><strong>Utility infrastructure</strong> &amp; water treatment systems</li>
-      <li><strong>Chemical &amp; pharmaceutical</strong> operations</li>
-      <li><strong>High-rise commercial</strong> properties &amp; parking structures</li>
-      <li><strong>Medical campuses</strong> &amp; multi-use buildings</li>
-      <li><strong>Steel structures</strong>, corrugated systems, and structural frames</li>
-    </ul>
-    <p class="p-lg" style="margin-top:32px;">If it's industrial, commercial, or mission-critical — we've likely coated it.</p>
-  </div>
-</section>
-
-<!-- Credentials Section -->
-<section style="padding:40px 20px; background:#ffffff;">
-  <div style="max-width:960px; margin:0 auto;">
-    <!-- Credential Bar — 3x3 Grid -->
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:36px;">
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Manufacturer Certified Installer
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ $2M+ General Liability
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Licensed &amp; Bonded — Georgia
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ OSHA Compliant — Active Facilities
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Warehouse · Manufacturing · Food &amp; Beverage
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Phased Scheduling — Minimal Downtime
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Written Warranty — Materials &amp; Labor
-  </div>
-  <div style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center;">
-    ✓ Serving Atlanta Since 1991
-  </div>
-  <a href="https://network.procore.com/p/southeast-commercial-services-of-georgia-llc-decatur"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="padding:10px 18px; background:#f1f5f9; border:1px solid #e2e8f0; border-radius:999px; font-size:14px; font-weight:700; color:#1e293b; text-align:center; text-decoration:none; display:block;">
-    ✓ Verified on Procore Network
-  </a>
-</div>
-  </div>
-</section>
-
-<!-- SECTION 9: Safety & Compliance (Dark) -->
-<section class="section dark-section" style="padding:80px 24px;">
-  <div class="container-5xl text-center">
-    <div class="accent-bar"></div>
-    <h2 class="h2 text-shadow-pop" style="color:#ffffff; margin-bottom:16px;">Safety, Compliance &amp; Your Reputation</h2>
-    <div class="answer-box max-w-3xl text-left" style="background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-left-color:var(--green);">
-      <p style="color:#f3f4f6;"><strong>Is Southeast compliant with safety regulations?</strong> Yes. We follow OSHA, EPA, fire codes, and air-quality regulations. We handle lead-based paints per EPA standards, dispose of waste per local ordinance, and carry full licensing, bonding, and insurance.</p>
-    </div>
-    <p class="p-lg" style="color:#e5e7eb; line-height:1.7; max-width:768px; margin-left:auto; margin-right:auto; margin-top:0;">OSHA, EPA, fire and air-quality codes — these aren't optional checkboxes. They're baked into our workflow. From proper storage and disposal to lead-safe practices and AQMD compliance, we follow all regulations.</p>
-    <p class="p-lg" style="color:#e5e7eb; line-height:1.7; max-width:768px; margin-left:auto; margin-right:auto;">We handle lead-based paints and hazardous materials according to EPA standards. Rinse water, solvents, unused coatings — we dispose per local ordinance. Licenses, bonds, insurance — up to industrial standards. <strong>Trust matters. We know that.</strong></p>
-  </div>
-</section>
-
-<!-- SECTION 10: Prep & Clean-Up Standards -->
-<section class="section pad-24">
+<!-- ══════════════════════════════════════
+     WARRANTY
+══════════════════════════════════════ -->
+<section class="section sec-white">
   <div class="container-5xl">
     <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">The Highest Prep &amp; Clean-Up Standards in the Industry</h2>
+      <span class="eyebrow">Coverage</span>
+      <h2 class="h2">Warranty on Every Project</h2>
     </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>Your facility is assessed and prepared by a team of experts following industry best practices to ensure optimal adhesion and performance of the paint. We also fully ensure that the work area is established and maintained to be clean, orderly, and <strong>liability-free</strong> and to protect all surfaces from drips, splatters, and spills.</p>
-      <p>Surface preparation includes pressure/power washing, sandblasting, caulking, priming, contaminant removal, and any other necessary treatments.</p>
-      <p>Surrounding landscapes and other areas are carefully safeguarded before and as we carry out the project.</p>
-      <p><strong>Clean-up:</strong> At completion of work each day, we remove all materials, supplies, debris, and trash and leave work spaces and paint storage areas in a clean, orderly, and safe condition.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 11: Top Quality Materials -->
-<section class="section pad-24-gray">
-  <div class="container-5xl">
-    <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">We Use Top-Quality Materials, Paint &amp; Professional Spray Applications</h2>
-    </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>We only work with the very best spray technologies and our standards always include top-quality paint manufacturers unless your requirements specify otherwise.</p>
-      <p>All materials are delivered to your project in original packaging bearing the manufacturer's name and product number.</p>
+    <div class="max-w-3xl" style="margin:0 auto;">
+      <div class="callout" style="margin-bottom:24px;">
+        <p><strong>One-year labor warranty on every project.</strong> If any workmanship issue surfaces within the first year, we address it promptly at no additional cost. Long-term manufacturer warranties apply to all coating products. Documentation provided at project close.</p>
+      </div>
+      <p class="p-body">The labor warranty reflects confidence in how we prepare surfaces and apply coating systems. A coating that fails within 12 months almost always traces back to surface prep or application conditions — not the product. We control both, which is why we can stand behind the work.</p>
+      <p class="p-body">Manufacturer warranties on Sherwin-Williams, PPG Amercoat, and Benjamin Moore systems add product-side coverage. Warranty terms vary by coating system and are disclosed in writing with each project proposal.</p>
     </div>
   </div>
 </section>
 
-<!-- SECTION 12: Safety & Regulations (Detailed) -->
-<section class="section pad-24">
-  <div class="container-5xl">
-    <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">Detailed Attention to Safety &amp; Regulations</h2>
-    </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>All <strong>Southeast Commercial Services industrial painting projects</strong> are completed with the utmost attention to job site safety, quality, and professionalism.</p>
-      <p>We strictly adhere to <strong>OSHA requirements</strong> and the application of finishes in accordance with the manufacturer's recommendations.</p>
-      <p>We ensure that all materials comply with all current requirements of Environmental Agencies, the appropriate Air Pollution Control District, and all other local, state, or Federal agencies.</p>
-      <p>We store all equipment and materials in strict compliance with local health and fire regulations.</p>
-      <p>Disposal of all wastewater and unused materials follow current A.Q.M.D. and local legal requirements and regulations.</p>
-      <p>Painting and preparation of any existing coatings or substrates containing lead are conducted in full compliance with current regulations as defined by the U.S. Environmental Protection Agency (USEPA).</p>
-      <p><strong>Southeast</strong> carries all the proper licensing, liability, and workers' comp insurance and adheres to manufacturer and industry best practices to ensure a <strong>high-quality and professional result</strong> every time.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 13: Scheduling -->
-<section class="section pad-24-gray">
-  <div class="container-5xl">
-    <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">We Work Efficiently Around Your Unique Scheduling Needs</h2>
-    </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>We understand the needs of our industrial and commercial property customers. We know how important it is to keep your business running with minimal disruption during the project.</p>
-      <p>All work is completed in a timely manner to avoid delays and schedule overruns that can negatively impact your business.</p>
-      <p>You can count on the pros at Southeast to get your <strong>Atlanta industrial painting job</strong> done smoothly while adhering to a flexible schedule ensuring minimal disruption to your flow of business.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 14: Results Guaranteed -->
-<section class="section pad-24">
-  <div class="container-5xl">
-    <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">Results that are Guaranteed</h2>
-    </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>We offer a <strong>one-year warranty on labor and long-term manufacturer warranties</strong> on our paint products.</p>
-      <p>By offering a one-year warranty on labor, we <strong>guarantee that our services are performed to the highest standard</strong> and that any issues that arise within the first year will be <strong>addressed promptly and professionally</strong>.</p>
-      <p>In addition, we provide <strong>long-term manufacturer warranties</strong> on our paint products, ensuring that our clients receive high-quality paint that will stand the test of time. This further demonstrates our <strong>commitment to excellence</strong> and our confidence in the quality of our products and services.</p>
-      <p>Together, these warranties provide peace of mind to our clients, knowing that they are receiving quality services and products that are backed by our company. <strong>We take pride in our work</strong> and are committed to providing exceptional service to all of our clients, whether it's a small-scale project or a large industrial facility.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ SECTION -->
-<section class="section pad-24-gray">
+<!-- ══════════════════════════════════════
+     FAQ
+══════════════════════════════════════ -->
+<section class="section sec-cream">
   <div class="container-5xl">
     <div class="text-center mb-12">
-      <div class="accent-bar"></div>
-      <h2 class="h2">Frequently Asked Questions About <strong>Industrial Painting Services</strong> in Georgia</h2>
+      <span class="eyebrow">Common Questions</span>
+      <h2 class="h2">Frequently Asked Questions — Industrial Painting in Metro Atlanta</h2>
     </div>
-    <div class="grid gap-6" style="max-width:896px; margin-left:auto; margin-right:auto;">
+    <div class="grid gap-6 max-w-4xl">
 
       <details class="faq">
-        <summary>What types of industrial facilities do you paint?
-          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></span>
+        <summary>What types of industrial facilities do you paint in Metro Atlanta?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
         </summary>
-        <p class="faq-body">We paint everything from large-scale warehouses and food processing plants to utility infrastructure, steel structures, and production floors. If it has structural steel, concrete, corrugated siding, or machinery that needs protective coatings — we've likely painted it. Our team is built for high-access, high-demand, and high-risk environments where performance matters.</p>
+        <p class="faq-body">We paint manufacturing plants, warehouses, food processing facilities, distribution centers, pharmaceutical operations, water treatment infrastructure, chemical plants, parking structures, and steel-frame commercial buildings throughout Metro Atlanta, Gainesville, Athens, and surrounding industrial corridors. If it has structural steel, concrete, corrugated metal siding, or industrial equipment requiring protective coatings, we have the crew and the systems for it.</p>
       </details>
 
       <details class="faq">
-        <summary>Do you work during nights or weekends?
-          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></span>
+        <summary>How do you schedule work without disrupting our operations?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
         </summary>
-        <p class="faq-body">Absolutely. Many of our projects are scheduled for off-hours — including nights, weekends, and plant shutdowns — to keep your operations running without interruption. We understand how critical uptime is, especially in 24/7 facilities, and we tailor our schedule to yours.</p>
+        <p class="faq-body">We build the project schedule around your production calendar, not ours. Off-hours, overnight windows, weekends, and planned plant shutdowns are all standard. We phase work in zones so adjacent operations stay live, coordinate directly with your facility manager or safety officer, and provide a detailed project schedule with every proposal so your team can plan accordingly. No surprise mobilizations.</p>
       </details>
 
       <details class="faq">
         <summary>How do you handle surface preparation for industrial painting?
-          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></span>
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
         </summary>
-        <p class="faq-body">Surface prep is the backbone of any lasting paint job. We use abrasive blasting, power washing, degreasing, grinding, and other prep methods depending on the substrate and coating requirements. Our crew ensures each surface is clean, dry, and properly profiled for adhesion — no shortcuts.</p>
+        <p class="faq-body">Surface preparation is the single biggest determinant of how long any coating system lasts. Depending on substrate and spec requirements, we use abrasive blasting, mechanical grinding, power washing, chemical degreasing, caulking, and crack repair. Containment zones are secured and adjacent equipment or operations protected before prep begins. Every prep step is documented — you should have a record of what was done, not just what it looks like when we leave.</p>
       </details>
 
       <details class="faq">
-        <summary>What types of coatings do you use?
-          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></span>
+        <summary>What coating systems and product brands do you use?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
         </summary>
-        <p class="faq-body">That depends on the application. We regularly use epoxies, urethanes, polyaspartics, elastomerics, and food-grade finishes — each selected for chemical resistance, moisture tolerance, traffic durability, or UV protection. We don't believe in one-size-fits-all solutions. We spec systems based on what your surfaces actually face.</p>
+        <p class="faq-body">We work with Sherwin-Williams Industrial, PPG Amercoat, and Benjamin Moore commercial-grade coating systems — selected based on your facility's exposure conditions, not what's fastest to apply. Epoxy floor coatings for chemical and impact resistance. Urethane topcoats for gloss and UV stability. Polyaspartic systems for rapid return-to-service. Elastomeric sealers for exterior moisture management. FDA/USDA-compliant finishes for food and pharmaceutical environments. We spec what holds.</p>
       </details>
 
       <details class="faq">
-        <summary>Are you licensed and insured for industrial work?
-          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></span>
+        <summary>Are you licensed, insured, and Procore Verified?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
         </summary>
-        <p class="faq-body">Yes. We're fully licensed in Georgia, insured for industrial and commercial projects, and follow all applicable safety and environmental regulations. When we're on your site, we treat your risk profile like it's our own.</p>
+        <p class="faq-body">Yes on all three. Southeast Commercial Services is a Georgia-registered business operating since 1991. We carry $2 million general liability insurance and full workers' compensation. We are Procore Verified — qualified through Procore's vetting process, the same platform most commercial and industrial facility managers use to manage projects. Certificates of insurance and Procore Verified documentation are available to your procurement or risk management team on request.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What does the quoting and site walk process look like?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <p class="faq-body">We start with an on-site facility walk. An estimator visits your facility, assesses surface conditions, reviews substrate issues, discusses your operational constraints, and identifies compliance or hazardous material considerations upfront. From that walk we produce a line-item estimate covering surface preparation, coating system specification, labor, and a project schedule. No ballpark numbers. No commitment required for the site walk. We typically schedule visits within a few business days of your request.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What is your service area?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <p class="faq-body">We serve Metro Atlanta and surrounding industrial corridors including the Fulton Industrial District, I-85 NE manufacturing zone, Gainesville, Athens, Decatur, Norcross, Smyrna, Kennesaw, Peachtree City, and the broader Georgia industrial market. Contact us to confirm coverage for your location.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Do you handle lead-based paint and hazardous material compliance?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+        </summary>
+        <p class="faq-body">Yes. All work involving lead-based coatings or hazardous substrates is conducted under full EPA RRP Rule compliance — worker protection, proper containment, waste handling, and post-project documentation. Rinse water, solvents, and unused materials are disposed of per AQMD and local ordinance. If your facility has known or suspected lead paint, we address it in the surface prep scope at project outset — not as a change order after work has started.</p>
       </details>
 
     </div>
   </div>
 </section>
 
-<!-- SECTION: The Southeast Legacy -->
-<section class="section pad-24">
+<!-- ══════════════════════════════════════
+     COMPANY FACT SHEET
+══════════════════════════════════════ -->
+<section class="section sec-white">
   <div class="container-5xl">
     <div class="text-center mb-8">
-      <div class="accent-bar"></div>
-      <h2 class="h2">Protecting Atlanta's Industrial Infrastructure Since 1991</h2>
+      <span class="eyebrow">About the Company</span>
+      <h2 class="h2">About Southeast Commercial Services</h2>
     </div>
-    <div class="max-w-3xl" style="margin-left:auto; margin-right:auto; color:var(--gray-700); font-size:18px; line-height:1.7;">
-      <p>Industrial painting is more than a maintenance task; it is a critical layer of <strong>asset protection</strong>. At Southeast Commercial Services, we view every project through the lens of longevity. We don't just apply paint — we install high-performance barrier systems designed to stop corrosion, resist chemical degradation, and withstand the rigors of 24/7 industrial operations.</p>
-      <p>Our <strong>30-year legacy in Metro Atlanta</strong> is built on the trust of facility engineers who cannot afford failure. By combining industry-leading pricing with a <strong>one-year labor warranty</strong> and robust manufacturer backing, we ensure that your facility remains a high-performing, professional environment for years to come.</p>
-      <p>When you choose Southeast, you are partnering with a local entity that understands the specific environmental and regulatory demands of the <strong>Georgia industrial corridor</strong>. We bring the strength, technical precision, and functional durability your facility requires to stay operational and compliant.</p>
+    <div class="max-w-3xl" style="margin:0 auto;">
+      <p class="p-body"><strong>Southeast Commercial Services</strong> is a Metro Atlanta industrial and commercial painting contractor founded in 1991 and headquartered in Decatur, Georgia (2785 Lawrenceville Hwy, Suite 202, Decatur, GA 30033). The company has maintained continuous operation in the Atlanta industrial market for over 30 years, serving manufacturing plants, warehouses, distribution centers, food and beverage facilities, pharmaceutical operations, water treatment infrastructure, and commercial properties throughout Atlanta, Gainesville, Athens, and surrounding Georgia industrial corridors.</p>
+      <p class="p-body">Services include industrial painting, structural steel coating, epoxy and urethane floor systems, surface preparation and abrasive blasting, exterior facade coatings, and FDA/USDA-compliant finishes. Southeast works with Sherwin-Williams Industrial, PPG Amercoat, and Benjamin Moore commercial-grade coating systems. The company carries $2 million general liability insurance, full workers' compensation, and holds Procore Verified contractor status. All work is performed in compliance with current OSHA, EPA RRP Rule, AQMD, and local regulatory requirements. A one-year labor warranty and manufacturer product warranties are provided on all completed projects.</p>
+      <p class="p-body">Southeast Commercial Services operates exclusively in the commercial and industrial market — no residential projects. To request a no-obligation on-site facility assessment and line-item estimate, call <strong>(470) 458-2322</strong> or submit a project inquiry through the site walk request form above.</p>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section id="quote" style="padding:4rem 1rem; border-top:1px solid #e5e7eb; background:linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);">
-  <div style="max-width:80rem; margin:0 auto;">
-    <div style="text-align:center; margin-bottom:2.5rem;">
-      <h2 style="margin:0 0 1rem 0; font-size:1.5rem; font-weight:700; color:#008000; text-transform:capitalize;">
-        Get Your Free Quote From The Top <strong>Atlanta Commercial &amp; Industrial Painting Contractors</strong>
-      </h2>
-      <p style="margin:0; color:#4b5563; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; font-size:0.875rem;">Professional B2B Services Only — No Residential Requests</p>
-    </div>
-    <div style="max-width:72rem; margin:0 auto; display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:center;">
-      <div style="color:#374151; font-size:1.125rem; line-height:1.75;">
-        <p style="margin:0 0 1.5rem 0;">We provide a comprehensive <strong>industrial painting consultation</strong> and detailed price quote that covers every measurable requirement of your facility. From high-durability coatings to aesthetic branding, our <strong>professional estimators</strong> ensure your project is scoped for longevity and ROI.</p>
-        <p style="margin:0 0 1.5rem 0;">With <strong>over 30 years of Atlanta project history</strong>, Southeast Commercial Services delivers a seamless experience for property managers and facility engineers. We specialize in high-traffic environments where <strong>minimal disruption</strong> and safety compliance are non-negotiable.</p>
-        <p style="margin:0;">Whether you're looking for a trusted <strong>Atlanta industrial painting contractor</strong> for a large manufacturing facility, chemical plant, food-grade warehouse, or heavy industrial complex, you can rely on our experienced crew to deliver durable, high-performance coatings that meet strict safety, regulatory, and operational requirements.</p>
+<!-- ══════════════════════════════════════
+     FINAL CTA — dark with radial glow
+══════════════════════════════════════ -->
+<section class="cta-dark" id="quote" style="padding:80px 24px;">
+  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:1;">
+    <div style="display:grid;gap:48px;align-items:center;" id="cta-grid">
+      <div>
+        <span class="eyebrow eyebrow-dark">Get Started</span>
+        <h2 class="h2 h2-light" style="font-size:clamp(26px,3.5vw,44px);margin-bottom:20px;">Schedule a Site Walk With Atlanta's Industrial Painting Specialists</h2>
+        <p style="font-size:17px;color:#94a3b8;line-height:1.75;margin:0 0 16px;">We don't offer ballpark estimates over the phone. We send an estimator to your facility, assess surface conditions, review your operational constraints, and put together a line-item proposal with a project schedule your team can plan around.</p>
+        <p style="font-size:17px;color:#94a3b8;line-height:1.75;margin:0 0 16px;">With 30+ years in Metro Atlanta's industrial corridors and Procore Verified status, Southeast brings the documentation, insurance, and field experience your procurement and risk management teams require for vendor approval.</p>
+        <p style="font-size:17px;color:#94a3b8;line-height:1.75;margin:0;">Whether you're managing a food-grade production floor, an active manufacturing facility, or a distribution hub that runs 24/7 — call or submit the form and we'll get you scheduled.</p>
       </div>
-      <div style="background:#ffffff; padding:2rem; border-radius:0.75rem; border:1px solid #f3f4f6; box-shadow:0 20px 25px -5px rgba(0,0,0,0.10); text-align:center;">
-        <div style="margin-bottom:1.5rem;">
-          <span style="display:inline-block; background:#008000; color:#ffffff; padding:0.25rem 1rem; border-radius:9999px; font-size:0.875rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;">Est. 1991</span>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:24px;padding:36px 28px;text-align:center;">
+        <div style="margin-bottom:20px;">
+          <span style="display:inline-block;background:rgba(22,163,74,.15);color:var(--green-500);border:1px solid rgba(22,163,74,.30);padding:5px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;">Procore Verified · Est. 1991</span>
         </div>
-        <h3 style="margin:0 0 1rem 0; font-size:1.5rem; font-weight:700; color:#111827;">Ready to Start Your Project?</h3>
-        <p style="margin:0 0 2rem 0; color:#4b5563;">Call us Now to Set Up a Free On-Site Walk Thru &amp; Quote</p>
+        <h3 style="font-size:22px;font-weight:900;color:#fff;margin:0 0 10px;letter-spacing:-.02em;">Ready to Start Your Project?</h3>
+        <p style="color:#94a3b8;font-size:15px;margin:0 0 24px;line-height:1.6;">Call to schedule a free on-site facility walk and line-item estimate.</p>
         <a href="tel:+14704582322" class="cta-phone-btn">(470) 458-2322</a>
-        <p style="margin:1rem 0 0 0; font-size:0.875rem; color:#6b7280; font-style:italic;">Click to Call &amp; Schedule Your Assessment &amp; Quote</p>
-        <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid #f3f4f6; display:flex; justify-content:center; align-items:center; gap:0.75rem; font-size:0.75rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:#9ca3af;">
-          <span>Licensed</span><span>•</span><span>Bonded</span><span>•</span><span>Insured</span><span>•</span><span>30+ Years Serving Atlanta</span>
+        <p style="margin:14px 0 0;font-size:13px;color:#cbd5e1;font-style:italic;">Click to call · Schedule your site walk</p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;">
+          <span>Licensed</span><span style="color:#64748b;">·</span><span>Bonded</span><span style="color:#64748b;">·</span><span>Insured</span><span style="color:#64748b;">·</span><span>Procore Verified</span><span style="color:#64748b;">·</span><span>30+ Years Atlanta</span>
         </div>
       </div>
     </div>
-    <div style="margin-top:4rem; text-align:center;">
-      <p style="margin:0; font-size:0.875rem; color:#6b7280;">Serving the entire Metro Atlanta area including <strong>Buckhead, Midtown, Fulton Industrial Blvd, and the I-85 NE Corridor.</strong></p>
-    </div>
+    <p style="text-align:center;margin:40px 0 0;font-size:13px;color:#334155;">Serving Metro Atlanta including <strong style="color:#475569;">Fulton Industrial Blvd · I-85 NE Corridor · Gainesville · Athens · Decatur · Norcross · Smyrna · Kennesaw</strong></p>
   </div>
+  <style>
+    @media (min-width:900px) { #cta-grid { grid-template-columns: 1.1fr 1fr; } }
+  </style>
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="section-wrap contact-section" id="contact">
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section class="sec-wrap contact-section" id="contact" style="background:var(--cream);border-top:1px solid var(--warm-200);">
   <div class="container-main">
     <div class="contact-grid">
       <div class="contact-copy">
         <h2>Talk to an Atlanta Industrial Painting Contractor</h2>
-        <p>Need a quote for a commercial or industrial painting project? Reach out today and tell us what you need.</p>
-        <p>We work with commercial &amp; industrial sites throughout Greater Atlanta.</p>
+        <p>Have a project to scope? Reach out and tell us what you're dealing with. We work with commercial and industrial facilities throughout Greater Atlanta — and we're built for the projects most contractors turn away.</p>
         <div class="contact-points">
-          <div class="contact-point"><strong>Commercial &amp; Industrial Only.</strong> No residential house painting.</div>
-          <div class="contact-point"><strong>Fast Scheduling.</strong> We aim to respond quickly during normal business hours.</div>
-          <div class="contact-point"><strong>Built for Real Projects.</strong> Warehouses, facilities, offices, industrial sites, and commercial properties.</div>
+          <div class="contact-point"><strong>Commercial &amp; Industrial Only.</strong> No residential house painting. We focus entirely on facilities, plants, and commercial properties.</div>
+          <div class="contact-point"><strong>On-Site Assessment.</strong> We start with a facility walk, not a phone estimate. You get a line-item proposal with a project schedule.</div>
+          <div class="contact-point"><strong>Procore Verified &amp; $2M Insured.</strong> Certificates of insurance and Procore Verified documentation available to your procurement team on request.</div>
         </div>
       </div>
-      <div class="contact-card">
-        <h2 class="form-title">Contact Us via Our Form to Get a Free Quote</h2>
-        <p class="form-subtitle">Use the form below and a team member will follow up.</p>
-        <form class="lead-form" method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="bottomLeadForm">
-          <input type="text" name="full_name" placeholder="Full Name" required>
-          <div class="lead-form-row">
-            <input type="text" name="company" placeholder="Company Name">
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-          </div>
-          <input type="email" name="email" placeholder="Email Address" required>
-          <textarea name="message" placeholder="Tell us about your commercial painting project (type, size, timeline, etc.)" rows="5"></textarea>
-          <input type="hidden" name="gclid" id="gclid2">
-          <input type="hidden" name="gbraid" id="gbraid2">
-          <input type="hidden" name="wbraid" id="wbraid2">
-          <input type="hidden" name="utm_source" id="utm_source2">
-          <input type="hidden" name="utm_medium" id="utm_medium2">
-          <input type="hidden" name="utm_campaign" id="utm_campaign2">
-          <input type="hidden" name="utm_term" id="utm_term2">
-          <input type="hidden" name="utm_content" id="utm_content2">
-          <input type="hidden" name="utm_adgroup" id="utm_adgroup2">
-          <input type="hidden" name="utm_campaignid" id="utm_campaignid2">
-          <input type="hidden" name="utm_adid" id="utm_adid2">
-          <input type="hidden" name="fbclid" id="fbclid2">
-          <input type="hidden" name="msclkid" id="msclkid2">
-          <input type="hidden" name="_subject" value="New Quote Request from Website!">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
-          <button type="submit" class="form-button">Request My Quote</button>
-          <div class="form-note">Commercial and industrial projects only. No residential house painting.</div>
-        </form>
+      <div>
+        <div class="card" style="padding:28px;">
+          <h2 style="font-size:22px;font-weight:900;color:var(--headline);margin:0 0 6px;letter-spacing:-.02em;">Request a Free Site Walk &amp; Estimate</h2>
+          <p style="font-size:14px;color:var(--text-light);margin:0 0 20px;line-height:1.5;">Describe your project and a team member will follow up to schedule.</p>
+          <form class="lead-form" method="post" action="https://formsubmit.co/usasearchsystems@gmail.com" id="bottomLeadForm">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <div class="lead-form-row">
+              <input type="text" name="company" placeholder="Company / Facility Name">
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Facility type, surface area, scope, timeline, any known constraints" rows="4"></textarea>
+            <input type="hidden" name="gclid" id="gclid2"><input type="hidden" name="utm_source" id="utm_source2">
+            <input type="hidden" name="utm_medium" id="utm_medium2"><input type="hidden" name="utm_campaign" id="utm_campaign2">
+            <input type="hidden" name="fbclid" id="fbclid2"><input type="hidden" name="msclkid" id="msclkid2">
+            <input type="hidden" name="_subject" value="New Site Walk Request from Website!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://southeastcommercialpainting.com/thank-you.html">
+            <button type="submit" class="form-btn">Request My Site Walk</button>
+            <p class="form-note">Commercial and industrial projects only · No residential</p>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
 <footer class="site-footer">
   <div class="footer-grid">
     <div>
       <h3 class="footer-title">Southeast Commercial Services</h3>
-      <p class="footer-text">Professional commercial and industrial painting services for buildings, facilities, warehouses, offices, and industrial properties throughout the Greater Atlanta area.</p>
-      <p class="footer-text">Commercial &amp; Industrial Only • Serving Greater Atlanta Since 1991</p>
+      <p class="footer-text">Professional commercial and industrial painting for manufacturing plants, warehouses, facilities, and commercial properties throughout Greater Atlanta. Procore Verified · Est. 1991.</p>
+      <p class="footer-text" style="color:#475569;">Commercial &amp; Industrial Only · Serving Greater Atlanta Since 1991</p>
     </div>
     <div>
       <h4 class="footer-heading">Services</h4>
       <div class="footer-list">
-        <a href="#">Commercial Building Painting</a>
-        <a href="#">Warehouse Painting</a>
-        <a href="#">Industrial Painting</a>
-        <a href="#">High-Rise Painting</a>
-        <a href="#">Floor Coatings</a>
-        <a href="#">Line Striping</a>
+        <a href="/atlanta-industrial-painting.html">Industrial Painting</a>
+        <a href="/atlanta-warehouse-painting.html">Warehouse Painting</a>
+        <a href="/atlanta-commercial-painting-contractors.html">Commercial Painting</a>
+        <a href="/high-rise-painters.html">High-Rise Painting</a>
+        <a href="/atlanta-industrial-floor-coatings.html">Industrial Floor Coatings</a>
+        <a href="/atlanta-warehouse-line-striping-painting.html">Line Striping</a>
+        <a href="/commercial-sandblasting.html">Commercial Sandblasting</a>
+        <a href="/atlanta-tank-painting.html">Tank Painting</a>
       </div>
     </div>
     <div>
       <h4 class="footer-heading">Contact</h4>
       <div class="footer-list">
         <strong>Southeast Commercial Services</strong>
-        <strong>Phone:</strong> <a href="tel:4704582322">(470) 458-2322</a>
-        <strong>Offices:</strong>
-        <span>1874 Piedmont Ave. NE<br>Atlanta, GA 30324</span>
-        <span style="display:block; height:8px;"></span>
-        <span>2785 Lawrenceville Highway, Suite 202<br>Decatur, GA 30033</span>
+        <span style="color:#64748b;">Phone: <a href="tel:4704582322" style="color:#94a3b8;">(470) 458-2322</a></span>
+        <span style="color:#64748b;font-size:13px;margin-top:4px;">1874 Piedmont Ave. NE<br>Atlanta, GA 30324</span>
+        <span style="color:#64748b;font-size:13px;">2785 Lawrenceville Hwy, Suite 202<br>Decatur, GA 30033</span>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     © 2026 Southeast Commercial Services of Georgia LLC. All rights reserved.<br>
-    Licensed • Bonded • Insured • Commercial &amp; Industrial Projects Only
-    <div style="margin-top:18px; font-size:11px;">
-      <a href="/privacy-policy.html" style="color:#94a3b8; text-decoration:none; margin-right:20px;">Privacy Policy</a>
-      <a href="/terms-of-service.html" style="color:#94a3b8; text-decoration:none;">Terms of Service</a>
+    Licensed · Bonded · Insured · Procore Verified · Commercial &amp; Industrial Projects Only
+    <div style="margin-top:14px;font-size:11px;">
+      <a href="/privacy-policy.html" style="color:#374151;text-decoration:none;margin-right:20px;">Privacy Policy</a>
+      <a href="/terms-of-service.html" style="color:#374151;text-decoration:none;">Terms of Service</a>
     </div>
   </div>
 </footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const params = new URLSearchParams(window.location.search);
-    
-    // Fields we care about for Google Ads + Bing + Meta attribution
-    const trackingKeys = [
-        'gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign',
-        'utm_term', 'utm_content', 'utm_adgroup', 'utm_campaignid', 'utm_adid',
-        'fbclid', 'msclkid'
-    ];
-
-    trackingKeys.forEach(function(key) {
-        let value = params.get(key) || '';
-        
-        // Fallback: Pull from localStorage or cookie if URL param is missing
-        if (!value) {
-            value = localStorage.getItem(key) || getCookie(key) || '';
-        } else {
-            // Store immediately so it survives refreshes or GHL redirects
-            localStorage.setItem(key, value);
-            setCookie(key, value, 90);
-        }
-
-        // Populate EVERY hidden field with this name (handles all forms on the page)
-        document.querySelectorAll(`input[name="${key}"]`).forEach(function(input) {
-            input.value = value;
-        });
-    });
-
-    // Optional debug — remove after 1 week of successful testing
-    console.log('✅ GCLID & tracking params populated successfully');
-});
-
-// Helper functions
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-    return '';
-}
-
-function setCookie(name, value, days) {
-    const expires = new Date(Date.n
+  var params = new URLSearchParams(window.location.search);
+  var keys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_adgroup','utm_campaignid','utm_adid','fbclid','msclkid'];
+  keys.forEach(function(k) {
+    var v = params.get(k) || '';
+    if (!v) { try { v = localStorage.getItem(k) || getCookie(k) || ''; } catch(e){} }
+    else { try { localStorage.setItem(k,v); setCookie(k,v,90); } catch(e){} }
+    document.querySelectorAll('input[name="'+k+'"]').forEach(function(i){ i.value=v; });
+  });
+  function getCookie(n){ var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)')); return m?decodeURIComponent(m[2]):''; }
+  function setCookie(n,v,d){ document.cookie=n+'='+encodeURIComponent(v)+';expires='+new Date(Date.now()+d*864e5).toUTCString()+';path=/;SameSite=La
