@@ -491,6 +491,38 @@
     }
 }
   </style>
+  <!-- Google Analytics 4 + Ads -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KEH5L41ZYX');
+    gtag('config', 'AW-784863985');
+  </script>
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+        s.async = true;
+        document.head.appendChild(s);
+      }, 1000);
+    });
+  </script>
+
+  <!-- GA4 generate_lead — fires on every successful form submission (all forms redirect here) -->
+  <script>
+    window.addEventListener('load', function() {
+      if (window.gtag) {
+        gtag('event', 'generate_lead', { method: 'form' });
+      } else {
+        setTimeout(function() {
+          if (window.gtag) { gtag('event', 'generate_lead', { method: 'form' }); }
+        }, 1500);
+      }
+    });
+  </script>
+
   <!-- Microsoft UET | Tag: 73013546 -->
   <script>(function(w, d, t, u, o) {w[u] = w[u] || [], o.ts = (new Date).getTime();var n = d.createElement(t);n.src = "https://bat.bing.net/bat.js?ti=" + o.ti + ("uetq" != u ? "&q=" + u : ""),n.async = 1, n.onload = n.onreadystatechange = function() {var s = this.readyState;s && "loaded" !== s && "complete" !== s ||(o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad"),n.onload = n.onreadystatechange = null)};var i = d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n, i);})(window, document, "script", "uetq", {ti: "73013546",enableAutoSpaTracking: true});</script>
 </head>

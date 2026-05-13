@@ -1322,6 +1322,8 @@
       <input type="hidden" name="utm_adgroup" id="utm_adgroup">
       <input type="hidden" name="utm_campaignid" id="utm_campaignid">
       <input type="hidden" name="utm_adid" id="utm_adid">
+      <input type="hidden" name="utm_matchtype" id="utm_matchtype">
+      <input type="hidden" name="utm_device" id="utm_device">
       <input type="hidden" name="fbclid" id="fbclid">
       <input type="hidden" name="msclkid" id="msclkid">
 
@@ -1405,6 +1407,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const trackingKeys = [
         'gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign',
         'utm_term', 'utm_content', 'utm_adgroup', 'utm_campaignid', 'utm_adid',
+        'utm_matchtype', 'utm_device',
         'fbclid', 'msclkid'
     ];
 
@@ -1482,6 +1485,13 @@ document.addEventListener('DOMContentLoaded', function() {
     })();
 
     console.log('✅ GCLID & tracking params populated successfully');
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+        el.addEventListener('click', function() {
+            if (window.gtag) {
+                gtag('event', 'generate_lead', { method: 'phone' });
+            }
+        });
+    });
 });
 
 // Helper functions
