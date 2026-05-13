@@ -841,7 +841,7 @@
               <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium">
               <input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term">
               <input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="fbclid" id="fbclid">
-              <input type="hidden" name="msclkid" id="msclkid">
+              <input type="hidden" name="msclkid" id="msclkid"><input type="hidden" name="referrer" id="referrer">
               <button type="submit" style="width:100%;padding:15px;background:linear-gradient(160deg,var(--green-600),var(--green-900));color:#fff;border-radius:12px;font-weight:800;font-size:16px;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(21,128,61,.40);letter-spacing:.02em;">Schedule My Site Walk</button>
               <div style="text-align:center;font-size:11px;color:#64748b;">Commercial &amp; industrial facilities only · No residential</div>
             </div>
@@ -1402,7 +1402,7 @@
             <textarea name="message" placeholder="How can we Help?" rows="4"></textarea>
             <input type="hidden" name="gclid" id="gclid2"><input type="hidden" name="utm_source" id="utm_source2">
             <input type="hidden" name="utm_medium" id="utm_medium2"><input type="hidden" name="utm_campaign" id="utm_campaign2">
-            <input type="hidden" name="fbclid" id="fbclid2"><input type="hidden" name="msclkid" id="msclkid2">
+            <input type="hidden" name="fbclid" id="fbclid2"><input type="hidden" name="msclkid" id="msclkid2"><input type="hidden" name="referrer" id="referrer2">
             <button type="submit" class="form-btn">Request My Site Walk</button>
             <p class="form-note">Commercial and industrial projects only · No residential</p>
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden;">
@@ -1471,6 +1471,37 @@
     });
     function getCookie(n) { var m = document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)')); return m ? decodeURIComponent(m[2]) : ''; }
     function setCookie(n,v,d) { document.cookie = n+'='+encodeURIComponent(v)+';expires='+new Date(Date.now()+d*864e5).toUTCString()+';path=/;SameSite=Lax'; }
+    // -- Referrer capture (organic / LLM / referral attribution) --
+    (function() {
+        var hasClickId = params.get('gclid') || params.get('msclkid') || params.get('fbclid') ||
+                         localStorage.getItem('gclid') || localStorage.getItem('msclkid') || localStorage.getItem('fbclid');
+        var hasUtmSource = params.get('utm_source') || localStorage.getItem('utm_source');
+        if (document.referrer && !localStorage.getItem('first_referrer')) {
+            localStorage.setItem('first_referrer', document.referrer);
+            setCookie('first_referrer', document.referrer, 90);
+        }
+        var storedRef = localStorage.getItem('first_referrer') || getCookie('first_referrer') || document.referrer || '';
+        document.querySelectorAll('input[name="referrer"]').forEach(function(el) { el.value = storedRef; });
+        if (hasClickId || hasUtmSource) return;
+        if (!storedRef) return;
+        var source = '', medium = '';
+        try {
+            var host = new URL(storedRef).hostname.replace(/^www\./, '');
+            var llm = { 'chatgpt.com':'chatgpt','chat.openai.com':'chatgpt','perplexity.ai':'perplexity','claude.ai':'claude','gemini.google.com':'gemini','copilot.microsoft.com':'copilot','grok.com':'grok','mistral.ai':'mistral' };
+            if (llm[host]) { source = llm[host]; medium = 'llm'; }
+            else if (/google\./.test(host)) { source = 'google'; medium = 'organic'; }
+            else if (/bing\./.test(host)) { source = 'bing'; medium = 'organic'; }
+            else if (host === 'yahoo.com') { source = 'yahoo'; medium = 'organic'; }
+            else { source = host; medium = 'referral'; }
+        } catch(e) { return; }
+        if (!source) return;
+        if (!localStorage.getItem('utm_source')) {
+            localStorage.setItem('utm_source', source); setCookie('utm_source', source, 90);
+            localStorage.setItem('utm_medium', medium); setCookie('utm_medium', medium, 90);
+        }
+        document.querySelectorAll('input[name="utm_source"]').forEach(function(el) { el.value = source; });
+        document.querySelectorAll('input[name="utm_medium"]').forEach(function(el) { el.value = medium; });
+    })();
   }
   if ('requestIdleCallback' in window) {
     requestIdleCallback(populateUTMFields, { timeout: 2000 });

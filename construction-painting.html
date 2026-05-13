@@ -1559,7 +1559,61 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional debug — remove after 1 week of successful testing
+
+    // -- Referrer capture (organic / LLM / referral attribution) --
+    // Only runs when no paid click ID or UTM source is in the session.
+    // Paid attribution (gclid, msclkid) always wins - never overwrites it.
+    (function() {
+        var hasClickId = params.get('gclid') || params.get('msclkid') || params.get('fbclid') ||
+                         localStorage.getItem('gclid') || localStorage.getItem('msclkid') || localStorage.getItem('fbclid');
+        var hasUtmSource = params.get('utm_source') || localStorage.getItem('utm_source');
+
+        // Capture raw referrer on first visit only (first-touch, never overwrite)
+        if (document.referrer && !localStorage.getItem('first_referrer')) {
+            localStorage.setItem('first_referrer', document.referrer);
+            setCookie('first_referrer', document.referrer, 90);
+        }
+
+        // Always populate referrer field from stored value
+        var storedRef = localStorage.getItem('first_referrer') || getCookie('first_referrer') || document.referrer || '';
+        document.querySelectorAll('input[name="referrer"]').forEach(function(el) { el.value = storedRef; });
+
+        if (hasClickId || hasUtmSource) return; // Paid or tagged - attribution already set
+        if (!storedRef) return;                  // True direct - nothing to infer from
+
+        var source = '', medium = '';
+        try {
+            var host = new URL(storedRef).hostname.replace(/^www\./, '');
+            var llm = {
+                'chatgpt.com': 'chatgpt', 'chat.openai.com': 'chatgpt',
+                'perplexity.ai': 'perplexity', 'claude.ai': 'claude',
+                'gemini.google.com': 'gemini', 'copilot.microsoft.com': 'copilot',
+                'you.com': 'you.com', 'grok.com': 'grok', 'mistral.ai': 'mistral'
+            };
+            if (llm[host]) {
+                source = llm[host]; medium = 'llm';
+            } else if (/google\./.test(host)) {
+                source = 'google'; medium = 'organic';
+            } else if (/bing\./.test(host)) {
+                source = 'bing'; medium = 'organic';
+            } else if (host === 'yahoo.com') {
+                source = 'yahoo'; medium = 'organic';
+            } else {
+                source = host; medium = 'referral';
+            }
+        } catch(e) { return; }
+
+        if (!source) return;
+
+        // Store first-touch source/medium - never overwrite paid attribution
+        if (!localStorage.getItem('utm_source')) {
+            localStorage.setItem('utm_source', source);  setCookie('utm_source', source, 90);
+            localStorage.setItem('utm_medium', medium);  setCookie('utm_medium', medium, 90);
+        }
+        document.querySelectorAll('input[name="utm_source"]').forEach(function(el) { el.value = source; });
+        document.querySelectorAll('input[name="utm_medium"]').forEach(function(el) { el.value = medium; });
+    })();
+
     console.log('✅ GCLID & tracking params populated successfully');
 });
 
