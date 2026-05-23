@@ -450,9 +450,6 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
         gap: 12px;
         font-size: 14.5px;
     }
-    .logo img {
-        max-height: 70px;
-    }
 }
 /* ================== IMPROVED FOOTER ================== */
 .site-footer {
@@ -595,11 +592,28 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
         text-align: center;
         padding: 16px 12px;
     }
-    
-    .logo img {
-        max-height: 72px;
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-    
+    .logo a {
+        display: block;
+        width: 240px;
+        max-width: 90vw;
+        height: 70px;
+        overflow: hidden;
+        line-height: 0;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+        max-width: none;
+        display: block;
+    }
+
     .phone {
         align-items: center;
         text-align: center;
