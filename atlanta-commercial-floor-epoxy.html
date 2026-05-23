@@ -335,9 +335,21 @@
     .logo img { max-height: 70px; }
     .contact-grid { grid-template-columns: 1fr; }
     .lead-form-row { grid-template-columns: 1fr; }
-    .top-bar-inner { grid-template-columns: 1fr auto 1fr; gap: 10px; padding: 0 12px; }
-    .trust-items { gap: 20px; font-size: 12px; }
+    .top-bar-inner { padding: 0 14px; min-height: 0; }
+    .trust-items {
+      position: static;
+      left: auto;
+      transform: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      white-space: normal;
+      width: 100%;
+      padding: 4px 0;
+    }
+    .trust-item { text-align: center; }
     .trust-item strong { font-size: 12px; }
+    .trust-item span  { font-size: 11px; margin-top: 2px; }
     .social-icons { gap: 8px; }
     .social-icons a { width: 28px; height: 28px; font-size: 13px; }
     .main-header-inner { flex-direction: column; gap: 16px; text-align: center; padding: 16px 12px; }
@@ -359,6 +371,7 @@
     .main-nav > div { gap: 4px; font-size: 13.5px; }
     .main-nav a, .dropbtn { padding: 5px 8px; }
     .cs-img-grid { grid-template-columns: repeat(2, 1fr); }
+    .trust-items { gap: 4px; }
   }
   @media (max-width: 900px) {
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -572,18 +585,11 @@
       <div class="top-bar-inner">
         <div></div>
         <div class="trust-items">
-          <div class="trust-item">
-            <strong>100% Customer Satisfaction</strong>
-            <span>With Every Job We Do</span>
-          </div>
-          <div class="trust-item">
-            <strong>Proudly Serving Atlanta</strong>
-            <span>Greater Atlanta Area</span>
-          </div>
-          <div class="trust-item">
-            <strong>Expert Commercial Crews</strong>
-            <span>Fully Insured &amp; Reliable</span>
-          </div>
+          <div class="trust-item"><strong>Procore Verified</strong><span>Contractor Qualified</span></div>
+          <div class="trust-item"><strong>Serving Metro Atlanta</strong><span>Since 1991</span></div>
+          <div class="trust-item"><strong>Multi-Million $ Insured</strong><span>Fully Insured &amp; Bonded</span></div>
+          <div class="trust-item"><strong>Expert Commercial Crews</strong><span>Fully Insured &amp; Reliable</span></div>
+          <div class="trust-item"><strong>100% Customer Satisfaction</strong><span>With Every Job We Do</span></div>
         </div>
         <div class="social-icons" style="display:flex; gap:10px;">
           <a href="https://www.facebook.com/southestcommercialservices" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
