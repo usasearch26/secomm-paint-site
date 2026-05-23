@@ -647,13 +647,14 @@
     .trust-item span  { font-size: 10px; margin-top: 2px; line-height: 1.15; }
     .social-icons { display: none; }
     .main-header-inner { flex-direction: column; gap: 14px; text-align: center; padding: 14px 16px; }
-    .logo { display: flex; justify-content: center; }
-    .logo a { display: inline-block; line-height: 0; }
+    .logo { display: flex; justify-content: center; width: 100%; }
+    .logo a { display: inline-block; line-height: 0; max-width: 100%; }
     .logo img {
-      height: 60px;
+      height: auto;
       width: auto;
-      max-width: none;
-      max-height: 60px;
+      max-height: 72px;
+      max-width: 100%;
+      display: block;
     }
     .phone { align-items: center; }
     .phone a { font-size: 24px; }
