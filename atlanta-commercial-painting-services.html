@@ -527,16 +527,23 @@
       position: static;
       left: auto;
       transform: none;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px 12px;
       white-space: normal;
       width: 100%;
       padding: 4px 0;
     }
-    .trust-item { text-align: center; }
-    .trust-item strong { font-size: 12px; }
-    .trust-item span  { font-size: 11px; margin-top: 2px; }
+    .trust-item {
+      flex: 0 0 calc(33.333% - 8px);
+      max-width: calc(33.333% - 8px);
+      min-width: 0;
+      text-align: center;
+    }
+    .trust-item strong { font-size: 11px; line-height: 1.15; }
+    .trust-item span  { font-size: 10px; margin-top: 2px; line-height: 1.15; }
     
     .social-icons {
         gap: 8px;
