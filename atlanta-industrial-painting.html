@@ -647,13 +647,25 @@
     .trust-item span  { font-size: 10px; margin-top: 2px; line-height: 1.15; }
     .social-icons { display: none; }
     .main-header-inner { flex-direction: column; gap: 14px; text-align: center; padding: 14px 16px; }
-    .logo { display: flex; justify-content: center; width: 100%; }
-    .logo a { display: inline-block; line-height: 0; max-width: 100%; }
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .logo a {
+      display: block;
+      width: 240px;
+      max-width: 90vw;
+      height: 70px;
+      overflow: hidden;
+      line-height: 0;
+    }
     .logo img {
-      height: auto;
-      width: auto;
-      max-height: 82px;
-      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
+      max-width: none;
       display: block;
     }
     .phone { align-items: center; }
