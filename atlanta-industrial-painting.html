@@ -622,9 +622,22 @@
      MOBILE
   ============================================= */
   @media (max-width: 768px) {
-    .top-bar-inner { padding: 0 14px; min-height: 44px; }
-    .trust-items { gap: 16px; position: absolute; left: 50%; transform: translateX(-50%); }
-    .trust-item strong { font-size: 11px; }
+    .top-bar { padding: 8px 0; }
+    .top-bar-inner { padding: 0 14px; min-height: 0; }
+    .trust-items {
+      position: static;
+      left: auto;
+      transform: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      white-space: normal;
+      width: 100%;
+      padding: 4px 0;
+    }
+    .trust-item { text-align: center; }
+    .trust-item strong { font-size: 12px; }
+    .trust-item span  { font-size: 11px; margin-top: 2px; }
     .social-icons { display: none; }
     .main-header-inner { flex-direction: column; gap: 14px; text-align: center; padding: 14px 16px; }
     .phone { align-items: center; }
@@ -643,7 +656,7 @@
   @media (max-width: 480px) {
     .industry-grid { grid-template-columns: 1fr; }
     .steps-grid { grid-template-columns: 1fr; }
-    .trust-items { gap: 12px; }
+    .trust-items { gap: 4px; }
   }
   </style>
 
