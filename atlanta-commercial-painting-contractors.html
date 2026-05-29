@@ -875,9 +875,7 @@
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
 </script>
-<script>
-  window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';s.async=true;document.head.appendChild(s);},1000);});
-</script>
+<!-- External gtag.js library moved behind the existing first-interaction gate below (PageSpeed). The inline stub + config calls above stay synchronous so any queued gtag('event',...) fires once the library loads. -->
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
@@ -885,6 +883,7 @@
 <!-- Third-party trackers deferred to first user interaction (PageSpeed fix) -->
 <script>
 (function(){var d=false;function load(){if(d)return;d=true;
+var gt=document.createElement('script');gt.async=true;gt.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';document.head.appendChild(gt);
 ['https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
  'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
 ].forEach(function(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s);});
