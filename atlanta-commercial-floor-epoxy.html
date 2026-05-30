@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Commercial Floor Epoxy Contractors</title>
   <meta name="description" content="Atlanta Commercial Epoxy Floor Coatings. Southeast Commercial Services Serves the Greater Metro Atlanta Area. No Residential. Get a free quote: (470) 458-2322.">
-  <link rel="preload" as="image" 
-  href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy-hero.webp" 
-  fetchpriority="high">
+  <link rel="preload" as="image"
+  href="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy-hero.webp"
+  fetchpriority="high" media="(min-width:769px)">
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 
 
@@ -385,6 +385,18 @@
     .footer-grid { grid-template-columns: 1fr; gap: 40px; }
     .footer-bottom { margin-top: 40px; }
   }
+
+  /* HERO BACKGROUND — mobile downloads zero hero bytes (solid blue field
+     under the existing ~80% blue overlay); desktop loads the hero image. */
+  .paint-hero { background-color: #1e3a8a; }
+  @media (min-width: 769px) {
+    .paint-hero {
+      background-image: url('https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy-hero.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
   </style>
 
 <!-- =========================
@@ -576,7 +588,27 @@
   gtag('config', 'AW-784863985');
 </script>
 <script>
-  window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';s.async=true;document.head.appendChild(s);},1000);});
+  // gtag.js library loader gated on first user interaction (with ~5s fallback).
+  // The inline gtag() stub + dataLayer + gtag('js') + both gtag('config') calls
+  // above remain synchronous in <head>, so queued events (e.g. phone-click
+  // generate_lead) replay the moment the library finishes loading.
+  (function(){
+    var fired=false;
+    function loadGtag(){
+      if(fired)return; fired=true;
+      ['scroll','click','keydown','touchstart','mousemove'].forEach(function(evt){
+        window.removeEventListener(evt,loadGtag,{passive:true});
+      });
+      var s=document.createElement('script');
+      s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      s.async=true;
+      document.head.appendChild(s);
+    }
+    ['scroll','click','keydown','touchstart','mousemove'].forEach(function(evt){
+      window.addEventListener(evt,loadGtag,{passive:true});
+    });
+    setTimeout(loadGtag,5000);
+  })();
 </script>
 
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
@@ -663,14 +695,7 @@
 </header>
 
 <!-- HERO -->
-<section style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;height:auto;color:#ffffff;padding:60px 16px 40px 16px;box-sizing:border-box;">
-  <img
-    src="https://southeastcommercialpainting.com/atlanta-commercial-floor-epoxy-hero.webp"
-    fetchpriority="high"
-    loading="eager"
-    decoding="async"
-    alt=""
-    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:1;">
+<section class="paint-hero" style="width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;height:auto;color:#ffffff;padding:60px 16px 40px 16px;box-sizing:border-box;">
 
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(17,24,39,.80) 0%,rgba(30,58,138,.72) 50%,rgba(49,46,129,.78) 100%);z-index:10;"></div>
   <div style="position:relative;z-index:20;width:100%;max-width:1280px;margin:0 auto;">
