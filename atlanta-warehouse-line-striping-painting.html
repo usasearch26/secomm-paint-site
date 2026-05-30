@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Warehouse Line Striping, Floor Marking & Line Marking</title>
   <meta name="description" content="Atlanta's trusted warehouse line striping and line marking experts since 1991. OSHA-compliant floor marking, 5S layouts & industrial coatings. Get a free quote today! (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" media="(min-width:769px)">
 
   <style>
   :root {
@@ -317,7 +318,18 @@
         padding: 5px 8px;
     }
     .trust-items { gap: 4px; }
-}  
+}
+
+/* Hero: blue field on mobile (zero hero bytes), image on desktop only */
+.paint-hero { background-color: #1e3a8a; }
+@media (min-width: 769px) {
+  .paint-hero {
+    background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
   </style>
 
 <!-- =========================
@@ -488,6 +500,7 @@
 
 <!-- GHL External Tracking (Chat Widget Attribution) -->
 <script
+  async
   src="https://go.usasearchsystems.com/js/external-tracking.js"
   data-tracking-id="tk_256ac3e5355f4672add059cc2e43f0c5"
 ></script>
@@ -500,9 +513,6 @@
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
 </script>
-<script>
-  window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';s.async=true;document.head.appendChild(s);},1000);});
-</script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
@@ -510,7 +520,8 @@
 <!-- Third-party trackers deferred to first user interaction (PageSpeed fix) -->
 <script>
 (function(){var d=false;function load(){if(d)return;d=true;
-['https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
+['https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX',
+ 'https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
  'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
 ].forEach(function(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s);});
 var g=document.createElement('script');g.async=true;
@@ -622,7 +633,7 @@ setTimeout(load,5000);})();
 </header>
 
 <!-- HERO -->
-<section style="
+<section class="paint-hero" style="
   width:100vw;
   position:relative;
   left:50%;
@@ -634,7 +645,6 @@ setTimeout(load,5000);})();
   padding:60px 16px 40px 16px;
   box-sizing:border-box;
 ">
-  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" alt="Atlanta commercial painting services" fetchpriority="high" loading="eager" width="1600" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg, rgba(17,24,39,.80) 0%, rgba(30,58,138,.72) 50%, rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -754,7 +764,7 @@ setTimeout(load,5000);})();
         <div style="flex: 1; min-width: 300px;">
           <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/699794fbdf9bdf1e5529f7d8.webp"
                alt="Atlanta Warehouse Line Striping" width="448" height="300"
-               fetchpriority="high" loading="eager"
+               loading="lazy"
                style="display: block; width: 100%; max-width: 448px; height: auto; aspect-ratio: 448 / 300; border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); margin-top: 32px;" />
         </div>
         <div style="flex: 1; min-width: 300px; color: #374151; font-size: 18px; line-height: 1.75;">
