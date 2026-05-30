@@ -6,7 +6,8 @@
   <title>Atlanta Commercial Painters</title>
   <meta name="description" content="Atlanta Commercial Painters | Professional B2B Crews Since 1991. Reliable 
 interior & exterior painting for facilities, offices, warehouses & industrial properties. No residential. Get a free quote: (470) 458-2322.">
-<link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">    
+<link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
+<link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" media="(min-width:769px)">
   <style>
   :root {
     --green: #008000;
@@ -674,7 +675,18 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
         padding: 5px 8px;
     }
     .trust-items { gap: 4px; }
-}    
+}
+
+/* Hero: solid blue on mobile (zero hero bytes), background image on desktop only */
+.paint-hero { background-color: #1e3a8a; }
+@media (min-width:769px) {
+  .paint-hero {
+    background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 </style>
 
 <!-- =========================
@@ -852,6 +864,7 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
 <script
   src="https://go.usasearchsystems.com/js/external-tracking.js"
   data-tracking-id="tk_256ac3e5355f4672add059cc2e43f0c5"
+  async
 ></script>
 
 <!-- Google Analytics + Google Ads -->
@@ -862,9 +875,7 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
 </script>
-<script>
-  window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';s.async=true;document.head.appendChild(s);},1000);});
-</script>
+<!-- gtag.js library loader moved into the first-interaction gate below (PageSpeed fix). Stub + configs above remain synchronous so queued events replay on load. -->
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
 <script src="https://backend.leadconnectorhq.com/appengine/loc/JWXMW7WUEPhxT3kBlgFp/pool/lbaVbAaVMgCDMHrWaQ0M/number_pool.js" defer></script>
@@ -872,6 +883,7 @@ interior & exterior painting for facilities, offices, warehouses & industrial pr
 <!-- Third-party trackers deferred to first user interaction (PageSpeed fix) -->
 <script>
 (function(){var d=false;function load(){if(d)return;d=true;
+var gt=document.createElement('script');gt.async=true;gt.src='https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';document.head.appendChild(gt);
 ['https://rest.revealid.xyz/v3/script?clientId=dU2k4e29mYqpLtYjstiZLJ&version=4.0.0',
  'https://monitor.fraudblocker.com/fbt.js?sid=KBp_DvmvR4ZwwP4K0EKpo'
 ].forEach(function(src){var s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s);});
@@ -994,7 +1006,7 @@ setTimeout(load,5000);})();
   </div>
 </header>
   <!-- HERO -->
-<section style="
+<section class="paint-hero" style="
   width:100vw;
   position:relative;
   left:50%;
@@ -1006,7 +1018,6 @@ setTimeout(load,5000);})();
   padding:60px 16px 40px 16px;
   box-sizing:border-box;
 ">
-  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" alt="Atlanta commercial painting services" fetchpriority="high" loading="eager" width="1600" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
   <div style="
     position:absolute;
     inset:0;
