@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Exterior Commercial Painting Services</title>
   <meta name="description" content="Atlanta Exterior Commercial Painting Services. Southeast Commercial Services Serves the Greater Metro Atlanta Area. No residential. Get a free quote: (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp">
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" media="(min-width:769px)">
+  <link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -277,6 +278,17 @@
     }
     .trust-items { gap: 4px; }
 }
+
+  /* Hero: solid color on mobile (zero hero bytes), image only on desktop */
+  .paint-hero { background-color: #1e3a8a; }
+  @media (min-width:769px) {
+    .paint-hero {
+      background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
   </style>
 
 <!-- ======================================== JSON-LD SCHEMA ======================================== -->
@@ -353,18 +365,39 @@
 
 <!-- GHL External Tracking (Chat Widget Attribution) -->
 <script
+  async
   src="https://go.usasearchsystems.com/js/external-tracking.js"
   data-tracking-id="tk_256ac3e5355f4672add059cc2e43f0c5"
 ></script>
 
 <!-- Google Analytics + Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX"></script>
+<!-- Synchronous stub + configs stay immediate so queued events (phone-click generate_lead) replay when the lib loads on first interaction -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KEH5L41ZYX');
   gtag('config', 'AW-784863985');
+
+  // gtag.js external loader is interaction-gated for mobile PageSpeed.
+  // First user interaction (or 5s fallback) loads the library; queued
+  // gtag() calls above replay automatically once it arrives.
+  (function () {
+    var loaded = false;
+    function loadGtag() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+      document.head.appendChild(s);
+      var ev = ['scroll','click','keydown','touchstart','mousemove'];
+      ev.forEach(function (t) { window.removeEventListener(t, loadGtag); });
+    }
+    var ev = ['scroll','click','keydown','touchstart','mousemove'];
+    ev.forEach(function (t) { window.addEventListener(t, loadGtag, { passive: true }); });
+    setTimeout(loadGtag, 5000);
+  })();
 </script>
 
 <!-- GHL Number Pool (Call Tracking) - Load normally, no long delay -->
@@ -464,7 +497,7 @@
 </header>
 
 <!-- HERO -->
-<section style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; background-image:url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp'); background-size:cover; background-position:center; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
+<section class="paint-hero" style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:auto; color:#ffffff; padding:60px 16px 40px 16px; box-sizing:border-box;">
   <div style="position:absolute; inset:0; background:linear-gradient(135deg,rgba(17,24,39,.80) 0%,rgba(30,58,138,.72) 50%,rgba(49,46,129,.78) 100%); z-index:10;"></div>
   <div style="position:relative; z-index:20; width:100%; max-width:1280px; margin:0 auto;">
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:50px; align-items:start;">
@@ -545,7 +578,7 @@
       <div style="flex:1; min-width:320px; max-width:480px;">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp"
              alt="Atlanta Commercial Exterior Painting Contractors - Southeast Commercial Services"
-             width="448" height="300" fetchpriority="high" loading="eager" decoding="async"
+             width="448" height="300" loading="lazy" decoding="async"
              style="display:block; width:100%; height:auto; border-radius:14px; box-shadow:0 18px 40px rgba(2,6,23,.18); border:1px solid rgba(15,23,42,.10); border-bottom:8px solid #334155;" />
         <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
           <span style="display:inline-flex; align-items:center; gap:6px; padding:7px 14px; background:#ecfdf5; border:1px solid rgba(16,185,129,.25); border-radius:999px; font-size:12px; font-weight:800; color:#064e3b; letter-spacing:.04em; text-transform:uppercase;">✓ Licensed &amp; Insured</span>
@@ -696,7 +729,7 @@
       <!-- 1 Exterior Painting (HERO) -->
       <a href="https://southeastcommercialpainting.com/exterior-commercial-painting" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; display:block;" onmouseover="this.firstElementChild.style.transform='translateY(-6px)'; this.firstElementChild.style.boxShadow='0 22px 60px rgba(2,6,23,.14)';" onmouseout="this.firstElementChild.style.transform='translateY(0)'; this.firstElementChild.style.boxShadow='0 12px 30px rgba(2,6,23,.10)';">
         <div style="background:#ffffff; border:2px solid #334155; border-radius:18px; overflow:hidden; box-shadow:0 12px 30px rgba(2,6,23,.10); transform:translateY(0); transition:transform .18s ease, box-shadow .18s ease;">
-          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Commercial exterior painting Atlanta - building facade" width="400" height="192" loading="eager" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
+          <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/699497eea9efdeea93e37ff9.webp" alt="Commercial exterior painting Atlanta - building facade" width="400" height="192" loading="lazy" decoding="async" style="display:block; width:100%; height:192px; object-fit:cover;">
           <div style="padding:22px;">
             <div style="height:4px; width:56px; background:#334155; border-radius:999px; margin-bottom:12px;"></div>
             <h3 style="margin:0 0 4px 0; font-size:20px; font-weight:900; color:#333333; letter-spacing:-0.01em;">Exterior Painting</h3>
