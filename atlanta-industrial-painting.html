@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlanta Industrial Painting Contractors | Southeast Commercial Services</title>
   <meta name="description" content="Industrial painting contractors serving Metro Atlanta since 1991. Protective coatings for manufacturing plants, warehouses & industrial facilities. Procore Verified. Multi-Million $ Insured. (470) 458-2322.">
-  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
+  <link rel="preload" as="image" href="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp" fetchpriority="high" media="(min-width:769px)">
 
   <style>
   /* =============================================
@@ -619,6 +620,19 @@
   }
 
   /* =============================================
+     HERO BACKGROUND — mobile downloads zero hero bytes
+  ============================================= */
+  .paint-hero { background-color: #1e3a8a; }
+  @media (min-width: 769px) {
+    .paint-hero {
+      background-image: url('https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  /* =============================================
      MOBILE
   ============================================= */
   @media (max-width: 768px) {
@@ -719,20 +733,16 @@
     if(_g){localStorage.setItem('gclid',_g);document.cookie="gclid="+encodeURIComponent(_g)+";expires="+new Date(Date.now()+90*864e5).toUTCString()+";path=/;SameSite=Lax";}
   } catch(e){}
 
-  // ── 3. Load GTM/gtag script files 1 second after load — removes ~486ms TBT
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      var s = document.createElement('script');
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
-      s.async = true;
-      document.head.appendChild(s);
-    }, 1000);
-  });
-
-  // ── 4. Load LeadConnector on first user interaction, 5s fallback
+  // ── 3. Load gtag.js + LeadConnector on first user interaction, 5s fallback
+  //      (gtag.js moved off page-load into the interaction gate — removes ~486ms TBT;
+  //       queued conversion events replay when the library loads)
   var _lcDone = false;
   function _loadLC() {
     if (_lcDone) return; _lcDone = true;
+    var g = document.createElement('script');
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=G-KEH5L41ZYX';
+    g.async = true;
+    document.head.appendChild(g);
     var a = document.createElement('script');
     a.src = 'https://backend.leadconnectorhq.com/appengine/js/user_session.js';
     document.head.appendChild(a);
@@ -832,14 +842,7 @@
 <!-- ══════════════════════════════════════
      HERO
 ══════════════════════════════════════ -->
-<section style="width:100vw;position:relative;overflow:hidden;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;color:#fff;padding:64px 20px 48px;">
-  <img src="https://assets.cdn.filesafe.space/JWXMW7WUEPhxT3kBlgFp/media/69ca8ca723b08241906a9589.webp"
-       alt="Atlanta industrial painting contractors working on facility"
-       fetchpriority="high"
-       loading="eager"
-       decoding="sync"
-       width="1600" height="900"
-       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+<section class="paint-hero" style="width:100vw;position:relative;overflow:hidden;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;color:#fff;padding:64px 20px 48px;">
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(17,24,39,.80) 0%,rgba(30,58,138,.72) 50%,rgba(49,46,129,.78) 100%);z-index:1;"></div>
   <!-- Subtle grid texture overlay -->
   <div style="position:absolute;inset:0;z-index:11;opacity:.04;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:48px 48px;"></div>
@@ -923,7 +926,7 @@
       <div class="img-col border-navy">
         <img src="https://storage.googleapis.com/msgsndr/JWXMW7WUEPhxT3kBlgFp/media/6994af666bac24a4b30d011e.webp"
              alt="Atlanta industrial painting crew on active job site" width="560" height="420"
-             fetchpriority="high" loading="eager" decoding="async"
+             loading="lazy" decoding="async"
              sizes="(max-width: 1024px) 100vw, 560px">
       </div>
       <div class="text-col" style="gap:0;">
