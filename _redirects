@@ -1,0 +1,65 @@
+# Cloudflare Pages redirects — WordPress → static migration recovery (2026-07-11)
+# 301s dead WP URLs (still indexed in Google, now 404) to their best live equivalent.
+# Recovers link equity + stops crawl waste. Audit: SEO-BLOG-PROJECT/data/dead-pages-audit-2026-07-11.md
+# NOTE: content URLs point to the nearest live service page for now; re-point to the
+#       new blog post once each rewrite publishes.
+
+# --- High-demand content (interim → nearest live page; rewrite pending) ---
+/revamp-your-atlanta-commercial-building-with-the-perfect-exterior-painting-and-stucco-repair-services/  /exterior-commercial-painting  301
+/commercial-painting-costs/  /atlanta-commercial-painting-contractors  301
+/protect-your-atlanta-commercial-roof-important-considerations-for-roof-painting-and-coating/  /commercial-building-painting  301
+/how-to-choose-great-atlanta-commercial-painting-contractors/  /atlanta-commercial-painting-contractors  301
+/tips-for-hiring-the-right-commercial-painting-companies/  /atlanta-commercial-painting-contractors  301
+/best-commercial-painters-atlantas-best-commercial-painting-contractor/  /atlanta-commercial-painting-contractors  301
+/revitalize-and-protect-your-tanks-and-silos-understanding-industrial-tank-painting-and-coating-services/  /atlanta-tank-painting  301
+/structural-steel-coating-discovering-the-best-industrial-coatings-for-steel-structure-painting-in-atlanta/  /atlanta-industrial-painting  301
+/expert-industrial-floor-coating-in-atlanta-transform-your-business-with-the-best-epoxy-floor-coatings-and-paints/  /atlanta-industrial-floor-coatings  301
+/why-pressure-washing-and-power-washing-are-essential-for-high-quality-commercial-painting-results/  /exterior-commercial-painting  301
+/expert-advice-exterior-commercial-building-and-commercial-painting-tips-from-the-pros/  /exterior-commercial-painting  301
+
+# --- Service topics that map to an existing live page ---
+/commercial-industrial-painting/  /atlanta-industrial-painting  301
+/atlanta-industrial-tank-painting  /atlanta-tank-painting  301
+/atlanta-tank-painting-mobile  /atlanta-tank-painting  301
+/industrial/  /atlanta-industrial-painting  301
+/building-painting-contractors  /commercial-building-painting  301
+/high-rise-painting/  /high-rise-painters  301
+/parking-loading/  /atlanta-parking-lot-striping  301
+/commercial-services  /  301
+
+# --- Structural / navigational ---
+/home  /  301
+/home-page-painting/  /  301
+/services/  /  301
+/atlanta/  /  301
+/category/commercial-painting/  /  301
+/contact/  /contact-us  301
+
+# --- Old WordPress city landing pages → homepage ---
+/athens/  /  301
+/marietta/  /  301
+/roswell/  /  301
+/sandy-springs/  /  301
+/smyrna/  /  301
+/alpharetta/  /  301
+/johns-creek/  /  301
+/duluth/  /  301
+/doraville/  /  301
+/suwanee/  /  301
+/norcross/  /  301
+/chamblee/  /  301
+/lawrenceville/  /  301
+/dunwoody/  /  301
+/brookhaven/  /  301
+/stonecrest/  /  301
+/south-fulton/  /  301
+
+# --- Off-core (janitorial/cleaning/residential) → homepage ---
+/atlanta-janitorial-services/  /  301
+/commercial-cleaning/  /  301
+/restaurant-cleaning-2/  /  301
+/coronavirus-cleaning/  /  301
+/residential-painting/  /  301
+
+# --- Duct cleaning lives on the separate facilities domain ---
+/atlanta-industrial-duct-cleaning  https://southeastfacilities.com/  301
